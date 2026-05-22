@@ -20,11 +20,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default:  `${SITE.name} | ${SITE.tagline}`,
+    default:  "ClickDudes | Turning Clicks Into Revenue",
     template: "%s",
   },
   description:  SITE.description,
   metadataBase: new URL(SITE.url),
+  icons: {
+    icon:     "/icon.png",
+    apple:    "/icon.png",
+    shortcut: "/icon.png",
+  },
   openGraph: {
     siteName: SITE.name,
     type:     "website",
