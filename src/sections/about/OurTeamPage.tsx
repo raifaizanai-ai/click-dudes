@@ -69,12 +69,12 @@ export function OurTeamPage() {
               Our Team
             </motion.span>
             <motion.h1 variants={fadeUp}
-              className="text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
+              className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
             >
               The People Behind{" "}
               <GradientText gradient="brand">Click Dudes</GradientText>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
+            <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
               Ad-tech veterans, engineers, and publisher advocates — unified by one goal: giving every publisher the technology and expertise to earn their true inventory value.
             </motion.p>
           </motion.div>

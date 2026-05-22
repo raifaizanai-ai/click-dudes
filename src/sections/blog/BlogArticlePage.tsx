@@ -102,7 +102,7 @@ export function BlogArticlePage({ article }: BlogArticlePageProps) {
 
       <>
         {/* ── Hero ── */}
-        <section className="section-base pt-16 pb-12">
+        <section className="section-base pt-10 pb-8 sm:pt-16 sm:pb-12">
           <div className="container-base">
             <div className="max-w-3xl mx-auto">
               <motion.div variants={fadeUp} initial="hidden" animate="visible">
@@ -144,7 +144,7 @@ export function BlogArticlePage({ article }: BlogArticlePageProps) {
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 0.1 }}
-                className="text-h1 font-bold text-text-primary tracking-display text-balance mb-5 leading-tight"
+                className="text-h2 sm:text-h1 font-bold text-text-primary tracking-display text-balance mb-5 leading-tight"
               >
                 {article.title}
               </motion.h1>
@@ -154,7 +154,7 @@ export function BlogArticlePage({ article }: BlogArticlePageProps) {
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 0.14 }}
-                className="text-body-lg text-text-secondary text-pretty mb-6"
+                className="text-base md:text-body-lg text-text-secondary text-pretty mb-6"
               >
                 {article.excerpt}
               </motion.p>

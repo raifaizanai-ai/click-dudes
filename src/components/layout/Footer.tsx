@@ -68,13 +68,13 @@ export function Footer() {
         {/* ══════════════════════════════════════════════
             Three-panel grid — 28 / 42 / 30 proportions
         ══════════════════════════════════════════════ */}
-        <div className="pt-16 pb-10 grid grid-cols-1 lg:grid-cols-[1.35fr_2fr_1.45fr] gap-6 items-stretch">
+        <div className="pt-10 sm:pt-16 pb-8 sm:pb-10 grid grid-cols-1 lg:grid-cols-[1.35fr_2fr_1.45fr] gap-5 sm:gap-6 items-stretch">
 
           {/* ─── LEFT: Brand + Rocket hero ─────────────── */}
           <motion.div
             custom={0} variants={panelVariants} initial="hidden"
             whileInView="visible" viewport={{ once: true, margin: "-40px" }}
-            className="glass-elevated rounded-3xl p-7 flex flex-col items-center text-center overflow-hidden"
+            className="glass-elevated rounded-3xl p-5 sm:p-7 flex flex-col items-center text-center overflow-hidden"
             style={{ boxShadow: "0 32px 80px rgba(7,17,47,0.12), 0 0 0 1px rgba(139,92,246,0.13), inset 0 1px 0 rgba(255,255,255,0.97)" }}
           >
             <div className="self-start mb-4"><SiteLogo context="footer" /></div>
@@ -95,28 +95,28 @@ export function Footer() {
           <motion.div
             custom={1} variants={panelVariants} initial="hidden"
             whileInView="visible" viewport={{ once: true, margin: "-40px" }}
-            className="glass rounded-3xl p-8 md:p-10 flex flex-col"
+            className="glass rounded-3xl p-6 sm:p-8 md:p-10 flex flex-col"
             style={{ boxShadow: "0 20px 60px rgba(7,17,47,0.08), 0 0 0 1px rgba(139,92,246,0.12), inset 0 1px 0 rgba(255,255,255,0.92)" }}
           >
             {/* Top header row */}
-            <div className="flex items-center justify-between mb-7 pb-5 border-b border-brand-purple/[0.10]">
+            <div className="flex items-center justify-between mb-6 pb-5 border-b border-brand-purple/[0.10]">
               <p className="text-sm font-bold text-text-primary tracking-tight">Site Navigation</p>
               <LiveDot color="purple" size="sm" label="Always on" />
             </div>
 
-            {/* 2×2 navigation grid */}
-            <div className="grid grid-cols-2 gap-x-8 gap-y-8">
+            {/* 2×2 navigation grid — single column on very small screens */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 md:gap-x-8 gap-y-6 md:gap-y-8">
               {FOOTER_COLUMNS.map((col) => (
-                <div key={col.heading} className="flex flex-col gap-4">
-                  <p className="text-[15px] font-bold uppercase tracking-wide text-brand-purple">
+                <div key={col.heading} className="flex flex-col gap-3">
+                  <p className="text-[13px] sm:text-[15px] font-bold uppercase tracking-wide text-brand-purple">
                     {col.heading}
                   </p>
-                  <ul className="flex flex-col gap-2.5">
+                  <ul className="flex flex-col gap-2">
                     {col.links.map((link) => (
                       <li key={link.href}>
                         <Link
                           href={link.href}
-                          className="text-[14px] text-text-secondary hover:text-brand-purple transition-colors duration-200 focus-ring rounded"
+                          className="text-[13px] sm:text-[14px] text-text-secondary hover:text-brand-purple transition-colors duration-200 focus-ring rounded"
                         >
                           {link.label}
                         </Link>
@@ -135,7 +135,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-brand-green flex-shrink-0" aria-hidden="true" />
-                <span className="text-xs text-text-muted">GCPP Verified Publishing Partner Network</span>
+                <span className="text-xs text-text-muted">GCPP Verified Partner</span>
               </div>
             </div>
           </motion.div>

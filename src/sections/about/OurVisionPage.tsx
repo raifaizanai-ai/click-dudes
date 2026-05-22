@@ -69,12 +69,12 @@ export function OurVisionPage() {
               Our Vision
             </motion.span>
             <motion.h1 variants={fadeUp}
-              className="text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
+              className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
             >
               The Future of{" "}
               <GradientText gradient="brand">Publisher Monetization</GradientText>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
+            <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
               We envision a world where every publisher — regardless of size — earns their inventory&apos;s true value, powered by AI that works invisibly and intelligently in the background.
             </motion.p>
           </motion.div>

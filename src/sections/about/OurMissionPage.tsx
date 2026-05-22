@@ -61,12 +61,12 @@ export function OurMissionPage() {
               Our Mission
             </motion.span>
             <motion.h1 variants={fadeUp}
-              className="text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
+              className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
             >
               Built for <GradientText gradient="brand">Publishers.</GradientText>
               <br />Full Stop.
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
+            <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
               Click Dudes was built to give independent publishers the same ad technology advantages as the largest media companies — premium demand, AI optimization, and expert management — without the enterprise price tag.
             </motion.p>
           </motion.div>

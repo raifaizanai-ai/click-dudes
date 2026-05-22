@@ -56,16 +56,16 @@ export function ContactUsPage() {
         <GradientOrb color="purple" size="2xl" blur="2xl" opacity={0.12} animate className="-top-24 left-1/4" />
         <GradientOrb color="cyan"   size="xl"  blur="2xl" opacity={0.09}        className="top-0 -right-16" />
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div variants={stagger} initial="hidden" animate="visible" className="flex flex-col gap-5">
               <motion.span variants={fadeUp} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-brand-purple/20 text-xs font-semibold tracking-widest uppercase text-brand-purple w-fit">
                 <Mail aria-hidden="true" className="w-3.5 h-3.5" />
                 Get in Touch
               </motion.span>
-              <motion.h1 variants={fadeUp} className="text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight">
+              <motion.h1 variants={fadeUp} className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight">
                 Talk to the{" "}<GradientText gradient="brand">Click Dudes Team</GradientText>
               </motion.h1>
-              <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl">
+              <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl">
                 Publisher onboarding, advertiser partnerships, technical support — our team responds within 24 hours on business days.
               </motion.p>
               <motion.div variants={fadeUp} className="flex flex-wrap gap-2 pt-1">

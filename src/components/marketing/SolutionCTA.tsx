@@ -94,7 +94,7 @@ export function SolutionCTA({
             <motion.div variants={itemVariants}>
               <h2
                 className="font-bold text-text-primary tracking-display text-balance leading-[1.06]"
-                style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)" }}
+                style={{ fontSize: "clamp(1.9rem, 5vw, 4rem)" }}
               >
                 {heading}
               </h2>
@@ -102,7 +102,7 @@ export function SolutionCTA({
 
             {/* Subheading */}
             <motion.div variants={itemVariants}>
-              <p className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-lg">
+              <p className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-lg">
                 {subheading}
               </p>
             </motion.div>

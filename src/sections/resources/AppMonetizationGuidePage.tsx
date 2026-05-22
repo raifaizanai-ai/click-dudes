@@ -65,12 +65,12 @@ export function AppMonetizationGuidePage() {
               App Monetization Guide
             </motion.span>
             <motion.h1 variants={fadeUp}
-              className="text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
+              className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
             >
               Maximize Your{" "}
               <GradientText gradient="brand">App Revenue</GradientText>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
+            <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
               The complete guide to in-app advertising — format strategy, mediation setup, in-app bidding, and revenue optimization for iOS and Android.
             </motion.p>
             <motion.div variants={stagger} className="flex flex-wrap justify-center gap-4 mt-2">

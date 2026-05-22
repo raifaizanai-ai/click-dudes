@@ -98,10 +98,10 @@ export function OurHistoryPage() {
               <motion.span variants={fadeUp} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-brand-purple/20 text-xs font-semibold tracking-widest uppercase text-brand-purple w-fit">
                 <History aria-hidden="true" className="w-3.5 h-3.5" />Our History
               </motion.span>
-              <motion.h1 variants={fadeUp} className="text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight">
+              <motion.h1 variants={fadeUp} className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight">
                 From Agency to{" "}<GradientText gradient="brand">Global Platform</GradientText>
               </motion.h1>
-              <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl">
+              <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl">
                 In three years, Click Dudes evolved from a digital marketing startup into a UK-registered global publisher monetization platform — driven by one belief: every publisher deserves their inventory&apos;s true value.
               </motion.p>
             </motion.div>

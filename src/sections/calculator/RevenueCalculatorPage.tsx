@@ -56,7 +56,7 @@ export function RevenueCalculatorPage() {
         <div aria-hidden="true" className="absolute inset-0 ai-grid pointer-events-none opacity-30" />
 
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
             <motion.div variants={stagger} initial="hidden" animate="visible"
               className="flex flex-col gap-5"
@@ -73,7 +73,7 @@ export function RevenueCalculatorPage() {
               </motion.div>
 
               <motion.h1 variants={fadeUp}
-                className="text-h1 md:text-display font-bold text-white tracking-display text-balance leading-tight"
+                className="text-h2 sm:text-h1 md:text-display font-bold text-white tracking-display text-balance leading-tight"
               >
                 AI-Powered{" "}
                 <GradientText gradient="brand">Ad Revenue</GradientText>

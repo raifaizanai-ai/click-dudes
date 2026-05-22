@@ -46,11 +46,11 @@ export function NavMobile({ id, open, onClose }: NavMobileProps) {
             exit={{ opacity: 0,   y: -12, scale: 0.98 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
             className={cn(
-              "fixed top-[102px] inset-x-4 z-40 lg:hidden",
+              "fixed top-[92px] sm:top-[100px] md:top-[102px] inset-x-3 sm:inset-x-4 z-40 lg:hidden",
               "bg-white/94 backdrop-blur-[28px]",
               "rounded-2xl border border-brand-purple/[0.14]",
               "shadow-[0_20px_60px_rgba(7,17,47,0.12),0_0_0_1px_rgba(139,92,246,0.10)]",
-              "overflow-hidden overflow-y-auto max-h-[calc(100dvh-100px)]"
+              "overflow-hidden overflow-y-auto max-h-[calc(100dvh-96px)] sm:max-h-[calc(100dvh-104px)]"
             )}
           >
             {/* Top shimmer line */}

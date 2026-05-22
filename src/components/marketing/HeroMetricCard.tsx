@@ -46,7 +46,7 @@ export function HeroMetricCard({
       }}
       whileHover={{ y: -5, transition: { duration: 0.22, ease: "easeOut" } }}
       className={cn(
-        "relative overflow-hidden rounded-3xl p-4 w-[188px] xl:w-[208px] flex-shrink-0",
+        "relative overflow-hidden rounded-3xl p-4 w-full min-w-0 flex-shrink-0",
         "bg-white/82 backdrop-blur-[22px]",
         "border border-brand-purple/[0.14]",
         "shadow-[0_16px_48px_rgba(7,17,47,0.10),0_0_0_1px_rgba(139,92,246,0.07),inset_0_1px_0_rgba(255,255,255,0.95)]",

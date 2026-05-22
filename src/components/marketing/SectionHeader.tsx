@@ -54,7 +54,7 @@ export function SectionHeader({
       <FadeUp delay={badge ? 0.08 : 0}>
         <h2
           className={cn(
-            "text-h2 md:text-h1 font-bold text-text-primary tracking-heading text-balance",
+            "text-h3 sm:text-h2 lg:text-h1 font-bold text-text-primary tracking-heading text-balance",
           )}
         >
           {heading}

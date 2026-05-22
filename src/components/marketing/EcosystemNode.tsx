@@ -51,7 +51,7 @@ export function EcosystemNode({ icon: Icon, title, description, accent, floatDel
       animate="animate"
       whileHover={{ scale: 1.06, transition: { duration: 0.2, ease: "easeOut" } }}
       className={cn(
-        "glass rounded-2xl p-3.5 w-[144px] flex flex-col items-center gap-2 text-center cursor-default select-none",
+        "glass rounded-2xl p-3 sm:p-3.5 w-[144px] flex flex-col items-center gap-2 text-center cursor-default select-none",
         "shadow-[0_4px_20px_rgba(7,17,47,0.08),0_0_0_1px_rgba(139,92,246,0.10)]",
         "transition-[box-shadow] duration-300",
         nodeHover[accent],

@@ -28,7 +28,7 @@ export function RevenueSection() {
           subtextWidth="md"
         />
 
-        <div className="mt-14 grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
+        <div className="mt-10 md:mt-14 grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-20 items-center">
           {/* Left: feature list */}
           <div className="flex flex-col gap-6">
             <FeatureBullet icon={TrendingUp} variant="icon" iconColor="purple" size="md">
@@ -52,7 +52,7 @@ export function RevenueSection() {
               <RobotImage variant="analytics" size="md" floatDelay={1.2} glowColor="cyan" />
             </div>
 
-            <div className="absolute -top-10 -left-2 sm:-left-16 z-20 hidden sm:block">
+            <div className="absolute -top-10 -left-4 xl:-left-16 z-20 hidden lg:block">
               <FloatingMetricCard
                 value={12.47}
                 prefix="$"
@@ -66,7 +66,7 @@ export function RevenueSection() {
 
             <RevenueDashboard />
 
-            <div className="absolute -bottom-10 -right-2 sm:-right-16 z-20 hidden sm:block">
+            <div className="absolute -bottom-10 -right-4 xl:-right-16 z-20 hidden lg:block">
               <FloatingMetricCard
                 value={78.5}
                 suffix="%"

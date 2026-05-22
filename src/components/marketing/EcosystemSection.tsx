@@ -48,9 +48,9 @@ export function EcosystemSection() {
         />
 
         {/* Mobile — robot + 2-column node grid */}
-        <div className="md:hidden mt-12 flex flex-col items-center gap-8">
-          <RobotImage variant="main" size="lg" floatDelay={0} glowColor="purple" />
-          <div className="grid grid-cols-2 gap-3 w-full max-w-sm">
+        <div className="md:hidden mt-10 flex flex-col items-center gap-6 sm:gap-8">
+          <RobotImage variant="main" size="md" floatDelay={0} glowColor="purple" />
+          <div className="grid grid-cols-2 gap-2.5 sm:gap-3 w-full max-w-sm">
             {MOBILE_ITEMS.map((item) => (
               <EcosystemNode
                 key={item.title}

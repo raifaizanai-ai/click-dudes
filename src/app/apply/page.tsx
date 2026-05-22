@@ -57,18 +57,18 @@ export default function ApplyPage() {
     <div className="section-base min-h-[90vh]">
 
       {/* ── Hero ── */}
-      <section className="pt-20 pb-16">
+      <section className="pt-10 pb-10 sm:pt-20 sm:pb-16">
         <div className="container-base">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-brand-purple/[0.12] text-xs font-semibold uppercase tracking-widest text-brand-purple mb-8">
               <Users className="w-3.5 h-3.5" aria-hidden="true" />
               Publisher Application
             </div>
-            <h1 className="text-display font-bold text-text-primary tracking-display text-balance mb-5 leading-tight">
+            <h1 className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance mb-5 leading-tight">
               Apply for{" "}
               <span className="text-gradient-brand">Premium Monetization</span>
             </h1>
-            <p className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl mx-auto mb-8">
+            <p className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl mx-auto mb-8">
               Join 1,200+ publishers earning 40–80% more with AI-driven monetization infrastructure. Apply takes 2 minutes — our team responds within 24 hours.
             </p>
 

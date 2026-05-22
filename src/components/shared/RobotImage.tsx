@@ -64,7 +64,7 @@ export function RobotImage({
   return (
     <div
       className={cn("relative inline-flex items-center justify-center flex-shrink-0", className)}
-      style={{ width: dim, height: dim }}
+      style={{ width: dim, height: dim, maxWidth: "100%" }}
     >
       {/* Outer atmospheric glow */}
       <div

@@ -10,7 +10,7 @@ export function HeroSection() {
       background="transparent"
       padding="none"
       aria-label="Hero — AI-Powered Monetization Platform"
-      className="pt-24 pb-20 lg:pt-28 lg:pb-24 mesh-animated"
+      className="pt-10 pb-14 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-24 mesh-animated"
     >
       {/* ── Layered background atmosphere ─────────────────── */}
       <GradientOrb color="purple" size="xl"  blur="2xl" opacity={0.14} animate className="-top-48 -left-48" />
@@ -32,7 +32,7 @@ export function HeroSection() {
 
       {/* ── Content ───────────────────────────────────────── */}
       <Container size="xl" className="relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 xl:gap-20 items-center">
           <HeroLeft />
           <HeroRight />
         </div>

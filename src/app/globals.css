@@ -144,6 +144,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scroll-behavior: auto; /* Lenis controls smooth scroll */
+  overflow-x: hidden;
 }
 
 body {
@@ -160,6 +161,8 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
   min-height: 100dvh;
   overflow-x: hidden;
+  /* Prevent pull-to-refresh rubber-band causing horizontal shift */
+  overscroll-behavior-x: none;
 }
 
 /* ═══════════════════════════════════════════════════════

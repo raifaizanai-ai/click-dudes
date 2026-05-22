@@ -131,7 +131,7 @@ export function ProcessSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="mt-10 lg:hidden flex flex-col gap-0"
+          className="mt-8 lg:hidden flex flex-col gap-0"
         >
           {STEPS.map((step, i) => (
             <motion.div key={step.number} variants={mobileItemVariants} className="flex gap-5">

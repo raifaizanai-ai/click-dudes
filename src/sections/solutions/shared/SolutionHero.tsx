@@ -46,14 +46,14 @@ export function SolutionHero({
   stats, panel, panelContent, robotVariant = "analytics",
 }: SolutionHeroProps) {
   return (
-    <Section background="transparent" padding="none" aria-label="Hero section" className="mesh-animated overflow-hidden pt-10 pb-16 lg:pt-12 lg:pb-24">
+    <Section background="transparent" padding="none" aria-label="Hero section" className="mesh-animated overflow-hidden pt-6 pb-12 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-24">
       <GradientOrb color="purple" size="2xl" blur="2xl" opacity={0.16} animate className="-top-40 -left-40" />
       <GradientOrb color="blue"   size="xl"  blur="2xl" opacity={0.10}        className="-top-20 right-0" />
       <GradientOrb color="cyan"   size="lg"  blur="xl"  opacity={0.08}        className="bottom-0 left-1/3" />
       <div aria-hidden="true" className="absolute inset-0 ai-grid pointer-events-none opacity-[0.14]" />
 
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-8 items-center py-4 lg:py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-8 items-center py-2 lg:py-8">
 
           {/* Left: content */}
           <motion.div variants={contentVariants} initial="hidden" animate="visible"
@@ -68,13 +68,13 @@ export function SolutionHero({
 
             <motion.div variants={itemVariant}>
               <h1 className="font-bold text-text-primary tracking-display text-balance leading-[1.06]"
-                style={{ fontSize: "clamp(2.6rem, 5.5vw, 4.2rem)" }}>
+                style={{ fontSize: "clamp(2rem, 5.5vw, 4.2rem)" }}>
                 {headline}
               </h1>
             </motion.div>
 
             <motion.div variants={itemVariant}>
-              <p className="text-body-lg text-text-secondary leading-relaxed text-pretty max-w-lg">
+              <p className="text-base md:text-body-lg text-text-secondary leading-relaxed text-pretty max-w-lg">
                 {subtext}
               </p>
             </motion.div>

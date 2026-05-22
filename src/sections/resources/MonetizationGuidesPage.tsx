@@ -93,12 +93,12 @@ export function MonetizationGuidesPage() {
               Publisher Resource Hub
             </motion.span>
             <motion.h1 variants={fadeUp}
-              className="text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
+              className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
             >
               Monetization{" "}
               <GradientText gradient="brand">Guides & Playbooks</GradientText>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
+            <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
               In-depth guides written by ad-tech practitioners — not generic content. Learn how to maximize revenue across every publisher format.
             </motion.p>
           </motion.div>

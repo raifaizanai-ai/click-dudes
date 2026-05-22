@@ -65,7 +65,7 @@ export function ServiceCard({ icon: Icon, title, description, accent, index, hre
       viewport={{ once: true, margin: "-60px" }}
       whileHover={{ y: -6, scale: 1.015, transition: { duration: 0.25, ease: "easeOut" } }}
       className={cn(
-        "group glass-elevated rounded-2xl p-7 flex flex-col gap-5",
+        "group glass-elevated rounded-2xl p-5 sm:p-6 lg:p-7 flex flex-col gap-4 sm:gap-5",
         href ? "cursor-pointer" : "cursor-default",
         "border border-brand-purple/[0.10]",
         "shadow-[0_4px_24px_rgba(7,17,47,0.06)]",

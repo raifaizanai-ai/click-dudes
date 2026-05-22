@@ -59,7 +59,7 @@ export function PublisherPlaceholderPage({
       background="hero"
       padding="none"
       aria-label={title}
-      className="min-h-[72vh] flex items-center pt-28 pb-20 overflow-hidden"
+      className="min-h-[72vh] flex items-center pt-16 pb-14 sm:pt-28 sm:pb-20 overflow-hidden"
     >
       <GradientOrb color="purple" size="2xl" blur="2xl" opacity={0.12} animate className="-top-32 left-1/4" />
       <GradientOrb color="blue"   size="xl"  blur="2xl" opacity={0.08}        className="top-4 -right-20" />
@@ -98,13 +98,13 @@ export function PublisherPlaceholderPage({
           {/* Heading */}
           <motion.h1
             variants={fadeUp}
-            className="text-h1 md:text-display font-bold tracking-display text-balance leading-tight text-text-primary mb-5"
+            className="text-h2 sm:text-h1 md:text-display font-bold tracking-display text-balance leading-tight text-text-primary mb-5"
           >
             <GradientText gradient="brand">{title}</GradientText>
           </motion.h1>
 
           {/* Description */}
-          <motion.p variants={fadeUp} className="text-body-lg text-text-secondary leading-relaxed text-pretty mb-10">
+          <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary leading-relaxed text-pretty mb-10">
             {description}
           </motion.p>
 

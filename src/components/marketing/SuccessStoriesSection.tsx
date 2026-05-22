@@ -60,10 +60,10 @@ export function SuccessStoriesSection() {
 
       <Container size="lg">
         {/* Header with celebrate robot */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-14">
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-14">
           {/* Robot — left on desktop, above header on mobile */}
           <div className="flex-shrink-0 lg:order-first">
-            <RobotImage variant="celebrate" size="lg" floatDelay={0.4} glowColor="green" />
+            <RobotImage variant="celebrate" size="md" floatDelay={0.4} glowColor="green" className="lg:!w-auto" />
           </div>
 
           {/* Section header — right aligned on desktop */}

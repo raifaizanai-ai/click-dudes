@@ -64,7 +64,7 @@ export function HeroLeft() {
       {/* Headline */}
       <motion.div variants={item}>
         <h1 className="font-bold text-text-primary tracking-display text-balance leading-[1.06]"
-            style={{ fontSize: "clamp(2.75rem, 5.5vw, 4.5rem)" }}>
+            style={{ fontSize: "clamp(2.1rem, 5.5vw, 4.5rem)" }}>
           <span className="block">Turning Clicks</span>
           <span className="block text-gradient-brand">Into Revenue</span>
         </h1>
@@ -72,7 +72,7 @@ export function HeroLeft() {
 
       {/* Subheadline */}
       <motion.div variants={item}>
-        <p className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-[500px]">
+        <p className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-[500px]">
           AI-powered monetization solutions helping web, app, and CTV publishers
           maximize revenue through Google AdX, Header Bidding, and intelligent
           optimization.

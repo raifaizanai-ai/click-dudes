@@ -62,7 +62,7 @@ export function SolutionHeroPanel({
       variants={panelReveal}
       initial="hidden"
       animate="visible"
-      className="relative w-full max-w-[440px] glass-strong rounded-3xl overflow-hidden border border-brand-purple/[0.16]"
+      className="relative w-full max-w-full sm:max-w-[440px] glass-strong rounded-3xl overflow-hidden border border-brand-purple/[0.16]"
       style={{ boxShadow: "0 32px 80px rgba(7,17,47,0.13),0 0 0 1px rgba(139,92,246,0.10),inset 0 1px 0 rgba(255,255,255,0.97)" }}
     >
       <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-brand-purple/30 to-transparent pointer-events-none" />

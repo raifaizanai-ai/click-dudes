@@ -73,14 +73,14 @@ export function AdFormatHero() {
 
             <motion.div variants={itemVariant}>
               <h1 className="font-bold text-text-primary tracking-display text-balance leading-[1.06]"
-                style={{ fontSize: "clamp(2.6rem, 5.5vw, 4.2rem)" }}>
+                style={{ fontSize: "clamp(2rem, 5.5vw, 4.2rem)" }}>
                 Premium Ad Formats<br />
                 <GradientText gradient="brand">for Every Screen</GradientText>
               </h1>
             </motion.div>
 
             <motion.div variants={itemVariant}>
-              <p className="text-body-lg text-text-secondary leading-relaxed text-pretty max-w-lg">
+              <p className="text-base md:text-body-lg text-text-secondary leading-relaxed text-pretty max-w-lg">
                 Monetize web, mobile, app, and CTV inventory with high-performing ad formats designed to increase RPM, viewability, engagement, and revenue — all managed by Click Dudes.
               </p>
             </motion.div>

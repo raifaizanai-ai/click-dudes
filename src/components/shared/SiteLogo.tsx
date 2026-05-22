@@ -28,11 +28,10 @@ export function SiteLogo({
   const img = isNavbar ? (
     // PNG is 800×800 (square). Container fixes the display size so the image
     // always renders fully visible without any clipping or scale tricks.
-    // 60px mobile / 68px desktop — fits the 74px pill with 3–7px breathing room.
     <div
       className={cn(
         "flex-shrink-0",
-        "h-[70px] w-[70px] md:h-[78px] md:w-[78px]",
+        "h-[58px] w-[58px] sm:h-[66px] sm:w-[66px] md:h-[74px] md:w-[74px]",
         className,
       )}
     >

@@ -95,8 +95,8 @@ export function Navbar() {
           animate="visible"
           className={cn(
             "relative pointer-events-auto",
-            "mx-auto w-[90%] max-w-[1220px]",
-            "flex items-center h-[80px] px-6 gap-4",
+            "mx-auto w-[92%] max-w-[1220px]",
+            "flex items-center h-[68px] sm:h-[76px] md:h-[80px] px-4 sm:px-5 md:px-6 gap-3 sm:gap-4",
             "rounded-full transition-all duration-500",
             scrolled
               ? "bg-white/62 backdrop-blur-[48px] border border-white/48 shadow-[0_20px_56px_rgba(7,17,47,0.09),0_4px_12px_rgba(7,17,47,0.05),0_0_0_1px_rgba(139,92,246,0.09),inset_0_1px_0_rgba(255,255,255,0.92)]"
@@ -246,8 +246,8 @@ export function Navbar() {
         />
       </header>
 
-      {/* Spacer — 20px top gap + 74px pill + 6px breathing */}
-      <div className="h-[106px]" aria-hidden="true" />
+      {/* Spacer — 20px top gap + pill height + 6px breathing */}
+      <div className="h-[96px] sm:h-[102px] md:h-[106px]" aria-hidden="true" />
 
       {/* Mobile nav panel */}
       <NavMobile

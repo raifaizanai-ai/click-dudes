@@ -31,10 +31,10 @@ const backgroundMap: Record<SectionBackground, string> = {
 
 const paddingMap: Record<SectionPadding, string> = {
   none: "py-0",
-  sm:   "py-10 md:py-14",
-  md:   "py-12 md:py-20",
-  lg:   "py-16 md:py-24",
-  xl:   "py-20 md:py-28",
+  sm:   "py-8 sm:py-10 md:py-14",
+  md:   "py-10 sm:py-12 md:py-20",
+  lg:   "py-12 sm:py-16 md:py-24",
+  xl:   "py-14 sm:py-20 md:py-28",
 }
 
 export function Section({

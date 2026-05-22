@@ -67,12 +67,12 @@ export function PublisherReferralPage() {
               Publisher Referral Program
             </motion.span>
             <motion.h1 variants={fadeUp}
-              className="text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
+              className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
             >
               Refer Publishers,{" "}
               <GradientText gradient="brand">Earn Commissions</GradientText>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
+            <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
               Earn 5% of referred publisher revenue for 12 months — no minimums, no limits, paid monthly. The more publishers you refer, the more you earn.
             </motion.p>
 

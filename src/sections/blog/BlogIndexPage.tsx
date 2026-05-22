@@ -49,7 +49,7 @@ export function BlogIndexPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="section-base pt-24 pb-16">
+      <section className="section-base pt-10 pb-14 sm:pt-16 sm:pb-16">
         <div className="container-base">
           <motion.div
             variants={containerVariant}
@@ -61,10 +61,10 @@ export function BlogIndexPage() {
               <BookOpen className="w-3.5 h-3.5" aria-hidden="true" />
               Publisher Intelligence
             </motion.div>
-            <motion.h1 variants={fadeUp} className="text-h1 font-bold text-text-primary tracking-display text-balance mb-4">
+            <motion.h1 variants={fadeUp} className="text-h2 sm:text-h1 font-bold text-text-primary tracking-display text-balance mb-4">
               The <span className="text-gradient-brand">Publisher Blog</span>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty max-w-xl mx-auto">
+            <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty max-w-xl mx-auto">
               Expert monetization strategies, ad-tech insights, and revenue growth guides from the ClickDudes team.
             </motion.p>
           </motion.div>

@@ -78,7 +78,7 @@ export function FinalCTASection() {
             <motion.div variants={itemVariants}>
               <h2
                 className="font-bold text-text-primary tracking-display text-balance leading-[1.06]"
-                style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)" }}
+                style={{ fontSize: "clamp(1.9rem, 5vw, 4rem)" }}
               >
                 Start Scaling Your Revenue{" "}
                 <span className="text-gradient-brand">Intelligently</span>
@@ -87,7 +87,7 @@ export function FinalCTASection() {
 
             {/* Subheadline */}
             <motion.div variants={itemVariants}>
-              <p className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-lg">
+              <p className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-lg">
                 Join the next generation of AI-powered monetization infrastructure. Built for publishers who demand more than average.
               </p>
             </motion.div>

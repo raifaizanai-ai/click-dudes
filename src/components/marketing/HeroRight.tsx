@@ -105,7 +105,7 @@ export function HeroRight() {
           variants={noMot ? {} : tlVariants}
           initial="hidden"
           animate="visible"
-          className="absolute top-[52px] left-0 z-20"
+          className="absolute top-[52px] left-0 z-20 w-[178px] xl:w-[200px]"
         >
           <HeroMetricCard
             icon={DollarSign} value={2847} prefix="$" suffix="K" decimals={0}
@@ -119,7 +119,7 @@ export function HeroRight() {
           variants={noMot ? {} : trVariants}
           initial="hidden"
           animate="visible"
-          className="absolute top-[52px] right-0 z-20"
+          className="absolute top-[52px] right-0 z-20 w-[178px] xl:w-[200px]"
         >
           <HeroMetricCard
             icon={BarChart3} value={2.4} prefix="$" suffix="M" decimals={1}
@@ -133,7 +133,7 @@ export function HeroRight() {
           variants={noMot ? {} : blVariants}
           initial="hidden"
           animate="visible"
-          className="absolute bottom-[52px] left-0 z-20"
+          className="absolute bottom-[52px] left-0 z-20 w-[178px] xl:w-[200px]"
         >
           <HeroMetricCard
             icon={Zap} value={8.42} prefix="$" decimals={2}
@@ -147,7 +147,7 @@ export function HeroRight() {
           variants={noMot ? {} : brVariants}
           initial="hidden"
           animate="visible"
-          className="absolute bottom-[52px] right-0 z-20"
+          className="absolute bottom-[52px] right-0 z-20 w-[178px] xl:w-[200px]"
         >
           <HeroMetricCard
             icon={Activity} value={94.2} suffix="%" decimals={1}
@@ -171,7 +171,7 @@ export function HeroRight() {
         </motion.div>
 
         {/* 2×2 card grid */}
-        <div className="grid grid-cols-2 gap-3 w-full max-w-[420px]">
+        <div className="grid grid-cols-2 gap-2.5 w-full max-w-[420px]">
           {[
             { icon: DollarSign, value: 2847,  prefix: "$", suffix: "K",  decimals: 0, label: "Revenue This Month", trend: "+38% vs last month",   chartType: "line"  as const, floatDelay: 0   },
             { icon: BarChart3,  value: 2.4,   prefix: "$", suffix: "M",  decimals: 1, label: "Total Revenue",      trend: "All-time high",        chartType: "line"  as const, floatDelay: 1.1 },
