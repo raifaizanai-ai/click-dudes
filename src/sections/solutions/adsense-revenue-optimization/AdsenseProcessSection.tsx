@@ -58,7 +58,7 @@ export function AdsenseProcessSection() {
             Optimization Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            Optimized in 7 Days,{" "}
+            Optimized in 7–14 Days,{" "}
             <span className="text-gradient-brand">Compounding in 30</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">

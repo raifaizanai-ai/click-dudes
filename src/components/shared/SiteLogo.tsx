@@ -41,7 +41,7 @@ export function SiteLogo({
         width={800}
         height={800}
         priority={priority}
-        quality={100}
+
         sizes="(max-width: 767px) 70px, 78px"
         draggable={false}
         style={{ width: "100%", height: "100%", objectFit: "contain" }}
@@ -56,7 +56,7 @@ export function SiteLogo({
         width={800}
         height={800}
         priority={priority}
-        quality={100}
+
         draggable={false}
         style={{ width: "100%", height: "auto" }}
         className="object-contain"

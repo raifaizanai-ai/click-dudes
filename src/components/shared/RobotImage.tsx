@@ -18,6 +18,7 @@ interface RobotImageProps {
   floatDelay?: number
   glowColor?:  GlowColor
   className?:  string
+  priority?:   boolean
 }
 
 const SRC: Record<RobotVariant, string> = {
@@ -57,6 +58,7 @@ export function RobotImage({
   floatDelay = 0,
   glowColor  = "purple",
   className,
+  priority   = false,
 }: RobotImageProps) {
   const reduced = useReducedMotion()
   const dim     = DIMS[size]
@@ -110,6 +112,7 @@ export function RobotImage({
           alt=""
           width={dim}
           height={dim}
+          priority={priority}
           className="w-full h-full object-contain drop-shadow-2xl"
           aria-hidden="true"
         />

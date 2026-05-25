@@ -199,7 +199,7 @@ export function EcosystemVisualization() {
 
       {/* Robot — centered, dominant */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-        <RobotImage variant="main" size="xl" floatDelay={0} glowColor="purple" />
+        <RobotImage variant="main" size="xl" floatDelay={0} glowColor="purple" priority />
       </div>
 
       {/* Ecosystem nodes — orbiting around the robot */}

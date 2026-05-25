@@ -1,11 +1,31 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { DollarSign, BarChart3, Zap, Activity } from "lucide-react"
+import { Users, TrendingUp, Zap, Shield } from "lucide-react"
+import type { LucideIcon } from "lucide-react"
 import { RobotImage } from "@/components/shared/RobotImage"
 import { GradientOrb } from "@/components/shared/GradientOrb"
-import { HeroMetricCard } from "@/components/marketing/HeroMetricCard"
 import { useReducedMotion } from "@/hooks/use-media-query"
+import { STATS } from "@/lib/stats"
+import { cn } from "@/lib/utils"
+
+/* ── Stat tile data ──────────────────────────────────────────── */
+
+interface HeroStatTile {
+  icon: LucideIcon
+  value: string
+  label: string
+  sub: string
+  accent: string
+  floatDelay: number
+}
+
+const TILES: HeroStatTile[] = [
+  { icon: Users,      value: STATS.publishers,  label: "Publishers",  sub: "In Our Network",      accent: "text-brand-purple", floatDelay: 0   },
+  { icon: TrendingUp, value: STATS.rpmLift,     label: "RPM Lift",    sub: "First 90 Days",       accent: "text-brand-green",  floatDelay: 1.1 },
+  { icon: Zap,        value: STATS.goLive,      label: "Go-Live",     sub: "From Approval",       accent: "text-brand-blue",   floatDelay: 2.2 },
+  { icon: Shield,     value: STATS.partnership, label: "Partnership", sub: "Google MCM Verified", accent: "text-brand-purple", floatDelay: 3.3 },
+]
 
 /* ── Animation Variants ──────────────────────────────────────── */
 
@@ -17,21 +37,43 @@ const ringVariants = {
   hidden:  { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1,   transition: { duration: 1.0, ease: [0.16, 1, 0.3, 1] as const, delay: 0.35 } },
 }
-const tlVariants = {
-  hidden:  { opacity: 0, x: -20, y: -20 },
-  visible: { opacity: 1, x: 0,   y: 0,   transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.50 } },
-}
-const trVariants = {
-  hidden:  { opacity: 0, x: 20,  y: -20 },
-  visible: { opacity: 1, x: 0,   y: 0,   transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.65 } },
-}
-const blVariants = {
-  hidden:  { opacity: 0, x: -20, y: 20  },
-  visible: { opacity: 1, x: 0,   y: 0,  transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.80 } },
-}
-const brVariants = {
-  hidden:  { opacity: 0, x: 20,  y: 20  },
-  visible: { opacity: 1, x: 0,   y: 0,  transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.95 } },
+const cornerVariants = [
+  { hidden: { opacity: 0, x: -20, y: -20 }, visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.50 } } },
+  { hidden: { opacity: 0, x:  20, y: -20 }, visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.65 } } },
+  { hidden: { opacity: 0, x: -20, y:  20 }, visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.80 } } },
+  { hidden: { opacity: 0, x:  20, y:  20 }, visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.95 } } },
+]
+
+const CORNER_POSITIONS = [
+  "absolute top-[52px] left-0 z-20 w-[178px] xl:w-[200px]",
+  "absolute top-[52px] right-0 z-20 w-[178px] xl:w-[200px]",
+  "absolute bottom-[52px] left-0 z-20 w-[178px] xl:w-[200px]",
+  "absolute bottom-[52px] right-0 z-20 w-[178px] xl:w-[200px]",
+]
+
+/* ── Stat card ───────────────────────────────────────────────── */
+
+interface StatTileCardProps { tile: HeroStatTile; noMot: boolean }
+
+function StatTileCard({ tile, noMot }: StatTileCardProps) {
+  return (
+    <motion.div
+      animate={noMot ? {} : { y: [0, -6, 0] }}
+      transition={{ duration: 5.5 + tile.floatDelay * 0.3, repeat: Infinity, ease: "easeInOut", delay: tile.floatDelay }}
+      className={cn(
+        "glass-strong rounded-2xl px-4 py-3.5",
+        "border border-brand-purple/[0.14]",
+        "shadow-[0_8px_32px_rgba(7,17,47,0.08),0_0_0_1px_rgba(139,92,246,0.10)]",
+        "hover:shadow-[0_12px_40px_rgba(7,17,47,0.12),0_0_0_1px_rgba(139,92,246,0.20)]",
+        "transition-shadow duration-300",
+      )}
+    >
+      <tile.icon aria-hidden="true" className={cn("w-3.5 h-3.5 mb-2 opacity-65", tile.accent)} />
+      <p className="text-[20px] font-bold text-text-primary leading-none tabular-nums">{tile.value}</p>
+      <p className="text-[11px] font-semibold text-text-secondary mt-1.5 leading-tight">{tile.label}</p>
+      <p className="text-[10px] text-text-muted leading-tight">{tile.sub}</p>
+    </motion.div>
+  )
 }
 
 /* ── Component ───────────────────────────────────────────────── */
@@ -82,7 +124,6 @@ export function HeroRight() {
             <ellipse cx="140" cy="28" rx="105" ry="11" fill="none" stroke="url(#ringGradInner)" strokeWidth="1" />
             <ellipse cx="140" cy="28" rx="68"  ry="6"  fill="none" stroke="url(#ringGradInner)" strokeWidth="0.7" opacity="0.6" />
           </svg>
-          {/* Ring pulse */}
           <motion.div
             className="absolute inset-0 rounded-full border border-brand-purple/20"
             animate={noMot ? {} : { scale: [1, 1.12, 1], opacity: [0.4, 0, 0.4] }}
@@ -100,66 +141,22 @@ export function HeroRight() {
           <RobotImage variant="celebrate" size="xl" floatDelay={0.4} glowColor="purple" />
         </motion.div>
 
-        {/* ── Card: top-left ── */}
-        <motion.div
-          variants={noMot ? {} : tlVariants}
-          initial="hidden"
-          animate="visible"
-          className="absolute top-[52px] left-0 z-20 w-[178px] xl:w-[200px]"
-        >
-          <HeroMetricCard
-            icon={DollarSign} value={2847} prefix="$" suffix="K" decimals={0}
-            label="Revenue This Month" trend="+38% vs last month"
-            chartType="line" floatDelay={0}
-          />
-        </motion.div>
-
-        {/* ── Card: top-right ── */}
-        <motion.div
-          variants={noMot ? {} : trVariants}
-          initial="hidden"
-          animate="visible"
-          className="absolute top-[52px] right-0 z-20 w-[178px] xl:w-[200px]"
-        >
-          <HeroMetricCard
-            icon={BarChart3} value={2.4} prefix="$" suffix="M" decimals={1}
-            label="Total Revenue" trend="All-time high"
-            chartType="line" floatDelay={1.1}
-          />
-        </motion.div>
-
-        {/* ── Card: bottom-left ── */}
-        <motion.div
-          variants={noMot ? {} : blVariants}
-          initial="hidden"
-          animate="visible"
-          className="absolute bottom-[52px] left-0 z-20 w-[178px] xl:w-[200px]"
-        >
-          <HeroMetricCard
-            icon={Zap} value={8.42} prefix="$" decimals={2}
-            label="Avg CPM" trend="+$1.24 vs Q3"
-            chartType="line" floatDelay={2.2}
-          />
-        </motion.div>
-
-        {/* ── Card: bottom-right ── */}
-        <motion.div
-          variants={noMot ? {} : brVariants}
-          initial="hidden"
-          animate="visible"
-          className="absolute bottom-[52px] right-0 z-20 w-[178px] xl:w-[200px]"
-        >
-          <HeroMetricCard
-            icon={Activity} value={94.2} suffix="%" decimals={1}
-            label="Avg Fill Rate" trend="Top 5th percentile"
-            chartType="bar" floatDelay={3.3}
-          />
-        </motion.div>
+        {/* ── Corner stat tiles ── */}
+        {TILES.map((tile, i) => (
+          <motion.div
+            key={tile.label}
+            variants={noMot ? {} : cornerVariants[i]}
+            initial="hidden"
+            animate="visible"
+            className={CORNER_POSITIONS[i]}
+          >
+            <StatTileCard tile={tile} noMot={noMot} />
+          </motion.div>
+        ))}
       </div>
 
       {/* ── Mobile visual (< lg) ─────────────────────────────── */}
       <div className="lg:hidden flex flex-col items-center gap-6">
-        {/* Robot */}
         <motion.div
           initial={noMot ? {} : { opacity: 0, scale: 0.85, y: 16 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -170,32 +167,16 @@ export function HeroRight() {
           <RobotImage variant="celebrate" size="lg" floatDelay={0.4} glowColor="purple" />
         </motion.div>
 
-        {/* 2×2 card grid */}
         <div className="grid grid-cols-2 gap-2.5 w-full max-w-[420px]">
-          {[
-            { icon: DollarSign, value: 2847,  prefix: "$", suffix: "K",  decimals: 0, label: "Revenue This Month", trend: "+38% vs last month",   chartType: "line"  as const, floatDelay: 0   },
-            { icon: BarChart3,  value: 2.4,   prefix: "$", suffix: "M",  decimals: 1, label: "Total Revenue",      trend: "All-time high",        chartType: "line"  as const, floatDelay: 1.1 },
-            { icon: Zap,        value: 8.42,  prefix: "$", suffix: undefined, decimals: 2, label: "Avg CPM",        trend: "+$1.24 vs Q3",         chartType: "line"  as const, floatDelay: 2.2 },
-            { icon: Activity,   value: 94.2,  prefix: undefined, suffix: "%", decimals: 1, label: "Avg Fill Rate",  trend: "Top 5th percentile",   chartType: "bar"   as const, floatDelay: 3.3 },
-          ].map((card, i) => (
+          {TILES.map((tile, i) => (
             <motion.div
-              key={card.label}
+              key={tile.label}
               initial={noMot ? {} : { opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const, delay: 0.3 + i * 0.1 }}
               className="w-full"
             >
-              <HeroMetricCard
-                icon={card.icon}
-                value={card.value}
-                prefix={card.prefix}
-                suffix={card.suffix}
-                decimals={card.decimals}
-                label={card.label}
-                trend={card.trend}
-                chartType={card.chartType}
-                floatDelay={card.floatDelay}
-              />
+              <StatTileCard tile={tile} noMot={noMot} />
             </motion.div>
           ))}
         </div>

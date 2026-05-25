@@ -11,6 +11,7 @@ import { RobotImage } from "@/components/shared/RobotImage"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
 import { SolutionCTA } from "@/components/marketing/SolutionCTA"
 import { cn } from "@/lib/utils"
+import { STATS } from "@/lib/stats"
 
 const fadeUp = {
   hidden:  { opacity: 0, y: 32 },
@@ -47,15 +48,15 @@ const TIMELINE: TimelineEntry[] = [
   },
   {
     year: "2024", badge: "Breakthrough", title: "Publisher Monetization Platform Launches",
-    body: "The pivot that changed everything. Using our GCPP connections, we built enterprise-grade infrastructure for publishers of all sizes — bringing Google AdX, header bidding, and AI optimization to those who were previously locked out. Within twelve months: 1,200+ publishers live across web, app, and CTV.",
+    body: "The pivot that changed everything. Using our GCPP connections, we built enterprise-grade infrastructure for publishers of all sizes — bringing Google AdX, header bidding, and AI optimization to those who were previously locked out. Within twelve months: 250+ publishers live across web, app, and CTV.",
     icon: Globe2, iconBg: "bg-brand-violet/10", iconColor: "text-brand-violet", dotBorder: "rgba(168,85,247,0.40)",
-    chips: ["Google AdX access", "1,200+ publishers onboarded", "Header bidding stack", "AI optimization deployed"],
+    chips: ["Google AdX access", "250+ publishers onboarded", "Header bidding stack", "AI optimization deployed"],
   },
   {
     year: "2025", badge: "Global Scale", title: "UK Registered · Global Expansion",
-    body: "Click Dudes officially registered in the United Kingdom, establishing our London HQ at Paul Street, EC2A. The platform now serves publishers across 40+ countries — North America, Europe, Asia-Pacific, and the Middle East — with AI optimization running 24/7 across every impression.",
+    body: "Click Dudes officially registered in the United Kingdom, establishing our London HQ at Paul Street, EC2A. The platform now serves publishers across 25+ countries — North America, Europe, Asia-Pacific, and the Middle East — with AI optimization running 24/7 across every impression.",
     icon: Building2, iconBg: "bg-brand-cyan/10", iconColor: "text-brand-cyan", dotBorder: "rgba(103,232,249,0.40)",
-    chips: ["UK company registered", "London HQ: EC2A", "40+ countries", "AI at full scale"],
+    chips: ["UK company registered", "London HQ: EC2A", "25+ countries", "AI at full scale"],
   },
 ]
 
@@ -69,10 +70,10 @@ const VALUES: ValueItem[] = [
 ]
 
 const METRICS = [
-  { value: "2022",   label: "Founded",           color: "text-brand-purple" },
-  { value: "1,200+", label: "Publishers Served", color: "text-brand-blue"   },
-  { value: "40+",    label: "Countries Reached", color: "text-brand-violet" },
-  { value: "2025",   label: "UK Registered",     color: "text-brand-purple"   },
+  { value: "2022",              label: "Founded",           color: "text-brand-purple" },
+  { value: STATS.publishers,    label: "Publishers Served", color: "text-brand-blue"   },
+  { value: STATS.countries,     label: "Countries Reached", color: "text-brand-violet" },
+  { value: "2025",              label: "UK Registered",     color: "text-brand-purple"   },
 ]
 
 const NEXT: { icon: LucideIcon; label: string }[] = [
@@ -235,7 +236,7 @@ export function OurHistoryPage() {
               The Next Chapter Is <GradientText gradient="violet">Just Beginning</GradientText>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-body text-text-secondary text-pretty leading-relaxed max-w-xl">
-              With 1,200+ publishers live and growing, we&apos;re focused on deepening our AI optimization stack, expanding into new verticals, and building the infrastructure that lets every publisher compete at the highest level.
+              With 250+ publishers live and growing, we&apos;re focused on deepening our AI optimization stack, expanding into new verticals, and building the infrastructure that lets every publisher compete at the highest level.
             </motion.p>
             <motion.div variants={fadeUp} className="glass-strong rounded-2xl p-6 border border-brand-purple/[0.12] w-full max-w-lg"
               style={{ boxShadow: "0 8px 40px rgba(7,17,47,0.06), 0 0 0 1px rgba(139,92,246,0.07)" }}
@@ -255,7 +256,7 @@ export function OurHistoryPage() {
         </Container>
       </Section>
 
-      <SolutionCTA heading="Be Part of What Comes Next" subheading="Join over 1,200 publishers who chose to stop leaving money on the table and start earning what their audiences are worth." badge="Apply to Join" robotVariant="rocket" primaryCTA={{ label: "Apply Now", href: "/about/contact-us" }} />
+      <SolutionCTA heading="Be Part of What Comes Next" subheading="Join 250+ publishers who chose to stop leaving money on the table and start earning what their audiences are worth." badge="Apply to Join" robotVariant="rocket" primaryCTA={{ label: "Apply Now", href: "/about/contact-us" }} />
     </>
   )
 }

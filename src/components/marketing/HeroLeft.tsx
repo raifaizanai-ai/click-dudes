@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Sparkles } from "lucide-react"
+import { STATS } from "@/lib/stats"
 import { HeroBadge } from "@/components/marketing/HeroBadge"
 import { CTAButtonGroup } from "@/components/marketing/CTAButtonGroup"
 import { useReducedMotion } from "@/hooks/use-media-query"
@@ -27,7 +28,7 @@ const itemVariants = {
 
 /* ── Constants ────────────────────────────────────────────────── */
 
-const TRUST_ITEMS = ["1,200+ Publishers", "1.5B+ Monthly Requests", "40+ Countries"]
+const TRUST_ITEMS = [`${STATS.publishers} Publishers`, `${STATS.countries} Countries`, "GCPP-Verified Partner"]
 
 const MINI_BADGES = [
   "Google AdX",

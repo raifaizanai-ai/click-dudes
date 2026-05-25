@@ -203,6 +203,10 @@ export function PublisherVoicesSection() {
             ))}
           </div>
         </div>
+
+        <p className="text-center text-[11px] text-text-muted mt-6">
+          Representative results. Individual outcomes vary based on traffic quality, vertical, and existing setup.
+        </p>
       </Container>
     </Section>
   )

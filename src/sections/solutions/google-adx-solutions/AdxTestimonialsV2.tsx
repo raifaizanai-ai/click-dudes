@@ -10,15 +10,15 @@ import { CountUp } from "@/components/motion/CountUp"
 
 interface AdxV2Story {
   quote: string; name: string; role: string; company: string
-  metric: string; cpmBefore: number; cpmAfter: number
+  metric: string; cpmBefore: number; cpmAfter: number; cpmAfterLabel?: string
   vertical: string; initials: string
   accentBg: string; accentText: string; dealType: string
 }
 
 const STORIES: AdxV2Story[] = [
-  { quote: "Getting into Google AdX directly as a small publisher was impossible. Click Dudes' MCM partnership gave us full AdX access in days. CPM went from $1.40 to $4.20 — before even adding the header bidding layer.", name: "Jake M.", role: "Publisher & CEO", company: "CryptoNews Daily", metric: "+200% CPM", cpmBefore: 1.40, cpmAfter: 4.20, vertical: "Finance & Crypto", initials: "JM", accentBg: "bg-brand-purple/10", accentText: "text-brand-purple", dealType: "Open RTB" },
+  { quote: "Getting into Google AdX directly as a small publisher was impossible. Click Dudes' MCM partnership gave us full AdX access in days. CPM went from $1.40 to $4.20 — before even adding the header bidding layer.", name: "Jake M.", role: "Publisher & CEO", company: "CryptoNews Daily", metric: "+80–120% CPM", cpmBefore: 1.40, cpmAfter: 4.20, vertical: "Finance & Crypto", initials: "JM", accentBg: "bg-brand-purple/10", accentText: "text-brand-purple", dealType: "Open RTB" },
   { quote: "We applied to Google AdX twice and got rejected both times. Click Dudes got us live under their MCM account within a week. The demand quality difference between AdSense and AdX is massive.", name: "Claire D.", role: "Head of Digital", company: "LegalPulse Network", metric: "Rejected → Live in 7d", cpmBefore: 2.10, cpmAfter: 5.80, vertical: "Legal & Professional", initials: "CD", accentBg: "bg-brand-blue/10", accentText: "text-brand-blue", dealType: "MCM Access" },
-  { quote: "Programmatic guaranteed deals through AdX for our B2B tech audience were the game changer. Fortune 500 tech brands paying $28 CPMs versus $2.80 from open exchange. That's a 10× difference.", name: "Raj P.", role: "VP Operations", company: "DevStack Weekly", metric: "10× CPM from PG deals", cpmBefore: 2.80, cpmAfter: 28.00, vertical: "Developer Media", initials: "RP", accentBg: "bg-brand-green/10", accentText: "text-brand-green", dealType: "PG Deals" },
+  { quote: "Programmatic guaranteed deals through AdX for our B2B tech audience were the game changer. Fortune 500 tech brands pay premium CPMs versus open exchange — the gap is substantial.", name: "Raj P.", role: "VP Operations", company: "DevStack Weekly", metric: "5–10× CPM from PG deals", cpmBefore: 2.80, cpmAfter: 0, cpmAfterLabel: "$20–30+", vertical: "Developer Media", initials: "RP", accentBg: "bg-brand-green/10", accentText: "text-brand-green", dealType: "PG Deals" },
   { quote: "Brand safety was our biggest concern. Within AdX, advertiser quality is genuinely better. Zero ad quality complaints since switching — and we review and approve buyers through Click Dudes' team.", name: "Simone T.", role: "Editor-in-Chief", company: "ParentingFirst", metric: "Zero quality issues", cpmBefore: 1.90, cpmAfter: 4.10, vertical: "Family & Parenting", initials: "ST", accentBg: "bg-brand-violet/10", accentText: "text-brand-violet", dealType: "Brand Safe" },
   { quote: "Health and pharmaceutical advertisers pay 5–8× open exchange CPMs for contextually relevant placements. That vertical premium is the biggest single win for us.", name: "Dr. Paul E.", role: "Publisher Director", company: "MedicalAdvice Pro", metric: "5–8× vertical premium", cpmBefore: 2.20, cpmAfter: 13.20, vertical: "Health & Medical", initials: "PE", accentBg: "bg-brand-purple/10", accentText: "text-brand-purple", dealType: "PMP Deals" },
   { quote: "Our e-commerce comparison site has 3× industry-benchmark conversion. Through AdX, retail brands compete in private auctions for our high-intent audience. RPM tripled in 60 days.", name: "Zara H.", role: "Monetization Lead", company: "CompareIt Hub", metric: "3× RPM in 60 days", cpmBefore: 2.40, cpmAfter: 7.20, vertical: "Comparison Shopping", initials: "ZH", accentBg: "bg-brand-blue/10", accentText: "text-brand-blue", dealType: "PMP + RTB" },
@@ -115,7 +115,10 @@ export function AdxTestimonialsV2() {
                       <div>
                         <p className="text-[8px] text-text-muted">AdX CPM</p>
                         <p className={`text-[20px] font-black tabular-nums leading-none ${s.accentText}`}>
-                          $<CountUp end={s.cpmAfter} decimals={2} duration={1.8} />
+                          {s.cpmAfterLabel
+                            ? s.cpmAfterLabel
+                            : <>$<CountUp end={s.cpmAfter} decimals={2} duration={1.8} /></>
+                          }
                         </p>
                       </div>
                       <div className="ml-auto">
@@ -148,6 +151,10 @@ export function AdxTestimonialsV2() {
               className={`rounded-full transition-all duration-300 ${i === idx ? "w-6 h-2 bg-brand-purple" : "w-2 h-2 bg-brand-purple/25 hover:bg-brand-purple/50"}`} />
           ))}
         </div>
+
+        <p className="text-center text-[11px] text-text-muted mt-6">
+          Representative results. Individual outcomes vary based on traffic quality, vertical, and existing setup.
+        </p>
       </Container>
     </Section>
   )

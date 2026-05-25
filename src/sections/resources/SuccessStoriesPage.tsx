@@ -9,6 +9,7 @@ import { GradientText } from "@/components/shared/GradientText"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
 import { SolutionCTA } from "@/components/marketing/SolutionCTA"
 import { cn } from "@/lib/utils"
+import { STATS } from "@/lib/stats"
 
 const fadeUp = {
   hidden:  { opacity: 0, y: 32 },
@@ -27,11 +28,10 @@ const cardVariant = {
 }
 
 interface StatItem { value: string; label: string; color: string }
-const STATS: StatItem[] = [
-  { value: "$2.4M+", label: "Publisher Revenue Generated", color: "text-brand-purple" },
-  { value: "1,200+", label: "Publishers Monetizing",       color: "text-brand-blue"   },
-  { value: "67%",    label: "Average Revenue Lift",        color: "text-brand-purple"   },
-  { value: "30 Days",label: "Average Time to Results",     color: "text-brand-violet" },
+const PAGE_STATS: StatItem[] = [
+  { value: STATS.publishers, label: "Publishers Monetizing",   color: "text-brand-blue"   },
+  { value: "67%",            label: "Average Revenue Lift",    color: "text-brand-purple" },
+  { value: "30 Days",        label: "Average Time to Results", color: "text-brand-violet" },
 ]
 
 interface StoryCard {
@@ -74,7 +74,7 @@ export function SuccessStoriesPage() {
               How publishers across web, app, and CTV verticals grew their inventory revenue with Click Dudes.
             </motion.p>
             <motion.div variants={stagger} className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 w-full">
-              {STATS.map((s) => (
+              {PAGE_STATS.map((s) => (
                 <motion.div key={s.label} variants={fadeUp}
                   className="glass-strong rounded-2xl p-4 border border-brand-purple/[0.10] flex flex-col items-center gap-1"
                 >
@@ -135,7 +135,7 @@ export function SuccessStoriesPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {([
               { icon: Award,     color: "text-brand-purple", bg: "bg-brand-purple/10", title: "Google Certified Publishing Partner", sub: "Verified premium demand, direct AdX access"    },
-              { icon: TrendingUp,color: "text-brand-blue",   bg: "bg-brand-blue/10",   title: "1,200+ Publishers Monetizing",         sub: "Across web, app, and CTV verticals"           },
+              { icon: TrendingUp,color: "text-brand-blue",   bg: "bg-brand-blue/10",   title: "250+ Publishers Monetizing",           sub: "Across web, app, and CTV verticals"           },
               { icon: Users,     color: "text-brand-purple",   bg: "bg-brand-cyan/10",   title: "Dedicated Account Management",         sub: "Real humans, not just an algorithm"           },
             ] as const).map(({ icon: Icon, color, bg, title, sub }) => (
               <div key={title} className="flex items-center gap-4">
@@ -154,7 +154,7 @@ export function SuccessStoriesPage() {
 
       <SolutionCTA
         heading="Ready to Write Your Success Story?"
-        subheading="Join 1,200+ publishers who upgraded their monetization with Click Dudes and saw results within 30 days."
+        subheading="Join 250+ publishers who upgraded their monetization with Click Dudes and saw results within 30 days."
         robotVariant="celebrate"
       />
     </>

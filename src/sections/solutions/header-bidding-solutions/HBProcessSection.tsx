@@ -1,11 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { BarChart3, Layers, Zap, TrendingUp, GitMerge } from "lucide-react"
+import { BarChart3, Layers, Zap, TrendingUp, GitMerge, Info } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { LiveDot } from "@/components/shared/LiveDot"
 import { CountUp } from "@/components/motion/CountUp"
+import { STATS } from "@/lib/stats"
 
 const STEPS = [
   {
@@ -60,7 +61,7 @@ export function HBProcessSection() {
             Integration Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            Prebid Live in 7 Days,{" "}
+            Prebid Live in 7–14 Days,{" "}
             <span className="text-gradient-brand">Revenue Growing in 15</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">
@@ -117,20 +118,25 @@ export function HBProcessSection() {
                     <p className="text-[10px] text-text-muted">Real-time SSP bid competition</p>
                   </div>
                 </div>
-                <LiveDot color="blue" size="sm" label="LIVE" />
+                <div className="flex flex-col items-end gap-0.5">
+                  <div className="flex items-center gap-1">
+                    <Info className="w-2.5 h-2.5 text-text-muted" aria-hidden="true" />
+                    <span className="text-[8px] text-text-muted">Illustrative — aggregate network view</span>
+                  </div>
+                  <LiveDot color="blue" size="sm" label="LIVE" />
+                </div>
               </div>
 
               {/* Winning bid display */}
               <div className="px-5 pt-5 pb-3">
-                <p className="text-[10px] text-text-muted uppercase tracking-wider font-semibold mb-1">Winning Bid — Last Impression</p>
+                <p className="text-[10px] text-text-muted uppercase tracking-wider font-semibold mb-1">Typical CPM Lift vs Waterfall</p>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[11px] text-text-secondary">$</span>
                   <p className="text-[34px] font-black tabular-nums text-brand-blue leading-none">
-                    <CountUp end={8.42} decimals={2} duration={2.2} />
+                    {STATS.rpmLift}
                   </p>
                   <div className="flex flex-col">
-                    <span className="text-[10px] text-brand-green font-bold">Google AdX wins</span>
-                    <span className="text-[9px] text-text-muted">187ms auction time</span>
+                    <span className="text-[10px] text-brand-green font-bold">across publisher network</span>
+                    <span className="text-[9px] text-text-muted">varies by site &amp; setup</span>
                   </div>
                 </div>
               </div>
@@ -157,18 +163,22 @@ export function HBProcessSection() {
               </div>
 
               <div className="grid grid-cols-3 gap-2 px-5 pb-5">
-                {[
-                  { label: "SSP Partners",   end: 15,  suffix: "+",  color: "text-brand-blue"   },
-                  { label: "CPM Increase",   end: 47,  suffix: "%",  color: "text-brand-purple" },
-                  { label: "Auction Speed",  end: 187, suffix: "ms", color: "text-brand-green"  },
-                ].map(({ label, end, suffix, color }) => (
-                  <div key={label} className="rounded-xl bg-brand-purple/[0.04] border border-brand-purple/[0.08] p-3 text-center">
-                    <p className={`text-[14px] font-bold tabular-nums ${color}`}>
-                      <CountUp end={end} suffix={suffix} duration={2.2} />
-                    </p>
-                    <p className="text-[9px] text-text-muted mt-0.5">{label}</p>
-                  </div>
-                ))}
+                <div className="rounded-xl bg-brand-purple/[0.04] border border-brand-purple/[0.08] p-3 text-center">
+                  <p className="text-[14px] font-bold tabular-nums text-brand-blue">
+                    <CountUp end={15} suffix="+" duration={2.2} />
+                  </p>
+                  <p className="text-[9px] text-text-muted mt-0.5">SSP Partners</p>
+                </div>
+                <div className="rounded-xl bg-brand-purple/[0.04] border border-brand-purple/[0.08] p-3 text-center">
+                  <p className="text-[14px] font-bold tabular-nums text-brand-purple">{STATS.rpmLift}</p>
+                  <p className="text-[9px] text-text-muted mt-0.5">CPM Increase</p>
+                </div>
+                <div className="rounded-xl bg-brand-purple/[0.04] border border-brand-purple/[0.08] p-3 text-center">
+                  <p className="text-[14px] font-bold tabular-nums text-brand-green">
+                    <CountUp end={187} suffix="ms" duration={2.2} />
+                  </p>
+                  <p className="text-[9px] text-text-muted mt-0.5">Auction Speed</p>
+                </div>
               </div>
             </div>
           </motion.div>

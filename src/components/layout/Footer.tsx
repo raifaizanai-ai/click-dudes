@@ -10,19 +10,20 @@ import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
 import { LiveDot } from "@/components/shared/LiveDot"
 import { FOOTER_COLUMNS, LEGAL_LINKS } from "@/lib/constants"
+import { STATS } from "@/lib/stats"
 
 /* ── Static data ─────────────────────────────────────────── */
 
 const AI_PRIMARY = [
-  { label: "Publishers Live",     value: "1,200+" },
-  { label: "Daily Optimizations", value: "47K+"   },
-  { label: "Avg RPM Uplift",      value: "+38%"   },
-] as const
+  { label: "Publishers Live",  value: STATS.publishers },
+  { label: "AI Optimization",  value: "24/7"           },
+  { label: "Avg RPM Lift",     value: STATS.rpmLift    },
+]
 
 const AI_SECONDARY = [
-  { label: "Uptime SLA",    value: "99.9%" },
-  { label: "AI Monitoring", value: "24/7"  },
-] as const
+  { label: "Network Uptime",  value: STATS.uptime },
+  { label: "AI Monitoring",   value: "24/7"       },
+]
 
 const ACTIVITY = [
   { text: "RPM floor recalculated",        detail: "US · Desktop +$0.42",         live: true  },
@@ -130,7 +131,7 @@ export function Footer() {
             {/* Bottom trust badge row */}
             <div className="mt-auto pt-5 border-t border-brand-purple/[0.10] flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-1.5">
-                <span className="text-sm font-bold text-text-primary">1,200+</span>
+                <span className="text-sm font-bold text-text-primary">{STATS.publishers}</span>
                 <span className="text-xs text-text-muted">Publishers</span>
               </div>
               <div className="flex items-center gap-2">
@@ -205,7 +206,7 @@ export function Footer() {
               <Zap aria-hidden="true" className="w-3 h-3 text-brand-purple flex-shrink-0" />
               <p className="text-[10px] text-text-secondary">
                 System nominal ·{" "}
-                <span className="font-semibold text-brand-green">99.9% uptime</span>
+                <span className="font-semibold text-brand-green">{STATS.uptime} uptime</span>
               </p>
             </div>
           </motion.div>

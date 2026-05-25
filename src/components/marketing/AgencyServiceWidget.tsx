@@ -32,7 +32,7 @@ export const AGENCY_SERVICES: AgencyServiceData[] = [
   },
   {
     id: "web-dev", icon: Code2, title: "Web Development",
-    metric: "96 / 100", metricLabel: "Lighthouse Score",
+    metric: "90+", metricLabel: "Lighthouse Score",
     hexColor: "#A855F7", bars: [45, 56, 62, 72, 85, 96],
     svgX: 820, svgY: 128, leftPct: 85.4, topPct: 17.8, floatDelay: 0.8,
   },
@@ -44,7 +44,7 @@ export const AGENCY_SERVICES: AgencyServiceData[] = [
   },
   {
     id: "ecom", icon: ShoppingCart, title: "E-Commerce",
-    metric: "+220%", metricLabel: "Revenue Growth",
+    metric: "+100–200%", metricLabel: "Revenue Growth",
     hexColor: "#10B981", bars: [22, 36, 48, 62, 78, 100],
     svgX: 820, svgY: 594, leftPct: 85.4, topPct: 82.5, floatDelay: 2.4,
   },
@@ -62,7 +62,7 @@ export const AGENCY_SERVICES: AgencyServiceData[] = [
   },
   {
     id: "social", icon: Share2, title: "Social Media",
-    metric: "+450%", metricLabel: "Follower Growth",
+    metric: "+200–400%", metricLabel: "Follower Growth",
     hexColor: "#A855F7", bars: [20, 28, 40, 56, 74, 100],
     svgX: 96,  svgY: 358, leftPct: 10.0, topPct: 49.7, floatDelay: 4.8,
   },

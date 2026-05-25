@@ -44,7 +44,7 @@ const SOLUTIONS = [
 const FEATURES = [
   {
     icon: Tv2, title: "Server-Side Ad Insertion (SSAI)",
-    description: "SSAI pipeline with CDN distribution eliminates client-side ad stitching errors. Broadcast-quality ad delivery with 99.9% uptime SLA — no buffering, no audio cuts.",
+    description: "SSAI pipeline with CDN distribution eliminates client-side ad stitching errors. Broadcast-quality ad delivery with 99.5% uptime SLA — no buffering, no audio cuts.",
     badge: "Core Tech", accent: "text-brand-purple", glow: "rgba(139,92,246,0.12)",
   },
   {
@@ -82,7 +82,7 @@ const WHY_US_ITEMS = [
   },
   {
     icon: Zap,        title: "Broadcast-Quality SSAI",
-    body: "Our SSAI infrastructure is built on enterprise CDN with 99.9% uptime SLA. No buffering, no audio drop, no ad stitching errors — the ad experience matches the content quality.",
+    body: "Our SSAI infrastructure is built on enterprise CDN with 99.5% uptime SLA. No buffering, no audio drop, no ad stitching errors — the ad experience matches the content quality.",
     highlight: "Enterprise Grade", accent: "text-brand-blue", bg: "rgba(96,165,250,0.10)", dotColor: "blue" as const,
   },
   {

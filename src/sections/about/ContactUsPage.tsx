@@ -34,9 +34,9 @@ const card = {
 }
 
 const TRUST = [
-  { icon: Users,   label: "1,200+ Publishers",    sub: "Onboarded and growing",    color: "text-brand-purple", bg: "bg-brand-purple/10" },
+  { icon: Users,   label: "250+ Publishers",      sub: "Onboarded and growing",    color: "text-brand-purple", bg: "bg-brand-purple/10" },
   { icon: Shield,  label: "GCPP Partner Network", sub: "Google Certified Partner", color: "text-brand-blue",   bg: "bg-brand-blue/10"   },
-  { icon: Globe2,  label: "Global Support",       sub: "40+ countries, 24/7 AI",   color: "text-brand-violet", bg: "bg-brand-violet/10" },
+  { icon: Globe2,  label: "Global Support",       sub: "25+ countries, 24/7 AI",   color: "text-brand-violet", bg: "bg-brand-violet/10" },
   { icon: Zap,     label: "24h Response Time",    sub: "Business days guaranteed", color: "text-brand-purple",   bg: "bg-brand-cyan/10"   },
 ]
 

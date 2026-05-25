@@ -16,6 +16,7 @@ const CY = 360
 // ─── Layout data ─────────────────────────────────────────────────────────────
 
 interface WidgetSlot {
+  id: string
   type: WidgetType
   leftPct: number
   topPct: number
@@ -27,14 +28,14 @@ interface WidgetSlot {
 }
 
 const SLOTS: WidgetSlot[] = [
-  { type: "ai-engine",  leftPct: 50,  topPct: 4,   rotation: 0,  floatDelay: 0,   floatAmp: 6,  svgX: 480, svgY: 29  },
-  { type: "meta-ads",   leftPct: 14,  topPct: 13,  rotation: -3, floatDelay: 0.8, floatAmp: 8,  svgX: 134, svgY: 94  },
-  { type: "seo",        leftPct: 84,  topPct: 11,  rotation: 3,  floatDelay: 1.5, floatAmp: 7,  svgX: 806, svgY: 79  },
-  { type: "social",     leftPct: 9,   topPct: 50,  rotation: -2, floatDelay: 2.2, floatAmp: 9,  svgX: 86,  svgY: 360 },
-  { type: "google-ads", leftPct: 90,  topPct: 48,  rotation: 2,  floatDelay: 2.9, floatAmp: 7,  svgX: 864, svgY: 346 },
-  { type: "ecom",       leftPct: 14,  topPct: 82,  rotation: 4,  floatDelay: 3.6, floatAmp: 10, svgX: 134, svgY: 590 },
-  { type: "revenue",    leftPct: 83,  topPct: 80,  rotation: -2, floatDelay: 4.3, floatAmp: 8,  svgX: 797, svgY: 576 },
-  { type: "webdev",     leftPct: 50,  topPct: 94,  rotation: -1, floatDelay: 5.0, floatAmp: 6,  svgX: 480, svgY: 677 },
+  { id: "slot-ai-engine",  type: "ai-engine",  leftPct: 50,  topPct: 4,   rotation: 0,  floatDelay: 0,   floatAmp: 6,  svgX: 480, svgY: 29  },
+  { id: "slot-meta-ads-a", type: "meta-ads",   leftPct: 14,  topPct: 13,  rotation: -3, floatDelay: 0.8, floatAmp: 8,  svgX: 134, svgY: 94  },
+  { id: "slot-seo-a",      type: "seo",        leftPct: 84,  topPct: 11,  rotation: 3,  floatDelay: 1.5, floatAmp: 7,  svgX: 806, svgY: 79  },
+  { id: "slot-social",     type: "social",     leftPct: 9,   topPct: 50,  rotation: -2, floatDelay: 2.2, floatAmp: 9,  svgX: 86,  svgY: 360 },
+  { id: "slot-google-ads", type: "google-ads", leftPct: 90,  topPct: 48,  rotation: 2,  floatDelay: 2.9, floatAmp: 7,  svgX: 864, svgY: 346 },
+  { id: "slot-seo-b",      type: "seo",        leftPct: 14,  topPct: 82,  rotation: 4,  floatDelay: 3.6, floatAmp: 10, svgX: 134, svgY: 590 },
+  { id: "slot-meta-ads-b", type: "meta-ads",   leftPct: 83,  topPct: 80,  rotation: -2, floatDelay: 4.3, floatAmp: 8,  svgX: 797, svgY: 576 },
+  { id: "slot-webdev",     type: "webdev",     leftPct: 50,  topPct: 94,  rotation: -1, floatDelay: 5.0, floatAmp: 6,  svgX: 480, svgY: 677 },
 ]
 
 interface NotifData {
@@ -187,7 +188,7 @@ export function AgencyOrbitScene() {
       {/* ── Widget panels — asymmetric orbit ─────────────────────────── */}
       {SLOTS.map((s, i) => (
         <div
-          key={s.type}
+          key={s.id}
           className="absolute z-30"
           style={{
             left: `${s.leftPct}%`,

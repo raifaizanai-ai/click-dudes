@@ -15,7 +15,7 @@ interface ProcessStep { number: string; icon: LucideIcon; title: string; descrip
 const STEPS: ProcessStep[] = [
   { number: "01", icon: Send,    title: "Apply",     description: "Submit your property details. Our team reviews your traffic and inventory quality within 48 hours." },
   { number: "02", icon: Search,  title: "Analyze",   description: "We audit your existing setup, identify revenue gaps, and build a custom monetization strategy." },
-  { number: "03", icon: Link,    title: "Integrate", description: "Header bidding and AdX tags go live in 3–5 business days. Our engineers handle everything — you don't touch code." },
+  { number: "03", icon: Link,    title: "Integrate", description: "Header bidding and AdX tags go live in 3–7 business days. Our engineers handle everything — you don't touch code." },
   { number: "04", icon: Sliders, title: "Optimize",  description: "AI recalibrates price floors, placement mix, and demand allocation daily. Weekly reports show exactly what's moving and why." },
   { number: "05", icon: Rocket,  title: "Scale",     description: "As your revenue grows, we bring in premium private marketplace deals and direct advertiser relationships." },
 ]

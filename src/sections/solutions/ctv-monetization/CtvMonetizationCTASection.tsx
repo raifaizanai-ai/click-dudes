@@ -96,7 +96,7 @@ export function CtvMonetizationCTASection() {
                   {[
                     { label: "Video Completion",   value: "97%",  color: "text-brand-violet" },
                     { label: "Premium Demand",      value: "15+",  color: "text-brand-purple" },
-                    { label: "SSAI Uptime",         value: "99.9%",color: "text-brand-green"  },
+                    { label: "SSAI Uptime",         value: "99.5%",color: "text-brand-green"  },
                   ].map(({ label, value, color }) => (
                     <div key={label} className="rounded-xl p-3 text-center" style={{ background: "rgba(168,85,247,0.06)", border: "1px solid rgba(168,85,247,0.10)" }}>
                       <p className={`text-[14px] font-bold ${color}`}>{value}</p>

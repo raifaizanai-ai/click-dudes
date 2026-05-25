@@ -171,7 +171,7 @@ export function CtvMonetizationProcessSection() {
               <div className="flex items-center gap-2 px-5 py-3 border-t border-brand-purple/[0.08] bg-brand-purple/[0.02]">
                 <Zap className="w-3.5 h-3.5 text-brand-violet shrink-0" aria-hidden="true" />
                 <p className="text-[11px] text-text-secondary">
-                  <span className="font-bold text-brand-violet">SSAI active</span> · Broadcast-quality insertion · 99.9% uptime SLA
+                  <span className="font-bold text-brand-violet">SSAI active</span> · Broadcast-quality insertion · 99.5% uptime SLA
                 </p>
               </div>
             </div>

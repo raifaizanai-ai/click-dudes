@@ -8,14 +8,15 @@ import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
 import { CountUp } from "@/components/motion/CountUp"
 import { LiveDot } from "@/components/shared/LiveDot"
+import { STATS } from "@/lib/stats"
 
 interface CapabilityCard { icon: typeof TrendingUp; label: string; value: string; sub: string; color: string; glow: string; border: string; dotColor: "green" | "purple" | "blue" | "cyan" }
 
 const CARDS: CapabilityCard[] = [
-  { icon: Users,      label: "Active Publishers",  value: "1,200+", sub: "and growing daily",   color: "text-brand-purple", glow: "rgba(139,92,246,0.12)", border: "rgba(139,92,246,0.20)", dotColor: "purple" },
-  { icon: TrendingUp, label: "Avg RPM Uplift",     value: "38%",    sub: "within 90 days",      color: "text-brand-purple",   glow: "rgba(103,232,249,0.12)", border: "rgba(103,232,249,0.20)", dotColor: "cyan" },
-  { icon: Shield,     label: "GCPP Verified",      value: "100%",   sub: "Google partner status", color: "text-brand-green",  glow: "rgba(16,185,129,0.12)",  border: "rgba(16,185,129,0.20)",  dotColor: "green" },
-  { icon: Zap,        label: "Live in Days",       value: "3–7",    sub: "business days",        color: "text-brand-blue",   glow: "rgba(96,165,250,0.12)",  border: "rgba(96,165,250,0.20)",  dotColor: "blue" },
+  { icon: Users,      label: "Active Publishers",  value: STATS.publishers,  sub: "and growing daily",      color: "text-brand-purple", glow: "rgba(139,92,246,0.12)", border: "rgba(139,92,246,0.20)", dotColor: "purple" },
+  { icon: TrendingUp, label: "Avg RPM Lift",       value: STATS.rpmLift,     sub: "first 90 days",          color: "text-brand-purple",   glow: "rgba(103,232,249,0.12)", border: "rgba(103,232,249,0.20)", dotColor: "cyan" },
+  { icon: Shield,     label: "GCPP Verified",      value: "100%",            sub: "Google partner status",  color: "text-brand-green",  glow: "rgba(16,185,129,0.12)",  border: "rgba(16,185,129,0.20)",  dotColor: "green" },
+  { icon: Zap,        label: "Go-Live Time",       value: STATS.goLive,      sub: "from approval",          color: "text-brand-blue",   glow: "rgba(96,165,250,0.12)",  border: "rgba(96,165,250,0.20)",  dotColor: "blue" },
 ]
 
 const containerVariants = {
@@ -120,7 +121,7 @@ export function FinalCTASection() {
 
             <motion.div variants={itemVariants}>
               <p className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-md">
-                Apply to the Click Dudes network. We review every property individually — if it&apos;s a fit, we&apos;ll have you live and earning more within a week.
+                Apply to the Click Dudes network. We review every property individually — if it&apos;s a fit, we&apos;ll have you live and earning more within 7–14 days.
               </p>
             </motion.div>
 

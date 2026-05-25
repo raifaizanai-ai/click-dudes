@@ -1,13 +1,14 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, CheckCircle2, Globe, Smartphone, Tv2, Zap, Shield, Users, Clock } from "lucide-react"
+import { STATS } from "@/lib/stats"
 
 export const metadata: Metadata = {
   title:       "Apply For Monetization — Click Dudes | Start Earning More Today",
   description: "Apply to join the Click Dudes publisher network. Get access to Google AdX, Header Bidding, AI Optimization, and premium demand to maximize your ad revenue.",
   openGraph: {
     title:       "Apply For Monetization — Click Dudes",
-    description: "Join 1,200+ publishers already earning more with Click Dudes. Apply today for Google AdX access, AI optimization, and premium demand.",
+    description: "Join 250+ publishers already earning more with Click Dudes. Apply today for Google AdX access, AI optimization, and premium demand.",
     url:         "https://clickdudes.com/apply",
     siteName:    "Click Dudes",
     type:        "website",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card:        "summary_large_image",
     title:       "Apply For Monetization — Click Dudes",
-    description: "Join 1,200+ publishers earning more with Click Dudes. Apply now.",
+    description: "Join 250+ publishers earning more with Click Dudes. Apply now.",
   },
   alternates: {
     canonical: "https://clickdudes.com/apply",
@@ -28,7 +29,7 @@ const BENEFITS = [
   { icon: Shield,     label: "GCPP Certified",           sub: "Google Certified Publishing Partner network"    },
   { icon: Smartphone, label: "Web, App & CTV",           sub: "All publisher types, one platform"             },
   { icon: Tv2,        label: "Premium Demand Partners",  sub: "30+ SSPs including Index Exchange & Magnite"   },
-  { icon: Clock,      label: "Live Within 7 Days",       sub: "No developer required on your side"            },
+  { icon: Clock,      label: "Live in 7–14 Days",         sub: "No developer required on your side"            },
 ]
 
 const INCLUDES = [
@@ -70,16 +71,16 @@ export default function ApplyPage() {
               <span className="text-gradient-brand">Premium Monetization</span>
             </h1>
             <p className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl mx-auto mb-8">
-              Join 1,200+ publishers earning 40–80% more with AI-driven monetization infrastructure. Apply takes 2 minutes — our team responds within 24 hours.
+              Join 250+ publishers earning more with AI-driven monetization infrastructure. Apply takes 2 minutes — our team responds within 24 hours.
             </p>
 
             {/* Key metrics */}
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               {[
-                { value: "1,200+", label: "Active Publishers" },
-                { value: "+38%",   label: "Avg RPM Uplift"    },
-                { value: "7 Days", label: "Avg Go-Live Time"  },
-                { value: "40+",    label: "Countries Served"  },
+                { value: STATS.publishers, label: "Active Publishers" },
+                { value: STATS.rpmLift,    label: "Avg RPM Uplift"    },
+                { value: STATS.goLive,     label: "Avg Go-Live Time"  },
+                { value: STATS.countries,  label: "Countries Served"  },
               ].map(({ value, label }) => (
                 <div key={label} className="text-center">
                   <p className="text-2xl font-bold text-gradient-brand leading-none">{value}</p>

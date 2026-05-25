@@ -1,32 +1,26 @@
 "use client"
 
-import { BarChart3, TrendingUp, Eye, DollarSign, Percent, Brain, Activity } from "lucide-react"
+import { BarChart3, TrendingUp, Eye, Percent, Brain, Activity, Info, Users } from "lucide-react"
 import { motion } from "framer-motion"
 import type { LucideIcon } from "lucide-react"
-import { LiveCounter } from "@/components/motion/LiveCounter"
 import { LiveDot } from "@/components/shared/LiveDot"
 import { DashboardLiveChart } from "@/components/marketing/DashboardLiveChart"
 import { DashboardActivityFeed } from "@/components/marketing/DashboardActivityFeed"
 import { cn } from "@/lib/utils"
+import { STATS } from "@/lib/stats"
 
-interface LiveMetric {
+interface StatTile {
   icon: LucideIcon
   label: string
-  base: number
-  range: number
-  prefix?: string
-  suffix?: string
-  decimals: number
-  trend: string
-  cycle: number
+  value: string
   accent: string
 }
 
-const LIVE_METRICS: LiveMetric[] = [
-  { icon: DollarSign, label: "Avg RPM",     base: 12.01, range: 0.14, prefix: "$",             decimals: 2, trend: "+31%", cycle: 11, accent: "text-brand-purple" },
-  { icon: TrendingUp, label: "Revenue",     base: 2.38,  range: 0.04, prefix: "$", suffix: "M", decimals: 2, trend: "+38%", cycle: 15, accent: "text-brand-green"  },
-  { icon: Percent,    label: "Fill Rate",   base: 94.1,  range: 0.40,               suffix: "%", decimals: 1, trend: "+12%", cycle:  9, accent: "text-brand-purple"   },
-  { icon: Eye,        label: "Viewability", base: 78.2,  range: 0.90,               suffix: "%", decimals: 1, trend: "+8%",  cycle: 12, accent: "text-brand-blue"   },
+const STAT_TILES: StatTile[] = [
+  { icon: Percent, label: "Avg Fill Rate",      value: STATS.fillRate,     accent: "text-brand-purple" },
+  { icon: TrendingUp, label: "Avg RPM Lift",    value: STATS.rpmLift,      accent: "text-brand-green"  },
+  { icon: Eye,     label: "Viewability",         value: "78%+",             accent: "text-brand-blue"   },
+  { icon: Users,   label: "Publishers Live",     value: STATS.publishers,   accent: "text-brand-purple" },
 ]
 
 const cellReveal = {
@@ -61,27 +55,33 @@ export function RevenueDashboard() {
           </div>
           <div>
             <p className="text-sm font-semibold text-text-primary leading-tight">Revenue Dashboard</p>
-            <p className="text-[11px] text-text-muted leading-tight mt-0.5">Q4 2024 · All Publishers</p>
+            <p className="text-[11px] text-text-muted leading-tight mt-0.5">Aggregate Publisher Network</p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <motion.span
-            animate={{ opacity: [0.70, 1, 0.70] }}
-            transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-            className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-brand-purple/8 border border-brand-purple/12"
-          >
-            <Brain aria-hidden="true" className="w-3 h-3 text-brand-purple" />
-            <span className="text-[10px] font-semibold text-brand-purple tracking-wide">AI OPTIMIZING</span>
-          </motion.span>
-          <LiveDot color="green" size="sm" label="LIVE" />
+        <div className="flex flex-col items-end gap-0.5">
+          <div className="flex items-center gap-1">
+            <Info className="w-3 h-3 text-text-muted/50 flex-shrink-0" aria-hidden="true" />
+            <span className="text-[9px] text-text-muted/60 leading-tight hidden sm:block">Illustrative — aggregate network view</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <motion.span
+              animate={{ opacity: [0.70, 1, 0.70] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+              className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-brand-purple/8 border border-brand-purple/12"
+            >
+              <Brain aria-hidden="true" className="w-3 h-3 text-brand-purple" />
+              <span className="text-[10px] font-semibold text-brand-purple tracking-wide">AI OPTIMIZING</span>
+            </motion.span>
+            <LiveDot color="green" size="sm" label="LIVE" />
+          </div>
         </div>
       </div>
 
-      {/* Live metrics 2×2 grid */}
+      {/* Anchor stat tiles 2×2 */}
       <div className="px-5 pt-4 pb-3 grid grid-cols-2 gap-2">
-        {LIVE_METRICS.map((m, i) => (
+        {STAT_TILES.map((tile, i) => (
           <motion.div
-            key={m.label}
+            key={tile.label}
             custom={i}
             variants={cellReveal}
             initial="hidden"
@@ -96,20 +96,11 @@ export function RevenueDashboard() {
               "transition-shadow duration-200",
             )}
           >
-            <div className="flex items-center justify-between mb-1.5">
-              <m.icon aria-hidden="true" className={cn("w-3.5 h-3.5 opacity-55", m.accent)} />
-              <span className="text-[10px] font-semibold text-brand-green">{m.trend}</span>
+            <div className="flex items-center mb-1.5">
+              <tile.icon aria-hidden="true" className={cn("w-3.5 h-3.5 opacity-55", tile.accent)} />
             </div>
-            <LiveCounter
-              base={m.base}
-              range={m.range}
-              cycleDuration={m.cycle}
-              prefix={m.prefix}
-              suffix={m.suffix}
-              decimals={m.decimals}
-              className="block text-lg font-bold text-text-primary"
-            />
-            <p className="text-[10px] text-text-muted mt-0.5 leading-tight">{m.label}</p>
+            <p className="text-lg font-bold text-text-primary">{tile.value}</p>
+            <p className="text-[10px] text-text-muted mt-0.5 leading-tight">{tile.label}</p>
           </motion.div>
         ))}
       </div>

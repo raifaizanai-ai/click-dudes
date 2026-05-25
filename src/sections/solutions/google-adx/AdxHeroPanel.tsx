@@ -1,22 +1,20 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { BrainCircuit, Activity, TrendingUp, Percent, DollarSign, Zap } from "lucide-react"
+import { BrainCircuit, TrendingUp, Percent, Zap, Info } from "lucide-react"
 import { LiveDot } from "@/components/shared/LiveDot"
-import { CountUp } from "@/components/motion/CountUp"
+import { STATS } from "@/lib/stats"
 
 /* ── Data ─────────────────────────────────────────────────── */
 
 const METRICS = [
-  { icon: DollarSign, label: "Avg CPM",      value: 8.47,  decimals: 2, prefix: "$",  trend: "+38%", accent: "text-brand-purple" },
-  { icon: Percent,    label: "Fill Rate",    value: 96.2,  decimals: 1, suffix: "%",  trend: "+12%", accent: "text-brand-purple"   },
-  { icon: TrendingUp, label: "Revenue Lift", value: 31,    decimals: 0, suffix: "%+", trend: "vs AdSense", accent: "text-brand-green"  },
-  { icon: Activity,   label: "Active Deals", value: 247,   decimals: 0,               trend: "PMPs",  accent: "text-brand-blue"   },
-] as const
+  { icon: Percent,    label: "Fill Rate",    value: STATS.fillRate, trend: "Network avg",    accent: "text-brand-purple" },
+  { icon: TrendingUp, label: "Revenue Lift", value: STATS.rpmLift,  trend: "vs prior setup", accent: "text-brand-green"  },
+]
 
 const CPM_BARS = [
-  { label: "AdSense",   value: 4.2, width: "42%", color: "bg-text-muted/20" },
-  { label: "Click Dudes AdX", value: 8.5, width: "85%", color: "bg-gradient-brand" },
+  { label: "AdSense",         value: "~$4–5",  width: "46%", color: "bg-text-muted/20"    },
+  { label: "Click Dudes AdX", value: "Higher", width: "85%", color: "bg-gradient-brand"   },
 ] as const
 
 const FLOOR_ITEMS = [
@@ -66,10 +64,16 @@ export function AdxHeroPanel() {
             <p className="text-[10px] text-text-muted mt-0.5">Click Dudes MCM Network · Live</p>
           </div>
         </div>
-        <LiveDot color="green" size="sm" label="LIVE" />
+        <div className="flex flex-col items-end gap-0.5">
+          <div className="flex items-center gap-1">
+            <Info className="w-3 h-3 text-text-muted/50 flex-shrink-0" aria-hidden="true" />
+            <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative — aggregate network view</span>
+          </div>
+          <LiveDot color="green" size="sm" label="LIVE" />
+        </div>
       </div>
 
-      {/* Metric grid 2×2 */}
+      {/* Metric grid 1×2 */}
       <div className="grid grid-cols-2 gap-2 p-4">
         {METRICS.map((m, i) => (
           <motion.div
@@ -84,13 +88,7 @@ export function AdxHeroPanel() {
               <m.icon aria-hidden="true" className={`w-3.5 h-3.5 opacity-60 ${m.accent}`} />
               <span className="text-[9px] font-semibold text-brand-green tracking-wide">{m.trend}</span>
             </div>
-            <CountUp
-              end={m.value}
-              prefix={"prefix" in m ? m.prefix : undefined}
-              suffix={"suffix" in m ? m.suffix : undefined}
-              decimals={m.decimals}
-              className="block text-xl font-bold text-text-primary tracking-tight"
-            />
+            <p className="text-xl font-bold text-text-primary tracking-tight tabular-nums">{m.value}</p>
             <p className="text-[10px] text-text-muted mt-0.5">{m.label}</p>
           </motion.div>
         ))}
@@ -104,7 +102,7 @@ export function AdxHeroPanel() {
             <div key={bar.label}>
               <div className="flex items-center justify-between mb-1">
                 <span className="text-[11px] text-text-secondary font-medium">{bar.label}</span>
-                <span className="text-[11px] font-bold text-text-primary">${bar.value.toFixed(2)}</span>
+                <span className="text-[11px] font-bold text-text-primary">{bar.value}</span>
               </div>
               <div className="h-2 w-full rounded-full bg-brand-purple/[0.07] overflow-hidden">
                 <motion.div
@@ -149,7 +147,7 @@ export function AdxHeroPanel() {
         <Zap aria-hidden="true" className="w-3 h-3 text-brand-purple flex-shrink-0" />
         <p className="text-[10px] text-text-secondary">
           System nominal ·{" "}
-          <span className="font-semibold text-brand-green">99.9% uptime</span>
+          <span className="font-semibold text-brand-green">{STATS.uptime} uptime</span>
         </p>
       </div>
     </motion.div>

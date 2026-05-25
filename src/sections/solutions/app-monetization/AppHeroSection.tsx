@@ -19,7 +19,7 @@ interface SatCard {
 
 const CARDS: SatCard[] = [
   {
-    id: "arpdau", label: "ARPDAU", value: "$0.24", delta: "+38% uplift",
+    id: "arpdau", label: "ARPDAU", value: "$0.24", delta: "+25–40% uplift",
     deltaColor: "text-brand-green", Icon: DollarSign,
     iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple",
     pos: "absolute -left-[82px] top-[36px]", dur: 5.2,
@@ -33,7 +33,7 @@ const CARDS: SatCard[] = [
     sparkline: SPK_STEP, sparkColor: "rgba(96,165,250,0.55)",
   },
   {
-    id: "fill", label: "Fill Rate", value: "96.8%", delta: "Real-time",
+    id: "fill", label: "Fill Rate", value: "90%+", delta: "Real-time",
     deltaColor: "text-brand-purple", Icon: Activity,
     iconBg: "bg-brand-green/10", iconColor: "text-brand-green",
     pos: "absolute -left-[80px] top-[47%]", dur: 6.1, isLive: true,
@@ -62,9 +62,9 @@ const CARDS: SatCard[] = [
 
 const STAT_PILLS = [
   { label: "Apps Monetized", value: "250+",   color: "text-brand-purple" },
-  { label: "eCPM Lift",      value: "38%",    color: "text-brand-blue" },
-  { label: "Fill Rate",      value: "96.8%",  color: "text-brand-green" },
-  { label: "SDK Live In",    value: "7 days", color: "text-brand-purple" },
+  { label: "eCPM Lift",      value: "+25–40%",  color: "text-brand-blue" },
+  { label: "Fill Rate",      value: "90%+",    color: "text-brand-green" },
+  { label: "SDK Live In",    value: "7–14 Days", color: "text-brand-purple" },
 ]
 
 export function AppHeroSection() {

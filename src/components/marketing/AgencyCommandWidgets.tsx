@@ -3,13 +3,13 @@
 import { motion } from "framer-motion"
 import {
   BrainCircuit, Megaphone, LineChart, Search,
-  Share2, ShoppingCart, Code2, TrendingUp,
+  Share2, Code2,
 } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 export type WidgetType =
   | "ai-engine" | "meta-ads" | "seo" | "google-ads"
-  | "social" | "ecom" | "revenue" | "webdev"
+  | "social" | "webdev"
 
 const G = (c: string) => ({
   background: "rgba(255,255,255,0.92)",
@@ -172,7 +172,7 @@ function Social({ iv }: { iv: boolean }) {
   return (
     <div className="w-[158px] rounded-2xl p-3.5 select-none cursor-default" style={G(C)}>
       <Hdr icon={Share2} title="Social Growth" c={C} d={1.4} />
-      <p className="text-[20px] font-black text-text-primary leading-none">+450%</p>
+      <p className="text-[20px] font-black text-text-primary leading-none">+200–400%</p>
       <p className="text-[9px] text-text-muted mb-2.5">Follower Growth</p>
       {platforms.map(([label, color, pct]) => (
         <div key={label} className="flex items-center gap-1.5 mb-1">
@@ -192,50 +192,6 @@ function Social({ iv }: { iv: boolean }) {
   )
 }
 
-function Ecom({ iv }: { iv: boolean }) {
-  const C = "#10B981"
-  const funnel = [["Visitors", "18,400", 100], ["Add to Cart", "3,210", 56], ["Checkout", "2,100", 38], ["Purchased", "1,847", 28]] as const
-  return (
-    <div className="w-[168px] rounded-2xl p-3.5 select-none cursor-default" style={G(C)}>
-      <Hdr icon={ShoppingCart} title="E-Commerce" c={C} d={1.8} />
-      <p className="text-[22px] font-black text-text-primary leading-none">$84.2K</p>
-      <p className="text-[9px] text-text-muted mb-2.5">Today's Revenue</p>
-      {funnel.map(([label, val, pct]) => (
-        <div key={label} className="flex items-center gap-1.5 mb-1">
-          <span className="text-[7.5px] text-text-muted w-[50px] truncate">{label}</span>
-          <div className="flex-1 h-[4px] rounded-full" style={{ background: `${C}14` }}>
-            <motion.div className="h-full rounded-full" style={{ background: `${C}cc` }}
-              initial={{ width: 0 }} animate={{ width: iv ? `${pct}%` : "0%" }}
-              transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] as const }} />
-          </div>
-          <span className="text-[7px] font-bold text-text-primary">{val}</span>
-        </div>
-      ))}
-      <div className="flex gap-3 mt-2">
-        <div><p className="text-[11px] font-black text-text-primary">3.8%</p><p className="text-[8px] text-text-muted">Conv Rate</p></div>
-        <div><p className="text-[11px] font-black" style={{ color: C }}>+220%</p><p className="text-[8px] text-text-muted">YTD Growth</p></div>
-      </div>
-    </div>
-  )
-}
-
-function Revenue({ iv }: { iv: boolean }) {
-  const C = "#8B5CF6"
-  const months = ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"]
-  return (
-    <div className="w-[215px] rounded-2xl p-4 select-none cursor-default" style={G(C)}>
-      <Hdr icon={TrendingUp} title="Revenue Intelligence" c={C} d={2.2} />
-      <div className="flex items-end justify-between mb-3">
-        <div><p className="text-[26px] font-black text-text-primary leading-none">$2.4M</p><p className="text-[9px] text-text-muted">Total Revenue</p></div>
-        <div className="text-right"><p className="text-[13px] font-black" style={{ color: C }}>+220%</p><p className="text-[8px] text-text-muted">YTD Growth</p></div>
-      </div>
-      <Bars v={[18, 24, 35, 42, 56, 68, 82, 100]} c={C} iv={iv} d={0.4} />
-      <div className="flex justify-between mt-1">
-        {months.map((m) => <span key={m} className="text-[7px] text-text-muted">{m}</span>)}
-      </div>
-    </div>
-  )
-}
 
 function WebDev({ iv }: { iv: boolean }) {
   const C = "#A855F7"
@@ -245,8 +201,8 @@ function WebDev({ iv }: { iv: boolean }) {
       <Hdr icon={Code2} title="Web Performance" c={C} d={2.6} />
       <div className="flex items-center gap-3 mb-3">
         <div className="relative">
-          <Ring pct={96} c={C} iv={iv} delay={0.6} sz={48} />
-          <div className="absolute inset-0 flex items-center justify-center"><span className="text-[12px] font-black text-text-primary">96</span></div>
+          <Ring pct={90} c={C} iv={iv} delay={0.6} sz={48} />
+          <div className="absolute inset-0 flex items-center justify-center"><span className="text-[12px] font-black text-text-primary">90+</span></div>
         </div>
         <div>
           <p className="text-[11px] font-black text-text-primary leading-tight">Lighthouse</p>
@@ -278,8 +234,6 @@ export function AgencyCommandWidget({ type, inView }: AgencyCommandWidgetProps) 
     case "seo":        return <SEO iv={inView} />
     case "google-ads": return <GoogleAds iv={inView} />
     case "social":     return <Social iv={inView} />
-    case "ecom":       return <Ecom iv={inView} />
-    case "revenue":    return <Revenue iv={inView} />
     case "webdev":     return <WebDev iv={inView} />
   }
 }

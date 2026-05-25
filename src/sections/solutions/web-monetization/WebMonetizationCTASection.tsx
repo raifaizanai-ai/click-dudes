@@ -1,17 +1,17 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, TrendingUp, Sparkles, CheckCircle2 } from "lucide-react"
+import { ArrowRight, TrendingUp, Sparkles, CheckCircle2, Info } from "lucide-react"
 import Link from "next/link"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
-import { CountUp } from "@/components/motion/CountUp"
 import { LiveDot } from "@/components/shared/LiveDot"
+import { STATS } from "@/lib/stats"
 
 const BENEFITS = [
   "No setup fees or monthly minimums",
-  "Live in 7 days — no developer needed",
+  "Live in 7–14 days — no developer needed",
   "Google Certified MCM partner access",
   "Dedicated publisher manager included",
 ]
@@ -49,20 +49,23 @@ export function WebMonetizationCTASection() {
                   <TrendingUp className="w-4 h-4 text-brand-purple" aria-hidden="true" />
                   <span className="text-[12px] font-bold text-text-primary">Revenue Intelligence</span>
                 </div>
-                <LiveDot color="green" size="sm" label="" />
+                <div className="flex flex-col items-end gap-0.5">
+                  <div className="flex items-center gap-1">
+                    <Info className="w-2.5 h-2.5 text-text-muted" aria-hidden="true" />
+                    <span className="text-[8px] text-text-muted">Illustrative — aggregate network view</span>
+                  </div>
+                  <LiveDot color="green" size="sm" label="" />
+                </div>
               </div>
 
               <div className="p-5 space-y-5">
-                {/* Revenue counter */}
+                {/* RPM lift */}
                 <div>
-                  <p className="text-[11px] text-text-muted mb-1 uppercase tracking-wider font-semibold">Avg Monthly Revenue Uplift</p>
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-[11px] text-text-muted">+$</span>
-                    <p className="text-[36px] font-black text-gradient-brand tabular-nums leading-none">
-                      <CountUp end={22400} duration={2.5} />
-                    </p>
-                  </div>
-                  <p className="text-[11px] text-text-muted mt-1">per publisher · first 90 days</p>
+                  <p className="text-[11px] text-text-muted mb-1 uppercase tracking-wider font-semibold">Typical RPM Lift</p>
+                  <p className="text-[36px] font-black text-gradient-brand tabular-nums leading-none">
+                    {STATS.rpmLift}
+                  </p>
+                  <p className="text-[11px] text-text-muted mt-1">first 90 days · varies by site</p>
                 </div>
 
                 {/* Chart bars */}
@@ -83,7 +86,7 @@ export function WebMonetizationCTASection() {
                   </div>
                   <div className="flex justify-between mt-1">
                     <span className="text-[9px] text-text-muted">Month 1</span>
-                    <span className="text-[9px] text-brand-green font-semibold">+41% RPM</span>
+                    <span className="text-[9px] text-brand-green font-semibold">{STATS.rpmLift} RPM lift</span>
                     <span className="text-[9px] text-text-muted">Month 3</span>
                   </div>
                 </div>
@@ -118,7 +121,7 @@ export function WebMonetizationCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join 500+ web publishers already earning more with Click Dudes' fully managed premium ad stack. No setup fees, no lock-in, results in 30 days.
+              Join 250+ web publishers already earning more with Click Dudes' fully managed premium ad stack. No setup fees, no lock-in, results in 30 days.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

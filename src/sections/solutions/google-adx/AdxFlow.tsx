@@ -24,14 +24,14 @@ const STEPS: Step[] = [
     icon:     ClipboardCheck,
     title:    "Apply & Qualify",
     body:     "Submit your property for review. We verify traffic quality, content compliance, and AdX eligibility. Most approvals complete within 5–10 business days.",
-    duration: "~7 days",
+    duration: "7–14 Days",
   },
   {
     step:     2,
     icon:     Code2,
     title:    "Technical Integration",
     body:     "Our team handles the full setup — header bidding wrapper, AdX tag deployment, and GAM configuration. No developer required on your end.",
-    duration: "3–5 days",
+    duration: "3–7 Days",
   },
   {
     step:     3,

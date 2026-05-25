@@ -8,7 +8,7 @@ import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
 import { LiveDot } from "@/components/shared/LiveDot"
-import { CountUp } from "@/components/motion/CountUp"
+import { STATS } from "@/lib/stats"
 
 interface ServiceNode { icon: LucideIcon; title: string; stat: string; href: string; color: string }
 
@@ -19,11 +19,11 @@ const PUBLISHERS: ServiceNode[] = [
 ]
 
 const CAPABILITIES: ServiceNode[] = [
-  { icon: Zap,        title: "Google AdX",       stat: "+38% RPM",  href: "/publisher-solutions/google-adx-solutions",     color: "text-brand-violet" },
-  { icon: GitBranch,  title: "Header Bidding",   stat: "96% Fill",  href: "/publisher-solutions/header-bidding-solutions", color: "text-brand-purple" },
-  { icon: Brain,      title: "AI Optimization",  stat: "1,247/day", href: "/publisher-solutions/ai-ad-optimization",       color: "text-brand-purple"   },
-  { icon: LayoutGrid, title: "Ad Formats",       stat: "50+ units", href: "/ad-formats",                                   color: "text-brand-blue"   },
-  { icon: Users,      title: "Referral Network", stat: "30% rev",   href: "/resources/publisher-referral-program",         color: "text-brand-green"  },
+  { icon: Zap,        title: "Google AdX",       stat: `${STATS.rpmLift} RPM`,    href: "/publisher-solutions/google-adx-solutions",     color: "text-brand-violet" },
+  { icon: GitBranch,  title: "Header Bidding",   stat: `${STATS.fillRate} Fill`,  href: "/publisher-solutions/header-bidding-solutions", color: "text-brand-purple" },
+  { icon: Brain,      title: "AI Optimization",  stat: "24/7 AI",                 href: "/publisher-solutions/ai-ad-optimization",       color: "text-brand-purple"   },
+  { icon: LayoutGrid, title: "Ad Formats",       stat: "50+ units",               href: "/ad-formats",                                   color: "text-brand-blue"   },
+  { icon: Users,      title: "Referral Network", stat: "30% rev",                 href: "/resources/publisher-referral-program",         color: "text-brand-green"  },
 ]
 
 const nodeAnim = {
@@ -112,14 +112,12 @@ export function ServicesSection() {
           </div>
           <div className="grid grid-cols-3 gap-2">
             {[
-              { label: "Active Publishers", end: 1200, suffix: "+" },
-              { label: "Avg RPM Uplift",    end: 38,   suffix: "%" },
-              { label: "Daily Optimizations", end: 1247, suffix: "" },
-            ].map(({ label, end, suffix }) => (
+              { label: "Publishers",       value: STATS.publishers  },
+              { label: "Avg RPM Lift",     value: STATS.rpmLift     },
+              { label: "Demand Sources",   value: STATS.demandPartners },
+            ].map(({ label, value }) => (
               <div key={label} className="text-center py-3 rounded-xl bg-brand-purple/[0.04] border border-brand-purple/[0.08]">
-                <p className="text-[18px] font-bold text-text-primary tabular-nums">
-                  <CountUp end={end} suffix={suffix} duration={2.0} />
-                </p>
+                <p className="text-[18px] font-bold text-text-primary tabular-nums">{value}</p>
                 <p className="text-[9px] text-text-muted mt-0.5">{label}</p>
               </div>
             ))}

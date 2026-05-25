@@ -21,7 +21,7 @@ export interface SolutionCTAProps {
 
 const DEFAULT_PRIMARY_CTA = { label: "Apply For Monetization", href: "/about/contact-us" }
 const DEFAULT_BADGE        = "Join the Network"
-const DEFAULT_TRUSTS       = ["1,200+ Publishers", "GCPP Verified", "30-Day Results", "No Lock-in"]
+const DEFAULT_TRUSTS       = ["250+ Publishers", "GCPP Verified", "30-Day Results", "No Lock-in"]
 
 const containerVariants = {
   hidden:  {},

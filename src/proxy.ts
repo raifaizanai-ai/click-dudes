@@ -29,7 +29,7 @@ function isRateLimited(ip: string): boolean {
   return false
 }
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl
 
   // ── 301 redirects for legacy publisher routes ──────────────────────────────

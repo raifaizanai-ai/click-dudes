@@ -71,7 +71,6 @@ export function AppPhoneMockup() {
                 <CountUp end={4280} decimals={0} duration={2.5} />
               </p>
             </div>
-            <p className="text-[8px] text-brand-green font-semibold mt-1">↑ 38% vs last month</p>
           </div>
         </div>
 
@@ -116,7 +115,7 @@ export function AppPhoneMockup() {
           {[
             { l: "eCPM",   v: "$8.70", c: "text-brand-purple" },
             { l: "ARPDAU", v: "$0.24", c: "text-brand-blue"   },
-            { l: "Fill",   v: "96.8%", c: "text-brand-green"  },
+            { l: "Fill",   v: "90%+",  c: "text-brand-green"  },
           ].map(({ l, v, c }) => (
             <div key={l} className="rounded-xl p-1.5 text-center"
               style={{ background: "rgba(139,92,246,0.04)", border: "1px solid rgba(139,92,246,0.08)" }}>

@@ -3,7 +3,7 @@ import { OurHistoryPage } from "@/sections/about/OurHistoryPage"
 
 export const metadata: Metadata = {
   title: "Our History — Click Dudes | From Agency to Global Ad-Tech Platform",
-  description: "The story of how Click Dudes evolved from a digital marketing agency in 2022 to a UK-registered global publisher monetization platform serving 1,200+ publishers.",
+  description: "The story of how Click Dudes evolved from a digital marketing agency in 2022 to a UK-registered global publisher monetization platform serving 250+ publishers.",
   openGraph: {
     title: "Our History — Click Dudes",
     description: "From digital marketing agency to global ad-tech platform — the Click Dudes story.",

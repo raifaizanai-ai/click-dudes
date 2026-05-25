@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og"
+import { STATS } from "@/lib/stats"
 
 export const runtime = "edge"
 export const alt = "Click Dudes — Turning Clicks Into Revenue"
@@ -139,10 +140,10 @@ export default function OgImage() {
           }}
         >
           {[
-            ["1,200+", "Active Publishers"],
-            ["+38%", "Avg RPM Uplift"],
+            [STATS.publishers, "Active Publishers"],
+            [STATS.rpmLift, "Avg RPM Uplift"],
             ["GCPP", "Google Certified"],
-            ["7 Days", "Avg Go-Live"],
+            [STATS.goLive, "Avg Go-Live"],
           ].map(([value, label]) => (
             <div key={label} style={{ textAlign: "center", display: "flex", flexDirection: "column", gap: "4px" }}>
               <span

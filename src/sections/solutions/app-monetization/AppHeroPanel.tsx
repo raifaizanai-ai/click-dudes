@@ -15,7 +15,7 @@ const floatVariant = {
 const APP_METRICS = [
   { label: "eCPM",      value: "$8.70",  delta: "↑", accentBg: "bg-brand-purple/10", accentText: "text-brand-purple" },
   { label: "ARPDAU",    value: "$0.24",  delta: null, accentBg: "bg-brand-blue/10",   accentText: "text-brand-blue"   },
-  { label: "Fill Rate", value: "96.8%",  delta: null, accentBg: "bg-brand-green/10",  accentText: "text-brand-green"  },
+  { label: "Fill Rate", value: "90%+",   delta: null, accentBg: "bg-brand-green/10",  accentText: "text-brand-green"  },
   { label: "SDK",       value: "Active", delta: null, accentBg: "bg-brand-cyan/10",   accentText: "text-brand-purple"   },
 ]
 

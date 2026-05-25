@@ -18,7 +18,7 @@ export const NAV_LINKS: NavLink[] = [
     megaMenu:           true,
     megaMenuTitle:      "Publisher Solutions",
     megaMenuSub:        "AI-powered revenue tools for every publisher type",
-    megaMenuFooterText: "1,200+ publishers trust Click Dudes — GCPP Certified",
+    megaMenuFooterText: "250+ publishers trust Click Dudes — GCPP Certified",
     megaMenuCTALabel:   "Apply for monetization",
     megaMenuCTAHref:    "/apply",
     children: [

@@ -1,19 +1,19 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, TrendingUp, Sparkles, CheckCircle2, ShieldCheck } from "lucide-react"
+import { ArrowRight, TrendingUp, Sparkles, CheckCircle2, ShieldCheck, Info } from "lucide-react"
 import Link from "next/link"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
-import { CountUp } from "@/components/motion/CountUp"
 import { LiveDot } from "@/components/shared/LiveDot"
+import { STATS } from "@/lib/stats"
 
 const BENEFITS = [
   "Full Google AdX demand pool — exclusive to certified MCM partners",
   "Programmatic direct & preferred deal access at premium CPMs",
   "Zero setup fees — revenue share on incremental gains only",
-  "Live in 7 days — our team handles all technical integration",
+  "Live in 7–14 days — our team handles all technical integration",
 ]
 
 const LIVE_DATA = [
@@ -53,19 +53,24 @@ export function AdxCTASection() {
                   <TrendingUp className="w-4 h-4 text-brand-blue" aria-hidden="true" />
                   <span className="text-[12px] font-bold text-text-primary">AdX Revenue Intelligence</span>
                 </div>
-                <LiveDot color="blue" size="sm" label="" />
+                <div className="flex flex-col items-end gap-0.5">
+                  <div className="flex items-center gap-1">
+                    <Info className="w-3 h-3 text-text-muted/50 flex-shrink-0" aria-hidden="true" />
+                    <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative — aggregate network view</span>
+                  </div>
+                  <LiveDot color="blue" size="sm" label="" />
+                </div>
               </div>
 
               <div className="p-5 space-y-5">
-                {/* CPM counter */}
+                {/* RPM lift */}
                 <div>
-                  <p className="text-[11px] text-text-muted mb-1 uppercase tracking-wider font-semibold">Avg AdX CPM — Publisher Network</p>
+                  <p className="text-[11px] text-text-muted mb-1 uppercase tracking-wider font-semibold">Avg RPM Lift — Publisher Network</p>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-[11px] text-text-muted">$</span>
                     <p className="text-[40px] font-black tabular-nums leading-none" style={{ background: "linear-gradient(135deg, #60A5FA, #8B5CF6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                      <CountUp end={12.40} decimals={2} duration={2.2} />
+                      {STATS.rpmLift}
                     </p>
-                    <span className="text-[12px] text-brand-green font-bold ml-1">↑ 41% vs AdSense</span>
+                    <span className="text-[12px] text-brand-green font-bold ml-1">vs prior setup</span>
                   </div>
                 </div>
 
@@ -96,7 +101,7 @@ export function AdxCTASection() {
                   <ShieldCheck className="w-5 h-5 text-brand-green shrink-0" aria-hidden="true" />
                   <div>
                     <p className="text-[12px] font-bold text-text-primary">Google Certified MCM Partner</p>
-                    <p className="text-[10px] text-text-muted">Full AdX demand pool access · 1,200+ publishers</p>
+                    <p className="text-[10px] text-text-muted">Full AdX demand pool access · 250+ publishers</p>
                   </div>
                 </div>
               </div>
@@ -121,7 +126,7 @@ export function AdxCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join 1,200+ publishers accessing the full Google AdX demand pool through Click Dudes' certified MCM partnership. Premium CPMs, programmatic direct deals, and zero setup fees.
+              Join 250+ publishers accessing the full Google AdX demand pool through Click Dudes' certified MCM partnership. Premium CPMs, programmatic direct deals, and zero setup fees.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

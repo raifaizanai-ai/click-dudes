@@ -5,6 +5,7 @@ import { Smartphone, Code2, Layers, Network, BrainCircuit, LayoutDashboard, Arro
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { LiveDot } from "@/components/shared/LiveDot"
+import { STATS } from "@/lib/stats"
 
 interface EcoNode {
   icon: React.ElementType
@@ -139,10 +140,10 @@ export function AppEcosystemSection() {
           style={{ border: "1px solid rgba(139,92,246,0.12)" }}
         >
           {[
-            { value: "< 7 days",  label: "Integration time",       color: "text-brand-purple" },
+            { value: STATS.integration, label: "Integration time",  color: "text-brand-purple" },
             { value: "< 300ms",   label: "Auction completion",     color: "text-brand-blue"   },
             { value: "< 800KB",   label: "SDK footprint",          color: "text-brand-violet" },
-            { value: "99.9%",     label: "Platform uptime",        color: "text-brand-green"  },
+            { value: STATS.uptime, label: "Platform uptime",         color: "text-brand-green"  },
           ].map(({ value, label, color }) => (
             <div key={label}>
               <p className={`text-[16px] font-black ${color} tabular-nums`}>{value}</p>

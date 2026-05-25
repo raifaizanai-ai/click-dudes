@@ -10,15 +10,16 @@ import { CTAButtonGroup } from "@/components/marketing/CTAButtonGroup"
 import { GradientText } from "@/components/shared/GradientText"
 import { RobotImage } from "@/components/shared/RobotImage"
 import { AdxHeroPanel } from "@/sections/solutions/google-adx/AdxHeroPanel"
+import { STATS } from "@/lib/stats"
 
 /* ── Data ─────────────────────────────────────────────────── */
 
-const STATS = [
-  { value: "30%+",   label: "Avg Revenue Uplift" },
-  { value: "1,200+", label: "Publishers Live" },
-  { value: "99.9%",  label: "Uptime SLA" },
-  { value: "24/7",   label: "AI Monitoring" },
-] as const
+const PAGE_STATS = [
+  { value: STATS.rpmLift,     label: "Avg Revenue Uplift" },
+  { value: STATS.publishers,  label: "Publishers Live" },
+  { value: STATS.uptime,      label: "Uptime SLA" },
+  { value: "24/7",            label: "AI Monitoring" },
+]
 
 /* ── Motion ───────────────────────────────────────────────── */
 
@@ -93,7 +94,7 @@ export function AdxHero() {
             {/* Stats row */}
             <motion.div variants={itemVariant}>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                {STATS.map((stat) => (
+                {PAGE_STATS.map((stat) => (
                   <div key={stat.label} className="glass rounded-2xl px-3.5 py-3 text-center border border-brand-purple/[0.10]">
                     <p className="text-xl font-bold text-gradient-brand leading-none">{stat.value}</p>
                     <p className="text-[10px] text-text-muted mt-1 leading-tight">{stat.label}</p>

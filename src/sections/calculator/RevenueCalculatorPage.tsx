@@ -17,6 +17,7 @@ import { RevenueChart } from "@/sections/calculator/RevenueChart"
 import { LeadCaptureSection } from "@/sections/calculator/LeadCaptureSection"
 import { DEFAULT_INPUTS, calculateRevenue } from "@/lib/revenueCalculator"
 import type { CalcInputs } from "@/lib/revenueCalculator"
+import { STATS } from "@/lib/stats"
 
 const fadeUp = {
   hidden:  { opacity: 0, y: 32 },
@@ -86,9 +87,8 @@ export function RevenueCalculatorPage() {
 
               <motion.div variants={fadeUp} className="flex flex-wrap gap-4 pt-2">
                 {[
-                  { val: "1,200+", label: "Publishers analyzed" },
-                  { val: "$2.4M+", label: "Revenue optimized" },
-                  { val: "67%",    label: "Avg revenue lift" },
+                  { val: STATS.publishers, label: "Publishers analyzed" },
+                  { val: "67%",            label: "Avg revenue lift" },
                 ].map(({ val, label }) => (
                   <div key={label} className="glass-dark rounded-2xl px-4 py-3 border border-brand-purple/[0.10]">
                     <p className="text-base font-bold text-text-primary">{val}</p>

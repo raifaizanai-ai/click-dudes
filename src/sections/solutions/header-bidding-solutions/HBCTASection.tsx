@@ -1,13 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Layers, Sparkles, CheckCircle2, GitMerge } from "lucide-react"
+import { ArrowRight, Layers, Sparkles, CheckCircle2, GitMerge, Info } from "lucide-react"
 import Link from "next/link"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
-import { CountUp } from "@/components/motion/CountUp"
 import { LiveDot } from "@/components/shared/LiveDot"
+import { STATS } from "@/lib/stats"
 
 const BENEFITS = [
   "Server-side Prebid.js — zero client-side JavaScript overhead",
@@ -54,20 +54,23 @@ export function HBCTASection() {
                   <GitMerge className="w-4 h-4 text-brand-blue" aria-hidden="true" />
                   <span className="text-[12px] font-bold text-text-primary">Unified Auction Live</span>
                 </div>
-                <LiveDot color="blue" size="sm" label="" />
+                <div className="flex flex-col items-end gap-0.5">
+                  <div className="flex items-center gap-1">
+                    <Info className="w-2.5 h-2.5 text-text-muted" aria-hidden="true" />
+                    <span className="text-[8px] text-text-muted">Illustrative — aggregate network view</span>
+                  </div>
+                  <LiveDot color="blue" size="sm" label="" />
+                </div>
               </div>
 
               <div className="p-5 space-y-5">
-                {/* CPM counter */}
+                {/* RPM lift */}
                 <div>
-                  <p className="text-[11px] text-text-muted mb-1 uppercase tracking-wider font-semibold">Avg CPM with Header Bidding</p>
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-[11px] text-text-muted">$</span>
-                    <p className="text-[38px] font-black tabular-nums leading-none" style={{ background: "linear-gradient(135deg, #60A5FA, #8B5CF6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                      <CountUp end={8.42} decimals={2} duration={2.2} />
-                    </p>
-                    <span className="text-[12px] text-brand-green font-bold ml-1">↑ 47% vs waterfall</span>
-                  </div>
+                  <p className="text-[11px] text-text-muted mb-1 uppercase tracking-wider font-semibold">Typical CPM Lift vs Waterfall</p>
+                  <p className="text-[38px] font-black tabular-nums leading-none" style={{ background: "linear-gradient(135deg, #60A5FA, #8B5CF6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                    {STATS.rpmLift}
+                  </p>
+                  <p className="text-[11px] text-text-muted mt-1">first 90 days · varies by site</p>
                 </div>
 
                 {/* Auction log */}
@@ -94,7 +97,7 @@ export function HBCTASection() {
                 <div className="grid grid-cols-3 gap-2">
                   {[
                     { label: "SSP Partners",  value: "15+",   color: "text-brand-blue"   },
-                    { label: "CPM Increase",  value: "47%",   color: "text-brand-purple" },
+                    { label: "CPM Increase",  value: STATS.rpmLift, color: "text-brand-purple" },
                     { label: "Core Vitals",   value: "✓ Safe",color: "text-brand-green"  },
                   ].map(({ label, value, color }) => (
                     <div key={label} className="rounded-xl p-3 text-center" style={{ background: "rgba(96,165,250,0.06)", border: "1px solid rgba(96,165,250,0.10)" }}>
@@ -125,7 +128,7 @@ export function HBCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join 700+ publishers running Click Dudes' server-side header bidding infrastructure. Sub-200ms auctions, 15+ SSPs, and AI floor optimization — all managed for you.
+              Join 250+ publishers running Click Dudes' server-side header bidding infrastructure. Sub-200ms auctions, 15+ SSPs, and AI floor optimization — all managed for you.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

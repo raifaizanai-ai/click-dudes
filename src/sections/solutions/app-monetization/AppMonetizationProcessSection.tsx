@@ -67,7 +67,7 @@ export function AppMonetizationProcessSection() {
             Integration Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            SDK Live in 7 Days,{" "}
+            SDK Live in 7–14 Days,{" "}
             <span className="text-gradient-brand">ARPDAU Growing in 30</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">

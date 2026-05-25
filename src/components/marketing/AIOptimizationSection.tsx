@@ -1,23 +1,23 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Brain, Zap, Activity, Eye, GitMerge, TrendingUp, LayoutDashboard } from "lucide-react"
+import { Brain, Zap, Activity, Eye, GitMerge, TrendingUp, LayoutDashboard, Info } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
 import { LiveDot } from "@/components/shared/LiveDot"
-import { CountUp } from "@/components/motion/CountUp"
+import { STATS } from "@/lib/stats"
 
 interface AIModule { icon: LucideIcon; label: string; value: string; color: string; glow: string; cx: number; cy: number }
 
 const MODULES: AIModule[] = [
-  { icon: TrendingUp,      label: "RPM Prediction",   value: "+38%",   color: "text-brand-purple", glow: "rgba(139,92,246,0.6)", cx: 50,  cy: 15  },
-  { icon: LayoutDashboard, label: "Layout AI",         value: "A/B x12", color: "text-brand-blue",   glow: "rgba(96,165,250,0.6)",  cx: 88,  cy: 38  },
-  { icon: Activity,        label: "Real-Time RPM",     value: "$12.47", color: "text-brand-purple",   glow: "rgba(103,232,249,0.6)", cx: 88,  cy: 72  },
-  { icon: Eye,             label: "Viewability",       value: "78.5%",  color: "text-brand-green",  glow: "rgba(16,185,129,0.6)",  cx: 50,  cy: 95  },
-  { icon: GitMerge,        label: "Demand Match",      value: "96% Fill", color: "text-brand-violet", glow: "rgba(168,85,247,0.6)", cx: 12,  cy: 72  },
-  { icon: Zap,             label: "Header Bidding",    value: "650ms",  color: "text-brand-blue",   glow: "rgba(96,165,250,0.6)",  cx: 12,  cy: 38  },
+  { icon: TrendingUp,      label: "RPM Prediction",   value: STATS.rpmLift,           color: "text-brand-purple", glow: "rgba(139,92,246,0.6)", cx: 50,  cy: 15  },
+  { icon: LayoutDashboard, label: "Layout AI",         value: "A/B x12",              color: "text-brand-blue",   glow: "rgba(96,165,250,0.6)",  cx: 88,  cy: 38  },
+  { icon: Activity,        label: "Real-Time Data",    value: "24/7",                 color: "text-brand-purple",   glow: "rgba(103,232,249,0.6)", cx: 88,  cy: 72  },
+  { icon: Eye,             label: "Viewability",       value: "78.5%",                color: "text-brand-green",  glow: "rgba(16,185,129,0.6)",  cx: 50,  cy: 95  },
+  { icon: GitMerge,        label: "Demand Match",      value: `${STATS.fillRate} Fill`, color: "text-brand-violet", glow: "rgba(168,85,247,0.6)", cx: 12,  cy: 72  },
+  { icon: Zap,             label: "Header Bidding",    value: "650ms",                color: "text-brand-blue",   glow: "rgba(96,165,250,0.6)",  cx: 12,  cy: 38  },
 ]
 
 const LOG_ITEMS = [
@@ -45,7 +45,7 @@ export function AIOptimizationSection() {
         <SectionHeader
           badge="Neural Command Center"
           heading={<>Your Revenue Stack<br /><span className="text-gradient-brand">Never Sleeps.</span></>}
-          subtext="While you focus on content, our AI is recalculating floor prices, running A/B tests, and matching demand — 1,247 times a day, across every publisher in the network."
+          subtext="While you focus on content, our AI is recalculating floor prices, running A/B tests, and matching demand — 24/7, across every publisher in the network."
           align="center"
           subtextWidth="md"
         />
@@ -134,7 +134,13 @@ export function AIOptimizationSection() {
                     <p className="text-[10px] text-text-muted">Click Dudes Intelligence v4.2</p>
                   </div>
                 </div>
-                <LiveDot color="purple" size="sm" label="ACTIVE" />
+                <div className="flex flex-col items-end gap-0.5">
+                  <div className="flex items-center gap-1">
+                    <Info className="w-3 h-3 text-text-muted/50 flex-shrink-0" aria-hidden="true" />
+                    <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative — aggregate network view</span>
+                  </div>
+                  <LiveDot color="purple" size="sm" label="ACTIVE" />
+                </div>
               </div>
               <div className="px-5 py-4 space-y-2">
                 {LOG_ITEMS.map((log, i) => (
@@ -155,9 +161,7 @@ export function AIOptimizationSection() {
               <div className="flex items-center gap-2 px-5 py-3 border-t border-brand-purple/[0.10] bg-brand-purple/[0.04]">
                 <Zap className="w-3.5 h-3.5 text-brand-purple shrink-0" aria-hidden="true" />
                 <p className="text-[11px] text-text-secondary">
-                  <span className="font-bold text-brand-purple">
-                    <CountUp end={1247} duration={2.5} />
-                  </span> optimizations run today across all publishers
+                  <span className="font-bold text-brand-purple">24/7</span> AI optimization running across all publishers
                 </p>
               </div>
             </div>
@@ -165,14 +169,12 @@ export function AIOptimizationSection() {
             {/* KPI strip */}
             <div className="grid grid-cols-3 gap-2">
               {[
-                { label: "Avg RPM Uplift", end: 38,   suffix: "%",  color: "text-brand-purple" },
-                { label: "Fill Rate",      end: 96.1, suffix: "%",  color: "text-brand-purple",   decimals: 1 },
-                { label: "Uptime",         end: 99.9, suffix: "%",  color: "text-brand-green",  decimals: 1 },
-              ].map(({ label, end, suffix, color, decimals }) => (
+                { label: "Avg RPM Lift", value: STATS.rpmLift,  color: "text-brand-purple" },
+                { label: "Fill Rate",    value: STATS.fillRate,  color: "text-brand-purple" },
+                { label: "Uptime",       value: STATS.uptime,    color: "text-brand-green"  },
+              ].map(({ label, value, color }) => (
                 <div key={label} className="glass-dark rounded-2xl p-3 border border-brand-purple/[0.09] text-center">
-                  <p className={`text-[17px] font-bold tabular-nums ${color}`}>
-                    <CountUp end={end} suffix={suffix} decimals={decimals} duration={2.2} />
-                  </p>
+                  <p className={`text-[17px] font-bold tabular-nums ${color}`}>{value}</p>
                   <p className="text-[9px] text-text-muted mt-0.5">{label}</p>
                 </div>
               ))}

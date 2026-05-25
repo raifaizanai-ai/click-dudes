@@ -60,7 +60,7 @@ export function AiAdProcessSection() {
             AI Integration Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            AI Live in 7 Days,{" "}
+            AI Live in 7–14 Days,{" "}
             <span className="text-gradient-brand">Compounding for Years</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">

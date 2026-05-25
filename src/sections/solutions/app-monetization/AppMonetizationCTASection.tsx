@@ -7,8 +7,8 @@ import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
 import { AppPhoneMockup } from "@/sections/solutions/app-monetization/AppPhoneMockup"
-import { CountUp } from "@/components/motion/CountUp"
 import { LiveDot } from "@/components/shared/LiveDot"
+import { STATS } from "@/lib/stats"
 
 const BENEFITS = [
   "Lightweight SDK — under 800KB, no performance hit",
@@ -25,7 +25,7 @@ interface FloatBadge {
 
 const FLOAT_BADGES: FloatBadge[] = [
   {
-    id: "arpdau", label: "ARPDAU", value: "$0.24", delta: "+38%",
+    id: "arpdau", label: "ARPDAU", value: "$0.24", delta: "",
     deltaColor: "text-brand-green", Icon: DollarSign,
     iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple",
     pos: "absolute -left-[72px] top-[72px]", dur: 5.2,
@@ -113,10 +113,8 @@ export function AppMonetizationCTASection() {
                   style={{ border: "1px solid rgba(139,92,246,0.16)", boxShadow: "0 8px 28px rgba(7,17,47,0.09)" }}>
                   <LiveDot color="green" size="sm" />
                   <span className="text-[10px] font-medium text-text-secondary">Avg ARPDAU</span>
-                  <span className="text-[14px] font-black text-brand-purple tabular-nums">
-                    $<CountUp end={0.24} decimals={2} duration={2.2} />
-                  </span>
-                  <span className="text-[10px] font-bold text-brand-green">+38% eCPM</span>
+                  <span className="text-[14px] font-black text-brand-purple tabular-nums">$0.24</span>
+                  <span className="text-[10px] font-bold text-brand-green">{STATS.rpmLift} eCPM</span>
                 </div>
               </motion.div>
             </div>
@@ -169,7 +167,7 @@ export function AppMonetizationCTASection() {
             <motion.div custom={5} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="flex items-center gap-2 pt-1">
               <Smartphone className="w-3.5 h-3.5 text-text-muted shrink-0" aria-hidden="true" />
-              <p className="text-[11px] text-text-muted">No setup fees · Revenue share model · Go live in &lt;7 days</p>
+              <p className="text-[11px] text-text-muted">No setup fees · Revenue share model · Go live in 7–14 days</p>
             </motion.div>
           </div>
         </div>

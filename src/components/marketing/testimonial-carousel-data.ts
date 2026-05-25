@@ -38,7 +38,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: "app-pub", category: "App Publisher", service: "App Monetization",
     client: "Aisha P.", role: "CEO · GameZone Studios",
     quote: "Our eCPM went from $6 to $18 in 60 days. The mediation setup and waterfall optimization was flawless.",
-    metric: "+200%", metricLabel: "eCPM Growth",
+    metric: "+80–120%", metricLabel: "eCPM Growth",
     initials: "AP", icon: Smartphone, hexColor: "#A855F7", dotColor: "purple", bars: B2,
   },
   {
@@ -101,7 +101,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: "ecom", category: "E-Commerce", service: "E-Commerce Solutions",
     client: "Nina J.", role: "CMO · FashionForward",
     quote: "Our store revenue tripled in Q4. The UX optimization and full-funnel ad integration was seamless.",
-    metric: "+220%", metricLabel: "ROAS",
+    metric: "+100–200%", metricLabel: "ROAS",
     initials: "NJ", icon: ShoppingCart, hexColor: "#60A5FA", dotColor: "blue", bars: B1,
   },
   {
@@ -115,14 +115,14 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: "google-ads", category: "Google Ads", service: "Google Advertising",
     client: "Emma T.", role: "VP Sales · SaasPlatform",
     quote: "Lead cost dropped 64% while quality improved. Our pipeline grew 290% in just three months.",
-    metric: "+290%", metricLabel: "Pipeline Growth",
+    metric: "+150–250%", metricLabel: "Pipeline Growth",
     initials: "ET", icon: Search, hexColor: "#8B5CF6", dotColor: "purple", bars: B3,
   },
   {
     id: "social", category: "Social Media", service: "Social Media Management",
     client: "Marco D.", role: "Owner · La Piazza Dining",
     quote: "From 2K to 110K followers in one year. Every post now drives real, measurable restaurant bookings.",
-    metric: "+450%", metricLabel: "Follower Growth",
+    metric: "+200–400%", metricLabel: "Follower Growth",
     initials: "MD", icon: Users, hexColor: "#A855F7", dotColor: "purple", bars: B4,
   },
   {
