@@ -6,15 +6,17 @@ import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
 import { RobotImage } from "@/components/shared/RobotImage"
+import type { RobotVariant } from "@/components/shared/RobotImage"
 import { CTAButtonGroup } from "@/components/marketing/CTAButtonGroup"
 
 export interface SolutionCTAProps {
-  heading:       string
-  subheading:    string
-  primaryCTA?:   { label: string; href: string }
-  badge?:        string
-  trusts?:       string[]
-  robotVariant?: "wave" | "celebrate" | "rocket"
+  heading:        string
+  subheading:     string
+  primaryCTA?:    { label: string; href: string }
+  secondaryCTA?:  { label: string; href: string }
+  badge?:         string
+  trusts?:        string[]
+  robotVariant?:  RobotVariant
 }
 
 const DEFAULT_PRIMARY_CTA = { label: "Apply For Monetization", href: "/about/contact-us" }
@@ -35,6 +37,7 @@ export function SolutionCTA({
   heading,
   subheading,
   primaryCTA    = DEFAULT_PRIMARY_CTA,
+  secondaryCTA  = { label: "Book Revenue Audit", href: "/about/contact-us" },
   badge         = DEFAULT_BADGE,
   trusts        = DEFAULT_TRUSTS,
   robotVariant  = "wave",
@@ -116,7 +119,7 @@ export function SolutionCTA({
             <motion.div variants={itemVariants}>
               <CTAButtonGroup
                 primary={primaryCTA}
-                secondary={{ label: "Book Revenue Audit", href: "/about/contact-us" }}
+                secondary={secondaryCTA}
                 align="center"
                 size="lg"
                 stackOnMobile

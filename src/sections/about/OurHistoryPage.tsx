@@ -36,7 +36,7 @@ const TIMELINE: TimelineEntry[] = [
   {
     year: "2022", badge: "The Beginning", title: "Digital Marketing Agency Founded",
     body: "Click Dudes launched as a performance-focused digital marketing agency. Helping brands grow online gave us an intimate view of digital advertising — and where the gaps were for publishers on the other side of the equation.",
-    icon: Rocket, iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", dotBorder: "rgba(139,92,246,0.40)",
+    icon: Rocket, iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", dotBorder: "rgba(139,92,246,0.40)",
     chips: ["Performance marketing", "First brand partnerships", "Ad ecosystem research"],
   },
   {
@@ -63,7 +63,7 @@ const VALUES: ValueItem[] = [
   { icon: BarChart3,    title: "Performance",     desc: "Every decision is measured by publisher revenue impact.",   bg: "bg-brand-purple/10", color: "text-brand-purple" },
   { icon: Shield,       title: "Integrity",        desc: "Full transparency — no black boxes, no hidden fees.",        bg: "bg-brand-blue/10",   color: "text-brand-blue"   },
   { icon: Zap,          title: "Innovation",       desc: "We move fast, test continuously, and never stop improving.", bg: "bg-brand-violet/10", color: "text-brand-violet" },
-  { icon: Target,       title: "Publisher Growth", desc: "Your success is our KPI. Full stop.",                        bg: "bg-brand-cyan/10",   color: "text-brand-cyan"   },
+  { icon: Target,       title: "Publisher Growth", desc: "Your success is our KPI. Full stop.",                        bg: "bg-brand-cyan/10",   color: "text-brand-purple"   },
   { icon: Star,         title: "Premium Demand",   desc: "Direct access to the highest-paying demand on the web.",    bg: "bg-brand-purple/10", color: "text-brand-purple" },
   { icon: BrainCircuit, title: "AI Optimization",  desc: "Self-learning systems that recalibrate every impression.",  bg: "bg-brand-blue/10",   color: "text-brand-blue"   },
 ]
@@ -72,7 +72,7 @@ const METRICS = [
   { value: "2022",   label: "Founded",           color: "text-brand-purple" },
   { value: "1,200+", label: "Publishers Served", color: "text-brand-blue"   },
   { value: "40+",    label: "Countries Reached", color: "text-brand-violet" },
-  { value: "2025",   label: "UK Registered",     color: "text-brand-cyan"   },
+  { value: "2025",   label: "UK Registered",     color: "text-brand-purple"   },
 ]
 
 const NEXT: { icon: LucideIcon; label: string }[] = [

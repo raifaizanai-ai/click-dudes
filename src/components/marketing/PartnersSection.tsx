@@ -6,58 +6,54 @@ import { LogoMarquee } from "@/components/marketing/LogoMarquee"
 
 /* ── Partner Data ─────────────────────────────────────────────── */
 
-const ROW_ONE = [
-  "Wortise",
-  "MonetizeMore",
-  "152 Media",
-  "AdPushup",
-  "Bidfuse",
-  "Denakop",
-  "HBDR",
-  "AWG",
-  "Empower AdTech",
+interface Partner { name: string; initials: string }
+
+const ROW_ONE: Partner[] = [
+  { name: "Wortise",       initials: "W"  },
+  { name: "MonetizeMore",  initials: "MM" },
+  { name: "152 Media",     initials: "15" },
+  { name: "AdPushup",      initials: "AP" },
+  { name: "Bidfuse",       initials: "BF" },
+  { name: "Denakop",       initials: "DK" },
+  { name: "HBDR",          initials: "HB" },
+  { name: "AWG",           initials: "AW" },
+  { name: "Empower AdTech",initials: "EA" },
 ]
 
-const ROW_TWO = [
-  "Denakop",
-  "HBDR",
-  "AWG",
-  "Empower AdTech",
-  "Wortise",
-  "MonetizeMore",
-  "152 Media",
-  "AdPushup",
-  "Bidfuse",
+const ROW_TWO: Partner[] = [
+  { name: "Denakop",       initials: "DK" },
+  { name: "HBDR",          initials: "HB" },
+  { name: "AWG",           initials: "AW" },
+  { name: "Empower AdTech",initials: "EA" },
+  { name: "Wortise",       initials: "W"  },
+  { name: "MonetizeMore",  initials: "MM" },
+  { name: "152 Media",     initials: "15" },
+  { name: "AdPushup",      initials: "AP" },
+  { name: "Bidfuse",       initials: "BF" },
 ]
 
 /* ── Sub-components ───────────────────────────────────────────── */
 
-function Dot() {
+function PartnerBadge({ partner }: { partner: Partner }) {
   return (
-    <span
-      aria-hidden="true"
-      className="mx-6 inline-block w-1.5 h-1.5 rounded-full bg-brand-purple/40 flex-shrink-0"
-    />
+    <span className="mx-3 inline-flex items-center gap-2.5 px-4 py-2.5 rounded-2xl glass border border-brand-purple/[0.10] shadow-[0_2px_12px_rgba(7,17,47,0.05)] hover:border-brand-purple/25 hover:shadow-[0_4px_20px_rgba(139,92,246,0.12)] transition-all duration-300 whitespace-nowrap flex-shrink-0">
+      <span className="w-7 h-7 rounded-lg bg-gradient-to-br from-brand-purple/20 to-brand-blue/20 flex items-center justify-center flex-shrink-0">
+        <span className="text-[9px] font-black text-brand-purple leading-none">{partner.initials}</span>
+      </span>
+      <span className="text-sm font-semibold text-text-secondary">{partner.name}</span>
+    </span>
   )
 }
 
 interface PartnerRowProps {
-  partners: string[]
-  opacity?: string
+  partners: Partner[]
 }
 
-function PartnerRow({ partners, opacity = "text-text-secondary" }: PartnerRowProps) {
+function PartnerRow({ partners }: PartnerRowProps) {
   return (
     <>
-      {partners.map((name, i) => (
-        <span key={`${name}-${i}`} className="flex items-center">
-          <span
-            className={`text-2xl sm:text-3xl font-semibold tracking-tight transition-colors duration-300 hover:text-brand-purple ${opacity} whitespace-nowrap`}
-          >
-            {name}
-          </span>
-          <Dot />
-        </span>
+      {partners.map((p, i) => (
+        <PartnerBadge key={`${p.name}-${i}`} partner={p} />
       ))}
     </>
   )
@@ -122,7 +118,7 @@ export function PartnersSection() {
             pauseOnHover
             edgeFade={false}
           >
-            <PartnerRow partners={ROW_ONE} opacity="text-text-secondary" />
+            <PartnerRow partners={ROW_ONE} />
           </LogoMarquee>
           <div
             aria-hidden="true"
@@ -148,7 +144,7 @@ export function PartnersSection() {
             reverse
             edgeFade={false}
           >
-            <PartnerRow partners={ROW_TWO} opacity="text-text-muted" />
+            <PartnerRow partners={ROW_TWO} />
           </LogoMarquee>
           <div
             aria-hidden="true"

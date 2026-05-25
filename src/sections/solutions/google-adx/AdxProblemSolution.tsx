@@ -36,7 +36,7 @@ const SOLUTIONS = [
   },
   {
     title: "Preferred deals & private auctions",
-    body:  "Unlock direct relationships with Fortune 500 advertisers. Access PMPs paying $20–$60 CPM that are completely unavailable through AdSense.",
+    body:  "Access direct relationships with Fortune 500 advertisers. PMPs paying $20–$60 CPM that are completely unavailable through AdSense.",
   },
 ] as const
 

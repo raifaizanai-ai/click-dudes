@@ -159,7 +159,16 @@ export function Navbar() {
                     <AnimatePresence>
                       {isOpen && (
                         item.megaMenu
-                          ? <NavMegaMenu items={item.children} pathname={pathname} onClose={() => setActiveDropdown(null)} />
+                          ? <NavMegaMenu
+                              items={item.children}
+                              pathname={pathname}
+                              onClose={() => setActiveDropdown(null)}
+                              menuTitle={item.megaMenuTitle}
+                              menuSubtitle={item.megaMenuSub}
+                              footerText={item.megaMenuFooterText}
+                              footerCTALabel={item.megaMenuCTALabel}
+                              footerCTAHref={item.megaMenuCTAHref}
+                            />
                           : <NavDropdown items={item.children} pathname={pathname} onClose={() => setActiveDropdown(null)} />
                       )}
                     </AnimatePresence>

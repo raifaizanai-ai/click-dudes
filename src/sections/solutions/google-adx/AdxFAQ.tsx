@@ -60,7 +60,7 @@ export function AdxFAQ() {
         <SectionHeader
           badge="FAQ"
           heading={<>AdX Questions,<br /><GradientText gradient="brand">Honest Answers</GradientText></>}
-          subtext="Everything you need to know before applying for Google AdX access through Click Dudes."
+          subtext="Publisher questions about AdX access, approval timelines, and what to expect. Straight answers."
           align="center"
           subtextWidth="sm"
           className="mb-12"

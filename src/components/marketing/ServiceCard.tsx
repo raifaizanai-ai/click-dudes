@@ -23,7 +23,7 @@ const accentMap: Record<Accent, { icon: string; glow: string }> = {
     glow: "hover:shadow-[0_20px_56px_rgba(7,17,47,0.12),0_0_0_1px_rgba(139,92,246,0.18),0_0_32px_rgba(139,92,246,0.10)]",
   },
   cyan: {
-    icon: "bg-brand-cyan/10 text-brand-cyan group-hover:bg-brand-cyan/18",
+    icon: "bg-brand-cyan/10 text-brand-purple group-hover:bg-brand-cyan/18",
     glow: "hover:shadow-[0_20px_56px_rgba(7,17,47,0.12),0_0_0_1px_rgba(103,232,249,0.18),0_0_32px_rgba(103,232,249,0.08)]",
   },
   blue: {
@@ -41,7 +41,7 @@ const accentMap: Record<Accent, { icon: string; glow: string }> = {
 }
 
 const arrowColors: Record<Accent, string> = {
-  purple: "text-brand-purple", cyan: "text-brand-cyan", blue: "text-brand-blue",
+  purple: "text-brand-purple", cyan: "text-brand-purple", blue: "text-brand-blue",
   violet: "text-brand-violet", green: "text-brand-green",
 }
 

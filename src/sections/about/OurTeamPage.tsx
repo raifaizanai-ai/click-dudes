@@ -9,7 +9,7 @@ import { GradientOrb } from "@/components/shared/GradientOrb"
 import { GradientText } from "@/components/shared/GradientText"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
 import { CTAButtonGroup } from "@/components/marketing/CTAButtonGroup"
-import { SolutionCTA } from "@/components/marketing/SolutionCTA"
+import { OurTeamCTASection } from "@/sections/about/OurTeamCTASection"
 import { cn } from "@/lib/utils"
 
 const fadeUp = {
@@ -37,14 +37,14 @@ const TEAM: TeamMember[] = [
   { name: "Rai Faizan",      role: "Founder & Visioner",                department: "Leadership",        bio: "Founder of ClickDudes, leading the company vision, monetization strategy, AI-powered ad-tech direction, and long-term growth ecosystem.",                                                  initials: "RF", accentBg: "bg-brand-purple/12", accentText: "text-brand-purple", years: "Founder"     },
   { name: "Syed Umer",       role: "Co-Founder & CFO",                  department: "Leadership",        bio: "Oversees finance, business operations, revenue planning, strategic partnerships, and sustainable growth execution for ClickDudes.",                                                        initials: "SU", accentBg: "bg-brand-blue/12",   accentText: "text-brand-blue",   years: "Co-Founder"  },
   { name: "Muhammad Sami",   role: "CEO",                               department: "Leadership",        bio: "Leads company execution, operational strategy, team management, publisher growth, and business development across the ClickDudes ecosystem.",                                              initials: "MS", accentBg: "bg-brand-violet/12", accentText: "text-brand-violet" },
-  { name: "Mumtaz Ahmed",    role: "Head of PR Department",             department: "Public Relations",  bio: "Manages public relations, communications, brand positioning, outreach coordination, and partner-facing reputation building.",                                                              initials: "MA", accentBg: "bg-brand-cyan/12",   accentText: "text-brand-cyan"   },
+  { name: "Mumtaz Ahmed",    role: "Head of PR Department",             department: "Public Relations",  bio: "Manages public relations, communications, brand positioning, outreach coordination, and partner-facing reputation building.",                                                              initials: "MA", accentBg: "bg-brand-cyan/12",   accentText: "text-brand-purple"   },
   { name: "Asjad Khalid",    role: "Director, Publisher Partnership",   department: "Partnerships",      bio: "Leads publisher partnership strategy, onboarding relationships, monetization opportunities, and growth collaboration with media owners.",                                                  initials: "AK", accentBg: "bg-brand-green/12",  accentText: "text-brand-green"  },
   { name: "Shumail Chuhan",  role: "Publisher Relationship Manager",    department: "Publisher Success", bio: "Manages publisher communication, account support, relationship building, onboarding assistance, and long-term partner success.",                                                           initials: "SC", accentBg: "bg-brand-blue/12",   accentText: "text-brand-blue"   },
 ]
 
 interface DeptCard { icon: LucideIcon; iconBg: string; iconColor: string; name: string; count: string; description: string }
 const DEPARTMENTS: DeptCard[] = [
-  { icon: BarChart2, iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", name: "Publisher Success", count: "12 people", description: "Dedicated account managers and onboarding specialists for every publisher." },
+  { icon: BarChart2, iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", name: "Publisher Success", count: "12 people", description: "Dedicated account managers and onboarding specialists for every publisher." },
   { icon: Code2,     iconBg: "bg-brand-blue/10",   iconColor: "text-brand-blue",   name: "Engineering",       count: "18 people", description: "Building the AI infrastructure and publisher-facing technology." },
   { icon: Briefcase, iconBg: "bg-brand-cyan/10",   iconColor: "text-brand-cyan",   name: "Demand Partnerships", count: "6 people", description: "Managing relationships with 500+ DSPs, SSPs, and direct advertisers." },
   { icon: Shield,    iconBg: "bg-brand-green/10",  iconColor: "text-brand-green",  name: "Ad Quality",        count: "4 people",  description: "Ensuring every ad served meets brand safety and quality standards." },
@@ -170,13 +170,7 @@ export function OurTeamPage() {
         </Container>
       </Section>
 
-      <SolutionCTA
-        heading="Work With a Team That Genuinely Cares"
-        subheading="Every publisher gets a dedicated account manager — not just a ticket queue."
-        badge="Meet Your Team"
-        robotVariant="wave"
-        primaryCTA={{ label: "Apply to Join the Network", href: "/about/contact-us" }}
-      />
+      <OurTeamCTASection />
     </>
   )
 }

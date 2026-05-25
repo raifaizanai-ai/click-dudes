@@ -37,7 +37,7 @@ const TRUST = [
   { icon: Users,   label: "1,200+ Publishers",    sub: "Onboarded and growing",    color: "text-brand-purple", bg: "bg-brand-purple/10" },
   { icon: Shield,  label: "GCPP Partner Network", sub: "Google Certified Partner", color: "text-brand-blue",   bg: "bg-brand-blue/10"   },
   { icon: Globe2,  label: "Global Support",       sub: "40+ countries, 24/7 AI",   color: "text-brand-violet", bg: "bg-brand-violet/10" },
-  { icon: Zap,     label: "24h Response Time",    sub: "Business days guaranteed", color: "text-brand-cyan",   bg: "bg-brand-cyan/10"   },
+  { icon: Zap,     label: "24h Response Time",    sub: "Business days guaranteed", color: "text-brand-purple",   bg: "bg-brand-cyan/10"   },
 ]
 
 const CARD_SHADOW = "0 8px 40px rgba(7,17,47,0.06), 0 0 0 1px rgba(139,92,246,0.07)"
@@ -153,7 +153,7 @@ export function ContactUsPage() {
                   86-90, Paul Street<br />London, England<br />United Kingdom, EC2A 4NE
                 </address>
               </div>
-              <a href={MAPS_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-semibold text-brand-cyan hover:text-brand-blue transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-cyan/40 rounded w-fit">
+              <a href={MAPS_HREF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-semibold text-brand-purple hover:text-brand-blue transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-cyan/40 rounded w-fit">
                 <ExternalLink aria-hidden="true" className="w-3.5 h-3.5" />View on map
               </a>
             </motion.div>
@@ -197,7 +197,7 @@ export function ContactUsPage() {
                   {([
                     { icon: Mail,      label: "Email",     value: EMAIL,                           href: `mailto:${EMAIL}` as string | undefined, color: "text-brand-purple"    },
                     { icon: Phone,     label: "Phone",     value: PHONE,                           href: PHONE_HREF as string | undefined,         color: "text-brand-blue"      },
-                    { icon: MapPin,    label: "Location",  value: "London, UK — EC2A 4NE",         href: undefined,                               color: "text-brand-cyan"      },
+                    { icon: MapPin,    label: "Location",  value: "London, UK — EC2A 4NE",         href: undefined,                               color: "text-brand-purple"      },
                     { icon: Clock,     label: "Hours",     value: "Mon–Fri, 9am–6pm GMT",          href: undefined,                               color: "text-text-secondary"  },
                     { icon: Building2, label: "Inquiries", value: "Publisher, Advertiser, Support", href: undefined,                              color: "text-text-secondary"  },
                   ]).map(({ icon: Icon, label, value, href, color }) => (

@@ -31,10 +31,22 @@ const breadcrumbSchema = {
   ],
 }
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "AI Ad Optimization — Autonomous Yield Management",
+  description: "Machine learning price floors, real-time anomaly detection, and predictive revenue forecasting for publishers. 24/7 autonomous optimization averaging 28% yield lift.",
+  provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
+  url: "https://clickdudes.com/publisher-solutions/ai-ad-optimization",
+  serviceType: "AI Ad Optimization",
+  areaServed: "Worldwide",
+}
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <AiOptimizationPage />
     </>
   )

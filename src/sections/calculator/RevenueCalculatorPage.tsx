@@ -64,7 +64,7 @@ export function RevenueCalculatorPage() {
               <motion.div variants={fadeUp} className="flex flex-wrap gap-2">
                 {HERO_BADGES.map(({ icon: Icon, label }) => (
                   <span key={label}
-                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass-dark border border-white/[0.10] text-[10px] font-semibold tracking-widest uppercase text-white/70"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass-dark border border-brand-purple/[0.12] text-[10px] font-semibold tracking-widest uppercase text-text-secondary"
                   >
                     <Icon aria-hidden="true" className="w-3 h-3" />
                     {label}
@@ -73,14 +73,14 @@ export function RevenueCalculatorPage() {
               </motion.div>
 
               <motion.h1 variants={fadeUp}
-                className="text-h2 sm:text-h1 md:text-display font-bold text-white tracking-display text-balance leading-tight"
+                className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight"
               >
                 AI-Powered{" "}
                 <GradientText gradient="brand">Ad Revenue</GradientText>
                 <br />Calculator
               </motion.h1>
 
-              <motion.p variants={fadeUp} className="text-body-lg text-white/65 text-pretty leading-relaxed max-w-lg">
+              <motion.p variants={fadeUp} className="text-body-lg text-text-secondary text-pretty leading-relaxed max-w-lg">
                 Estimate your website&apos;s real revenue potential using AI-driven market benchmarks, traffic intelligence, and monetization analytics.
               </motion.p>
 
@@ -90,9 +90,9 @@ export function RevenueCalculatorPage() {
                   { val: "$2.4M+", label: "Revenue optimized" },
                   { val: "67%",    label: "Avg revenue lift" },
                 ].map(({ val, label }) => (
-                  <div key={label} className="glass-dark rounded-2xl px-4 py-3 border border-white/[0.08]">
-                    <p className="text-base font-bold text-white">{val}</p>
-                    <p className="text-[10px] text-white/55">{label}</p>
+                  <div key={label} className="glass-dark rounded-2xl px-4 py-3 border border-brand-purple/[0.10]">
+                    <p className="text-base font-bold text-text-primary">{val}</p>
+                    <p className="text-[10px] text-text-muted">{label}</p>
                   </div>
                 ))}
               </motion.div>
@@ -152,7 +152,7 @@ export function RevenueCalculatorPage() {
       <LeadCaptureSection inputs={inputs} results={results} />
 
       <SolutionCTA
-        heading="Ready to Unlock Your Real Revenue Potential?"
+        heading="See What Your Inventory Is Actually Worth"
         subheading="Let Click Dudes review your website and build a smarter monetization strategy — tailored to your inventory."
         badge="Apply For Monetization"
         robotVariant="rocket"

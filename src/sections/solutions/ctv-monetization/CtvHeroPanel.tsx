@@ -16,7 +16,7 @@ const TV_METRICS = [
   { label: "CPM",         value: "$28.40", accentBg: "bg-brand-purple/10", accentText: "text-brand-purple" },
   { label: "Completion",  value: "97%",    accentBg: "bg-brand-green/10",  accentText: "text-brand-green"  },
   { label: "Impressions", value: "18.6M",  accentBg: "bg-brand-blue/10",   accentText: "text-brand-blue"   },
-  { label: "SSAI",        value: "Active", accentBg: "bg-brand-cyan/10",   accentText: "text-brand-cyan"   },
+  { label: "SSAI",        value: "Active", accentBg: "bg-brand-cyan/10",   accentText: "text-brand-purple"   },
 ]
 
 export function CtvHeroPanel() {
@@ -35,16 +35,16 @@ export function CtvHeroPanel() {
         <div className="rounded-2xl bg-brand-navy/[0.06] border border-brand-navy/[0.08] p-2">
 
           {/* Screen (16:9 aspect) */}
-          <div className="relative w-full rounded-xl overflow-hidden bg-gradient-to-br from-brand-navy/[0.08] to-brand-blue/[0.06]" style={{ paddingBottom: "56.25%" }}>
+          <div className="relative w-full rounded-xl overflow-hidden bg-gradient-to-br from-brand-navy/[0.18] to-brand-blue/[0.14]" style={{ paddingBottom: "56.25%" }}>
             <div className="absolute inset-0 flex flex-col">
 
               {/* Streaming content */}
               <div className="flex-1 relative">
                 {/* Simulated video content */}
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/[0.08] to-brand-purple/[0.06]" />
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-navy/[0.15] to-brand-purple/[0.12]" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-white/20 border border-white/30 flex items-center justify-center backdrop-blur-sm">
-                    <Play aria-hidden="true" className="w-5 h-5 text-white/80 ml-0.5" fill="currentColor" />
+                  <div className="w-12 h-12 rounded-full bg-brand-purple/20 border border-brand-purple/40 flex items-center justify-center backdrop-blur-sm">
+                    <Play aria-hidden="true" className="w-5 h-5 text-brand-purple ml-0.5" fill="currentColor" />
                   </div>
                 </div>
 

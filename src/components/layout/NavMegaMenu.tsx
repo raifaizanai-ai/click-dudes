@@ -23,12 +23,26 @@ const itemVariants = {
 /* ── Component ───────────────────────────────────────────── */
 
 interface NavMegaMenuProps {
-  items:    NavChild[]
-  pathname: string
-  onClose?: () => void
+  items:            NavChild[]
+  pathname:         string
+  onClose?:         () => void
+  menuTitle?:       string
+  menuSubtitle?:    string
+  footerText?:      string
+  footerCTALabel?:  string
+  footerCTAHref?:   string
 }
 
-export function NavMegaMenu({ items, pathname, onClose }: NavMegaMenuProps) {
+export function NavMegaMenu({
+  items,
+  pathname,
+  onClose,
+  menuTitle      = "Publisher Solutions",
+  menuSubtitle   = "AI-powered revenue tools for every publisher type",
+  footerText     = "1,200+ publishers trust Click Dudes",
+  footerCTALabel = "Apply now",
+  footerCTAHref  = "/apply",
+}: NavMegaMenuProps) {
   return (
     <motion.div
       role="menu"
@@ -53,10 +67,10 @@ export function NavMegaMenu({ items, pathname, onClose }: NavMegaMenuProps) {
       {/* Header */}
       <div className="mb-4 pb-3 border-b border-brand-purple/[0.08]">
         <p className="text-[11px] font-bold uppercase tracking-widest text-brand-purple/70">
-          Publisher Solutions
+          {menuTitle}
         </p>
         <p className="text-[12px] text-text-muted mt-0.5">
-          AI-powered revenue tools for every publisher type
+          {menuSubtitle}
         </p>
       </div>
 
@@ -114,13 +128,13 @@ export function NavMegaMenu({ items, pathname, onClose }: NavMegaMenuProps) {
       {/* Footer CTA strip */}
       <div className="mt-4 pt-3 border-t border-brand-purple/[0.08] flex items-center justify-between">
         <p className="text-[11px] text-text-muted">
-          1,200+ publishers trust Click Dudes
+          {footerText}
         </p>
         <Link
-          href="/apply"
+          href={footerCTAHref}
           className="text-[12px] font-semibold text-brand-purple hover:text-brand-violet transition-colors duration-150 focus-ring rounded"
         >
-          Apply now →
+          {footerCTALabel} →
         </Link>
       </div>
     </motion.div>

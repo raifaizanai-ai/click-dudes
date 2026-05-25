@@ -16,7 +16,7 @@ interface EcosystemCardProps {
 
 const accentIcon: Record<Accent, string> = {
   purple: "bg-brand-purple/10 text-brand-purple",
-  cyan:   "bg-brand-cyan/10   text-brand-cyan",
+  cyan:   "bg-brand-cyan/10   text-brand-purple",
   blue:   "bg-brand-blue/10   text-brand-blue",
   violet: "bg-brand-violet/10 text-brand-violet",
   green:  "bg-brand-green/10  text-brand-green",

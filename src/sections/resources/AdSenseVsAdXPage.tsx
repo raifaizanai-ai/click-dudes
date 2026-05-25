@@ -71,7 +71,7 @@ export function AdSenseVsAdXPage() {
               <GradientText gradient="brand">Google AdX</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              The complete, honest comparison — what AdX actually unlocks, when to upgrade, and how to access it as an independent publisher.
+              The complete, honest comparison — what AdX actually delivers, when it's worth switching, and how to access it as an independent publisher.
             </motion.p>
 
             <motion.div variants={stagger} className="flex flex-col sm:flex-row gap-4 mt-4 w-full max-w-xl">
@@ -174,7 +174,7 @@ export function AdSenseVsAdXPage() {
       </Section>
 
       <SolutionCTA
-        heading="Ready to Unlock Google AdX Revenue?"
+        heading="Ready to Access Google AdX Revenue?"
         subheading="Apply today — we handle the entire AdX approval and technical integration for you."
         badge="Get AdX Access"
         robotVariant="rocket"

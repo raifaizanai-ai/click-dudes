@@ -33,12 +33,12 @@ interface ValueCard {
 }
 
 const VALUES: ValueCard[] = [
-  { icon: Heart,      iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", title: "Publisher First",     description: "Every product decision, every partnership, every feature we build starts with one question: does this benefit the publisher?" },
+  { icon: Heart,      iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", title: "Publisher First",     description: "Every product decision, every partnership, every feature we build starts with one question: does this benefit the publisher?" },
   { icon: Lightbulb, iconBg: "bg-brand-blue/10",   iconColor: "text-brand-blue",   title: "Intelligent by Design", description: "We believe AI should work invisibly — eliminating guesswork, automating optimization, and delivering more revenue without complexity." },
   { icon: Shield,    iconBg: "bg-brand-green/10",  iconColor: "text-brand-green",  title: "Radical Transparency", description: "No black boxes. Publishers see exactly what demand partners pay, what fees are taken, and what every metric means." },
   { icon: TrendingUp,iconBg: "bg-brand-cyan/10",   iconColor: "text-brand-cyan",   title: "Growth Without Limits", description: "We don't cap publisher revenue. Our model scales with you — the more you earn, the better the network becomes for everyone." },
   { icon: Users,     iconBg: "bg-brand-violet/10", iconColor: "text-brand-violet", title: "Human + Machine",     description: "AI optimizes every impression. Humans ensure every publisher has an advocate. We believe both are irreplaceable." },
-  { icon: Target,    iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", title: "True Inventory Value", description: "Most publishers earn 40–60% of their inventory's real worth. Our mission is to close that gap, permanently." },
+  { icon: Target,    iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", title: "True Inventory Value", description: "Most publishers earn 40–60% of their inventory's real worth. Our mission is to close that gap, permanently." },
 ]
 
 export function OurMissionPage() {

@@ -22,7 +22,7 @@ const iconColorMap: Record<NonNullable<FeatureBulletProps["iconColor"]>, { bg: s
   purple: { bg: "bg-brand-purple/10", icon: "text-brand-purple" },
   green:  { bg: "bg-brand-green/10",  icon: "text-brand-green" },
   blue:   { bg: "bg-brand-blue/10",   icon: "text-brand-blue" },
-  cyan:   { bg: "bg-brand-cyan/20",   icon: "text-brand-cyan" },
+  cyan:   { bg: "bg-brand-cyan/20",   icon: "text-brand-purple" },
 }
 
 export function FeatureBullet({

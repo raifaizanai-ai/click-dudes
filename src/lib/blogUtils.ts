@@ -1,14 +1,22 @@
 import type { BlogArticle, BlogCategory } from "@/types/blog"
-import { ARTICLES_1_5 }  from "@/lib/blogArticles1"
-import { ARTICLES_6_10 } from "@/lib/blogArticles2"
+import { ARTICLES_1_5 }   from "@/lib/blogArticles1"
+import { ARTICLES_6_10 }  from "@/lib/blogArticles2"
 import { ARTICLES_11_15 } from "@/lib/blogArticles3"
 import { ARTICLES_16_20 } from "@/lib/blogArticles4"
+import { ARTICLES_21_25 } from "@/lib/blogArticles5"
+import { ARTICLES_26_30 } from "@/lib/blogArticles6"
+import { ARTICLES_31_35 } from "@/lib/blogArticles7"
+import { ARTICLES_36_40 } from "@/lib/blogArticles8"
 
 export const ALL_ARTICLES: BlogArticle[] = [
   ...ARTICLES_1_5,
   ...ARTICLES_6_10,
   ...ARTICLES_11_15,
   ...ARTICLES_16_20,
+  ...ARTICLES_21_25,
+  ...ARTICLES_26_30,
+  ...ARTICLES_31_35,
+  ...ARTICLES_36_40,
 ]
 
 export function getAllArticles(): BlogArticle[] {

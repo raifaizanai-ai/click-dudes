@@ -5,6 +5,7 @@ type SectionBackground =
   | "section"
   | "white"
   | "navy"
+  | "premium"
   | "hero"
   | "transparent"
 
@@ -24,7 +25,8 @@ const backgroundMap: Record<SectionBackground, string> = {
   base:        "section-base",
   section:     "section-alt",
   white:       "section-white",
-  navy:        "section-navy",
+  navy:        "section-premium",
+  premium:     "section-premium",
   hero:        "section-hero",
   transparent: "bg-transparent",
 }

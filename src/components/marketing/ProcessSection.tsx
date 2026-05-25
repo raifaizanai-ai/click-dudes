@@ -6,7 +6,6 @@ import type { LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
-import { RobotImage } from "@/components/shared/RobotImage"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
 import { ProcessPipeline } from "@/components/marketing/ProcessPipeline"
 import { cn } from "@/lib/utils"
@@ -16,9 +15,9 @@ interface ProcessStep { number: string; icon: LucideIcon; title: string; descrip
 const STEPS: ProcessStep[] = [
   { number: "01", icon: Send,    title: "Apply",     description: "Submit your property details. Our team reviews your traffic and inventory quality within 48 hours." },
   { number: "02", icon: Search,  title: "Analyze",   description: "We audit your existing setup, identify revenue gaps, and build a custom monetization strategy." },
-  { number: "03", icon: Link,    title: "Integrate", description: "Seamless header bidding and AdX integration — typically live within 3–5 business days." },
-  { number: "04", icon: Sliders, title: "Optimize",  description: "AI continuously tests floors, placements, and demand mix. Weekly insight reports keep you informed." },
-  { number: "05", icon: Rocket,  title: "Scale",     description: "As revenue grows, we expand demand partnerships and unlock premium private marketplace deals." },
+  { number: "03", icon: Link,    title: "Integrate", description: "Header bidding and AdX tags go live in 3–5 business days. Our engineers handle everything — you don't touch code." },
+  { number: "04", icon: Sliders, title: "Optimize",  description: "AI recalibrates price floors, placement mix, and demand allocation daily. Weekly reports show exactly what's moving and why." },
+  { number: "05", icon: Rocket,  title: "Scale",     description: "As your revenue grows, we bring in premium private marketplace deals and direct advertiser relationships." },
 ]
 
 const NODE_X_PCT = [11.11, 30.56, 50, 69.44, 88.89] as const
@@ -57,20 +56,13 @@ export function ProcessSection() {
       <GradientOrb color="purple" size="xl" blur="2xl" opacity={0.09} animate className="-top-40 left-1/2 -translate-x-1/2" />
 
       <Container size="lg">
-        {/* Header with robot accent */}
-        <div className="relative">
-          <SectionHeader
-            badge="How It Works"
-            heading={<>From Application to{" "}<span className="text-gradient-brand">Revenue in Days</span></>}
-            subtext="A streamlined onboarding process built for publishers who want results fast — not a months-long integration project."
-            align="center"
-            subtextWidth="md"
-          />
-          {/* Robot laptop — floats left of header on xl */}
-          <div className="absolute -left-8 xl:-left-4 top-1/2 -translate-y-1/2 pointer-events-none hidden xl:block">
-            <RobotImage variant="laptop" size="md" floatDelay={0.6} glowColor="purple" />
-          </div>
-        </div>
+        <SectionHeader
+          badge="How It Works"
+          heading={<>From Application to{" "}<span className="text-gradient-brand">Revenue in Days</span></>}
+          subtext="A streamlined onboarding process built for publishers who want results fast — not a months-long integration project."
+          align="center"
+          subtextWidth="md"
+        />
 
         {/* ── Desktop: 2.5D pipeline ── */}
         <div className="mt-14 hidden lg:block mx-auto max-w-[920px]">

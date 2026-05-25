@@ -54,7 +54,7 @@ const DIFFERENTIATORS: Differentiator[] = [
     title:     "No Lock-in. No Hidden Fees.",
     body:      "Month-to-month terms with transparent revenue share. No onboarding fees, no minimum commitments, and no contracts designed to trap you. If we don't deliver results, you're free to leave.",
     highlight: "Flexible Terms",
-    accent:    "text-brand-cyan",
+    accent:    "text-brand-purple",
     bg:        "rgba(103,232,249,0.09)",
     dotColor:  "cyan",
   },

@@ -41,7 +41,7 @@ const UX_STYLE: Record<string, string> = {
 const DEVICE_STYLE: Record<string, string> = {
   "Web":     "bg-brand-purple/10 text-brand-purple",
   "Mobile":  "bg-brand-blue/10 text-brand-blue",
-  "App":     "bg-brand-cyan/10 text-brand-cyan",
+  "App":     "bg-brand-cyan/10 text-brand-purple",
   "All":     "bg-brand-green/10 text-brand-green",
   "CTV":     "bg-brand-violet/10 text-brand-violet",
   "Web/App": "bg-brand-blue/10 text-brand-blue",

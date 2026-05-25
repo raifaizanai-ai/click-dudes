@@ -23,7 +23,7 @@ interface FloatingCard {
 const PREVIEW_CARDS: FloatingCard[] = [
   { label: "Banner Ad",    icon: Monitor,     pos: "top-[8%]  left-[2%]",   delay: 0,    accent: "text-brand-purple", bg: "bg-brand-purple/10" },
   { label: "Native Ad",    icon: Layers,      pos: "top-[22%] right-[0%]",  delay: 0.3,  accent: "text-brand-blue",   bg: "bg-brand-blue/10"   },
-  { label: "Sticky Ad",    icon: Zap,         pos: "bottom-[38%] left-[0%]", delay: 0.6, accent: "text-brand-cyan",   bg: "bg-brand-cyan/10"   },
+  { label: "Sticky Ad",    icon: Zap,         pos: "bottom-[38%] left-[0%]", delay: 0.6, accent: "text-brand-purple",   bg: "bg-brand-cyan/10"   },
   { label: "Video Ad",     icon: PlaySquare,  pos: "top-[10%] right-[8%]",  delay: 0.15, accent: "text-brand-violet", bg: "bg-brand-violet/10" },
   { label: "Interstitial", icon: Smartphone,  pos: "bottom-[22%] right-[2%]",delay: 0.45, accent: "text-brand-green",  bg: "bg-brand-green/10"  },
   { label: "CTV Ad",       icon: Tv2,         pos: "bottom-[8%] left-[12%]", delay: 0.75, accent: "text-brand-purple", bg: "bg-brand-purple/10" },

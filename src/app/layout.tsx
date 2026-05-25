@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
 import { CustomCursor } from "@/components/shared/CustomCursor"
+import { CursorGlow } from "@/components/shared/CursorGlow"
+import { Analytics } from "@/components/shared/Analytics"
 import { SITE } from "@/lib/constants"
 import "./globals.css"
 
@@ -10,6 +12,7 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets:  ["latin"],
   display:  "swap",
+  preload:  true,
 })
 
 const geistMono = Geist_Mono({
@@ -20,8 +23,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default:  "ClickDudes | Turning Clicks Into Revenue",
-    template: "%s",
+    default:  "Click Dudes | Turning Clicks Into Revenue",
+    template: "%s — Click Dudes",
   },
   description:  SITE.description,
   metadataBase: new URL(SITE.url),
@@ -35,7 +38,7 @@ export const metadata: Metadata = {
     type:     "website",
     locale:   "en_US",
     images: [{
-      url:    "/logo/clickdudes-logo.png",
+      url:    "/opengraph-image",
       width:  1200,
       height: 630,
       alt:    "Click Dudes — Turning Clicks Into Revenue",
@@ -44,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card:    "summary_large_image",
     creator: SITE.twitter,
-    images:  ["/logo/clickdudes-logo.png"],
+    images:  ["/opengraph-image"],
   },
   robots: {
     index:     true,
@@ -102,6 +105,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
+      <head>
+        {/* Font preconnect for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-dvh antialiased flex flex-col bg-surface-base">
 
         {/* Fixed ambient background — animates independently of scroll */}
@@ -130,6 +138,8 @@ export default function RootLayout({
           Skip to main content
         </a>
 
+        {/* Cursor effects — desktop only (pointer: fine = mouse) */}
+        <CursorGlow />
         <CustomCursor />
         <Navbar />
 
@@ -138,6 +148,7 @@ export default function RootLayout({
         </main>
 
         <Footer />
+        <Analytics />
 
       </body>
     </html>

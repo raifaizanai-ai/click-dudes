@@ -1,26 +1,18 @@
 "use client"
 
 import { BrainCircuit, BarChart3, Zap, TrendingUp, Shield, DollarSign, Users, Clock, Award, Layers } from "lucide-react"
-import { SolutionHero } from "@/sections/solutions/shared/SolutionHero"
+import { AIOptimizationHero } from "@/sections/solutions/ai-ad-optimization/AIOptimizationHero"
 import { SolutionPartners } from "@/sections/solutions/shared/SolutionPartners"
 import { SolutionProblemSolution } from "@/sections/solutions/shared/SolutionProblemSolution"
 import { SolutionFeatures } from "@/sections/solutions/shared/SolutionFeatures"
 import { SolutionAnalytics } from "@/sections/solutions/shared/SolutionAnalytics"
-import { SolutionFlow } from "@/sections/solutions/shared/SolutionFlow"
 import { SolutionWhyUs } from "@/sections/solutions/shared/SolutionWhyUs"
 import { SolutionMetrics } from "@/sections/solutions/shared/SolutionMetrics"
 import { SolutionFAQ } from "@/sections/solutions/shared/SolutionFAQ"
-import { SolutionCTA } from "@/components/marketing/SolutionCTA"
-import { AIHeroPanel } from "@/sections/solutions/ai-ad-optimization/AIHeroPanel"
 import { AITestimonials } from "@/sections/solutions/ai-ad-optimization/AITestimonials"
+import { AiAdProcessSection } from "@/sections/solutions/ai-ad-optimization/AiAdProcessSection"
+import { AiAdCTASection } from "@/sections/solutions/ai-ad-optimization/AiAdCTASection"
 import { GradientText } from "@/components/shared/GradientText"
-
-const STATS = [
-  { value: "28%",   label: "AI yield lift"      },
-  { value: "98%",   label: "Prediction accuracy" },
-  { value: "24/7",  label: "Live monitoring"     },
-  { value: "$200M+", label: "Training data"      },
-]
 
 const PARTNERS = [
   "Google AdX", "OpenX", "Magnite", "Index Exchange", "PubMatic",
@@ -54,7 +46,7 @@ const FEATURES = [
   {
     icon: BarChart3, title: "Predictive Revenue Forecasting",
     description: "30-day rolling revenue forecasts with seasonal CPM adjustment models. Understand exactly how holidays, news cycles, and campaign seasons will affect your revenue.",
-    badge: "Forecasting", accent: "text-brand-cyan", glow: "rgba(103,232,249,0.12)",
+    badge: "Forecasting", accent: "text-brand-purple", glow: "rgba(103,232,249,0.12)",
   },
   {
     icon: Layers, title: "Automated A/B Testing Engine",
@@ -73,13 +65,6 @@ const FEATURES = [
   },
 ]
 
-const FLOW_STEPS = [
-  { icon: BarChart3,   title: "Baseline Analysis",    body: "AI ingests 90 days of your historical auction data to establish CPM patterns, seasonal curves, and demand profiles — building the training foundation for your personalized model.",      duration: "Day 1–3"  },
-  { icon: BrainCircuit, title: "Model Deployment",    body: "Customized floor pricing and anomaly detection models go live against your inventory. Initial predictions are conservative — models widen confidence as they observe your specific traffic.",  duration: "Day 4–7"  },
-  { icon: Zap,         title: "Active Optimization",  body: "AI begins autonomous floor adjustments, anomaly alerting, and A/B test scheduling. You receive weekly AI-generated insights with recommended actions.",                                        duration: "Day 8–30" },
-  { icon: TrendingUp,  title: "Compound Intelligence", body: "Models improve continuously as they accumulate data on your specific inventory. Yield improvements typically compound 3–5% monthly as prediction accuracy increases.",                          duration: "Month 2+" },
-]
-
 const WHY_US_ITEMS = [
   {
     icon: Award,      title: "Trained on $200M+ in Auction Data",
@@ -94,7 +79,7 @@ const WHY_US_ITEMS = [
   {
     icon: BarChart3,  title: "98% Floor Prediction Accuracy",
     body: "Our floor pricing AI achieves 98% accuracy in predicting optimal CPM floors across diverse inventory types — a benchmark built through years of iterative model refinement.",
-    highlight: "98% Accuracy", accent: "text-brand-cyan", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
+    highlight: "98% Accuracy", accent: "text-brand-purple", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
   },
   {
     icon: Users,      title: "AI + Human Intelligence",
@@ -107,7 +92,7 @@ const METRICS = [
   { icon: TrendingUp, value: 28,  decimals: 0, prefix: "",  suffix: "%",    label: "AI Yield Lift",      caption: "Over manual optimization baseline",             accent: "text-brand-purple", bg: "rgba(139,92,246,0.10)" },
   { icon: Zap,        value: 5,   decimals: 0, prefix: "",  suffix: " min", label: "Alert Response",     caption: "P95 time from anomaly to notification",        accent: "text-brand-blue",   bg: "rgba(96,165,250,0.10)" },
   { icon: BarChart3,  value: 98.1, decimals: 1, prefix: "", suffix: "%",   label: "Prediction Accuracy",caption: "Floor price model accuracy rate",               accent: "text-brand-green",  bg: "rgba(16,185,129,0.10)" },
-  { icon: Clock,      value: 3,   decimals: 0, prefix: "",  suffix: " days", label: "Time to Insights",  caption: "From data ingestion to first AI recommendations", accent: "text-brand-cyan",   bg: "rgba(103,232,249,0.10)" },
+  { icon: Clock,      value: 3,   decimals: 0, prefix: "",  suffix: " days", label: "Time to Insights",  caption: "From data ingestion to first AI recommendations", accent: "text-brand-purple",   bg: "rgba(103,232,249,0.10)" },
 ]
 
 
@@ -141,15 +126,7 @@ const FAQS = [
 export function AiOptimizationPage() {
   return (
     <>
-      <SolutionHero
-        badge="AI Ad Optimization"
-        badgeIcon={BrainCircuit}
-        headline={<>AI That Optimizes Your Revenue<br /><GradientText gradient="brand">While You Sleep</GradientText></>}
-        subtext="Machine learning price floors, real-time anomaly detection, and predictive revenue forecasting — running autonomously 24/7. Publishers see an average 28% yield lift over manual optimization."
-        stats={STATS}
-        panelContent={<AIHeroPanel />}
-        robotVariant="analytics"
-      />
+      <AIOptimizationHero />
 
       <SolutionPartners label="Integrated Demand Partners" partners={PARTNERS} />
 
@@ -184,12 +161,7 @@ export function AiOptimizationPage() {
         robotCaption="Generates actionable optimization recommendations from your auction data every 30 minutes."
       />
 
-      <SolutionFlow
-        badge="Deployment Process"
-        heading={<>AI Optimizing Your Revenue<br /><GradientText gradient="brand">Within 7 Days</GradientText></>}
-        subtext="No technical implementation required on your side. We ingest your auction data, train the models, and deploy live optimization in less than a week."
-        steps={FLOW_STEPS}
-      />
+      <AiAdProcessSection />
 
       <SolutionWhyUs
         badge="Why Click Dudes AI"
@@ -214,12 +186,7 @@ export function AiOptimizationPage() {
         faqs={FAQS}
       />
 
-      <SolutionCTA
-        heading="Ready to Let AI Optimize Every Impression?"
-        subheading="Join publishers whose revenue compounds monthly as Click Dudes' AI learns their audience. Dynamic floors, anomaly detection, and revenue forecasting — all on autopilot."
-        robotVariant="rocket"
-        primaryCTA={{ label: "Start AI Ad Optimization", href: "/about/contact-us" }}
-      />
+      <AiAdCTASection />
     </>
   )
 }

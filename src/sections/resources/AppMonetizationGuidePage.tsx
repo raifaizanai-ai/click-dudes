@@ -33,7 +33,7 @@ interface FormatCard {
 }
 
 const FORMATS: FormatCard[] = [
-  { icon: Play,   iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", title: "Rewarded Video",   ecpm: "$8–$25 eCPM", description: "Opt-in video ads exchanged for in-app rewards. Highest user engagement and CPM of any mobile format.",                           best: "Gaming, utility apps" },
+  { icon: Play,   iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", title: "Rewarded Video",   ecpm: "$8–$25 eCPM", description: "Opt-in video ads exchanged for in-app rewards. Highest user engagement and CPM of any mobile format.",                           best: "Gaming, utility apps" },
   { icon: Layout, iconBg: "bg-brand-blue/10",   iconColor: "text-brand-blue",   title: "Interstitial",    ecpm: "$4–$14 eCPM", description: "Full-screen ads at natural transition points. High visibility without interrupting the core experience.",                   best: "Games, content apps" },
   { icon: Gift,   iconBg: "bg-brand-cyan/10",   iconColor: "text-brand-cyan",   title: "Rewarded Interstitial", ecpm: "$5–$16 eCPM", description: "Full-screen opt-in ads that users choose to view. Higher CPMs than standard interstitials with better user retention.", best: "All app categories" },
   { icon: Layout, iconBg: "bg-brand-green/10",  iconColor: "text-brand-green",  title: "Banner",          ecpm: "$0.50–$2 eCPM","description": "Persistent ad units at screen edges. Lower CPM but 100% fill rate makes them valuable for session-heavy apps.",             best: "Utility, productivity" },

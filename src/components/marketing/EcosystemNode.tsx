@@ -17,7 +17,7 @@ interface EcosystemNodeProps {
 
 const iconStyle: Record<NodeAccent, string> = {
   purple: "bg-brand-purple/10 text-brand-purple shadow-[0_0_14px_rgba(139,92,246,0.28)]",
-  cyan:   "bg-brand-cyan/10   text-brand-cyan   shadow-[0_0_14px_rgba(103,232,249,0.22)]",
+  cyan:   "bg-brand-cyan/10   text-brand-purple   shadow-[0_0_14px_rgba(103,232,249,0.22)]",
   blue:   "bg-brand-blue/10   text-brand-blue   shadow-[0_0_14px_rgba(96,165,250,0.22)]",
   violet: "bg-brand-violet/10 text-brand-violet shadow-[0_0_14px_rgba(168,85,247,0.25)]",
   green:  "bg-brand-green/10  text-brand-green  shadow-[0_0_14px_rgba(16,185,129,0.20)]",

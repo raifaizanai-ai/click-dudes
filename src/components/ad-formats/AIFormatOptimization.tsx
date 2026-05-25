@@ -50,7 +50,7 @@ const AI_CARDS: AICard[] = [
     stat:      "84%",
     statLabel: "Predicted viewability",
     dotColor:  "cyan",
-    accent:    "text-brand-cyan",
+    accent:    "text-brand-purple",
     bg:        "rgba(103,232,249,0.10)",
   },
   {

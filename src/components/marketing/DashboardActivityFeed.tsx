@@ -31,7 +31,7 @@ const EVENT_POOL: { text: string; color: EventColor }[] = [
 
 const colorClass: Record<EventColor, string> = {
   purple: "text-brand-purple",
-  cyan:   "text-brand-cyan",
+  cyan:   "text-brand-purple",
   green:  "text-brand-green",
 }
 

@@ -9,7 +9,7 @@ const badgeVariants = cva(
         purple:  "bg-brand-purple/10 text-brand-purple border-brand-purple/20",
         violet:  "bg-brand-violet/10 text-brand-violet border-brand-violet/20",
         blue:    "bg-brand-blue/10   text-brand-blue   border-brand-blue/20",
-        cyan:    "bg-brand-cyan/10   text-brand-cyan   border-brand-cyan/20",
+        cyan:    "bg-brand-cyan/10   text-brand-purple   border-brand-cyan/20",
         green:   "bg-brand-green/10  text-brand-green  border-brand-green/20",
         navy:    "bg-brand-navy      text-white         border-brand-navy/80",
         neutral: "bg-surface-section text-text-secondary border-[rgba(7,17,47,0.08)]",

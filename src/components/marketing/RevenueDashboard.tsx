@@ -25,7 +25,7 @@ interface LiveMetric {
 const LIVE_METRICS: LiveMetric[] = [
   { icon: DollarSign, label: "Avg RPM",     base: 12.01, range: 0.14, prefix: "$",             decimals: 2, trend: "+31%", cycle: 11, accent: "text-brand-purple" },
   { icon: TrendingUp, label: "Revenue",     base: 2.38,  range: 0.04, prefix: "$", suffix: "M", decimals: 2, trend: "+38%", cycle: 15, accent: "text-brand-green"  },
-  { icon: Percent,    label: "Fill Rate",   base: 94.1,  range: 0.40,               suffix: "%", decimals: 1, trend: "+12%", cycle:  9, accent: "text-brand-cyan"   },
+  { icon: Percent,    label: "Fill Rate",   base: 94.1,  range: 0.40,               suffix: "%", decimals: 1, trend: "+12%", cycle:  9, accent: "text-brand-purple"   },
   { icon: Eye,        label: "Viewability", base: 78.2,  range: 0.90,               suffix: "%", decimals: 1, trend: "+8%",  cycle: 12, accent: "text-brand-blue"   },
 ]
 
@@ -124,7 +124,7 @@ export function RevenueDashboard() {
             className="flex items-center gap-1"
           >
             <Activity aria-hidden="true" className="w-3 h-3 text-brand-cyan" />
-            <span className="text-[10px] text-brand-cyan font-medium">Real-time</span>
+            <span className="text-[10px] text-brand-purple font-medium">Real-time</span>
           </motion.div>
         </div>
         <DashboardLiveChart />

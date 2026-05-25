@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
+import dynamic from "next/dynamic"
 import { HeroSection } from "@/components/marketing/HeroSection"
 import { PartnersSection } from "@/components/marketing/PartnersSection"
-import { EcosystemSection } from "@/components/marketing/EcosystemSection"
-import { RevenueSection } from "@/components/marketing/RevenueSection"
-import { ServicesSection } from "@/components/marketing/ServicesSection"
-import { AIOptimizationSection } from "@/components/marketing/AIOptimizationSection"
-import { ProcessSection } from "@/components/marketing/ProcessSection"
-import { SuccessStoriesSection } from "@/components/marketing/SuccessStoriesSection"
-import { FAQSection } from "@/components/marketing/FAQSection"
-import { FinalCTASection } from "@/components/marketing/FinalCTASection"
+
+const EcosystemSection      = dynamic(() => import("@/components/marketing/EcosystemSection").then(m => ({ default: m.EcosystemSection })))
+const RevenueSection        = dynamic(() => import("@/components/marketing/RevenueSection").then(m => ({ default: m.RevenueSection })))
+const ServicesSection       = dynamic(() => import("@/components/marketing/ServicesSection").then(m => ({ default: m.ServicesSection })))
+const DigitalServicesSection= dynamic(() => import("@/components/marketing/DigitalServicesSection").then(m => ({ default: m.DigitalServicesSection })))
+const AIOptimizationSection = dynamic(() => import("@/components/marketing/AIOptimizationSection").then(m => ({ default: m.AIOptimizationSection })))
+const ProcessSection        = dynamic(() => import("@/components/marketing/ProcessSection").then(m => ({ default: m.ProcessSection })))
+const PublisherVoicesSection= dynamic(() => import("@/components/marketing/PublisherVoicesSection").then(m => ({ default: m.PublisherVoicesSection })))
+const FAQSection            = dynamic(() => import("@/components/marketing/FAQSection").then(m => ({ default: m.FAQSection })))
+const FinalCTASection       = dynamic(() => import("@/components/marketing/FinalCTASection").then(m => ({ default: m.FinalCTASection })))
 
 export const metadata: Metadata = {
   title: "Click Dudes | Turning Clicks Into Revenue",
@@ -40,9 +43,10 @@ export default function HomePage() {
       <EcosystemSection />
       <RevenueSection />
       <ServicesSection />
+      <DigitalServicesSection />
       <AIOptimizationSection />
       <ProcessSection />
-      <SuccessStoriesSection />
+      <PublisherVoicesSection />
       <FAQSection />
       <FinalCTASection />
     </>

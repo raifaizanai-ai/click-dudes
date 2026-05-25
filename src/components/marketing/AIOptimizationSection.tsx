@@ -1,141 +1,181 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { TrendingUp, LayoutDashboard, GitMerge, Eye, Activity, Brain, Zap } from "lucide-react"
+import { Brain, Zap, Activity, Eye, GitMerge, TrendingUp, LayoutDashboard } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
-import { GradientOrb } from "@/components/shared/GradientOrb"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
 import { LiveDot } from "@/components/shared/LiveDot"
+import { CountUp } from "@/components/motion/CountUp"
 
-interface AIFeature {
-  icon: LucideIcon
-  title: string
-  description: string
-}
+interface AIModule { icon: LucideIcon; label: string; value: string; color: string; glow: string; cx: number; cy: number }
 
-const FEATURES: AIFeature[] = [
-  { icon: TrendingUp,      title: "RPM Prediction",           description: "Forecasts optimal floor prices per geo, device, and time of day using historical patterns." },
-  { icon: LayoutDashboard, title: "Layout Intelligence",      description: "A/B tests ad placement and density automatically to find the highest-yield configurations." },
-  { icon: GitMerge,        title: "Demand Matching",          description: "Routes impressions to the best-performing demand partner in real time for every auction." },
-  { icon: Eye,             title: "Viewability Optimization", description: "Monitors and adjusts placements to maximize viewable impressions and brand-safe delivery." },
-  { icon: Activity,        title: "Real-Time Analytics",      description: "Sub-second reporting on RPM, fill rate, and revenue across all publishers and formats." },
-  { icon: Brain,           title: "Monetization Intelligence","description": "Learns from billions of signals to surface insights and automate revenue-maximizing decisions." },
+const MODULES: AIModule[] = [
+  { icon: TrendingUp,      label: "RPM Prediction",   value: "+38%",   color: "text-brand-purple", glow: "rgba(139,92,246,0.6)", cx: 50,  cy: 15  },
+  { icon: LayoutDashboard, label: "Layout AI",         value: "A/B x12", color: "text-brand-blue",   glow: "rgba(96,165,250,0.6)",  cx: 88,  cy: 38  },
+  { icon: Activity,        label: "Real-Time RPM",     value: "$12.47", color: "text-brand-purple",   glow: "rgba(103,232,249,0.6)", cx: 88,  cy: 72  },
+  { icon: Eye,             label: "Viewability",       value: "78.5%",  color: "text-brand-green",  glow: "rgba(16,185,129,0.6)",  cx: 50,  cy: 95  },
+  { icon: GitMerge,        label: "Demand Match",      value: "96% Fill", color: "text-brand-violet", glow: "rgba(168,85,247,0.6)", cx: 12,  cy: 72  },
+  { icon: Zap,             label: "Header Bidding",    value: "650ms",  color: "text-brand-blue",   glow: "rgba(96,165,250,0.6)",  cx: 12,  cy: 38  },
 ]
 
 const LOG_ITEMS = [
-  { action: "RPM floor recalculated",     detail: "US · Desktop +$0.42",    status: "success" as const },
-  { action: "New A/B test launched",      detail: "Layout variant 7 of 12", status: "active"  as const },
-  { action: "Demand partner matched",     detail: "CTV · Premium PMPs",     status: "success" as const },
-  { action: "Viewability alert resolved", detail: "Sidebar placement fixed", status: "success" as const },
-  { action: "Header bid timeout updated", detail: "650ms → 720ms optimal",  status: "active"  as const },
+  { action: "RPM floor recalculated",     detail: "US · Desktop +$0.42",    color: "bg-brand-green"  },
+  { action: "New A/B test launched",      detail: "Layout variant 7 of 12", color: "bg-brand-purple" },
+  { action: "Demand partner matched",     detail: "CTV · Premium PMPs",     color: "bg-brand-green"  },
+  { action: "Viewability alert resolved", detail: "Sidebar placement fixed", color: "bg-brand-green"  },
+  { action: "Header bid timeout updated", detail: "650ms → 720ms optimal",  color: "bg-brand-cyan"   },
 ]
 
-const containerVariants = {
-  hidden:  {},
-  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
-}
-
-const itemVariants = {
-  hidden:  { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] as const } },
-}
-
-const panelVariants = {
+const panelAnim = {
   hidden:  { opacity: 0, x: 32 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const, delay: 0.2 } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const, delay: 0.15 } },
 }
 
 export function AIOptimizationSection() {
   return (
-    <Section background="base" padding="lg" aria-label="AI Optimization Engine" className="mesh-bg">
-      <GradientOrb color="purple" size="xl" blur="2xl" opacity={0.10} animate className="-top-32 -right-48" />
-      <GradientOrb color="cyan"   size="lg" blur="xl"  opacity={0.07}        className="bottom-0 left-0" />
+    <Section background="navy" padding="lg" aria-label="AI Neural Command Center">
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-32 left-1/4 w-[500px] h-[400px] rounded-full bg-brand-purple/[0.10] blur-3xl" />
+        <div className="absolute bottom-0 right-1/3 w-[400px] h-[300px] rounded-full bg-brand-cyan/[0.06] blur-3xl" />
+      </div>
 
       <Container size="xl">
         <SectionHeader
-          badge="AI Optimization Engine"
-          heading={<>Intelligent Automation.<br /><span className="text-gradient-brand">Revenue at Scale.</span></>}
-          subtext="Our AI engine operates 24/7 across every layer of your stack — predicting, testing, and optimizing in real time so you never leave revenue on the table."
+          badge="Neural Command Center"
+          heading={<>Your Revenue Stack<br /><span className="text-gradient-brand">Never Sleeps.</span></>}
+          subtext="While you focus on content, our AI is recalculating floor prices, running A/B tests, and matching demand — 1,247 times a day, across every publisher in the network."
           align="center"
           subtextWidth="md"
         />
 
-        <div className="mt-14 grid lg:grid-cols-2 gap-12 xl:gap-20 items-start">
-          {/* Feature grid */}
+        <div className="mt-14 grid lg:grid-cols-2 gap-10 xl:gap-16 items-center">
+          {/* Left: Neural network SVG */}
           <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="grid sm:grid-cols-2 gap-4"
+            initial={{ opacity: 0, x: -32 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="relative aspect-square max-w-md mx-auto lg:mx-0 w-full"
           >
-            {FEATURES.map((f) => (
-              <motion.div
-                key={f.title}
-                variants={itemVariants}
-                whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                className="flex flex-col gap-3 p-5 glass-elevated rounded-2xl border border-brand-purple/[0.10] hover:border-brand-purple/[0.20] hover:shadow-[0_12px_40px_rgba(7,17,47,0.08),0_0_20px_rgba(139,92,246,0.08)] transition-all duration-300 group"
-              >
-                <div className="w-9 h-9 rounded-xl bg-brand-purple/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-purple/16 transition-colors duration-200">
-                  <f.icon aria-hidden="true" className="w-4 h-4 text-brand-purple" />
+            <svg viewBox="0 0 100 110" className="w-full h-full" aria-hidden="true">
+              {/* Connection lines from center to each module */}
+              {MODULES.map((mod, i) => (
+                <motion.line key={`line-${i}`}
+                  x1="50" y1="55" x2={mod.cx} y2={mod.cy}
+                  stroke={mod.glow} strokeWidth="0.6" strokeDasharray="100"
+                  initial={{ strokeDashoffset: 100, opacity: 0 }}
+                  whileInView={{ strokeDashoffset: 0, opacity: 0.45 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.9, delay: 0.2 + i * 0.1 }}
+                />
+              ))}
+              {/* Cross-connections for organic feel */}
+              {[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0]].map(([a, b], i) => (
+                <motion.line key={`cross-${i}`}
+                  x1={MODULES[a].cx} y1={MODULES[a].cy}
+                  x2={MODULES[b].cx} y2={MODULES[b].cy}
+                  stroke="rgba(139,92,246,0.3)" strokeWidth="0.4" strokeDasharray="60"
+                  initial={{ strokeDashoffset: 60, opacity: 0 }}
+                  whileInView={{ strokeDashoffset: 0, opacity: 0.2 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.0, delay: 0.8 + i * 0.07 }}
+                />
+              ))}
+              {/* Module nodes */}
+              {MODULES.map((mod, i) => (
+                <motion.g key={`node-${i}`}
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+                  style={{ transformOrigin: `${mod.cx}px ${mod.cy}px` }}
+                >
+                  <circle cx={mod.cx} cy={mod.cy} r="6.5" fill="rgba(139,92,246,0.08)" stroke={mod.glow} strokeWidth="0.7" />
+                  <motion.circle cx={mod.cx} cy={mod.cy} r="3" fill={mod.glow}
+                    animate={{ opacity: [0.8, 0.4, 0.8], r: [3, 3.5, 3] }}
+                    transition={{ duration: 2.5 + i * 0.3, repeat: Infinity, ease: "easeInOut" }} />
+                </motion.g>
+              ))}
+              {/* Central Brain node */}
+              <motion.g initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.2 }} style={{ transformOrigin: "50px 55px" }}>
+                <motion.circle cx="50" cy="55" r="12" fill="rgba(139,92,246,0.14)" stroke="rgba(139,92,246,0.55)" strokeWidth="1"
+                  animate={{ r: [12, 13, 12] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }} />
+                <circle cx="50" cy="55" r="7" fill="rgba(139,92,246,0.25)" stroke="rgba(139,92,246,0.7)" strokeWidth="0.8" />
+              </motion.g>
+            </svg>
+
+            {/* Module labels overlaid */}
+            {MODULES.map((mod) => (
+              <div key={mod.label} className="absolute pointer-events-none"
+                style={{ left: `${mod.cx}%`, top: `${mod.cy}%`, transform: "translate(-50%, -50%)" }}>
+                <div className="glass-dark rounded-xl px-2.5 py-1.5 border border-brand-purple/[0.12] text-center whitespace-nowrap mt-8">
+                  <p className={`text-[10px] font-bold ${mod.color}`}>{mod.value}</p>
+                  <p className="text-[9px] text-text-muted">{mod.label}</p>
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-text-primary mb-1">{f.title}</p>
-                  <p className="text-xs text-text-muted leading-relaxed">{f.description}</p>
-                </div>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
 
-          {/* AI control center panel */}
-          <motion.div
-            variants={panelVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="glass-elevated rounded-3xl overflow-hidden border border-brand-purple/[0.16] shadow-[0_24px_80px_rgba(7,17,47,0.10),0_0_32px_rgba(139,92,246,0.08)]"
-          >
-            <div className="flex items-center justify-between px-5 py-4 border-b border-brand-purple/[0.10]">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-xl bg-brand-purple/10 flex items-center justify-center">
-                  <Brain aria-hidden="true" className="w-4 h-4 text-brand-purple" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-text-primary">AI Control Center</p>
-                  <p className="text-[11px] text-text-muted">Click Dudes Intelligence v4.2</p>
-                </div>
-              </div>
-              <LiveDot color="purple" size="sm" label="ACTIVE" />
-            </div>
-
-            <div className="px-5 py-4 space-y-2">
-              {LOG_ITEMS.map((log, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: 12 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.08, duration: 0.4, ease: [0.16, 1, 0.3, 1] as const }}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-surface-card/50 border border-brand-purple/[0.06] hover:border-brand-purple/[0.12] transition-colors duration-200"
-                >
-                  <div className={`w-2 h-2 rounded-full flex-shrink-0 ${log.status === "success" ? "bg-brand-green" : "bg-brand-purple"}`}
-                    style={{ animation: log.status === "active" ? "ping-slow 2s ease-in-out infinite" : "none" }}
-                  />
-                  <div className="flex-1 min-w-0">
-                    <p className="text-[12px] font-medium text-text-primary truncate">{log.action}</p>
-                    <p className="text-[11px] text-text-muted">{log.detail}</p>
+          {/* Right: Command feed + metrics */}
+          <motion.div variants={panelAnim} initial="hidden" whileInView="visible" viewport={{ once: true }} className="space-y-3">
+            {/* Header */}
+            <div className="glass-dark rounded-3xl overflow-hidden border border-brand-purple/[0.18]"
+              style={{ boxShadow: "0 24px 80px rgba(7,17,47,0.06), 0 0 32px rgba(139,92,246,0.08)" }}>
+              <div className="flex items-center justify-between px-5 py-4 border-b border-brand-purple/[0.12]">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-xl bg-brand-purple/[0.18] border border-brand-purple/[0.30] flex items-center justify-center">
+                    <Brain className="w-4 h-4 text-brand-purple" aria-hidden="true" />
                   </div>
-                </motion.div>
-              ))}
+                  <div>
+                    <p className="text-[13px] font-bold text-text-primary">AI Control Center</p>
+                    <p className="text-[10px] text-text-muted">Click Dudes Intelligence v4.2</p>
+                  </div>
+                </div>
+                <LiveDot color="purple" size="sm" label="ACTIVE" />
+              </div>
+              <div className="px-5 py-4 space-y-2">
+                {LOG_ITEMS.map((log, i) => (
+                  <motion.div key={i}
+                    initial={{ opacity: 0, x: 12 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 + i * 0.08, duration: 0.4 }}
+                    className="flex items-center gap-3 p-3 rounded-xl bg-brand-purple/[0.04] border border-brand-purple/[0.07]">
+                    <div className={`w-2 h-2 rounded-full shrink-0 ${log.color}`} style={{ animation: `ping-slow 2s ease-in-out infinite` }} />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-[12px] font-medium text-text-primary truncate">{log.action}</p>
+                      <p className="text-[10px] text-text-muted">{log.detail}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+              <div className="flex items-center gap-2 px-5 py-3 border-t border-brand-purple/[0.10] bg-brand-purple/[0.04]">
+                <Zap className="w-3.5 h-3.5 text-brand-purple shrink-0" aria-hidden="true" />
+                <p className="text-[11px] text-text-secondary">
+                  <span className="font-bold text-brand-purple">
+                    <CountUp end={1247} duration={2.5} />
+                  </span> optimizations run today across all publishers
+                </p>
+              </div>
             </div>
 
-            <div className="flex items-center gap-2 px-5 py-3 border-t border-brand-purple/[0.10] bg-brand-purple/[0.03]">
-              <Zap aria-hidden="true" className="w-3.5 h-3.5 text-brand-purple flex-shrink-0" />
-              <p className="text-[11px] text-text-secondary">
-                <span className="font-semibold text-brand-purple">1,247 optimizations</span> run today across all publishers
-              </p>
+            {/* KPI strip */}
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                { label: "Avg RPM Uplift", end: 38,   suffix: "%",  color: "text-brand-purple" },
+                { label: "Fill Rate",      end: 96.1, suffix: "%",  color: "text-brand-purple",   decimals: 1 },
+                { label: "Uptime",         end: 99.9, suffix: "%",  color: "text-brand-green",  decimals: 1 },
+              ].map(({ label, end, suffix, color, decimals }) => (
+                <div key={label} className="glass-dark rounded-2xl p-3 border border-brand-purple/[0.09] text-center">
+                  <p className={`text-[17px] font-bold tabular-nums ${color}`}>
+                    <CountUp end={end} suffix={suffix} decimals={decimals} duration={2.2} />
+                  </p>
+                  <p className="text-[9px] text-text-muted mt-0.5">{label}</p>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>

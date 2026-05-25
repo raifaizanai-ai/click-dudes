@@ -14,7 +14,7 @@ interface LiveResultsProps {
 
 const OPPORTUNITY_STYLES = {
   "Low":       { bg: "bg-brand-blue/10",   text: "text-brand-blue",   bar: "bg-brand-blue",   pct: 20 },
-  "Medium":    { bg: "bg-brand-cyan/10",   text: "text-brand-cyan",   bar: "bg-brand-cyan",   pct: 45 },
+  "Medium":    { bg: "bg-brand-cyan/10",   text: "text-brand-purple",   bar: "bg-brand-cyan",   pct: 45 },
   "High":      { bg: "bg-brand-violet/10", text: "text-brand-violet", bar: "bg-brand-violet", pct: 72 },
   "Very High": { bg: "bg-brand-purple/10", text: "text-brand-purple", bar: "bg-brand-purple", pct: 95 },
 }

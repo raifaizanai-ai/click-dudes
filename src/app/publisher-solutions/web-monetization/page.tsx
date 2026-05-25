@@ -31,10 +31,22 @@ const breadcrumbSchema = {
   ],
 }
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Web Publisher Monetization — Google AdX & Header Bidding",
+  description: "Full managed ad stack for web publishers including Google AdX, 15+ SSPs, AI price floors, and header bidding. Average 41% RPM uplift within 30 days.",
+  provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
+  url: "https://clickdudes.com/publisher-solutions/web-monetization",
+  serviceType: "Publisher Monetization",
+  areaServed: "Worldwide",
+}
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <WebMonetizationPage />
     </>
   )

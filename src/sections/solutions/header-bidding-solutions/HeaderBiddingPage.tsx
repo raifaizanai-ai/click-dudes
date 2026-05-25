@@ -6,13 +6,13 @@ import { SolutionPartners } from "@/sections/solutions/shared/SolutionPartners"
 import { SolutionProblemSolution } from "@/sections/solutions/shared/SolutionProblemSolution"
 import { SolutionFeatures } from "@/sections/solutions/shared/SolutionFeatures"
 import { SolutionAnalytics } from "@/sections/solutions/shared/SolutionAnalytics"
-import { SolutionFlow } from "@/sections/solutions/shared/SolutionFlow"
 import { SolutionWhyUs } from "@/sections/solutions/shared/SolutionWhyUs"
 import { SolutionMetrics } from "@/sections/solutions/shared/SolutionMetrics"
 import { SolutionFAQ } from "@/sections/solutions/shared/SolutionFAQ"
-import { SolutionCTA } from "@/components/marketing/SolutionCTA"
 import { HBHeroPanel } from "@/sections/solutions/header-bidding-solutions/HBHeroPanel"
 import { HBTestimonials } from "@/sections/solutions/header-bidding-solutions/HBTestimonials"
+import { HBProcessSection } from "@/sections/solutions/header-bidding-solutions/HBProcessSection"
+import { HBCTASection } from "@/sections/solutions/header-bidding-solutions/HBCTASection"
 import { GradientText } from "@/components/shared/GradientText"
 
 const STATS = [
@@ -54,7 +54,7 @@ const FEATURES = [
   {
     icon: BarChart3, title: "Dynamic Price Floor Engine",
     description: "Machine learning price floors adapt to bid patterns by SSP, geo, device, hour, and placement. Prevent underpricing without sacrificing fill rate balance.",
-    badge: "AI-Powered", accent: "text-brand-cyan", glow: "rgba(103,232,249,0.12)",
+    badge: "AI-Powered", accent: "text-brand-purple", glow: "rgba(103,232,249,0.12)",
   },
   {
     icon: Shield, title: "Invalid Traffic Prevention",
@@ -73,13 +73,6 @@ const FEATURES = [
   },
 ]
 
-const FLOW_STEPS = [
-  { icon: BarChart3,  title: "Auction Audit",         body: "We analyze your current ad stack, waterfall configuration, SSP relationships, and existing floor logic to identify the highest-impact header bidding opportunities.",   duration: "Day 1–2"  },
-  { icon: Layers,     title: "Prebid Configuration",  body: "Deploy server-side Prebid.js infrastructure, configure all SSP adapters, establish initial floor logic, and connect your GAM account — zero developer effort.",          duration: "Day 3–7"  },
-  { icon: Zap,        title: "Latency Optimization",  body: "Tune timeout thresholds, enable bid caching, configure lazy loading and lazy bidding — ensuring your Core Web Vitals improve alongside revenue.",                          duration: "Day 8–14" },
-  { icon: TrendingUp, title: "Floor & Yield Growth",  body: "AI price floors calibrate to your specific traffic. New SSPs onboarded quarterly. Ongoing A/B testing compounds revenue growth continuously.",                              duration: "Day 15+"  },
-]
-
 const WHY_US_ITEMS = [
   {
     icon: Award,      title: "15+ Premium SSP Relationships",
@@ -94,7 +87,7 @@ const WHY_US_ITEMS = [
   {
     icon: BarChart3,  title: "Proprietary Floor AI",
     body: "Price floor models trained on $200M+ in auction data across 700+ publishers. They know what your inventory is worth before the auction even starts.",
-    highlight: "AI-Powered", accent: "text-brand-cyan", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
+    highlight: "AI-Powered", accent: "text-brand-purple", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
   },
   {
     icon: Users,      title: "Prebid Engineering Expertise",
@@ -107,7 +100,7 @@ const METRICS = [
   { icon: TrendingUp, value: 47,   decimals: 0, prefix: "",  suffix: "%",   label: "Average CPM Lift",      caption: "Over waterfall baseline at 30 days",          accent: "text-brand-purple", bg: "rgba(139,92,246,0.10)" },
   { icon: Zap,        value: 187,  decimals: 0, prefix: "",  suffix: "ms",  label: "Auction Latency",       caption: "Server-side, P95 across all partners",        accent: "text-brand-blue",   bg: "rgba(96,165,250,0.10)" },
   { icon: BarChart3,  value: 14.2, decimals: 1, prefix: "",  suffix: "×",   label: "Avg Bid Density",       caption: "Competing bids per impression",               accent: "text-brand-green",  bg: "rgba(16,185,129,0.10)" },
-  { icon: Clock,      value: 7,    decimals: 0, prefix: "",  suffix: " days", label: "Time to Go Live",     caption: "From kickoff to first header bid",            accent: "text-brand-cyan",   bg: "rgba(103,232,249,0.10)" },
+  { icon: Clock,      value: 7,    decimals: 0, prefix: "",  suffix: " days", label: "Time to Go Live",     caption: "From kickoff to first header bid",            accent: "text-brand-purple",   bg: "rgba(103,232,249,0.10)" },
 ]
 
 
@@ -144,7 +137,7 @@ export function HeaderBiddingPage() {
       <SolutionHero
         badge="Header Bidding Solutions"
         badgeIcon={Layers}
-        headline={<>Replace Your Waterfall.<br /><GradientText gradient="brand">Unlock True Market Value.</GradientText></>}
+        headline={<>Replace Your Waterfall.<br /><GradientText gradient="brand">Earn What Your Inventory Is Worth.</GradientText></>}
         subtext="Server-side header bidding with 15+ SSPs running in parallel at sub-200ms latency. Our publishers see an average 47% CPM increase over waterfall — without touching their Core Web Vitals."
         stats={STATS}
         panelContent={<HBHeroPanel />}
@@ -184,12 +177,7 @@ export function HeaderBiddingPage() {
         robotCaption="Monitors bid patterns and surfaces floor adjustment opportunities before they cost you revenue."
       />
 
-      <SolutionFlow
-        badge="Integration Process"
-        heading={<>Header Bidding Live<br /><GradientText gradient="brand">in 7 Days</GradientText></>}
-        subtext="Zero developer effort on your side. We configure Prebid.js, connect all SSPs, integrate with GAM, and optimize floors — start to finish."
-        steps={FLOW_STEPS}
-      />
+      <HBProcessSection />
 
       <SolutionWhyUs
         badge="Why Click Dudes"
@@ -214,12 +202,7 @@ export function HeaderBiddingPage() {
         faqs={FAQS}
       />
 
-      <SolutionCTA
-        heading="Ready to Maximize Every Bid?"
-        subheading="Join 700+ publishers running Click Dudes' server-side header bidding infrastructure. Sub-200ms auctions, 15+ SSPs, and AI floor optimization — all managed for you."
-        robotVariant="celebrate"
-        primaryCTA={{ label: "Optimize with Header Bidding", href: "/about/contact-us" }}
-      />
+      <HBCTASection />
     </>
   )
 }

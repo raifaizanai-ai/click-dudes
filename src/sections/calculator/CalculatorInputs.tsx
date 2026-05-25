@@ -108,7 +108,7 @@ export function CalculatorInputs({ inputs, onChange, onReset }: CalculatorInputs
           </div>
           <div className="grid grid-cols-2 gap-3 text-center">
             <div className="glass-subtle rounded-xl p-2"><p className="text-[10px] text-text-muted">Mobile</p><p className="text-sm font-bold text-brand-blue">{mobileVal}%</p></div>
-            <div className="glass-subtle rounded-xl p-2"><p className="text-[10px] text-text-muted">Tablet</p><p className="text-sm font-bold text-brand-cyan">{tabletVal}%</p></div>
+            <div className="glass-subtle rounded-xl p-2"><p className="text-[10px] text-text-muted">Tablet</p><p className="text-sm font-bold text-brand-purple">{tabletVal}%</p></div>
           </div>
         </div>
       </SectionCard>
@@ -154,7 +154,7 @@ export function CalculatorInputs({ inputs, onChange, onReset }: CalculatorInputs
             />
           </div>
           <div className="flex flex-col gap-1.5">
-            <div className="flex justify-between"><label className={LABEL}>Direct Sold %</label><span className="text-xs font-bold text-brand-cyan">{inputs.directSoldPercent}%</span></div>
+            <div className="flex justify-between"><label className={LABEL}>Direct Sold %</label><span className="text-xs font-bold text-brand-purple">{inputs.directSoldPercent}%</span></div>
             <input type="range" min={0} max={80} step={5} value={inputs.directSoldPercent}
               onChange={e => onChange({ directSoldPercent: Number(e.target.value) })} className={SLIDER} aria-label="Direct sold percentage"
             />

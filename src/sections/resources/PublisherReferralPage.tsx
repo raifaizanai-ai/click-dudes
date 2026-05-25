@@ -30,7 +30,7 @@ const STEPS = [
   { icon: Share2,    color: "text-brand-purple", bg: "bg-brand-purple/10", num: "01", title: "Share Your Referral Link",  description: "Get your unique referral URL from your dashboard. Share it with publisher friends, in communities, or on social." },
   { icon: Users,     color: "text-brand-blue",   bg: "bg-brand-blue/10",   num: "02", title: "Publisher Signs Up",         description: "When a publisher applies using your link, they&apos;re tagged to your account. No complex tracking — it&apos;s automatic." },
   { icon: CheckCircle2, color: "text-brand-green", bg: "bg-brand-green/10", num: "03", title: "They Go Live",             description: "Once your referral is onboarded and live, your commission period begins. No payout until they&apos;re earning." },
-  { icon: DollarSign, color: "text-brand-cyan",  bg: "bg-brand-cyan/10",   num: "04", title: "Earn Recurring Commission", description: "Receive 5% of their managed revenue for the first 12 months — paid monthly alongside your regular revenue." },
+  { icon: DollarSign, color: "text-brand-purple",  bg: "bg-brand-cyan/10",   num: "04", title: "Earn Recurring Commission", description: "Receive 5% of their managed revenue for the first 12 months — paid monthly alongside your regular revenue." },
 ]
 
 interface EarningsRow { publishers: number; avgMonthly: string; commission: string; annual: string }
@@ -45,7 +45,7 @@ const BENEFITS = [
   { icon: Clock,      color: "text-brand-purple", bg: "bg-brand-purple/10", title: "No Minimums",        sub: "Earn from your first referral" },
   { icon: TrendingUp, color: "text-brand-blue",   bg: "bg-brand-blue/10",   title: "Recurring Payouts",  sub: "12 months per referred publisher" },
   { icon: DollarSign, color: "text-brand-green",  bg: "bg-brand-green/10",  title: "5% Commission",      sub: "Of referred publisher revenue" },
-  { icon: Gift,       color: "text-brand-cyan",   bg: "bg-brand-cyan/10",   title: "No Cap",             sub: "Unlimited referrals, unlimited earnings" },
+  { icon: Gift,       color: "text-brand-purple",   bg: "bg-brand-cyan/10",   title: "No Cap",             sub: "Unlimited referrals, unlimited earnings" },
 ]
 
 export function PublisherReferralPage() {

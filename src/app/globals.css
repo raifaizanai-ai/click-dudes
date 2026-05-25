@@ -150,12 +150,15 @@ html {
 body {
   /* Single continuous canvas — all sections are transparent overlays on this */
   background:
-    radial-gradient(ellipse 900px 700px at 18%  8%,  rgba(139,92,246,0.062) 0%, transparent 70%),
+    radial-gradient(ellipse 900px 700px at 18%  8%,  rgba(139,92,246,0.060) 0%, transparent 70%),
     radial-gradient(ellipse 700px 500px at 83%  19%, rgba(96,165,250,0.048)  0%, transparent 70%),
-    radial-gradient(ellipse 800px 600px at 10%  40%, rgba(103,232,249,0.038) 0%, transparent 65%),
-    radial-gradient(ellipse 750px 550px at 88%  56%, rgba(139,92,246,0.045)  0%, transparent 65%),
-    radial-gradient(ellipse 800px 600px at 28%  72%, rgba(96,165,250,0.036)  0%, transparent 65%),
-    radial-gradient(ellipse 700px 500px at 74%  88%, rgba(139,92,246,0.040)  0%, transparent 65%),
+    radial-gradient(ellipse 800px 600px at 10%  40%, rgba(103,232,249,0.036) 0%, transparent 65%),
+    radial-gradient(ellipse 750px 550px at 88%  56%, rgba(139,92,246,0.042)  0%, transparent 65%),
+    radial-gradient(ellipse 800px 600px at 28%  72%, rgba(96,165,250,0.034)  0%, transparent 65%),
+    radial-gradient(ellipse 700px 500px at 74%  88%, rgba(139,92,246,0.038)  0%, transparent 65%),
+    radial-gradient(ellipse 600px 400px at 55%  32%, rgba(192,132,252,0.022) 0%, transparent 60%),
+    radial-gradient(ellipse 500px 350px at 30%  88%, rgba(244,114,182,0.015) 0%, transparent 55%),
+    radial-gradient(ellipse 650px 450px at 80%  68%, rgba(192,132,252,0.018) 0%, transparent 55%),
     #F8FAFF;
   color: #07112F;
   font-family: var(--font-sans), system-ui, sans-serif;
@@ -203,11 +206,15 @@ body {
 
 /* Standard light glass — for cards on white/light bg */
 .glass {
-  background: var(--glass-bg);
+  background:
+    linear-gradient(145deg, rgba(139,92,246,0.025) 0%, rgba(103,232,249,0.014) 50%, transparent 100%),
+    var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
-  box-shadow: var(--glass-shadow);
+  box-shadow:
+    var(--glass-shadow),
+    inset 0 0 16px rgba(139, 92, 246, 0.016);
 }
 
 /* Stronger glass — more opaque, stronger border */
@@ -228,13 +235,29 @@ body {
   box-shadow: 0 4px 16px rgba(7, 17, 47, 0.05);
 }
 
-/* Dark glass — for use on navy backgrounds */
+/* Glass-dark — premium card surface: gradient background + layered glow border */
 .glass-dark {
-  background: var(--glass-bg-dark);
+  background:
+    linear-gradient(145deg, rgba(139,92,246,0.038) 0%, rgba(103,232,249,0.020) 55%, transparent 100%),
+    rgba(255, 255, 255, 0.84);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid rgba(139, 92, 246, 0.20);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(139, 92, 246, 0.14);
+  box-shadow:
+    0 8px 32px rgba(7, 17, 47, 0.07),
+    0 0 0 1px rgba(103, 232, 249, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96),
+    inset 0 0 18px rgba(139, 92, 246, 0.022);
+  transition: box-shadow 0.30s ease, border-color 0.30s ease;
+}
+
+.glass-dark:hover {
+  border-color: rgba(139, 92, 246, 0.20);
+  box-shadow:
+    0 12px 44px rgba(7, 17, 47, 0.09),
+    0 0 0 1px rgba(103, 232, 249, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98),
+    inset 0 0 24px rgba(139, 92, 246, 0.030);
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -446,21 +469,53 @@ body {
 
 /* ═══════════════════════════════════════════════════════
    SECTION BACKGROUND UTILITIES
+   ── All sections are pure transparent overlays on the
+      body canvas. No section ever sets a solid color.
+      This ensures zero hard cuts between sections.
    ═══════════════════════════════════════════════════════ */
 
-.section-base    { background: transparent; }
-.section-alt     {
-  background: linear-gradient(
-    to bottom,
-    #F8FAFF  0%,
-    #EEF2FF 10%,
-    #EEF2FF 90%,
-    #F8FAFF 100%
+.section-base { background: transparent; }
+
+/* Soft centered indigo radial wash — fades naturally on all sides */
+.section-alt {
+  background: radial-gradient(
+    ellipse 120% 70% at 50% 50%,
+    rgba(238, 242, 255, 0.28) 0%,
+    transparent 68%
   );
 }
-.section-white   { background-color: #FFFFFF; }
-.section-navy    { background: var(--grad-navy); color: #FFFFFF; }
-.section-hero    { background: var(--grad-hero); }
+
+/* Subtle brightness lift — no solid white, dissolves into body canvas */
+.section-white {
+  background: radial-gradient(
+    ellipse 110% 65% at 50% 50%,
+    rgba(255, 255, 255, 0.38) 0%,
+    transparent 72%
+  );
+}
+
+/* Navy/premium: purple + cyan radial warmth only — no opaque base */
+.section-navy {
+  background:
+    radial-gradient(ellipse 90% 65% at 8%  -8%,  rgba(192,132,252,0.08) 0%, transparent 58%),
+    radial-gradient(ellipse 70% 58% at 92% 108%, rgba(103,232,249,0.06) 0%, transparent 58%),
+    radial-gradient(ellipse 60% 50% at 50%  55%, rgba(139,92,246,0.035) 0%, transparent 58%);
+}
+
+.section-premium {
+  background:
+    radial-gradient(ellipse 80% 60% at 14%   2%, rgba(192,132,252,0.07) 0%, transparent 58%),
+    radial-gradient(ellipse 65% 55% at 88% 100%, rgba(103,232,249,0.06) 0%, transparent 58%),
+    radial-gradient(ellipse 55% 45% at 48%  50%, rgba(139,92,246,0.030) 0%, transparent 58%);
+}
+
+/* Hero: top-biased lavender bloom, transparent at bottom */
+.section-hero {
+  background:
+    radial-gradient(ellipse 85% 60% at 50%  -5%, rgba(139,92,246,0.05)  0%, transparent 62%),
+    radial-gradient(ellipse 60% 45% at 18% 100%, rgba(103,232,249,0.04) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 85%  80%, rgba(96,165,250,0.030) 0%, transparent 52%);
+}
 
 /* ═══════════════════════════════════════════════════════
    CARD UTILITIES
@@ -486,6 +541,30 @@ body {
   border: 1px solid rgba(139, 92, 246, 0.20);
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(7, 17, 47, 0.08);
+}
+
+/* Gradient-tinted card surface — purple-to-cyan warmth */
+.card-gradient {
+  background:
+    linear-gradient(145deg, rgba(139,92,246,0.055) 0%, rgba(103,232,249,0.030) 55%, transparent 100%),
+    rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  box-shadow:
+    0 8px 28px rgba(7, 17, 47, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+}
+
+/* Subtle inner glow — use alongside glass or card-gradient */
+.inner-glow-purple {
+  box-shadow:
+    inset 0 0 28px rgba(139, 92, 246, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.inner-glow-cyan {
+  box-shadow:
+    inset 0 0 28px rgba(103, 232, 249, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -737,6 +816,41 @@ img { content-visibility: auto; }
     mesh-blue   61s ease-in-out infinite;
 }
 
+/* Flow lines layer — very subtle diagonal AI data-stream gradients */
+.ambient-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(135deg, transparent 0%, rgba(139,92,246,0.048) 28%, rgba(103,232,249,0.030) 52%, transparent 76%),
+    linear-gradient(225deg, transparent 0%, rgba(96,165,250,0.038) 32%, rgba(192,132,252,0.025) 58%, transparent 88%);
+  background-size: 680px 680px, 900px 900px;
+  animation: flow-drift-a 22s ease-in-out infinite, flow-drift-b 32s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+/* Floating particle dots — barely-there depth points */
+.ambient-canvas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle 3px   at  8%  14%, rgba(139,92,246,0.22) 0%, transparent 100%),
+    radial-gradient(circle 2.5px at 22%  81%, rgba(103,232,249,0.18) 0%, transparent 100%),
+    radial-gradient(circle 3px   at 71%  27%, rgba(96,165,250,0.20)  0%, transparent 100%),
+    radial-gradient(circle 2px   at 44%  64%, rgba(192,132,252,0.16) 0%, transparent 100%),
+    radial-gradient(circle 3px   at 88%  71%, rgba(139,92,246,0.14)  0%, transparent 100%),
+    radial-gradient(circle 2.5px at 60%  43%, rgba(103,232,249,0.12) 0%, transparent 100%),
+    radial-gradient(circle 2px   at 33%  38%, rgba(96,165,250,0.14)  0%, transparent 100%),
+    radial-gradient(circle 3px   at 78%  89%, rgba(139,92,246,0.11)  0%, transparent 100%),
+    radial-gradient(circle 2.5px at 15%  55%, rgba(103,232,249,0.13) 0%, transparent 100%),
+    radial-gradient(circle 2px   at 92%  19%, rgba(192,132,252,0.16) 0%, transparent 100%),
+    radial-gradient(circle 2px   at 50%  92%, rgba(139,92,246,0.10)  0%, transparent 100%),
+    radial-gradient(circle 3px   at 38%  24%, rgba(96,165,250,0.12)  0%, transparent 100%);
+  animation: particles-slow-drift 90s ease-in-out infinite;
+  pointer-events: none;
+}
+
 /* ═══════════════════════════════════════════════════════
    SHINE SWEEP — System 7: CTA button highlight sweep
    ═══════════════════════════════════════════════════════ */
@@ -783,11 +897,11 @@ img { content-visibility: auto; }
 }
 .section-blend-edge::before {
   top: 0;
-  background: linear-gradient(to bottom, var(--color-surface-base) 0%, transparent 100%);
+  background: transparent;
 }
 .section-blend-edge::after {
   bottom: 0;
-  background: linear-gradient(to top, var(--color-surface-base) 0%, transparent 100%);
+  background: transparent;
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -814,6 +928,56 @@ img { content-visibility: auto; }
   0%          { transform: translateX(-120%); opacity: 1; }
   10%         { transform: translateX(420%);  opacity: 1; }
   11%, 100%   { transform: translateX(420%);  opacity: 0; }
+}
+
+@keyframes particles-slow-drift {
+  0%,  100% { transform: translate(0px,   0px);  }
+  20%        { transform: translate(6px,  -10px); }
+  40%        { transform: translate(10px,  -4px); }
+  60%        { transform: translate(4px,   -8px); }
+  80%        { transform: translate(-5px,  -3px); }
+}
+
+/* ═══════════════════════════════════════════════════════
+   CURSOR GLOW — follows pointer, low opacity purple/cyan
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  --cursor-x: 50vw;
+  --cursor-y: 50vh;
+}
+
+.cursor-glow-layer {
+  background: radial-gradient(
+    500px circle at var(--cursor-x) var(--cursor-y),
+    rgba(139, 92, 246, 0.045) 0%,
+    rgba(103, 232, 249, 0.022) 35%,
+    transparent 65%
+  );
+  mix-blend-mode: multiply;
+}
+
+/* ═══════════════════════════════════════════════════════
+   GRADIENT FLOW LINES — animated AI data streams
+   ═══════════════════════════════════════════════════════ */
+
+.flow-lines {
+  background-image:
+    linear-gradient(135deg, transparent 0%, rgba(139,92,246,0.06) 25%, rgba(103,232,249,0.04) 50%, transparent 75%),
+    linear-gradient(225deg, transparent 0%, rgba(96,165,250,0.05) 30%, rgba(192,132,252,0.04) 60%, transparent 90%);
+  background-size: 600px 600px, 800px 800px;
+  animation: flow-drift-a 18s ease-in-out infinite, flow-drift-b 24s ease-in-out infinite reverse;
+}
+
+@keyframes flow-drift-a {
+  0%   { background-position: 0px    0px,    0px   0px;    }
+  50%  { background-position: 200px  100px,  -150px 80px;  }
+  100% { background-position: 0px    0px,    0px   0px;    }
+}
+@keyframes flow-drift-b {
+  0%   { background-position: 0px    0px;  }
+  50%  { background-position: -100px 150px; }
+  100% { background-position: 0px    0px;  }
 }
 
 /* ═══════════════════════════════════════════════════════

@@ -1,4 +1,4 @@
-import { Globe, Smartphone, Tv2, BarChart3, Layers, BrainCircuit, TrendingUp, Star, HelpCircle, BookOpen, BarChart2, Gift, Target, Compass, Users, Mail, History } from "lucide-react"
+import { Globe, Smartphone, Tv2, BarChart3, Layers, BrainCircuit, TrendingUp, Star, HelpCircle, BookOpen, BarChart2, Gift, Target, Compass, Users, Mail, History, ShoppingCart, Code2, Palette, Share2, User2, Megaphone, Search, LineChart } from "lucide-react"
 import type { NavLink } from "@/types"
 
 export const SITE = {
@@ -13,8 +13,14 @@ export const SITE = {
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   {
-    label:    "Publisher Solutions",
-    href:     "/publishers",
+    label:              "Publisher Solutions",
+    href:               "/publishers",
+    megaMenu:           true,
+    megaMenuTitle:      "Publisher Solutions",
+    megaMenuSub:        "AI-powered revenue tools for every publisher type",
+    megaMenuFooterText: "1,200+ publishers trust Click Dudes — GCPP Certified",
+    megaMenuCTALabel:   "Apply for monetization",
+    megaMenuCTAHref:    "/apply",
     children: [
       {
         label:       "Web Monetization",
@@ -60,10 +66,76 @@ export const NAV_LINKS: NavLink[] = [
       },
     ],
   },
+  {
+    label:            "Services",
+    href:             "/services",
+    megaMenu:         true,
+    megaMenuTitle:      "Digital Services",
+    megaMenuSub:        "Full-service agency solutions for brands that want to grow",
+    megaMenuFooterText: "Trusted by 500+ businesses worldwide",
+    megaMenuCTALabel:   "View All Services",
+    megaMenuCTAHref:    "/services",
+    children: [
+      {
+        label:       "E-Commerce",
+        href:        "/services/e-commerce",
+        description: "Build, optimize, and scale online stores that convert",
+        icon:        ShoppingCart,
+      },
+      {
+        label:       "Web Development",
+        href:        "/services/web-development",
+        description: "Shopify, WordPress, full-stack & custom websites",
+        icon:        Code2,
+      },
+      {
+        label:       "Graphic Designing",
+        href:        "/services/graphic-designing",
+        description: "Social media content, brand visuals & ad creatives",
+        icon:        Palette,
+      },
+      {
+        label:       "Social Media Management",
+        href:        "/services/social-media-management",
+        description: "Content planning, posting, engagement & growth",
+        icon:        Share2,
+      },
+      {
+        label:       "Personal Social Account Management",
+        href:        "/services/personal-social-account-management",
+        description: "Personal brand building for founders & creators",
+        icon:        User2,
+      },
+      {
+        label:       "Meta Ads",
+        href:        "/services/meta-ads",
+        description: "Facebook & Instagram ads for leads and conversions",
+        icon:        Megaphone,
+      },
+      {
+        label:       "Google Ads",
+        href:        "/services/google-ads",
+        description: "Search, display & YouTube performance campaigns",
+        icon:        Search,
+      },
+      {
+        label:       "SEO Services",
+        href:        "/services/seo-services",
+        description: "Technical, on-page, off-page & ecommerce SEO",
+        icon:        LineChart,
+      },
+    ],
+  },
   { label: "Ad Formats",          href: "/ad-formats" },
   {
-    label: "Resources",
-    href:  "/resources",
+    label:              "Resources",
+    href:               "/resources",
+    megaMenu:           true,
+    megaMenuTitle:      "Resources & Guides",
+    megaMenuSub:        "Everything you need to grow your publisher revenue",
+    megaMenuFooterText: "Free tools, calculators, and expert guides",
+    megaMenuCTALabel:   "Try Revenue Calculator",
+    megaMenuCTAHref:    "/revenue-calculator",
     children: [
       { label: "Success Stories",          href: "/resources/success-stories",          description: "Real publisher results and case studies",        icon: Star       },
       { label: "FAQs",                     href: "/resources/faqs",                     description: "Answers to common monetization questions",       icon: HelpCircle },
@@ -76,8 +148,14 @@ export const NAV_LINKS: NavLink[] = [
   { label: "Revenue Calculator", href: "/revenue-calculator" },
   { label: "Blog",               href: "/blog" },
   {
-    label: "About Us",
-    href:  "/about",
+    label:              "About Us",
+    href:               "/about",
+    megaMenu:           true,
+    megaMenuTitle:      "About Click Dudes",
+    megaMenuSub:        "The team turning publisher clicks into revenue",
+    megaMenuFooterText: "GCPP Certified · London, United Kingdom",
+    megaMenuCTALabel:   "Contact our team",
+    megaMenuCTAHref:    "/about/contact-us",
     children: [
       { label: "Our Mission", href: "/about/our-mission",  description: "Our publisher-first philosophy and purpose", icon: Target  },
       { label: "Our Vision",  href: "/about/our-vision",   description: "The future of AI-powered monetization",     icon: Compass },
@@ -101,6 +179,15 @@ export const FOOTER_COLUMNS = [
       { label: "App Publishers", href: "/publisher-solutions/app-monetization" },
       { label: "CTV Publishers", href: "/publisher-solutions/ctv-monetization" },
       { label: "AdSense",        href: "/publisher-solutions/adsense-revenue-optimization" },
+    ],
+  },
+  {
+    heading: "Services",
+    links: [
+      { label: "E-Commerce",         href: "/services/e-commerce" },
+      { label: "Web Development",    href: "/services/web-development" },
+      { label: "Meta Ads",           href: "/services/meta-ads" },
+      { label: "SEO Services",       href: "/services/seo-services" },
     ],
   },
   {

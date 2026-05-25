@@ -45,7 +45,7 @@ const GUIDES: GuideCard[] = [
   {
     title: "Web Monetization Masterclass", category: "Web Publishing",
     description: "The complete guide to header bidding, AdX access, floor price optimization, and multi-demand monetization for web publishers.",
-    readTime: "18 min read", difficulty: "Intermediate", icon: Globe, iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", trending: true,
+    readTime: "18 min read", difficulty: "Intermediate", icon: Globe, iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", trending: true,
   },
   {
     title: "In-App Advertising Revenue Guide", category: "App Publishing",
@@ -54,7 +54,7 @@ const GUIDES: GuideCard[] = [
   },
   {
     title: "CTV Monetization Playbook", category: "Connected TV",
-    description: "How to access premium CTV/OTT demand, structure your ad breaks, and unlock the $25+ CPMs available in programmatic TV.",
+    description: "How to access premium CTV/OTT demand, structure your ad breaks, and reach the $25+ CPMs available in programmatic TV.",
     readTime: "15 min read", difficulty: "Advanced", icon: Monitor, iconBg: "bg-brand-cyan/10", iconColor: "text-brand-cyan",
   },
   {

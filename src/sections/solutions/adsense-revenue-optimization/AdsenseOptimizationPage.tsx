@@ -6,13 +6,13 @@ import { SolutionPartners } from "@/sections/solutions/shared/SolutionPartners"
 import { SolutionProblemSolution } from "@/sections/solutions/shared/SolutionProblemSolution"
 import { SolutionFeatures } from "@/sections/solutions/shared/SolutionFeatures"
 import { SolutionAnalytics } from "@/sections/solutions/shared/SolutionAnalytics"
-import { SolutionFlow } from "@/sections/solutions/shared/SolutionFlow"
 import { SolutionWhyUs } from "@/sections/solutions/shared/SolutionWhyUs"
 import { SolutionMetrics } from "@/sections/solutions/shared/SolutionMetrics"
 import { SolutionFAQ } from "@/sections/solutions/shared/SolutionFAQ"
-import { SolutionCTA } from "@/components/marketing/SolutionCTA"
 import { AdsenseHeroPanel } from "@/sections/solutions/adsense-revenue-optimization/AdsenseHeroPanel"
 import { AdsenseTestimonials } from "@/sections/solutions/adsense-revenue-optimization/AdsenseTestimonials"
+import { AdsenseProcessSection } from "@/sections/solutions/adsense-revenue-optimization/AdsenseProcessSection"
+import { AdsenseCTASection } from "@/sections/solutions/adsense-revenue-optimization/AdsenseCTASection"
 import { GradientText } from "@/components/shared/GradientText"
 
 const STATS = [
@@ -54,7 +54,7 @@ const FEATURES = [
   {
     icon: TrendingUp, title: "Viewability Maximization",
     description: "Lazy loading, sticky ad units, and scroll-depth targeting are configured to ensure the maximum percentage of your impressions qualify for viewable CPM — commanding the premium advertisers pay for.",
-    accent: "text-brand-cyan", glow: "rgba(103,232,249,0.12)",
+    accent: "text-brand-purple", glow: "rgba(103,232,249,0.12)",
   },
   {
     icon: Shield, title: "Policy Compliance Audit",
@@ -68,16 +68,9 @@ const FEATURES = [
   },
   {
     icon: Globe, title: "AdSense to AdX Migration Path",
-    description: "For publishers ready to grow beyond AdSense, we provide a clear, zero-disruption migration path to Google AdX access — unlocking the premium demand channels AdSense doesn't provide.",
+    description: "When you're ready to move beyond AdSense, we handle the AdX migration with zero revenue disruption — opening up premium demand channels that AdSense simply can't reach.",
     badge: "Growth Path", accent: "text-brand-purple", glow: "rgba(139,92,246,0.10)",
   },
-]
-
-const FLOW_STEPS = [
-  { icon: BarChart3, title: "AdSense Audit",        body: "Full review of your current placement configuration, RPM performance, viewability metrics, Core Web Vitals scores, and policy compliance status.",                  duration: "Day 1–2"  },
-  { icon: Layers,    title: "Layout Redesign",       body: "We redesign your ad unit placement, sizes, and format mix based on your content template and audience behavior — with measurable RPM improvement targets.",           duration: "Day 3–7"  },
-  { icon: Zap,       title: "A/B Testing Phase",     body: "Systematic testing of placement variations, format combinations, and density configurations. Statistical significance gates all changes before permanent deployment.",  duration: "Day 8–21" },
-  { icon: TrendingUp, title: "Compound Optimization", body: "Ongoing quarterly audits, policy compliance monitoring, and upgrade planning — including readiness assessment for AdX migration when the time is right.",              duration: "Month 2+" },
 ]
 
 const WHY_US_ITEMS = [
@@ -94,11 +87,11 @@ const WHY_US_ITEMS = [
   {
     icon: Zap,        title: "SEO-Compatible Ad Architecture",
     body: "Our ad implementations are designed to maintain or improve Core Web Vitals scores. We've never had a client lose organic traffic due to ad implementation changes.",
-    highlight: "SEO Friendly", accent: "text-brand-cyan", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
+    highlight: "SEO Friendly", accent: "text-brand-purple", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
   },
   {
     icon: TrendingUp, title: "Clear Path to AdX",
-    body: "We treat AdSense optimization as the foundation, not the ceiling. When you're ready for AdX, we handle the migration seamlessly — with no revenue disruption during the transition.",
+    body: "We treat AdSense optimization as the foundation, not the ceiling. When you're ready for AdX, we run the migration clean — no revenue disruption, no guesswork.",
     highlight: "Growth Ready", accent: "text-brand-green", bg: "rgba(16,185,129,0.10)", dotColor: "green" as const,
   },
 ]
@@ -107,7 +100,7 @@ const METRICS = [
   { icon: TrendingUp, value: 62,  decimals: 0, prefix: "",  suffix: "%",  label: "AdSense RPM Lift",   caption: "Average across 400+ optimized sites",           accent: "text-brand-purple", bg: "rgba(139,92,246,0.10)" },
   { icon: BarChart3,  value: 84.3, decimals: 1, prefix: "", suffix: "%",  label: "Avg Viewability",    caption: "Post-optimization viewability rate",            accent: "text-brand-blue",   bg: "rgba(96,165,250,0.10)" },
   { icon: Zap,        value: 2.8, decimals: 1, prefix: "",  suffix: "%",  label: "Average CTR",        caption: "Across optimized ad placements",               accent: "text-brand-green",  bg: "rgba(16,185,129,0.10)" },
-  { icon: Clock,      value: 7,   decimals: 0, prefix: "",  suffix: " days", label: "To First Uplift", caption: "From audit completion to measurable RPM gain",  accent: "text-brand-cyan",   bg: "rgba(103,232,249,0.10)" },
+  { icon: Clock,      value: 7,   decimals: 0, prefix: "",  suffix: " days", label: "To First Uplift", caption: "From audit completion to measurable RPM gain",  accent: "text-brand-purple",   bg: "rgba(103,232,249,0.10)" },
 ]
 
 
@@ -144,7 +137,7 @@ export function AdsenseOptimizationPage() {
       <SolutionHero
         badge="AdSense Revenue Optimization"
         badgeIcon={TrendingUp}
-        headline={<>Unlock Your AdSense<br /><GradientText gradient="brand">Revenue Ceiling</GradientText></>}
+        headline={<>Your AdSense Revenue<br /><GradientText gradient="brand">Should Be Higher</GradientText></>}
         subtext="Expert AdSense layout optimization, viewability maximization, and policy compliance management. Our publishers see an average 62% RPM increase without changing their traffic or content."
         stats={STATS}
         panelContent={<AdsenseHeroPanel />}
@@ -164,7 +157,7 @@ export function AdsenseOptimizationPage() {
       <SolutionFeatures
         badge="Optimization Services"
         heading={<>Every Lever for<br /><GradientText gradient="violet">Maximum AdSense Revenue</GradientText></>}
-        subtext="Layout optimization, viewability engineering, policy compliance, and a clear path to AdX when you're ready to go further."
+        subtext="Layout optimization, viewability engineering, compliance management, and a direct path to AdX when you're ready for more."
         features={FEATURES}
       />
 
@@ -184,12 +177,7 @@ export function AdsenseOptimizationPage() {
         robotCaption="Identifies underperforming placements and policy risk signals before they impact your account."
       />
 
-      <SolutionFlow
-        badge="Optimization Process"
-        heading={<>RPM Uplift in 7 Days,<br /><GradientText gradient="brand">Compounding in 30</GradientText></>}
-        subtext="Systematic, data-driven AdSense optimization with clear milestones and measurable outcomes at every stage."
-        steps={FLOW_STEPS}
-      />
+      <AdsenseProcessSection />
 
       <SolutionWhyUs
         badge="Why Click Dudes"
@@ -210,15 +198,11 @@ export function AdsenseOptimizationPage() {
       <SolutionFAQ
         badge="FAQ"
         heading={<>AdSense Optimization<br /><GradientText gradient="brand">Questions Answered</GradientText></>}
-        subtext="Everything you need to know about maximizing your AdSense revenue with Click Dudes."
+        subtext="Common questions before your AdSense audit. We keep the answers short and honest."
         faqs={FAQS}
       />
 
-      <SolutionCTA
-        heading="Ready to Grow Beyond Basic AdSense Revenue?"
-        subheading="Join 400+ publishers who unlocked their true AdSense RPM potential with Click Dudes. Optimized placement, compliance audit, and AI-powered viewability improvements."
-        robotVariant="wave"
-      />
+      <AdsenseCTASection />
     </>
   )
 }

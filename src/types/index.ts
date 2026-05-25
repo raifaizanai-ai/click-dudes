@@ -10,10 +10,15 @@ export interface NavChild {
 }
 
 export interface NavLink {
-  label: string
-  href: string
-  children?: NavChild[]
-  megaMenu?: boolean
+  label:               string
+  href:                string
+  children?:           NavChild[]
+  megaMenu?:           boolean
+  megaMenuTitle?:      string
+  megaMenuSub?:        string
+  megaMenuFooterText?: string
+  megaMenuCTALabel?:   string
+  megaMenuCTAHref?:    string
 }
 
 /* ─── Marketing ──────────────────────────────────────────────────────────── */

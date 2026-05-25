@@ -20,7 +20,7 @@ const variantDefaults: Record<
   users:    { icon: Users,  iconClass: "text-brand-blue" },
   security: { icon: Shield, iconClass: "text-brand-green" },
   award:    { icon: Award,  iconClass: "text-brand-purple" },
-  speed:    { icon: Zap,    iconClass: "text-brand-cyan" },
+  speed:    { icon: Zap,    iconClass: "text-brand-purple" },
 }
 
 const sizeMap = {

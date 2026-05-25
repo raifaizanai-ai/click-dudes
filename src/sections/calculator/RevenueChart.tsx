@@ -34,7 +34,7 @@ const rowVariant = {
 const TEXT_COLOR: Record<string, string> = {
   "bg-brand-purple": "text-brand-purple",
   "bg-brand-blue":   "text-brand-blue",
-  "bg-brand-cyan":   "text-brand-cyan",
+  "bg-brand-cyan":   "text-brand-purple",
   "bg-brand-violet": "text-brand-violet",
   "bg-brand-green":  "text-brand-green",
 }

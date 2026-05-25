@@ -9,7 +9,7 @@ import { CountUp } from "@/components/motion/CountUp"
 
 const METRICS = [
   { icon: DollarSign, label: "Avg CPM",      value: 8.47,  decimals: 2, prefix: "$",  trend: "+38%", accent: "text-brand-purple" },
-  { icon: Percent,    label: "Fill Rate",    value: 96.2,  decimals: 1, suffix: "%",  trend: "+12%", accent: "text-brand-cyan"   },
+  { icon: Percent,    label: "Fill Rate",    value: 96.2,  decimals: 1, suffix: "%",  trend: "+12%", accent: "text-brand-purple"   },
   { icon: TrendingUp, label: "Revenue Lift", value: 31,    decimals: 0, suffix: "%+", trend: "vs AdSense", accent: "text-brand-green"  },
   { icon: Activity,   label: "Active Deals", value: 247,   decimals: 0,               trend: "PMPs",  accent: "text-brand-blue"   },
 ] as const

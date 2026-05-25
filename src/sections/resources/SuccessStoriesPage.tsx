@@ -30,7 +30,7 @@ interface StatItem { value: string; label: string; color: string }
 const STATS: StatItem[] = [
   { value: "$2.4M+", label: "Publisher Revenue Generated", color: "text-brand-purple" },
   { value: "1,200+", label: "Publishers Monetizing",       color: "text-brand-blue"   },
-  { value: "67%",    label: "Average Revenue Lift",        color: "text-brand-cyan"   },
+  { value: "67%",    label: "Average Revenue Lift",        color: "text-brand-purple"   },
   { value: "30 Days",label: "Average Time to Results",     color: "text-brand-violet" },
 ]
 
@@ -41,7 +41,7 @@ interface StoryCard {
 const STORIES: StoryCard[] = [
   { publisher: "TechInsight Daily",  vertical: "Technology News",  metric: "+84% RPM",      lift: "$3.20 → $5.89",    quote: "Switching from AdSense to Click Dudes was the single best business decision we made this year.",                        initials: "TD", accentBg: "bg-brand-purple/10", accentText: "text-brand-purple", category: "Web"  },
   { publisher: "SportsPulse App",    vertical: "Sports & Fitness", metric: "+120% eCPM",    lift: "$1.40 → $3.08",    quote: "Rewarded video and interstitials through Click Dudes completely transformed our in-app revenue model.",              initials: "SP", accentBg: "bg-brand-blue/10",   accentText: "text-brand-blue",   category: "App"  },
-  { publisher: "HomeLife Channel",   vertical: "Lifestyle CTV",    metric: "+195% CPM",     lift: "$6.20 → $18.30",   quote: "CTV demand was untapped for us until Click Dudes connected us to premium programmatic buyers.",                      initials: "HL", accentBg: "bg-brand-cyan/10",   accentText: "text-brand-cyan",   category: "CTV"  },
+  { publisher: "HomeLife Channel",   vertical: "Lifestyle CTV",    metric: "+195% CPM",     lift: "$6.20 → $18.30",   quote: "CTV demand was untapped for us until Click Dudes connected us to premium programmatic buyers.",                      initials: "HL", accentBg: "bg-brand-cyan/10",   accentText: "text-brand-purple",   category: "CTV"  },
   { publisher: "Finance Digest",     vertical: "Personal Finance", metric: "+217% CPM",     lift: "$1.20 → $3.80",    quote: "Private marketplace deals changed everything. AdSense could never unlock these premium finance buyers.",             initials: "FD", accentBg: "bg-brand-green/10",  accentText: "text-brand-green",  category: "AdX"  },
   { publisher: "TravelNomad Blog",   vertical: "Travel Content",   metric: "+68% Revenue",  lift: "Best month ever",  quote: "1.2M monthly visitors finally monetizing at their true worth. Click Dudes made it happen in under a month.",       initials: "TN", accentBg: "bg-brand-violet/10", accentText: "text-brand-violet", category: "Web"  },
   { publisher: "GameZone Mobile",    vertical: "Mobile Gaming",    metric: "+145% ARPU",    lift: "Full mediation",   quote: "Header bidding for mobile apps was something we thought was only for the big studios. Not anymore.",                initials: "GZ", accentBg: "bg-brand-purple/10", accentText: "text-brand-purple", category: "App"  },
@@ -71,7 +71,7 @@ export function SuccessStoriesPage() {
               Real Publishers. <GradientText gradient="brand">Real Revenue.</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              Discover how publishers across web, app, and CTV verticals unlocked their true inventory value with Click Dudes.
+              How publishers across web, app, and CTV verticals grew their inventory revenue with Click Dudes.
             </motion.p>
             <motion.div variants={stagger} className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 w-full">
               {STATS.map((s) => (
@@ -136,7 +136,7 @@ export function SuccessStoriesPage() {
             {([
               { icon: Award,     color: "text-brand-purple", bg: "bg-brand-purple/10", title: "Google Certified Publishing Partner", sub: "Verified premium demand, direct AdX access"    },
               { icon: TrendingUp,color: "text-brand-blue",   bg: "bg-brand-blue/10",   title: "1,200+ Publishers Monetizing",         sub: "Across web, app, and CTV verticals"           },
-              { icon: Users,     color: "text-brand-cyan",   bg: "bg-brand-cyan/10",   title: "Dedicated Account Management",         sub: "Real humans, not just an algorithm"           },
+              { icon: Users,     color: "text-brand-purple",   bg: "bg-brand-cyan/10",   title: "Dedicated Account Management",         sub: "Real humans, not just an algorithm"           },
             ] as const).map(({ icon: Icon, color, bg, title, sub }) => (
               <div key={title} className="flex items-center gap-4">
                 <div className={cn("w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0", bg)}>

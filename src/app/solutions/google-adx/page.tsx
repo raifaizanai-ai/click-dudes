@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   description: "Access Google AdX premium demand through Click Dudes — a certified Google MCM partner. AI-powered price floors, preferred deals, private auctions, and 24/7 yield optimization for qualifying publishers.",
   openGraph: {
     title:       "Google AdX Solutions | Click Dudes",
-    description: "Unlock Google AdX with a certified MCM partner. Average 30%+ revenue uplift over AdSense. Includes AI price floors, preferred deals, and header bidding.",
+    description: "Access Google AdX through a certified MCM partner. Average 30%+ revenue uplift over AdSense. Includes AI price floors, preferred deals, and header bidding.",
     url:         "https://clickdudes.com/solutions/google-adx",
   },
   twitter: {
     title:       "Google AdX Solutions | Click Dudes",
-    description: "Unlock Google AdX with a certified MCM partner. Average 30%+ revenue uplift over AdSense.",
+    description: "Access Google AdX through a certified MCM partner. Average 30%+ revenue uplift over AdSense.",
   },
   alternates: {
     canonical: "https://clickdudes.com/solutions/google-adx",

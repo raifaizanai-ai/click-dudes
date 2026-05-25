@@ -16,7 +16,7 @@ const METRICS = [
   { label: "RPM",     value: "$11.40", delta: "↑",  accentBg: "bg-brand-purple/10", accentText: "text-brand-purple" },
   { label: "Fill",    value: "97%",    delta: null,  accentBg: "bg-brand-blue/10",   accentText: "text-brand-blue"   },
   { label: "Revenue", value: "$2,840", delta: "/day",accentBg: "bg-brand-green/10",  accentText: "text-brand-green"  },
-  { label: "AI",      value: "Active", delta: null,  accentBg: "bg-brand-cyan/10",   accentText: "text-brand-cyan"   },
+  { label: "AI",      value: "Active", delta: null,  accentBg: "bg-brand-cyan/10",   accentText: "text-brand-purple"   },
 ]
 
 export function WebHeroPanel() {

@@ -6,13 +6,13 @@ import { SolutionPartners } from "@/sections/solutions/shared/SolutionPartners"
 import { SolutionProblemSolution } from "@/sections/solutions/shared/SolutionProblemSolution"
 import { SolutionFeatures } from "@/sections/solutions/shared/SolutionFeatures"
 import { SolutionAnalytics } from "@/sections/solutions/shared/SolutionAnalytics"
-import { SolutionFlow } from "@/sections/solutions/shared/SolutionFlow"
 import { SolutionWhyUs } from "@/sections/solutions/shared/SolutionWhyUs"
 import { SolutionMetrics } from "@/sections/solutions/shared/SolutionMetrics"
 import { SolutionFAQ } from "@/sections/solutions/shared/SolutionFAQ"
-import { SolutionCTA } from "@/components/marketing/SolutionCTA"
 import { WebHeroPanel } from "@/sections/solutions/web-monetization/WebHeroPanel"
 import { WebTestimonials } from "@/sections/solutions/web-monetization/WebTestimonials"
+import { WebMonetizationProcessSection } from "@/sections/solutions/web-monetization/WebMonetizationProcessSection"
+import { WebMonetizationCTASection } from "@/sections/solutions/web-monetization/WebMonetizationCTASection"
 import { GradientText } from "@/components/shared/GradientText"
 
 const STATS = [
@@ -54,7 +54,7 @@ const FEATURES = [
   {
     icon: Zap, title: "Lazy & Refresh Ad Loading",
     description: "Smart lazy loading improves Core Web Vitals while ad refresh at configurable intervals significantly increases total impressions served per session.",
-    accent: "text-brand-cyan", glow: "rgba(103,232,249,0.12)",
+    accent: "text-brand-purple", glow: "rgba(103,232,249,0.12)",
   },
   {
     icon: Shield, title: "Ad Quality & Brand Safety",
@@ -73,13 +73,6 @@ const FEATURES = [
   },
 ]
 
-const FLOW_STEPS = [
-  { icon: Globe,      title: "Site Audit",        body: "We review your traffic, content, ad placement layout, and existing revenue baseline to identify the highest-yield optimization opportunities.",  duration: "Day 1–2"   },
-  { icon: Layers,     title: "Ad Stack Setup",     body: "We configure GAM, deploy header bidding wrappers, integrate demand partners, and establish price floor baselines — all with zero developer effort required.", duration: "Day 3–7"   },
-  { icon: BarChart3,  title: "Calibration Phase",  body: "AI models train on your specific traffic patterns. Floor prices, bid density, and timeout settings are tuned for maximum yield over the first 14 days.",        duration: "Day 8–21"  },
-  { icon: TrendingUp, title: "Scale & Optimize",   body: "Ongoing A/B testing, new demand partner onboarding, and seasonal CPM adjustments ensure revenue continues to grow month over month.",                          duration: "Day 22+"  },
-]
-
 const WHY_US_ITEMS = [
   {
     icon: Award,      title: "Google Certified MCM Partner",
@@ -94,7 +87,7 @@ const WHY_US_ITEMS = [
   {
     icon: BarChart3,  title: "Proprietary AI Yield Engine",
     body: "Built on 3+ years of publisher data, our floor pricing AI outperforms manual optimization by 18% on average — and it keeps improving as it learns your audience.",
-    highlight: "AI-Powered", accent: "text-brand-cyan", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
+    highlight: "AI-Powered", accent: "text-brand-purple", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
   },
   {
     icon: Users,      title: "Dedicated Publisher Manager",
@@ -107,7 +100,7 @@ const METRICS = [
   { icon: TrendingUp, value: 41,   decimals: 0, prefix: "",  suffix: "%",   label: "Average RPM Lift",     caption: "Over AdSense baseline within 30 days",          accent: "text-brand-purple", bg: "rgba(139,92,246,0.10)" },
   { icon: BarChart3,  value: 97.2, decimals: 1, prefix: "",  suffix: "%",   label: "Fill Rate",            caption: "Maintained across all demand sources",          accent: "text-brand-blue",   bg: "rgba(96,165,250,0.10)" },
   { icon: DollarSign, value: 2.8,  decimals: 1, prefix: "",  suffix: "×",   label: "CPM Multiplier",       caption: "Versus single-network baseline",                accent: "text-brand-green",  bg: "rgba(16,185,129,0.10)" },
-  { icon: Clock,      value: 7,    decimals: 0, prefix: "",  suffix: " days", label: "Integration Time",   caption: "From sign-up to first optimized impression",    accent: "text-brand-cyan",   bg: "rgba(103,232,249,0.10)" },
+  { icon: Clock,      value: 7,    decimals: 0, prefix: "",  suffix: " days", label: "Integration Time",   caption: "From sign-up to first optimized impression",    accent: "text-brand-purple",   bg: "rgba(103,232,249,0.10)" },
 ]
 
 
@@ -164,7 +157,7 @@ export function WebMonetizationPage() {
       <SolutionFeatures
         badge="Platform Features"
         heading={<>The Complete Web<br /><GradientText gradient="violet">Monetization Stack</GradientText></>}
-        subtext="Every tool you need to unlock the full revenue potential of your web audience — unified, managed, and continuously optimized."
+        subtext="The complete web monetization stack — Google AdX, header bidding, AI price floors, premium SSPs — managed by our team, built around your inventory."
         features={FEATURES}
       />
 
@@ -184,12 +177,7 @@ export function WebMonetizationPage() {
         robotCaption="Surfaces floor price adjustments and demand gaps before they cost you revenue."
       />
 
-      <SolutionFlow
-        badge="Integration Process"
-        heading={<>Live in 7 Days,<br /><GradientText gradient="brand">Optimized in 30</GradientText></>}
-        subtext="Our managed integration means your team doesn't write a single line of code. We configure everything — then hand you a dashboard and a dedicated manager."
-        steps={FLOW_STEPS}
-      />
+      <WebMonetizationProcessSection />
 
       <SolutionWhyUs
         badge="Why Click Dudes"
@@ -210,16 +198,11 @@ export function WebMonetizationPage() {
       <SolutionFAQ
         badge="FAQ"
         heading={<>Web Monetization<br /><GradientText gradient="brand">Questions Answered</GradientText></>}
-        subtext="Everything you need to know before switching your ad stack to Click Dudes."
+        subtext="Questions publishers ask before making the switch. Honest answers about timelines, results, and how it works."
         faqs={FAQS}
       />
 
-      <SolutionCTA
-        heading="Ready to Turn Your Website Traffic Into Higher Revenue?"
-        subheading="Join 500+ web publishers already earning more with Click Dudes' fully managed premium ad stack. No setup fees, no lock-in, results in 30 days."
-        robotVariant="wave"
-        primaryCTA={{ label: "Let's Monetize Your Website", href: "/about/contact-us" }}
-      />
+      <WebMonetizationCTASection />
     </>
   )
 }
