@@ -36,7 +36,7 @@ export function EcommerceCTASection() {
               Build a Store That <span className="text-gradient-brand">Actually Converts</span>
             </h2>
             <p className="text-body-lg text-text-secondary leading-relaxed mb-8 text-pretty max-w-md">
-              ClickDudes builds and optimises ecommerce stores that convert. From Shopify setup to full-stack growth strategy, we deliver measurable revenue results.
+              Click Dudes builds and optimises ecommerce stores that convert. From Shopify setup to full-stack growth strategy, we deliver measurable revenue results.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
               <Link href="/about/contact-us"

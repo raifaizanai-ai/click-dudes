@@ -3,7 +3,7 @@ import { SeoServicesPage } from "@/sections/services/seo-services/SeoServicesPag
 
 export const metadata: Metadata = {
   title: "SEO Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "Technical SEO, on-page, off-page, local, and ecommerce SEO — built around your business goals, not just keyword rankings. ClickDudes handles it all.",
+  description: "Technical SEO, on-page, off-page, local, and ecommerce SEO — built around your business goals, not just keyword rankings. Click Dudes handles it all.",
   openGraph: {
     title: "SEO Services — Click Dudes",
     description: "Technical, on-page, off-page, local, and ecommerce SEO that drives lasting organic growth.",

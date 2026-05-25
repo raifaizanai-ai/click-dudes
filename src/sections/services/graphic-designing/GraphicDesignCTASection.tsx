@@ -41,7 +41,7 @@ export function GraphicDesignCTASection() {
               Visuals That <span className="text-gradient-brand">Build Your Brand</span>
             </h2>
             <p className="text-body-lg text-text-secondary leading-relaxed mb-8 max-w-md text-pretty">
-              ClickDudes creates premium visual content that makes your brand stand out, drives engagement, and converts across every platform and channel.
+              Click Dudes creates premium visual content that makes your brand stand out, drives engagement, and converts across every platform and channel.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
               <Link href="/about/contact-us"

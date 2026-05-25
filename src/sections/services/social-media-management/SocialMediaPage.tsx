@@ -56,7 +56,7 @@ export function SocialMediaPage() {
         badge="Social Media Management"
         badgeIcon={Share2}
         headline={<>Consistent Brand Presence <span className="text-gradient-brand">Across Every Platform</span></>}
-        subtext="ClickDudes manages your business social media end-to-end — content strategy, creation, scheduling, community management, and monthly reporting."
+        subtext="Click Dudes manages your business social media end-to-end — content strategy, creation, scheduling, community management, and monthly reporting."
         primaryCTA={{ label: "Manage My Social Media", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Get a Free Audit", href: "/about/contact-us" }}
         caption="Multi-platform management · Brand-native content · Community management · Monthly reporting"
@@ -76,8 +76,8 @@ export function SocialMediaPage() {
         subtext="Most businesses fail at social media for the same predictable reasons. Here's the truth and how we solve it."
         problems={problems}
         solutions={solutions}
-        problemLabel="Without ClickDudes"
-        solutionLabel="With ClickDudes"
+        problemLabel="Without Click Dudes"
+        solutionLabel="With Click Dudes"
       />
       <SolutionFeatures
         badge="What We Manage"
@@ -87,7 +87,7 @@ export function SocialMediaPage() {
       />
       <SocialMediaProcessSection />
       <SolutionWhyUs
-        badge="Why ClickDudes"
+        badge="Why Click Dudes"
         heading={<>The Social Media Partner That <span className="text-gradient-brand">Grows Your Brand</span></>}
         subtext="We bring platform expertise, brand-first strategy, and measurable results to every social media account we manage."
         items={whyUsItems}

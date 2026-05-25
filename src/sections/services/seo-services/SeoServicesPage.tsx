@@ -76,8 +76,8 @@ export function SeoServicesPage() {
         subtext="Most businesses struggle with the same SEO problems that are completely fixable with the right strategy."
         problems={problems}
         solutions={solutions}
-        problemLabel="Without ClickDudes"
-        solutionLabel="With ClickDudes"
+        problemLabel="Without Click Dudes"
+        solutionLabel="With Click Dudes"
       />
       <SolutionFeatures
         badge="What We Do"
@@ -87,7 +87,7 @@ export function SeoServicesPage() {
       />
       <SeoProcessSection />
       <SolutionWhyUs
-        badge="Why ClickDudes"
+        badge="Why Click Dudes"
         heading={<>The SEO Partner That <span className="text-gradient-brand">Delivers Real Rankings</span></>}
         subtext="We combine full-spectrum SEO expertise, white-hat execution, and transparent reporting to grow your organic traffic sustainably."
         items={whyUsItems}

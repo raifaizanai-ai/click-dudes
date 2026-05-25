@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     title:       "Apply For Monetization — Click Dudes",
     description: "Join 1,200+ publishers already earning more with Click Dudes. Apply today for Google AdX access, AI optimization, and premium demand.",
     url:         "https://clickdudes.com/apply",
+    siteName:    "Click Dudes",
     type:        "website",
   },
   twitter: {

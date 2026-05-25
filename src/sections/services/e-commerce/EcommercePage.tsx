@@ -62,7 +62,7 @@ export function EcommercePage() {
         badge="E-Commerce Solutions"
         badgeIcon={ShoppingCart}
         headline={<>Build, Optimize & <span className="text-gradient-brand">Scale Your Online Store</span></>}
-        subtext="ClickDudes delivers end-to-end ecommerce solutions — from Shopify and WooCommerce setup to conversion optimization and revenue growth strategy."
+        subtext="Click Dudes delivers end-to-end ecommerce solutions — from Shopify and WooCommerce setup to conversion optimization and revenue growth strategy."
         primaryCTA={{ label: "Scale Your Online Store", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Talk to Our Team", href: "/about/contact-us" }}
         caption="Shopify & WooCommerce experts · 500+ stores built · Results in 30 days"
@@ -82,8 +82,8 @@ export function EcommercePage() {
         subtext="Most ecommerce businesses struggle with the same avoidable problems. Here's what holds them back — and how we fix it."
         problems={problems}
         solutions={solutions}
-        problemLabel="Without ClickDudes"
-        solutionLabel="With ClickDudes"
+        problemLabel="Without Click Dudes"
+        solutionLabel="With Click Dudes"
       />
       <SolutionFeatures
         badge="What We Deliver"
@@ -93,7 +93,7 @@ export function EcommercePage() {
       />
       <EcommerceProcessSection />
       <SolutionWhyUs
-        badge="Why ClickDudes"
+        badge="Why Click Dudes"
         heading={<>The eCommerce Partner That <span className="text-gradient-brand">Delivers Results</span></>}
         subtext="We combine platform expertise, conversion science, and transparent reporting to drive real revenue growth."
         items={whyUsItems}

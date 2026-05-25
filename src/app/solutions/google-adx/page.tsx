@@ -17,8 +17,11 @@ export const metadata: Metadata = {
     title:       "Google AdX Solutions | Click Dudes",
     description: "Access Google AdX through a certified MCM partner. Average 30%+ revenue uplift over AdSense. Includes AI price floors, preferred deals, and header bidding.",
     url:         "https://clickdudes.com/solutions/google-adx",
+    siteName:    "Click Dudes",
+    type:        "website",
   },
   twitter: {
+    card:        "summary_large_image",
     title:       "Google AdX Solutions | Click Dudes",
     description: "Access Google AdX through a certified MCM partner. Average 30%+ revenue uplift over AdSense.",
   },

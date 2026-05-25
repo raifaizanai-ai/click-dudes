@@ -3,7 +3,7 @@ import { ServicesIndexPage } from "@/sections/services/ServicesIndexPage"
 
 export const metadata: Metadata = {
   title: "Digital Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "ClickDudes offers full-service digital solutions — ecommerce, web development, graphic designing, social media management, Meta Ads, Google Ads, and SEO services.",
+  description: "Click Dudes offers full-service digital solutions — ecommerce, web development, graphic designing, social media management, Meta Ads, Google Ads, and SEO services.",
   openGraph: {
     title: "Digital Services — Click Dudes",
     description: "Full-service digital agency solutions: ecommerce, web development, social media, paid ads, graphic design, and SEO.",

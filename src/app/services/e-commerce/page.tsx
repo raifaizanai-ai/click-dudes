@@ -3,10 +3,10 @@ import { EcommercePage } from "@/sections/services/e-commerce/EcommercePage"
 
 export const metadata: Metadata = {
   title: "E-Commerce Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "ClickDudes builds, optimizes, and scales online stores on Shopify and WooCommerce. Conversion-focused ecommerce strategy, product page optimization, and revenue growth.",
+  description: "Click Dudes builds, optimizes, and scales online stores on Shopify and WooCommerce. Conversion-focused ecommerce strategy, product page optimization, and revenue growth.",
   openGraph: {
     title: "E-Commerce Services — Click Dudes",
-    description: "Build, optimize, and scale your online store with ClickDudes ecommerce experts.",
+    description: "Build, optimize, and scale your online store with Click Dudes ecommerce experts.",
     url: "https://clickdudes.com/services/e-commerce",
     siteName: "Click Dudes",
     type: "website",

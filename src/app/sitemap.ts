@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { getAllSlugs } from "@/lib/blogUtils"
 
 const BASE  = "https://clickdudes.com"
-const BUILT = "2025-05-25"
+const BUILT = "2026-05-25"
 
 type Freq = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never"
 

@@ -37,7 +37,7 @@ export function PersonalSocialCTASection() {
               Become the Name <span className="text-gradient-brand">Everyone Knows</span>
             </h2>
             <p className="text-body-lg text-text-secondary leading-relaxed mb-8 max-w-md text-pretty">
-              ClickDudes helps founders and executives become the name in their niche. We build your audience, grow your authority, and generate real business opportunities through strategic personal branding.
+              Click Dudes helps founders and executives become the name in their niche. We build your audience, grow your authority, and generate real business opportunities through strategic personal branding.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
               <Link href="/about/contact-us"

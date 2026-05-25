@@ -35,7 +35,7 @@ export function WebDevCTASection() {
               Your Website, <span className="text-gradient-brand">Built to Perform</span>
             </h2>
             <p className="text-body-lg text-text-muted leading-relaxed mb-8 max-w-md text-pretty">
-              ClickDudes builds fast, custom websites on WordPress, Shopify, and modern frameworks. From landing pages to full SaaS platforms — delivered on time and above expectation.
+              Click Dudes builds fast, custom websites on WordPress, Shopify, and modern frameworks. From landing pages to full SaaS platforms — delivered on time and above expectation.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
               <Link href="/about/contact-us"

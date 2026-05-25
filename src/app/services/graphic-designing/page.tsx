@@ -3,7 +3,7 @@ import { GraphicDesigningPage } from "@/sections/services/graphic-designing/Grap
 
 export const metadata: Metadata = {
   title: "Graphic Designing Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "ClickDudes creates premium graphic design content — social media visuals, personal brand content, Amazon A+ content, product listing images, and advertising creatives.",
+  description: "Click Dudes creates premium graphic design content — social media visuals, personal brand content, Amazon A+ content, product listing images, and advertising creatives.",
   openGraph: {
     title: "Graphic Designing Services — Click Dudes",
     description: "Social media content, brand visuals, Amazon A+ content, and ad creatives designed to perform.",

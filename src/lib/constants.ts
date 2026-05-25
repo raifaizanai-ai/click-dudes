@@ -4,7 +4,7 @@ import type { NavLink } from "@/types"
 export const SITE = {
   name:        "Click Dudes",
   tagline:     "Turning Clicks Into Revenue",
-  description: "AI-powered ad-tech, monetization, and advertising platform helping web publishers, app publishers, and CTV publishers maximize revenue through Google AdX, Header Bidding, AI optimization, premium demand, and smart ad solutions.",
+  description: "Click Dudes is an AI-powered monetization, advertising, SEO, and publisher growth platform helping websites, apps, brands, and CTV publishers scale traffic, engagement, and revenue through intelligent digital growth solutions.",
   url:         "https://clickdudes.com",
   email:       "contact@clickdudes.com",
   twitter:     "@clickdudes",
@@ -167,8 +167,8 @@ export const NAV_LINKS: NavLink[] = [
 ]
 
 export const SOCIAL_LINKS = [
-  { label: "Twitter",  href: "https://twitter.com/clickdudes" },
-  { label: "LinkedIn", href: "https://linkedin.com/company/clickdudes" },
+  { label: "Twitter",  href: "https://twitter.com/Click Dudes" },
+  { label: "LinkedIn", href: "https://linkedin.com/company/Click Dudes" },
 ] as const
 
 export const FOOTER_COLUMNS = [

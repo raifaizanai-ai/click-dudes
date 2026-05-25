@@ -114,7 +114,7 @@ export function ServicesIndexPage() {
 
             <motion.div variants={itemVariant}>
               <p className="text-base md:text-body-lg text-text-secondary leading-relaxed text-pretty max-w-2xl">
-                ClickDudes delivers premium digital services — from ecommerce and web development to paid ads, SEO, social media management, and brand design. One trusted partner for every channel.
+                Click Dudes delivers premium digital services — from ecommerce and web development to paid ads, SEO, social media management, and brand design. One trusted partner for every channel.
               </p>
             </motion.div>
 

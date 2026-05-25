@@ -62,7 +62,7 @@ export function WebDevelopmentPage() {
         badge="Web Development"
         badgeIcon={Code2}
         headline={<>Premium Websites Built to <span className="text-gradient-brand">Convert & Perform</span></>}
-        subtext="ClickDudes builds fast, beautiful, fully custom websites on WordPress, Shopify, and modern tech stacks — engineered for performance and designed to convert."
+        subtext="Click Dudes builds fast, beautiful, fully custom websites on WordPress, Shopify, and modern tech stacks — engineered for performance and designed to convert."
         primaryCTA={{ label: "Build My Website", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Talk to Our Team", href: "/about/contact-us" }}
         caption="Custom builds · 90+ Lighthouse scores · Mobile-first · Post-launch support"
@@ -79,11 +79,11 @@ export function WebDevelopmentPage() {
       <SolutionProblemSolution
         badge="The Problem"
         heading={<>Why Most Business Websites <span className="text-gradient-brand">Underperform</span></>}
-        subtext="Most websites are built fast and cheap — and they perform that way too. Here's what goes wrong and how ClickDudes fixes it."
+        subtext="Most websites are built fast and cheap — and they perform that way too. Here's what goes wrong and how Click Dudes fixes it."
         problems={problems}
         solutions={solutions}
-        problemLabel="Without ClickDudes"
-        solutionLabel="With ClickDudes"
+        problemLabel="Without Click Dudes"
+        solutionLabel="With Click Dudes"
       />
       <SolutionFeatures
         badge="What We Build"
@@ -93,7 +93,7 @@ export function WebDevelopmentPage() {
       />
       <WebDevProcessSection />
       <SolutionWhyUs
-        badge="Why ClickDudes"
+        badge="Why Click Dudes"
         heading={<>The Web Development Partner <span className="text-gradient-brand">Built for Results</span></>}
         subtext="We combine technical excellence, design precision, and long-term support to deliver websites that perform."
         items={whyUsItems}

@@ -56,7 +56,7 @@ export function GraphicDesigningPage() {
         badge="Graphic Designing"
         badgeIcon={Palette}
         headline={<>Visuals That <span className="text-gradient-brand">Stop Scrolling & Build Brands</span></>}
-        subtext="ClickDudes creates premium visual content — from social media graphics to ad creatives, Amazon A+ content, and personal brand visuals — designed to perform."
+        subtext="Click Dudes creates premium visual content — from social media graphics to ad creatives, Amazon A+ content, and personal brand visuals — designed to perform."
         primaryCTA={{ label: "Design My Brand Content", href: "/about/contact-us" }}
         secondaryCTA={{ label: "See Our Work", href: "/about/contact-us" }}
         caption="Brand-native design · Platform-optimized · 48hr turnaround · Unlimited revisions"
@@ -76,8 +76,8 @@ export function GraphicDesigningPage() {
         subtext="Most businesses underinvest in visual content quality — and their engagement and conversion rates suffer for it."
         problems={problems}
         solutions={solutions}
-        problemLabel="Without ClickDudes"
-        solutionLabel="With ClickDudes"
+        problemLabel="Without Click Dudes"
+        solutionLabel="With Click Dudes"
       />
       <SolutionFeatures
         badge="What We Create"
@@ -87,7 +87,7 @@ export function GraphicDesigningPage() {
       />
       <GraphicDesignProcessSection />
       <SolutionWhyUs
-        badge="Why ClickDudes"
+        badge="Why Click Dudes"
         heading={<>The Design Partner That <span className="text-gradient-brand">Elevates Your Brand</span></>}
         subtext="We don't just design — we build visual identities that make your brand impossible to ignore."
         items={whyUsItems}

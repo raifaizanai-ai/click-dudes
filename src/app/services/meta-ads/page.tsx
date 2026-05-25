@@ -3,7 +3,7 @@ import { MetaAdsPage } from "@/sections/services/meta-ads/MetaAdsPage"
 
 export const metadata: Metadata = {
   title: "Meta Ads Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "ClickDudes manages Facebook and Instagram ad campaigns — lead generation, conversions, retargeting, ad creatives, and campaign optimization for scalable paid growth.",
+  description: "Click Dudes manages Facebook and Instagram ad campaigns — lead generation, conversions, retargeting, ad creatives, and campaign optimization for scalable paid growth.",
   openGraph: {
     title: "Meta Ads Services — Click Dudes",
     description: "Facebook and Instagram advertising campaigns that deliver leads, conversions, and ROAS.",

@@ -3,16 +3,17 @@ import { BlogIndexPage } from "@/sections/blog/BlogIndexPage"
 
 export const metadata: Metadata = {
   title:       "Blog — Click Dudes | Publisher Monetization Insights & Ad-Tech Guides",
-  description: "Expert publisher monetization guides, programmatic advertising insights, and revenue growth strategies from the ClickDudes team.",
+  description: "Expert publisher monetization guides, programmatic advertising insights, and revenue growth strategies from the Click Dudes team.",
   openGraph: {
-    title:       "ClickDudes Blog — Publisher Monetization Insights",
+    title:       "Click Dudes Blog — Publisher Monetization Insights",
     description: "Expert guides on AdSense optimization, AdX access, header bidding, AI ad optimization, and publisher revenue growth.",
     url:         "https://clickdudes.com/blog",
+    siteName:    "Click Dudes",
     type:        "website",
   },
   twitter: {
     card:        "summary_large_image",
-    title:       "ClickDudes Blog — Publisher Monetization Insights",
+    title:       "Click Dudes Blog — Publisher Monetization Insights",
     description: "Expert guides on AdSense, AdX, Header Bidding, AI optimization, and publisher revenue growth.",
   },
   alternates: {

@@ -56,7 +56,7 @@ export function MetaAdsPage() {
         badge="Meta Ads Management"
         badgeIcon={Megaphone}
         headline={<>Facebook & Instagram Ads That <span className="text-gradient-brand">Drive Real Results</span></>}
-        subtext="ClickDudes manages your Meta advertising campaigns — strategy, creative, targeting, optimization, and reporting — to deliver consistent leads and revenue growth."
+        subtext="Click Dudes manages your Meta advertising campaigns — strategy, creative, targeting, optimization, and reporting — to deliver consistent leads and revenue growth."
         primaryCTA={{ label: "Launch Meta Ads Campaign", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Free Account Audit", href: "/about/contact-us" }}
         caption="Meta certified · In-house creatives · ROAS-focused · Full transparency"
@@ -76,8 +76,8 @@ export function MetaAdsPage() {
         subtext="Facebook and Instagram ads can work extremely well — or drain your budget fast. Here's what separates the two, and how we fix it."
         problems={problems}
         solutions={solutions}
-        problemLabel="Without ClickDudes"
-        solutionLabel="With ClickDudes"
+        problemLabel="Without Click Dudes"
+        solutionLabel="With Click Dudes"
       />
       <SolutionFeatures
         badge="What We Do"
@@ -87,7 +87,7 @@ export function MetaAdsPage() {
       />
       <MetaAdsProcessSection />
       <SolutionWhyUs
-        badge="Why ClickDudes"
+        badge="Why Click Dudes"
         heading={<>The Meta Ads Partner That <span className="text-gradient-brand">Delivers ROAS</span></>}
         subtext="We combine certified expertise, in-house creative production, and ROAS-focused optimization to grow your business through Meta."
         items={whyUsItems}

@@ -34,7 +34,7 @@ export function GoogleAdsCTASection() {
               Dominate Google <span className="text-gradient-brand">Search Results</span>
             </h2>
             <p className="text-body-lg text-text-muted leading-relaxed mb-8 max-w-md text-pretty">
-              ClickDudes builds Google Ads campaigns that put your business at the top of search results — with Quality Scores above 8, CTRs that beat the industry average, and ROAS that compounds month over month.
+              Click Dudes builds Google Ads campaigns that put your business at the top of search results — with Quality Scores above 8, CTRs that beat the industry average, and ROAS that compounds month over month.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
               <Link href="/about/contact-us"

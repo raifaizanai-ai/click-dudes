@@ -82,8 +82,8 @@ export function Footer() {
               The premium AI-powered monetization platform for web, app, and CTV publishers.
             </p>
             <div className="flex items-center gap-2 mb-4">
-              <FooterSocialLink href="https://twitter.com/clickdudes"        label="Twitter"  icon={<TwitterIcon />}  />
-              <FooterSocialLink href="https://linkedin.com/company/clickdudes" label="LinkedIn" icon={<LinkedInIcon />} />
+              <FooterSocialLink href="https://twitter.com/Click Dudes"        label="Twitter"  icon={<TwitterIcon />}  />
+              <FooterSocialLink href="https://linkedin.com/company/Click Dudes" label="LinkedIn" icon={<LinkedInIcon />} />
             </div>
             {/* Rocket robot — primary hero visual */}
             <div className="flex-1 flex items-end justify-center w-full pt-2">

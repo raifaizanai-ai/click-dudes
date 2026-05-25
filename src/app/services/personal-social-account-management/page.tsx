@@ -3,7 +3,7 @@ import { PersonalSocialPage } from "@/sections/services/personal-social-account-
 
 export const metadata: Metadata = {
   title: "Personal Social Account Management — Click Dudes | Turning Clicks Into Revenue",
-  description: "ClickDudes manages personal social media accounts for founders, CEOs, and creators — content creation, posting, engagement, and personal brand authority building.",
+  description: "Click Dudes manages personal social media accounts for founders, CEOs, and creators — content creation, posting, engagement, and personal brand authority building.",
   openGraph: {
     title: "Personal Social Account Management — Click Dudes",
     description: "Personal brand management for founders, CEOs, and creators across LinkedIn, Instagram, and TikTok.",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Personal Social Account Management — Click Dudes",
-    description: "Build your personal brand and online authority with ClickDudes professional management.",
+    description: "Build your personal brand and online authority with Click Dudes professional management.",
   },
   alternates: {
     canonical: "https://clickdudes.com/services/personal-social-account-management",

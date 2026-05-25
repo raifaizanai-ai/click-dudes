@@ -65,7 +65,7 @@ export function BlogIndexPage() {
               The <span className="text-gradient-brand">Publisher Blog</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty max-w-xl mx-auto">
-              Expert monetization strategies, ad-tech insights, and revenue growth guides from the ClickDudes team.
+              Expert monetization strategies, ad-tech insights, and revenue growth guides from the Click Dudes team.
             </motion.p>
           </motion.div>
         </div>

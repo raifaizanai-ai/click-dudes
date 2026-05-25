@@ -16,7 +16,7 @@ interface ArticleCTAProps {
 }
 
 export function ArticleCTA({ content }: ArticleCTAProps) {
-  const body = content ?? "Ready to grow your publisher revenue? ClickDudes helps web, app, and CTV publishers maximize earnings through Google AdX, Header Bidding, and AI-powered optimization."
+  const body = content ?? "Ready to grow your publisher revenue? Click Dudes helps web, app, and CTV publishers maximize earnings through Google AdX, Header Bidding, and AI-powered optimization."
 
   return (
     <motion.aside

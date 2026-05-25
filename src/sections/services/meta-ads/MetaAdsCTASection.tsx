@@ -38,7 +38,7 @@ export function MetaAdsCTASection() {
               Meta Ads That Pay <span className="text-gradient-brand">for Themselves</span>
             </h2>
             <p className="text-body-lg text-text-secondary leading-relaxed mb-8 max-w-md text-pretty">
-              ClickDudes builds and manages Meta advertising campaigns that deliver consistent ROAS, quality leads, and scalable revenue growth through certified expertise and in-house creatives.
+              Click Dudes builds and manages Meta advertising campaigns that deliver consistent ROAS, quality leads, and scalable revenue growth through certified expertise and in-house creatives.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
               <Link href="/about/contact-us"

@@ -56,7 +56,7 @@ export function GoogleAdsPage() {
         badge="Google Ads Management"
         badgeIcon={Search}
         headline={<>Google Ads Campaigns That <span className="text-gradient-brand">Convert at Scale</span></>}
-        subtext="ClickDudes manages your Google Ads from strategy to execution — search, display, YouTube, and Performance Max campaigns optimized for maximum conversions and ROAS."
+        subtext="Click Dudes manages your Google Ads from strategy to execution — search, display, YouTube, and Performance Max campaigns optimized for maximum conversions and ROAS."
         primaryCTA={{ label: "Start Google Ads Campaign", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Free Account Audit", href: "/about/contact-us" }}
         caption="Google certified · Full tracking setup · Weekly optimization · Clear reporting"
@@ -76,8 +76,8 @@ export function GoogleAdsPage() {
         subtext="Google Ads can be the most profitable channel in your business — or the most wasteful. Here's what separates them."
         problems={problems}
         solutions={solutions}
-        problemLabel="Without ClickDudes"
-        solutionLabel="With ClickDudes"
+        problemLabel="Without Click Dudes"
+        solutionLabel="With Click Dudes"
       />
       <SolutionFeatures
         badge="What We Manage"
@@ -87,7 +87,7 @@ export function GoogleAdsPage() {
       />
       <GoogleAdsProcessSection />
       <SolutionWhyUs
-        badge="Why ClickDudes"
+        badge="Why Click Dudes"
         heading={<>The Google Ads Partner That <span className="text-gradient-brand">Maximizes Every Dollar</span></>}
         subtext="We combine Google Ads certification, intent-based strategy, and data-driven optimization to deliver consistent conversion growth."
         items={whyUsItems}

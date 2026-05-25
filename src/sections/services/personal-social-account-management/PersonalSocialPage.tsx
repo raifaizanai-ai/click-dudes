@@ -55,7 +55,7 @@ export function PersonalSocialPage() {
         badge="Personal Brand Management"
         badgeIcon={User2}
         headline={<>Build Your Personal Brand & <span className="text-gradient-brand">Online Authority</span></>}
-        subtext="ClickDudes manages your personal social accounts — content creation, posting, engagement, and network growth — so your personal brand works while you focus on your business."
+        subtext="Click Dudes manages your personal social accounts — content creation, posting, engagement, and network growth — so your personal brand works while you focus on your business."
         primaryCTA={{ label: "Grow My Personal Brand", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Free Brand Audit", href: "/about/contact-us" }}
         caption="LinkedIn, Instagram, TikTok · Authentic content · Authority building · Network growth"
@@ -75,8 +75,8 @@ export function PersonalSocialPage() {
         subtext="Most professionals understand that a strong personal brand matters. The hard part is building one consistently — and that's where most people fall short."
         problems={problems}
         solutions={solutions}
-        problemLabel="Without ClickDudes"
-        solutionLabel="With ClickDudes"
+        problemLabel="Without Click Dudes"
+        solutionLabel="With Click Dudes"
       />
       <SolutionFeatures
         badge="What We Deliver"
@@ -86,7 +86,7 @@ export function PersonalSocialPage() {
       />
       <PersonalSocialProcessSection />
       <SolutionWhyUs
-        badge="Why ClickDudes"
+        badge="Why Click Dudes"
         heading={<>The Personal Brand Partner <span className="text-gradient-brand">Built for Founders</span></>}
         subtext="We combine authentic content creation, strategic growth, and business-focused thinking to build personal brands that convert."
         items={whyUsItems}

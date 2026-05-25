@@ -13,9 +13,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home",         item: "https://clickdudes.com" },
-    { "@type": "ListItem", position: 2, name: "About",        item: "https://clickdudes.com/about/our-mission" },
-    { "@type": "ListItem", position: 3, name: "Our Mission",  item: "https://clickdudes.com/about/our-mission" },
+    { "@type": "ListItem", position: 1, name: "Home",        item: "https://clickdudes.com" },
+    { "@type": "ListItem", position: 2, name: "About",       item: "https://clickdudes.com/about" },
+    { "@type": "ListItem", position: 3, name: "Our Mission", item: "https://clickdudes.com/about/our-mission" },
   ],
 }
 

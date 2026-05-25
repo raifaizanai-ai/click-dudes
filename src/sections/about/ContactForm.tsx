@@ -26,7 +26,7 @@ const INITIAL: FormState = { name: "", email: "", company: "", inquiry: "", mess
 
 async function submitToEmail(data: Omit<FormState, "honeypot">): Promise<void> {
   const subject = encodeURIComponent(
-    `[ClickDudes] ${data.inquiry || "Inquiry"} from ${data.name}`
+    `[Click Dudes] ${data.inquiry || "Inquiry"} from ${data.name}`
   )
   const body = encodeURIComponent(
     `Name: ${data.name}\nEmail: ${data.email}\nCompany/Website: ${data.company}\nInquiry Type: ${data.inquiry}\n\nMessage:\n${data.message}`

@@ -40,7 +40,7 @@ export function SeoCTASection() {
               Own Page One, <span className="text-gradient-brand">Grow Organically</span>
             </h2>
             <p className="text-body-lg text-text-secondary leading-relaxed mb-8 max-w-md text-pretty">
-              ClickDudes handles every layer of SEO — technical, on-page, off-page, and local — using only white-hat strategies that build lasting rankings. No shortcuts, no penalties.
+              Click Dudes handles every layer of SEO — technical, on-page, off-page, and local — using only white-hat strategies that build lasting rankings. No shortcuts, no penalties.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
               <Link href="/about/contact-us"

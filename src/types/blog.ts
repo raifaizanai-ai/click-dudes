@@ -89,7 +89,7 @@ export const CATEGORY_GRADIENT: Record<BlogCategory, string> = {
 }
 
 export const AUTHOR = {
-  name:   "ClickDudes Editorial Team",
-  bio:    "ClickDudes helps publishers maximize revenue through AI-powered monetization, premium demand access, and advanced optimization strategies.",
+  name:   "Click Dudes Editorial Team",
+  bio:    "Click Dudes helps publishers maximize revenue through AI-powered monetization, premium demand access, and advanced optimization strategies.",
   avatar: "CD",
 }

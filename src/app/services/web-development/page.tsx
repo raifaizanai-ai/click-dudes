@@ -3,7 +3,7 @@ import { WebDevelopmentPage } from "@/sections/services/web-development/WebDevel
 
 export const metadata: Metadata = {
   title: "Web Development Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "ClickDudes builds premium websites on WordPress, Shopify, and custom stacks. Fast, mobile-first, conversion-focused websites for businesses, SaaS, and ecommerce.",
+  description: "Click Dudes builds premium websites on WordPress, Shopify, and custom stacks. Fast, mobile-first, conversion-focused websites for businesses, SaaS, and ecommerce.",
   openGraph: {
     title: "Web Development Services — Click Dudes",
     description: "Premium WordPress, Shopify, and custom website development that converts and performs.",

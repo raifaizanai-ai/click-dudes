@@ -36,7 +36,7 @@ export function SiteLogo({
       )}
     >
       <Image
-        src="/logo/clickdudes-logo.png"
+        src="/logo/Click Dudes-logo.png"
         alt="Click Dudes — Turning Clicks Into Revenue"
         width={800}
         height={800}
@@ -51,7 +51,7 @@ export function SiteLogo({
   ) : (
     <div className={cn(wrapperWidths[context], "flex-shrink-0", className)}>
       <Image
-        src="/logo/clickdudes-logo.png"
+        src="/logo/Click Dudes-logo.png"
         alt="Click Dudes — Turning Clicks Into Revenue"
         width={800}
         height={800}
