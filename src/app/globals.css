@@ -939,25 +939,6 @@ img { content-visibility: auto; }
 }
 
 /* ═══════════════════════════════════════════════════════
-   CURSOR GLOW — follows pointer, low opacity purple/cyan
-   ═══════════════════════════════════════════════════════ */
-
-:root {
-  --cursor-x: 50vw;
-  --cursor-y: 50vh;
-}
-
-.cursor-glow-layer {
-  background: radial-gradient(
-    500px circle at var(--cursor-x) var(--cursor-y),
-    rgba(139, 92, 246, 0.045) 0%,
-    rgba(103, 232, 249, 0.022) 35%,
-    transparent 65%
-  );
-  mix-blend-mode: multiply;
-}
-
-/* ═══════════════════════════════════════════════════════
    GRADIENT FLOW LINES — animated AI data streams
    ═══════════════════════════════════════════════════════ */
 

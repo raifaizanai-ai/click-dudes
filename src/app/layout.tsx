@@ -2,8 +2,6 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
-import { CustomCursor } from "@/components/shared/CustomCursor"
-import { CursorGlow } from "@/components/shared/CursorGlow"
 import { Analytics } from "@/components/shared/Analytics"
 import { SITE } from "@/lib/constants"
 import "./globals.css"
@@ -188,9 +186,6 @@ export default function RootLayout({
           Skip to main content
         </a>
 
-        {/* Cursor effects — desktop only (pointer: fine = mouse) */}
-        <CursorGlow />
-        <CustomCursor />
         <Navbar />
 
         <main id="main" className="flex-1 flex flex-col">

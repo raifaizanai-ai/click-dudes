@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { buttonVariants } from "@/components/ui/button"
-import { MagneticWrapper } from "@/components/motion/MagneticWrapper"
 import { cn } from "@/lib/utils"
 
 interface CTALink {
@@ -41,21 +40,19 @@ export function CTAButtonGroup({
           stackOnMobile ? "flex-col sm:flex-row" : "flex-row"
         )}
       >
-        <MagneticWrapper strength={0.25}>
-          <Link
-            href={primary.href}
-            className={cn(
-              buttonVariants({ variant: "primary", size }),
-              "group"
-            )}
-          >
-            {primary.label}
-            <ArrowRight
-              aria-hidden="true"
-              className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5"
-            />
-          </Link>
-        </MagneticWrapper>
+        <Link
+          href={primary.href}
+          className={cn(
+            buttonVariants({ variant: "primary", size }),
+            "group"
+          )}
+        >
+          {primary.label}
+          <ArrowRight
+            aria-hidden="true"
+            className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5"
+          />
+        </Link>
 
         {secondary && (
           <Link
