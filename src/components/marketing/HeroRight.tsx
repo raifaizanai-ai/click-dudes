@@ -57,9 +57,7 @@ interface StatTileCardProps { tile: HeroStatTile; noMot: boolean }
 
 function StatTileCard({ tile, noMot }: StatTileCardProps) {
   return (
-    <motion.div
-      animate={noMot ? {} : { y: [0, -6, 0] }}
-      transition={{ duration: 5.5 + tile.floatDelay * 0.3, repeat: Infinity, ease: "easeInOut", delay: tile.floatDelay }}
+    <div
       className={cn(
         "glass-strong rounded-2xl px-4 py-3.5",
         "border border-brand-purple/[0.14]",
@@ -67,12 +65,16 @@ function StatTileCard({ tile, noMot }: StatTileCardProps) {
         "hover:shadow-[0_12px_40px_rgba(7,17,47,0.12),0_0_0_1px_rgba(139,92,246,0.20)]",
         "transition-shadow duration-300",
       )}
+      style={noMot ? {} : {
+        animation: `float ${5.5 + tile.floatDelay * 0.3}s ease-in-out infinite ${tile.floatDelay}s`,
+        willChange: "transform",
+      }}
     >
       <tile.icon aria-hidden="true" className={cn("w-3.5 h-3.5 mb-2 opacity-65", tile.accent)} />
       <p className="text-[20px] font-bold text-text-primary leading-none tabular-nums">{tile.value}</p>
       <p className="text-[11px] font-semibold text-text-secondary mt-1.5 leading-tight">{tile.label}</p>
       <p className="text-[10px] text-text-muted leading-tight">{tile.sub}</p>
-    </motion.div>
+    </div>
   )
 }
 

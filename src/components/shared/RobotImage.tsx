@@ -77,46 +77,29 @@ export function RobotImage({
         className={cn("absolute inset-0 rounded-full blur-xl scale-75 opacity-80 pointer-events-none", GLOW_INNER[glowColor])}
       />
 
-      {/* Robot image — floating motion */}
-      <motion.div
+      {/* Robot image — CSS float (GPU-animated, no JS per-frame cost) */}
+      <div
         className="relative z-10 w-full h-full cursor-default"
-        animate={reduced ? {} : {
-          y:      [0, -12, 0],
-          rotate: [0, 1.0, 0, -1.0, 0],
-          scale:  [1, 1.012, 1, 0.992, 1],
-        }}
-        whileHover={reduced ? {} : { scale: 1.07, rotate: 0, transition: { duration: 0.35, ease: "easeOut" } }}
-        transition={reduced ? {} : {
-          y: {
-            duration:   5.5,
-            repeat:     Infinity,
-            ease:       [0.45, 0, 0.55, 1] as const,
-            delay:      floatDelay,
-          },
-          rotate: {
-            duration:   7.0,
-            repeat:     Infinity,
-            ease:       [0.45, 0, 0.55, 1] as const,
-            delay:      floatDelay + 0.3,
-          },
-          scale: {
-            duration:   4.5,
-            repeat:     Infinity,
-            ease:       "easeInOut",
-            delay:      floatDelay + 0.8,
-          },
+        style={reduced ? {} : {
+          animation: `float-gentle 5.5s ease-in-out infinite ${floatDelay}s`,
+          willChange: "transform",
         }}
       >
-        <Image
-          src={SRC[variant]}
-          alt=""
-          width={dim}
-          height={dim}
-          priority={priority}
-          className="w-full h-full object-contain drop-shadow-2xl"
-          aria-hidden="true"
-        />
-      </motion.div>
+        <motion.div
+          className="w-full h-full"
+          whileHover={reduced ? {} : { scale: 1.07, transition: { duration: 0.35, ease: "easeOut" } }}
+        >
+          <Image
+            src={SRC[variant]}
+            alt=""
+            width={dim}
+            height={dim}
+            priority={priority}
+            className="w-full h-full object-contain drop-shadow-2xl"
+            aria-hidden="true"
+          />
+        </motion.div>
+      </div>
     </div>
   )
 }

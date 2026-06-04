@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { Zap } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -45,11 +45,26 @@ let uidCounter = 100
 
 export function DashboardActivityFeed() {
   const [events, setEvents] = useState<ActivityEvent[]>(INITIAL)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const isVisibleRef = useRef(false)
+
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { isVisibleRef.current = entry.isIntersecting },
+      { threshold: 0 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   useEffect(() => {
     const usedTexts = new Set(INITIAL.map((e) => e.text))
 
     const interval = setInterval(() => {
+      if (!isVisibleRef.current) return
+
       setEvents((prev) => {
         const currentTexts = new Set(prev.map((e) => e.text))
         const candidates = EVENT_POOL.filter((e) => !currentTexts.has(e.text))
@@ -73,7 +88,7 @@ export function DashboardActivityFeed() {
   }, [])
 
   return (
-    <div className="space-y-2 overflow-hidden">
+    <div ref={containerRef} className="space-y-2 overflow-hidden">
       <AnimatePresence mode="popLayout" initial={false}>
         {events.map((event) => (
           <motion.div

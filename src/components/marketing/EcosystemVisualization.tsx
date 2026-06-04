@@ -101,11 +101,15 @@ export function EcosystemVisualization() {
   useEffect(() => {
     const el = ref.current
     if (!el) return
+    let rafId: number
     const obs = new ResizeObserver(([entry]) => {
-      setScale(entry.contentRect.width / 960)
+      cancelAnimationFrame(rafId)
+      rafId = requestAnimationFrame(() => {
+        setScale(entry.contentRect.width / 960)
+      })
     })
     obs.observe(el)
-    return () => obs.disconnect()
+    return () => { obs.disconnect(); cancelAnimationFrame(rafId) }
   }, [])
 
   const orbitData = useMemo(
@@ -149,29 +153,26 @@ export function EcosystemVisualization() {
           </radialGradient>
         </defs>
 
-        {/* Platform glow disc */}
-        <motion.ellipse cx="480" cy="465" rx="210" ry="52"
+        {/* Platform glow disc — CSS animation (no JS per-frame) */}
+        <ellipse cx="480" cy="465" rx="210" ry="52"
           fill="url(#eco-platform-glow)"
-          animate={{ opacity: [0.45, 0.90, 0.45] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          style={{ animation: "eco-glow-platform 4s ease-in-out infinite" }}
         />
 
         {/* Concentric platform rings */}
         {([70, 108, 150] as const).map((r, i) => (
-          <motion.circle key={`eco-pr-${r}`} cx="480" cy="380" r={r}
+          <circle key={`eco-pr-${r}`} cx="480" cy="380" r={r}
             fill="none" stroke="rgba(103,232,249,0.14)" strokeWidth="1"
-            animate={{ opacity: [0.08, 0.22, 0.08] }}
-            transition={{ duration: 3.8 + i * 1.0, repeat: Infinity, ease: "easeInOut", delay: i * 0.9 }}
+            style={{ animation: `eco-glow-ring ${3.8 + i}s ease-in-out infinite`, animationDelay: `${i * 0.9}s` }}
           />
         ))}
 
-        {/* Connection lines — flowing dashes toward node home positions */}
+        {/* Connection lines — CSS dash animation */}
         {NODES.map((n, i) => (
-          <motion.line key={`eco-cl-${n.title}`}
+          <line key={`eco-cl-${n.title}`}
             x1="480" y1="380" x2={n.lx} y2={n.ly}
             stroke={`url(#eco-line-${i})`} strokeWidth="1.2" strokeDasharray="4 8"
-            animate={{ strokeDashoffset: [0, -12] }}
-            transition={{ duration: 1.4 + i * 0.09, repeat: Infinity, ease: "linear" }}
+            style={{ animation: `eco-dash-flow ${1.4 + i * 0.09}s linear infinite` }}
           />
         ))}
 
@@ -187,12 +188,11 @@ export function EcosystemVisualization() {
             fill="none" stroke="rgba(139,92,246,0.26)" strokeWidth="1" strokeDasharray="5 10" />
         </g>
 
-        {/* Pulsing dots at node home positions */}
+        {/* Pulsing dots at node home positions — CSS animation */}
         {NODES.map((n, i) => (
-          <motion.circle key={`eco-dot-${n.title}`} cx={n.lx} cy={n.ly} r="3.5"
+          <circle key={`eco-dot-${n.title}`} cx={n.lx} cy={n.ly} r="3.5"
             fill="rgba(139,92,246,0.60)"
-            animate={{ opacity: [0.35, 0.90, 0.35] }}
-            transition={{ duration: 2.2 + i * 0.28, repeat: Infinity, ease: "easeInOut", delay: i * 0.42 }}
+            style={{ animation: `eco-glow-dot ${2.2 + i * 0.28}s ease-in-out infinite`, animationDelay: `${i * 0.42}s` }}
           />
         ))}
       </svg>
@@ -207,7 +207,7 @@ export function EcosystemVisualization() {
         <motion.div
           key={node.title}
           className="absolute z-30"
-          style={{ left: `${node.leftPct}%`, top: `${node.topPct}%`, transform: "translate(-50%, -50%)" }}
+          style={{ left: `${node.leftPct}%`, top: `${node.topPct}%`, transform: "translate(-50%, -50%)", willChange: "transform" }}
           animate={inView && !noMot ? { x: orbitData[i].x, y: orbitData[i].y } : { x: 0, y: 0 }}
           transition={inView && !noMot ? {
             duration: node.orbitDuration,

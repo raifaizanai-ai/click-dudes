@@ -4,7 +4,9 @@
       "Bash(pnpm *)",
       "Bash(pnpm dev *)",
       "Read(//tmp/**)",
-      "Bash(curl -s http://localhost:3001/)"
+      "Bash(curl -s http://localhost:3001/)",
+      "PowerShell(head *)",
+      "Bash(npx tsc *)"
     ]
   }
 }

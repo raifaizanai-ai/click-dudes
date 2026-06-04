@@ -36,7 +36,12 @@ export function Navbar() {
   const [scrolled,        setScrolled]       = useState(false)
   const [mobileOpen,      setMobileOpen]     = useState(false)
   const [activeDropdown,  setActiveDropdown] = useState<string | null>(null)
-  const closeTimer                           = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const closeTimer          = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const activeDropdownRef   = useRef<string | null>(null)
+
+  useEffect(() => {
+    activeDropdownRef.current = activeDropdown
+  }, [activeDropdown])
 
   const openDropdown = useCallback((label: string) => {
     if (closeTimer.current) clearTimeout(closeTimer.current)
@@ -50,11 +55,11 @@ export function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 24)
-      if (activeDropdown) setActiveDropdown(null)
+      if (activeDropdownRef.current) setActiveDropdown(null)
     }
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
-  }, [activeDropdown])
+  }, [])
 
   useEffect(() => {
     setMobileOpen(false)
@@ -99,8 +104,8 @@ export function Navbar() {
             "flex items-center h-[68px] sm:h-[76px] md:h-[80px] px-4 sm:px-5 md:px-6 gap-3 sm:gap-4",
             "rounded-full transition-all duration-500",
             scrolled
-              ? "bg-white/62 backdrop-blur-[48px] border border-white/48 shadow-[0_20px_56px_rgba(7,17,47,0.09),0_4px_12px_rgba(7,17,47,0.05),0_0_0_1px_rgba(139,92,246,0.09),inset_0_1px_0_rgba(255,255,255,0.92)]"
-              : "bg-white/50 backdrop-blur-[36px] border border-white/40 shadow-[0_4px_24px_rgba(7,17,47,0.06),0_1px_4px_rgba(7,17,47,0.03),0_0_0_1px_rgba(255,255,255,0.26),inset_0_1px_0_rgba(255,255,255,0.80)]"
+              ? "bg-white/62 backdrop-blur-[20px] md:backdrop-blur-[48px] border border-white/48 shadow-[0_20px_56px_rgba(7,17,47,0.09),0_4px_12px_rgba(7,17,47,0.05),0_0_0_1px_rgba(139,92,246,0.09),inset_0_1px_0_rgba(255,255,255,0.92)]"
+              : "bg-white/50 backdrop-blur-[16px] md:backdrop-blur-[36px] border border-white/40 shadow-[0_4px_24px_rgba(7,17,47,0.06),0_1px_4px_rgba(7,17,47,0.03),0_0_0_1px_rgba(255,255,255,0.26),inset_0_1px_0_rgba(255,255,255,0.80)]"
           )}
         >
           {/* Top-edge light catch — simulates 3D glass surface */}

@@ -31,40 +31,33 @@ const nodeHover: Record<NodeAccent, string> = {
   green:  "hover:shadow-[0_8px_32px_rgba(7,17,47,0.10),0_0_0_1px_rgba(16,185,129,0.22),0_0_20px_rgba(16,185,129,0.10)]",
 }
 
-const floatVariants = {
-  animate: (d: number) => ({
-    y: [0, -8, 0],
-    transition: {
-      duration: 4.2 + d * 0.6,
-      repeat: Infinity,
-      ease: [0.45, 0, 0.55, 1] as const,
-      delay: d * 0.45,
-    },
-  }),
-}
-
 export function EcosystemNode({ icon: Icon, title, description, accent, floatDelay = 0, className }: EcosystemNodeProps) {
+  const floatDuration = 4.2 + floatDelay * 0.6
   return (
-    <motion.div
-      custom={floatDelay}
-      variants={floatVariants}
-      animate="animate"
-      whileHover={{ scale: 1.06, transition: { duration: 0.2, ease: "easeOut" } }}
-      className={cn(
-        "glass rounded-2xl p-3 sm:p-3.5 w-[144px] flex flex-col items-center gap-2 text-center cursor-default select-none",
-        "shadow-[0_4px_20px_rgba(7,17,47,0.08),0_0_0_1px_rgba(139,92,246,0.10)]",
-        "transition-[box-shadow] duration-300",
-        nodeHover[accent],
-        className
-      )}
+    <div
+      style={{
+        animation: `float ${floatDuration}s ease-in-out infinite ${floatDelay * 0.45}s`,
+        willChange: "transform",
+      }}
     >
-      <div className={cn("w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0", iconStyle[accent])}>
-        <Icon aria-hidden="true" className="w-[18px] h-[18px]" />
-      </div>
-      <div>
-        <h3 className="text-[11px] font-semibold text-text-primary leading-tight">{title}</h3>
-        <p className="text-[10px] text-text-muted leading-snug mt-0.5">{description}</p>
-      </div>
-    </motion.div>
+      <motion.div
+        whileHover={{ scale: 1.06, transition: { duration: 0.2, ease: "easeOut" } }}
+        className={cn(
+          "glass rounded-2xl p-3 sm:p-3.5 w-[144px] flex flex-col items-center gap-2 text-center cursor-default select-none",
+          "shadow-[0_4px_20px_rgba(7,17,47,0.08),0_0_0_1px_rgba(139,92,246,0.10)]",
+          "transition-[box-shadow] duration-300",
+          nodeHover[accent],
+          className
+        )}
+      >
+        <div className={cn("w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0", iconStyle[accent])}>
+          <Icon aria-hidden="true" className="w-[18px] h-[18px]" />
+        </div>
+        <div>
+          <h3 className="text-[11px] font-semibold text-text-primary leading-tight">{title}</h3>
+          <p className="text-[10px] text-text-muted leading-snug mt-0.5">{description}</p>
+        </div>
+      </motion.div>
+    </div>
   )
 }

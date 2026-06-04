@@ -36,16 +36,15 @@ export function DashboardLiveChart() {
         </linearGradient>
       </defs>
 
-      {/* Faint grid lines */}
+      {/* Faint grid lines — CSS animation */}
       {([18, 36, 54] as const).map((y) => (
-        <motion.line
+        <line
           key={y}
           x1="0" y1={y} x2="400" y2={y}
           stroke="rgba(139,92,246,0.07)"
           strokeWidth="1"
           strokeDasharray="4 8"
-          animate={reduced ? {} : { opacity: [0.4, 0.8, 0.4] }}
-          transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: y / 30 }}
+          style={reduced ? {} : { animation: `rv-grid-pulse 3.5s ease-in-out infinite`, animationDelay: `${y / 30}s` }}
         />
       ))}
 

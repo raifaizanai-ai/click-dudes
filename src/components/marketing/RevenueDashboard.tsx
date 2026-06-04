@@ -64,14 +64,13 @@ export function RevenueDashboard() {
             <span className="text-[9px] text-text-muted/60 leading-tight hidden sm:block">Illustrative — aggregate network view</span>
           </div>
           <div className="flex items-center gap-2">
-            <motion.span
-              animate={{ opacity: [0.70, 1, 0.70] }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+            <span
               className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-brand-purple/8 border border-brand-purple/12"
+              style={{ animation: "ui-pulse-70 2.5s ease-in-out infinite" }}
             >
               <Brain aria-hidden="true" className="w-3 h-3 text-brand-purple" />
               <span className="text-[10px] font-semibold text-brand-purple tracking-wide">AI OPTIMIZING</span>
-            </motion.span>
+            </span>
             <LiveDot color="green" size="sm" label="LIVE" />
           </div>
         </div>
@@ -109,14 +108,13 @@ export function RevenueDashboard() {
       <div className="px-5 pb-3">
         <div className="flex items-center justify-between mb-2">
           <p className="text-[11px] text-text-muted tracking-wide uppercase">RPM Trend · 30 Days</p>
-          <motion.div
-            animate={{ opacity: [0.6, 1, 0.6] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          <div
             className="flex items-center gap-1"
+            style={{ animation: "ui-pulse-60 2s ease-in-out infinite" }}
           >
             <Activity aria-hidden="true" className="w-3 h-3 text-brand-cyan" />
             <span className="text-[10px] text-brand-purple font-medium">Real-time</span>
-          </motion.div>
+          </div>
         </div>
         <DashboardLiveChart />
       </div>
@@ -125,13 +123,12 @@ export function RevenueDashboard() {
       <div className="px-5 pb-4 pt-3 border-t border-brand-purple/[0.08]">
         <div className="flex items-center justify-between mb-2.5">
           <p className="text-[10px] tracking-widest uppercase text-text-muted">AI Activity</p>
-          <motion.span
-            animate={{ opacity: [0.5, 1, 0.5] }}
-            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+          <span
             className="text-[10px] text-brand-purple font-semibold"
+            style={{ animation: "ui-pulse-50 1.8s ease-in-out infinite" }}
           >
             ● STREAMING
-          </motion.span>
+          </span>
         </div>
         <DashboardActivityFeed />
       </div>
