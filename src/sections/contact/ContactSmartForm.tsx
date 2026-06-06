@@ -10,9 +10,9 @@ import { GradientText } from "@/components/shared/GradientText"
 import { cn } from "@/lib/utils"
 
 const CONTACT_EMAIL = "contact@clickdudes.com"
-const WHATSAPP      = "https://wa.me/447446123539"
-const PHONE         = "+44 7446 123539"
-const PHONE_HREF    = "tel:+447446123539"
+const WHATSAPP      = "https://wa.me/447735316000"
+const PHONE         = "+44 7735 316000"
+const PHONE_HREF    = "tel:+447735316000"
 
 const PLATFORM_TYPES  = ["Website", "App", "CTV", "Advertiser"]
 const GOALS           = ["Increase RPM", "Google AdX", "Header Bidding", "AI Optimization", "General Inquiry"]

@@ -8,9 +8,9 @@ import { Container } from "@/components/layout/Container"
 import { cn } from "@/lib/utils"
 
 const EMAIL      = "contact@clickdudes.com"
-const PHONE      = "+44 7446 123539"
-const PHONE_HREF = "tel:+447446123539"
-const WHATSAPP   = "https://wa.me/447446123539"
+const PHONE      = "+44 7735 316000"
+const PHONE_HREF = "tel:+447735316000"
+const WHATSAPP   = "https://wa.me/447735316000"
 const MAPS_HREF  = "https://maps.google.com/?q=86-90+Paul+Street+London+EC2A+4NE"
 
 const CARD_SHADOW = "0 8px 40px rgba(7,17,47,0.06), 0 0 0 1px rgba(139,92,246,0.07)"

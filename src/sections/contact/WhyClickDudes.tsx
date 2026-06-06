@@ -21,7 +21,7 @@ const METRICS = [
   {
     icon: Users,
     color: "text-brand-purple", bg: "bg-brand-purple/10",
-    value: 250, suffix: "+", prefix: "",
+    value: 450, suffix: "+", prefix: "",
     label: "Publishers",
     sub: "Onboarded and growing",
   },
