@@ -3,7 +3,7 @@ import { WebMonetizationPage } from "@/sections/solutions/web-monetization/WebMo
 
 export const metadata: Metadata = {
   title: "Web Monetization — Click Dudes | Turning Clicks Into Revenue",
-  description: "Deploy the full premium ad stack — Google AdX, 15+ SSPs, AI price floors, and header bidding — managed entirely by our team. Average publishers see 41% RPM uplift within 30 days.",
+  description: "Deploy the full premium ad stack, Google AdX, 15+ SSPs, AI price floors, and header bidding, managed entirely by our team. Average publishers see 41% RPM uplift within 30 days.",
   openGraph: {
     title: "Web Monetization — Click Dudes",
     description: "Turn your web traffic into maximum revenue with managed AdX, header bidding, and AI optimization.",
@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Web Publisher Monetization — Google AdX & Header Bidding",
+  name: "Web Publisher Monetization, Google AdX & Header Bidding",
   description: "Full managed ad stack for web publishers including Google AdX, 15+ SSPs, AI price floors, and header bidding. Average 41% RPM uplift within 30 days.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/publisher-solutions/web-monetization",

@@ -32,32 +32,33 @@ const OUTER_DUR = 72
 const ORBIT_STEPS = 36
 
 // Container viewBox: 960×760. Center: (480, 380).
-// Inner orbit r=215; outer orbit rx=310 ry=248.
+// Inner orbit r=280 (robot xl=340px → safe-zone radius 170px; card half-width 72px → inner card edge 208px, 38px clearance).
+// Outer orbit rx=350 ry=272.
 const NODES: NodeDef[] = [
   { icon: Brain,      title: "AI Optimization",   description: "ML floor & placement engine",   accent: "cyan",
-    leftPct: 34.17, topPct: 30.00, floatDelay: 0, lx: 328, ly: 228,
-    orbitRx: 215, orbitRy: 215, initialAngle: 225, orbitDuration: INNER_DUR, orbitDir:  1 },
+    leftPct: 29.38, topPct: 23.95, floatDelay: 0, lx: 282, ly: 182,
+    orbitRx: 280, orbitRy: 280, initialAngle: 225, orbitDuration: INNER_DUR, orbitDir:  1 },
   { icon: Zap,        title: "Google AdX",         description: "Premium demand pool access",    accent: "violet",
-    leftPct: 65.83, topPct: 30.00, floatDelay: 1, lx: 632, ly: 228,
-    orbitRx: 215, orbitRy: 215, initialAngle: 315, orbitDuration: INNER_DUR, orbitDir:  1 },
+    leftPct: 70.63, topPct: 23.95, floatDelay: 1, lx: 678, ly: 182,
+    orbitRx: 280, orbitRy: 280, initialAngle: 315, orbitDuration: INNER_DUR, orbitDir:  1 },
   { icon: GitBranch,  title: "Header Bidding",     description: "Unified auction yield",         accent: "purple",
-    leftPct: 65.83, topPct: 70.00, floatDelay: 2, lx: 632, ly: 532,
-    orbitRx: 215, orbitRy: 215, initialAngle:  45, orbitDuration: INNER_DUR, orbitDir:  1 },
+    leftPct: 70.63, topPct: 76.05, floatDelay: 2, lx: 678, ly: 578,
+    orbitRx: 280, orbitRy: 280, initialAngle:  45, orbitDuration: INNER_DUR, orbitDir:  1 },
   { icon: BarChart3,  title: "Revenue Analytics",  description: "Real-time monetization data",   accent: "blue",
-    leftPct: 34.17, topPct: 70.00, floatDelay: 3, lx: 328, ly: 532,
-    orbitRx: 215, orbitRy: 215, initialAngle: 135, orbitDuration: INNER_DUR, orbitDir:  1 },
+    leftPct: 29.38, topPct: 76.05, floatDelay: 3, lx: 282, ly: 578,
+    orbitRx: 280, orbitRy: 280, initialAngle: 135, orbitDuration: INNER_DUR, orbitDir:  1 },
   { icon: Sparkles,   title: "Premium Demand",     description: "Fortune 500 brand access",      accent: "purple",
-    leftPct: 50.00, topPct: 17.37, floatDelay: 4, lx: 480, ly: 132,
-    orbitRx: 310, orbitRy: 248, initialAngle: 270, orbitDuration: OUTER_DUR, orbitDir: -1 },
+    leftPct: 50.00, topPct: 14.21, floatDelay: 4, lx: 480, ly: 108,
+    orbitRx: 350, orbitRy: 272, initialAngle: 270, orbitDuration: OUTER_DUR, orbitDir: -1 },
   { icon: Smartphone, title: "App Publishers",     description: "High-fill in-app monetization", accent: "cyan",
-    leftPct: 82.29, topPct: 50.00, floatDelay: 5, lx: 790, ly: 380,
-    orbitRx: 310, orbitRy: 248, initialAngle:   0, orbitDuration: OUTER_DUR, orbitDir: -1 },
+    leftPct: 86.46, topPct: 50.00, floatDelay: 5, lx: 830, ly: 380,
+    orbitRx: 350, orbitRy: 272, initialAngle:   0, orbitDuration: OUTER_DUR, orbitDir: -1 },
   { icon: Monitor,    title: "CTV Publishers",     description: "Premium connected TV demand",   accent: "violet",
-    leftPct: 50.00, topPct: 82.63, floatDelay: 6, lx: 480, ly: 628,
-    orbitRx: 310, orbitRy: 248, initialAngle:  90, orbitDuration: OUTER_DUR, orbitDir: -1 },
+    leftPct: 50.00, topPct: 85.79, floatDelay: 6, lx: 480, ly: 652,
+    orbitRx: 350, orbitRy: 272, initialAngle:  90, orbitDuration: OUTER_DUR, orbitDir: -1 },
   { icon: Globe,      title: "Web Publishers",     description: "Display, video & native yield", accent: "blue",
-    leftPct: 17.71, topPct: 50.00, floatDelay: 7, lx: 170, ly: 380,
-    orbitRx: 310, orbitRy: 248, initialAngle: 180, orbitDuration: OUTER_DUR, orbitDir: -1 },
+    leftPct: 13.54, topPct: 50.00, floatDelay: 7, lx: 130, ly: 380,
+    orbitRx: 350, orbitRy: 272, initialAngle: 180, orbitDuration: OUTER_DUR, orbitDir: -1 },
 ]
 
 const ORBIT_TIMES = Array.from({ length: ORBIT_STEPS + 1 }, (_, k) => k / ORBIT_STEPS)
@@ -178,13 +179,13 @@ export function EcosystemVisualization() {
 
         {/* Outer orbit ring — clockwise indicator */}
         <g className="svg-orbit-cw">
-          <ellipse cx="480" cy="380" rx="310" ry="248"
+          <ellipse cx="480" cy="380" rx="350" ry="272"
             fill="none" stroke="rgba(139,92,246,0.20)" strokeWidth="1.2" strokeDasharray="8 16" />
         </g>
 
         {/* Inner orbit ring — counter-clockwise indicator */}
         <g className="svg-orbit-ccw">
-          <circle cx="480" cy="380" r="215"
+          <circle cx="480" cy="380" r="280"
             fill="none" stroke="rgba(139,92,246,0.26)" strokeWidth="1" strokeDasharray="5 10" />
         </g>
 
@@ -197,8 +198,8 @@ export function EcosystemVisualization() {
         ))}
       </svg>
 
-      {/* Robot — centered, dominant */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+      {/* Robot — centered, dominant — z-40 keeps it above orbit cards (z-30) at all times */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-40">
         <RobotImage variant="main" size="xl" floatDelay={0} glowColor="purple" priority />
       </div>
 

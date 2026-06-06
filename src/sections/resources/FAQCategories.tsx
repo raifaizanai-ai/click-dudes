@@ -20,8 +20,8 @@ const CATEGORIES: FAQCategory[] = [
     questions: [
       { question: "What is Click Dudes?", answer: "Click Dudes is a Google Certified Publishing Partner (GCPP) providing AI-powered ad monetization for web, app, and CTV publishers. We provide access to Google AdX, header bidding, premium demand partners, and managed AI optimization." },
       { question: "What traffic requirements do I need?", answer: "We work with publishers generating 500K+ monthly pageviews (web/app) or 250K+ monthly impressions (CTV). Traffic must originate from Tier-1 or Tier-2 geos and be brand-safe. Quality matters more than raw volume." },
-      { question: "How long does onboarding take?", answer: "Most publishers are fully live within 3–7 business days after approval. This includes AdX tag integration, header bidding wrapper, and initial AI calibration. No developer required on your end." },
-      { question: "Do I need to sign a long-term contract?", answer: "No long-term contracts. We operate on rolling agreements — give us 30 days notice and you can exit. We prefer publishers stay because of the results, not because they're locked in." },
+      { question: "How long does onboarding take?", answer: "Most publishers are fully live within 2–7 days after approval. This includes AdX tag integration, header bidding wrapper, and initial AI calibration. No developer required on your end." },
+      { question: "Do I need to sign a long-term contract?", answer: "No long-term contracts. We operate on rolling agreements, give us 30 days notice and you can exit. We prefer publishers stay because of the results, not because they're locked in." },
     ],
   },
   {
@@ -37,14 +37,14 @@ const CATEGORIES: FAQCategory[] = [
     questions: [
       { question: "Which platforms and SDKs do you support?", answer: "We support iOS, Android, and Unity. Our mediation stack is compatible with Google AdMob, MAX (AppLovin), Prebid Mobile, and all major mediation adapters. Integration typically takes 1–3 days with our SDK guides." },
       { question: "What's the average eCPM improvement for apps?", answer: "App publishers on our network see an average of 70–120% eCPM improvement within 60 days. Rewarded video and interstitial formats consistently outperform banner by 5–15x in eCPM, and our AI optimizes bid floors for each." },
-      { question: "Do you support rewarded ads?", answer: "Yes — rewarded video is one of our highest-performing formats. We manage demand fill, creative quality, and reward timing to maximize both revenue and user experience metrics like retention and session length." },
+      { question: "Do you support rewarded ads?", answer: "Yes, rewarded video is one of our highest-performing formats. We manage demand fill, creative quality, and reward timing to maximize both revenue and user experience metrics like retention and session length." },
     ],
   },
   {
     id: "adx", label: "Google AdX",
     questions: [
       { question: "What is Google AdX and why is it better than AdSense?", answer: "Google AdX is the enterprise programmatic exchange that powers Google's premium publisher marketplace. Unlike AdSense (which only uses GDN demand), AdX connects you to 500+ DSPs, private marketplace deals, and preferred deal buyers. Average web CPMs are 2–4x higher than AdSense." },
-      { question: "How do I get Google AdX as a publisher?", answer: "AdX requires a Google Certified Publishing Partner — which Click Dudes is. We review your property, submit for approval through our managed partner account, and handle the technical integration. AdX approval typically takes 5–10 business days." },
+      { question: "How do I get Google AdX as a publisher?", answer: "AdX requires a Google Certified Publishing Partner, which Click Dudes is. We review your property, submit for approval through our managed partner account, and handle the technical integration. AdX approval typically takes 5–10 business days." },
       { question: "Are there AdX-specific policy requirements?", answer: "Yes. AdX has stricter content policies than AdSense, particularly around adult content, copyright, and user-generated content. Our compliance team reviews your property before submission and guides you through any required changes." },
     ],
   },
@@ -52,7 +52,7 @@ const CATEGORIES: FAQCategory[] = [
     id: "payments", label: "Payments",
     questions: [
       { question: "When do I receive my first payment?", answer: "Payments are issued on a NET-30 basis after each calendar month closes. January revenue is paid in late February. We support bank wire, ACH (US), and PayPal. Minimum payout threshold is $100." },
-      { question: "What percentage does Click Dudes take?", answer: "We charge a revenue share on managed yield — this covers AdX partner fees, header bidding infrastructure, and managed service. Our rate is disclosed clearly during onboarding. Publishers consistently net more even after our fee versus managing AdSense alone." },
+      { question: "What percentage does Click Dudes take?", answer: "We charge a revenue share on managed yield, this covers AdX partner fees, header bidding infrastructure, and managed service. Our rate is disclosed clearly during onboarding. Publishers consistently net more even after our fee versus managing AdSense alone." },
       { question: "Can I get accelerated payments?", answer: "High-volume publishers (earning $5,000+ monthly) can arrange bi-weekly payment schedules at no extra cost. Enterprise partners with $25,000+ monthly revenue can discuss NET-15 terms." },
     ],
   },

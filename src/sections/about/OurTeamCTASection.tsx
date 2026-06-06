@@ -25,7 +25,7 @@ const STATS = [
 ]
 
 const BENEFITS = [
-  "Dedicated account manager from day one — not a shared queue",
+  "Dedicated account manager from day one, not a shared queue",
   "Publisher Success team available 24/7 across time zones",
   "Engineering team on-call for any technical integration issues",
   "Monthly strategy reviews with senior monetization consultants",
@@ -107,7 +107,7 @@ export function OurTeamCTASection() {
                   <div>
                     <p className="text-[11px] font-semibold text-text-primary">Publisher Success Message</p>
                     <p className="text-[10px] text-text-secondary mt-0.5 leading-relaxed">
-                      "Your account manager will be in touch within 4 hours of sign-up — not 4 days."
+                      "Your account manager will be in touch within 4 hours of sign-up, not 4 days."
                     </p>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export function OurTeamCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Every publisher gets a dedicated account manager — not just a ticket queue. Our Publisher Success team is built around real relationships and measurable revenue outcomes.
+              Every publisher gets a dedicated account manager, not just a ticket queue. Our Publisher Success team is built around real relationships and measurable revenue outcomes.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

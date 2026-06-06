@@ -104,8 +104,8 @@ export function calculateRevenue(inputs: CalcInputs): CalcResults {
   const insights: string[] = []
   if (inputs.geography === "tier1")         insights.push("Your Tier 1 traffic has strong high-value potential with premium buyer demand.")
   if (inputs.adPlacementQuality < 70)       insights.push("Improving ad placement quality could increase your RPM by 20–35%.")
-  if (inputs.platform === "adsense")        insights.push("Upgrading from AdSense to AdX could unlock 2–4x higher CPM demand.")
-  if (inputs.viewabilityRate < 65)          insights.push("Improving viewability above 70% unlocks higher CPM bids from premium advertisers.")
+  if (inputs.platform === "adsense")        insights.push("Upgrading from AdSense to AdX can deliver 2–4x higher CPM demand through premium buyers.")
+  if (inputs.viewabilityRate < 65)          insights.push("Improving viewability above 70% attracts higher CPM bids from premium advertisers.")
   if (inputs.fillRate < 80)                 insights.push("Header bidding competition could push your fill rate to 95%+.")
   if (inputs.platform !== "header_bidding") insights.push("Header bidding creates real-time demand competition and typically improves fill rate.")
   if (inputs.contentQuality > 75)          insights.push("Your high content quality score positions you well for private marketplace deals.")

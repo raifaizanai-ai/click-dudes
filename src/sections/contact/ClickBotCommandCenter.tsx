@@ -29,7 +29,7 @@ const ACTIVITY = [
 ]
 
 const STATUS_ITEMS = [
-  { label: "Monitoring",           value: "250+ Publishers" },
+  { label: "Monitoring",           value: "450+ Publishers" },
   { label: "Revenue Signals",      value: "24,892" },
   { label: "Optimizations Today",  value: "143" },
   { label: "Demand Partners",      value: "50+" },

@@ -67,7 +67,7 @@ export function AdxHeroPanel() {
         <div className="flex flex-col items-end gap-0.5">
           <div className="flex items-center gap-1">
             <Info className="w-3 h-3 text-text-muted/50 flex-shrink-0" aria-hidden="true" />
-            <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative — aggregate network view</span>
+            <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative, aggregate network view</span>
           </div>
           <LiveDot color="green" size="sm" label="LIVE" />
         </div>

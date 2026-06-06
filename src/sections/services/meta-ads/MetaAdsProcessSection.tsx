@@ -29,7 +29,7 @@ const LOOP_STEPS = [
   },
   {
     num: "04", icon: TrendingUp, title: "Scale & ROAS Optimisation",
-    body: "We scale winning ad sets, cut underperformers, refresh creatives, and push ROAS higher every month — no plateau.",
+    body: "We scale winning ad sets, cut underperformers, refresh creatives, and push ROAS higher every month, no plateau.",
     kpi: { label: "Avg ROAS achieved", value: "5.8x" }, time: "Ongoing",
     color: "text-brand-green", bg: "bg-brand-green/[0.08]", border: "border-brand-green/[0.15]",
     glow: "hover:shadow-[0_12px_40px_rgba(16,185,129,0.14)]",

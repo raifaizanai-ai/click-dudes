@@ -33,7 +33,7 @@ export function AdxAnalytics() {
             <SectionHeader
               badge="Revenue Intelligence"
               heading={<>Real-Time Visibility.<br /><GradientText gradient="brand">Zero Guesswork.</GradientText></>}
-              subtext="Our live revenue dashboard gives you instant access to every metric that matters — so you always know exactly how your inventory is performing."
+              subtext="Our live revenue dashboard gives you instant access to every metric that matters, so you always know exactly how your inventory is performing."
               align="left"
               subtextWidth="full"
             />

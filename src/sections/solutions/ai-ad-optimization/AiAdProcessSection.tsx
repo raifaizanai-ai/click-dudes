@@ -11,12 +11,12 @@ const STEPS = [
   {
     icon: BarChart3, title: "Baseline Analysis", duration: "Day 1–3",
     color: "text-brand-purple", border: "rgba(139,92,246,0.22)", glow: "rgba(139,92,246,0.14)",
-    body: "AI ingests 90 days of your historical auction data to establish CPM patterns, seasonal curves, and demand profiles — building the training foundation for your personalized model.",
+    body: "AI ingests 90 days of your historical auction data to establish CPM patterns, seasonal curves, and demand profiles, building the training foundation for your personalized model.",
   },
   {
     icon: BrainCircuit, title: "Model Deployment", duration: "Day 4–7",
     color: "text-brand-violet", border: "rgba(168,85,247,0.22)", glow: "rgba(168,85,247,0.14)",
-    body: "Customized floor pricing and anomaly detection models go live against your inventory. Initial predictions are conservative — models widen confidence as they observe your specific traffic.",
+    body: "Customized floor pricing and anomaly detection models go live against your inventory. Initial predictions are conservative, models widen confidence as they observe your specific traffic.",
   },
   {
     icon: Zap, title: "Active Optimization", duration: "Day 8–30",
@@ -60,11 +60,11 @@ export function AiAdProcessSection() {
             AI Integration Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            AI Live in 7–14 Days,{" "}
+            AI Live in 2–7 days,{" "}
             <span className="text-gradient-brand">Compounding for Years</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">
-            Your personalized AI model is trained on your specific inventory, demand patterns, and audience — getting smarter with every impression.
+            Your personalized AI model is trained on your specific inventory, demand patterns, and audience, getting smarter with every impression.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export function AiAdProcessSection() {
 
               {/* AI action log */}
               <div className="px-5 pb-4 space-y-2">
-                <p className="text-[10px] text-text-muted uppercase tracking-wider font-semibold">AI Activity Log — Live</p>
+                <p className="text-[10px] text-text-muted uppercase tracking-wider font-semibold">AI Activity Log, Live</p>
                 {LOG_ITEMS.map((item, i) => (
                   <motion.div key={i}
                     initial={{ opacity: 0, x: 12 }}

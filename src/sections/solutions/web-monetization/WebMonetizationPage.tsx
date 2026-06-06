@@ -31,12 +31,12 @@ const PARTNERS = [
 const PROBLEMS = [
   { title: "AdSense CPM Ceiling", body: "Single-demand waterfall caps your CPMs at AdSense rates. Competing demand partners are completely locked out, leaving money on the table every day." },
   { title: "Zero Yield Visibility", body: "AdSense reports give you totals, not intelligence. You can't see which placements, device types, or geographies are underperforming." },
-  { title: "No Direct Deal Access", body: "Premium advertisers pay 3–6× higher CPMs through direct and preferred deals — but without AdX access, this demand segment is entirely inaccessible." },
+  { title: "No Direct Deal Access", body: "Premium advertisers pay 3–6× higher CPMs through direct and preferred deals, but without AdX access, this demand segment is entirely inaccessible." },
 ]
 
 const SOLUTIONS = [
   { title: "Full Demand Competition", body: "Deploy 15+ premium SSPs in a unified auction. Every impression triggers real-time competition across Google AdX, open exchange, and private marketplace simultaneously." },
-  { title: "Granular Revenue Intelligence", body: "Session-level analytics break down CPM, fill rate, and revenue by placement, device, OS, geography, and ad format — refreshed every 30 minutes." },
+  { title: "Granular Revenue Intelligence", body: "Session-level analytics break down CPM, fill rate, and revenue by placement, device, OS, geography, and ad format, refreshed every 30 minutes." },
   { title: "Private Marketplace Access", body: "Our managed demand team negotiates preferred deals and private auction packages with tier-1 brand advertisers specifically for your content vertical." },
 ]
 
@@ -81,17 +81,17 @@ const WHY_US_ITEMS = [
   },
   {
     icon: Zap,        title: "Sub-200ms Header Bidding",
-    body: "Our server-side bidding infrastructure runs auctions with under 200ms added latency — fast enough that Core Web Vitals scores are not affected by the ad stack.",
+    body: "Our server-side bidding infrastructure runs auctions with under 200ms added latency, fast enough that Core Web Vitals scores are not affected by the ad stack.",
     highlight: "Speed Optimized", accent: "text-brand-blue", bg: "rgba(96,165,250,0.10)", dotColor: "blue" as const,
   },
   {
     icon: BarChart3,  title: "Proprietary AI Yield Engine",
-    body: "Built on 3+ years of publisher data, our floor pricing AI outperforms manual optimization by 18% on average — and it keeps improving as it learns your audience.",
+    body: "Built on 3+ years of publisher data, our floor pricing AI outperforms manual optimization by 18% on average, and it keeps improving as it learns your audience.",
     highlight: "AI-Powered", accent: "text-brand-purple", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
   },
   {
     icon: Users,      title: "Dedicated Publisher Manager",
-    body: "A real human with ad-tech expertise monitors your account, answers questions, and proactively surfaces revenue opportunities — not a ticket queue.",
+    body: "A real human with ad-tech expertise monitors your account, answers questions, and proactively surfaces revenue opportunities, not a ticket queue.",
     highlight: "White Glove", accent: "text-brand-green", bg: "rgba(16,185,129,0.10)", dotColor: "green" as const,
   },
 ]
@@ -107,11 +107,11 @@ const METRICS = [
 const FAQS = [
   {
     question: "What traffic threshold do I need to qualify?",
-    answer:   "We work with web publishers generating 500K+ monthly pageviews. Traffic quality — engagement depth, Tier-1 geography, content compliance — matters as much as raw volume. Publishers with highly engaged niche audiences often outperform high-volume general news sites.",
+    answer:   "We work with web publishers generating 500K+ monthly pageviews. Traffic quality, engagement depth, Tier-1 geography, content compliance, matters as much as raw volume. Publishers with highly engaged niche audiences often outperform high-volume general news sites.",
   },
   {
     question: "Will adding more demand partners slow down my site?",
-    answer:   "No. We use server-side header bidding, which means the auction happens on our servers — not in the user's browser. Latency impact is under 200ms and your Core Web Vitals scores are unaffected. We'll run a before/after speed benchmark as part of every integration.",
+    answer:   "No. We use server-side header bidding, which means the auction happens on our servers, not in the user's browser. Latency impact is under 200ms and your Core Web Vitals scores are unaffected. We'll run a before/after speed benchmark as part of every integration.",
   },
   {
     question: "How long until I see a meaningful revenue lift?",
@@ -119,7 +119,7 @@ const FAQS = [
   },
   {
     question: "Can I keep my existing AdSense account running?",
-    answer:   "Yes. We configure AdSense as a demand partner within your ad stack rather than replacing it. AdX and open exchange bids compete against AdSense in real time — AdSense still wins impressions when it bids highest. Revenue from all sources is tracked in a single unified dashboard.",
+    answer:   "Yes. We configure AdSense as a demand partner within your ad stack rather than replacing it. AdX and open exchange bids compete against AdSense in real time, AdSense still wins impressions when it bids highest. Revenue from all sources is tracked in a single unified dashboard.",
   },
   {
     question: "What content categories do you work with?",
@@ -138,7 +138,7 @@ export function WebMonetizationPage() {
         badge="Web Monetization"
         badgeIcon={Globe}
         headline={<>Turn Your Web Traffic Into<br /><GradientText gradient="brand">Maximum Revenue</GradientText></>}
-        subtext="Deploy the full premium ad stack — Google AdX, 15+ SSPs, AI price floors, and header bidding — managed entirely by our team. Average publishers see 41% RPM uplift within 30 days."
+        subtext="Deploy the full premium ad stack, Google AdX, 15+ SSPs, AI price floors, and header bidding, managed entirely by our team. Average publishers see 41% RPM uplift within 30 days."
         stats={STATS}
         panelContent={<WebHeroPanel />}
         robotVariant="analytics"
@@ -157,14 +157,14 @@ export function WebMonetizationPage() {
       <SolutionFeatures
         badge="Platform Features"
         heading={<>The Complete Web<br /><GradientText gradient="violet">Monetization Stack</GradientText></>}
-        subtext="The complete web monetization stack — Google AdX, header bidding, AI price floors, premium SSPs — managed by our team, built around your inventory."
+        subtext="The complete web monetization stack, Google AdX, header bidding, AI price floors, premium SSPs, managed by our team, built around your inventory."
         features={FEATURES}
       />
 
       <SolutionAnalytics
         badge="Revenue Intelligence"
         heading={<>Real-Time Analytics<br /><GradientText gradient="brand">Built for Publishers</GradientText></>}
-        subtext="Session-level revenue data, demand partner breakdown, and AI-driven recommendations — refreshed every 30 minutes so you're always acting on current intelligence."
+        subtext="Session-level revenue data, demand partner breakdown, and AI-driven recommendations, refreshed every 30 minutes so you're always acting on current intelligence."
         bullets={[
           "Placement-level CPM, fill rate, and revenue breakdown",
           "Device and geography performance segmentation",
@@ -189,7 +189,7 @@ export function WebMonetizationPage() {
       <SolutionMetrics
         badge="Proven Results"
         heading={<>Numbers That<br /><GradientText gradient="brand">Speak for Themselves</GradientText></>}
-        subtext="Real performance data from our publisher network — not projections or best-case scenarios."
+        subtext="Real performance data from our publisher network, not projections or best-case scenarios."
         metrics={METRICS}
       />
 

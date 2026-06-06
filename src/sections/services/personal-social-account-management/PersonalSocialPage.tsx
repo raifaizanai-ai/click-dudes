@@ -18,7 +18,7 @@ const problems = [
 ]
 
 const solutions = [
-  { title: "Always-On Presence Without the Work", body: "We manage your personal accounts end-to-end — content, posting, engagement — so you appear active without spending hours on it." },
+  { title: "Always-On Presence Without the Work", body: "We manage your personal accounts end-to-end, content, posting, engagement, so you appear active without spending hours on it." },
   { title: "Professional Content Creation", body: "We write, design, and produce content in your authentic voice that positions you as a credible authority in your field." },
   { title: "Strategic Profile Optimization", body: "We optimize your LinkedIn, Instagram, and other profiles to attract the right audience and clearly communicate your value." },
 ]
@@ -34,10 +34,10 @@ const features = [
 
 
 const whyUsItems = [
-  { icon: User2, title: "Your Voice, Not a Bot", body: "We write content that sounds authentically like you — not generic, AI-generated filler that your audience can immediately spot.", highlight: "Authentic Content", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
+  { icon: User2, title: "Your Voice, Not a Bot", body: "We write content that sounds authentically like you, not generic, AI-generated filler that your audience can immediately spot.", highlight: "Authentic Content", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
   { icon: Star, title: "Authority-Building Strategy", body: "We position you as a thought leader with strategic content that earns credibility, trust, and inbound opportunities.", highlight: "Industry Authority", accent: "text-brand-purple", bg: "rgba(103,232,249,0.08)", dotColor: "cyan" as const },
   { icon: TrendingUp, title: "Rapid Profile Growth", body: "Our clients average 68% follower growth in the first 90 days with high engagement rates that signal real authority.", highlight: "68% Avg Growth", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
-  { icon: Zap, title: "Business Opportunity Driven", body: "Personal branding isn't vanity — it's lead generation. We build your presence to attract deals, partnerships, and clients.", highlight: "ROI Focused", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
+  { icon: Zap, title: "Business Opportunity Driven", body: "Personal branding isn't vanity, it's lead generation. We build your presence to attract deals, partnerships, and clients.", highlight: "ROI Focused", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
 ]
 
 const faqs = [
@@ -55,7 +55,7 @@ export function PersonalSocialPage() {
         badge="Personal Brand Management"
         badgeIcon={User2}
         headline={<>Build Your Personal Brand & <span className="text-gradient-brand">Online Authority</span></>}
-        subtext="Click Dudes manages your personal social accounts — content creation, posting, engagement, and network growth — so your personal brand works while you focus on your business."
+        subtext="Click Dudes manages your personal social accounts, content creation, posting, engagement, and network growth, so your personal brand works while you focus on your business."
         primaryCTA={{ label: "Grow My Personal Brand", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Free Brand Audit", href: "/about/contact-us" }}
         caption="LinkedIn, Instagram, TikTok · Authentic content · Authority building · Network growth"
@@ -72,7 +72,7 @@ export function PersonalSocialPage() {
       <SolutionProblemSolution
         badge="The Problem"
         heading={<>Why Most Personal Brands <span className="text-gradient-brand">Never Take Off</span></>}
-        subtext="Most professionals understand that a strong personal brand matters. The hard part is building one consistently — and that's where most people fall short."
+        subtext="Most professionals understand that a strong personal brand matters. The hard part is building one consistently, and that's where most people fall short."
         problems={problems}
         solutions={solutions}
         problemLabel="Without Click Dudes"

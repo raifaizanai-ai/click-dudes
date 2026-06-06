@@ -24,13 +24,13 @@ const STEPS: Step[] = [
     icon:     ClipboardCheck,
     title:    "Apply & Qualify",
     body:     "Submit your property for review. We verify traffic quality, content compliance, and AdX eligibility. Most approvals complete within 5–10 business days.",
-    duration: "7–14 Days",
+    duration: "2–7 days",
   },
   {
     step:     2,
     icon:     Code2,
     title:    "Technical Integration",
-    body:     "Our team handles the full setup — header bidding wrapper, AdX tag deployment, and GAM configuration. No developer required on your end.",
+    body:     "Our team handles the full setup, header bidding wrapper, AdX tag deployment, and GAM configuration. No developer required on your end.",
     duration: "3–7 Days",
   },
   {
@@ -70,7 +70,7 @@ export function AdxFlow() {
         <SectionHeader
           badge="Onboarding Process"
           heading={<>Live in{" "}<GradientText gradient="brand">Under 2 Weeks.</GradientText><br />We Handle Everything.</>}
-          subtext="A fully managed integration from application to first revenue. Our team runs the technical side end-to-end — you just approve and watch the RPMs climb."
+          subtext="A fully managed integration from application to first revenue. Our team runs the technical side end-to-end, you just approve and watch the RPMs climb."
           align="center"
           subtextWidth="md"
           className="mb-14"

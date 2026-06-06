@@ -32,7 +32,7 @@ const SOLUTIONS = [
   },
   {
     title: "100+ demand partners bidding",
-    body:  "Google AdX, Amazon TAM, Index Exchange, and 47 other premium SSPs compete in a unified real-time auction — driving CPMs up through competition.",
+    body:  "Google AdX, Amazon TAM, Index Exchange, and 47 other premium SSPs compete in a unified real-time auction, driving CPMs up through competition.",
   },
   {
     title: "Preferred deals & private auctions",
@@ -61,7 +61,7 @@ export function AdxProblemSolution() {
         <SectionHeader
           badge="The AdSense Problem"
           heading={<>Your Revenue Is Capped.<br /><GradientText gradient="brand">AdX Removes the Ceiling.</GradientText></>}
-          subtext="Most publishers hit an AdSense plateau within months. The platform is designed for simplicity — not maximum yield. Here is exactly what you are missing."
+          subtext="Most publishers hit an AdSense plateau within months. The platform is designed for simplicity, not maximum yield. Here is exactly what you are missing."
           align="center"
           subtextWidth="md"
           className="mb-14"

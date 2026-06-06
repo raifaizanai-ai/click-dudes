@@ -22,7 +22,7 @@ const CTV_FORMATS: CTVFormat[] = [
   {
     icon:        PlayCircle,
     name:        "Pre-Roll Video Ads",
-    description: "Shown before content begins — highest completion rates and brand recall. Ideal for awareness campaigns commanding $18–45 CPM.",
+    description: "Shown before content begins, highest completion rates and brand recall. Ideal for awareness campaigns commanding $18–45 CPM.",
     cpm:         "$18–45 CPM",
     completion:  "85–95%",
     badge:       "Most Demanded",
@@ -38,7 +38,7 @@ const CTV_FORMATS: CTVFormat[] = [
   {
     icon:        StopCircle,
     name:        "Post-Roll Video Ads",
-    description: "Plays after content ends — served to highly engaged viewers. Lower volume but strong intent signals and brand safety.",
+    description: "Plays after content ends, served to highly engaged viewers. Lower volume but strong intent signals and brand safety.",
     cpm:         "$12–28 CPM",
     completion:  "70–85%",
   },

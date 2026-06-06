@@ -3,9 +3,9 @@ import { OurTeamPage } from "@/sections/about/OurTeamPage"
 
 export const metadata: Metadata = {
   title: "Our Team — Click Dudes | The People Behind the Platform",
-  description: "Meet the team behind Click Dudes — ad-tech veterans, engineers, and publisher advocates building the future of monetization.",
-  openGraph: { title: "Our Team — Click Dudes", description: "Meet the people building Click Dudes.", url: "https://clickdudes.com/about/our-team", siteName: "Click Dudes", type: "website" },
-  twitter: { card: "summary_large_image", title: "Our Team — Click Dudes", description: "Meet the people building Click Dudes." },
+  description: "Meet the team behind Click Dudes, ad-tech veterans, engineers, and publisher advocates building the future of monetization.",
+  openGraph: { title: "Our Team, Click Dudes", description: "Meet the people building Click Dudes.", url: "https://clickdudes.com/about/our-team", siteName: "Click Dudes", type: "website" },
+  twitter: { card: "summary_large_image", title: "Our Team, Click Dudes", description: "Meet the people building Click Dudes." },
   alternates: { canonical: "https://clickdudes.com/about/our-team" },
 }
 

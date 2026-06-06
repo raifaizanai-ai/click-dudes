@@ -127,7 +127,7 @@ export function RevenueCalculatorPage() {
               <GradientText gradient="brand">See Your Potential</GradientText>
             </h2>
             <p className="text-body text-text-secondary mt-2">
-              Adjust any input — results update instantly.
+              Adjust any input, results update instantly.
             </p>
           </motion.div>
 
@@ -153,7 +153,7 @@ export function RevenueCalculatorPage() {
 
       <SolutionCTA
         heading="See What Your Inventory Is Actually Worth"
-        subheading="Let Click Dudes review your website and build a smarter monetization strategy — tailored to your inventory."
+        subheading="Let Click Dudes review your website and build a smarter monetization strategy, tailored to your inventory."
         badge="Apply For Monetization"
         robotVariant="rocket"
         primaryCTA={{ label: "Apply For Monetization", href: "/about/contact-us" }}

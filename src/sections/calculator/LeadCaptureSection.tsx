@@ -96,7 +96,7 @@ export function LeadCaptureSection({ inputs, results }: LeadCaptureSectionProps)
             <div className="flex flex-col gap-3">
               {[
                 { icon: FileText,      text: `Your estimate: ${fmtCurrency(results.expectedEstimate)}/mo` },
-                { icon: MessageSquare, text: `AI score: ${results.aiScore}/100 — ${results.opportunityLevel} opportunity` },
+                { icon: MessageSquare, text: `AI score: ${results.aiScore}/100, ${results.opportunityLevel} opportunity` },
                 { icon: Mail,          text: "Sent to your inbox within 24 hours" },
               ].map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-3">

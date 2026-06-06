@@ -10,10 +10,10 @@ import { CountUp } from "@/components/motion/CountUp"
 import { LiveDot } from "@/components/shared/LiveDot"
 
 const BENEFITS = [
-  "Policy-safe optimization — no account risk, no violations",
+  "Policy-safe optimization, no account risk, no violations",
   "A/B testing of placement, formats, and density scientifically",
-  "Core Web Vitals protected — faster pages, better SEO",
-  "AdX upgrade pathway — when you're ready, we migrate you",
+  "Core Web Vitals protected, faster pages, better SEO",
+  "AdX upgrade pathway, when you're ready, we migrate you",
 ]
 
 const RPM_WEEKS = [28, 34, 36, 42, 40, 52, 56, 64, 60, 75, 80, 100]
@@ -70,7 +70,7 @@ export function AdsenseCTASection() {
 
                 {/* RPM trend chart */}
                 <div>
-                  <p className="text-[10px] text-text-muted mb-2 font-medium">RPM Growth — 12 Week Trend</p>
+                  <p className="text-[10px] text-text-muted mb-2 font-medium">RPM Growth, 12 Week Trend</p>
                   <div className="flex items-end gap-1 h-12">
                     {RPM_WEEKS.map((v, i) => (
                       <motion.div key={i}
@@ -126,7 +126,7 @@ export function AdsenseCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join 400+ publishers who raised their AdSense RPM with Click Dudes. Optimized placement, compliance audit, and better viewability — without changing a word of content.
+              Join 400+ publishers who raised their AdSense RPM with Click Dudes. Optimized placement, compliance audit, and better viewability, without changing a word of content.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

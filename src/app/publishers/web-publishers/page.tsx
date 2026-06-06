@@ -3,7 +3,7 @@ import { PublisherPlaceholderPage } from "@/sections/publishers/PublisherPlaceho
 
 export const metadata: Metadata = {
   title: "Web Publishers — Click Dudes | Full-Stack Web Monetization",
-  description: "Full-stack monetization for display, video, and native advertising across desktop and mobile web — powered by Click Dudes.",
+  description: "Full-stack monetization for display, video, and native advertising across desktop and mobile web, powered by Click Dudes.",
   openGraph: {
     title: "Web Publishers — Click Dudes",
     description: "Full-stack monetization for display, video, and native advertising across desktop and mobile web.",
@@ -36,7 +36,7 @@ export default function Page() {
       <PublisherPlaceholderPage
         iconKey="globe"
         title="Web Publishers"
-        description="Full-stack monetization for display, video, and native advertising across desktop and mobile web — from first impression to final payout."
+        description="Full-stack monetization for display, video, and native advertising across desktop and mobile web, from first impression to final payout."
       />
     </>
   )

@@ -8,7 +8,7 @@ import { LiveDot } from "@/components/shared/LiveDot"
 const POSTS = [
   {
     platform: "Instagram", handle: "@yourstore", time: "2h",
-    content: "New collection just dropped — shop the look before it's gone 🔥",
+    content: "New collection just dropped, shop the look before it's gone 🔥",
     likes: "4.2K", comments: "186", bg: "from-brand-purple/[0.06] to-brand-violet/[0.04]",
     dot: "purple" as const,
   },

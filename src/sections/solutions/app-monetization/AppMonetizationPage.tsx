@@ -29,10 +29,10 @@ const METRICS = [
 const FAQS = [
   {
     question: "What DAU threshold do I need to qualify?",
-    answer:   "We typically work with apps generating 10,000+ daily active users. Quality of engagement, session duration, and content category matter significantly — a highly engaged niche app with 15K DAU can outperform a low-engagement app with 100K DAU.",
+    answer:   "We typically work with apps generating 10,000+ daily active users. Quality of engagement, session duration, and content category matter significantly, a highly engaged niche app with 15K DAU can outperform a low-engagement app with 100K DAU.",
   },
   {
-    question: "Which platforms do you support — iOS, Android, or both?",
+    question: "Which platforms do you support, iOS, Android, or both?",
     answer:   "We support iOS, Android, and cross-platform frameworks including Unity, React Native, and Flutter. Our SDK handles platform-specific compliance requirements (ATT on iOS, consent framework on Android) automatically.",
   },
   {
@@ -49,7 +49,7 @@ const FAQS = [
   },
   {
     question: "What does your fee structure look like for apps?",
-    answer:   "Revenue share model with no setup fees or monthly minimums. Our fee is calculated on incremental revenue above your established baseline. Rates depend on app category, DAU volume, and geo mix — discussed during onboarding.",
+    answer:   "Revenue share model with no setup fees or monthly minimums. Our fee is calculated on incremental revenue above your established baseline. Rates depend on app category, DAU volume, and geo mix, discussed during onboarding.",
   },
 ]
 
@@ -69,7 +69,7 @@ export function AppMonetizationPage() {
       <SolutionMetrics
         badge="Proven Results"
         heading={<>App Revenue Numbers<br /><GradientText gradient="brand">That Matter</GradientText></>}
-        subtext="Observed performance across our managed app portfolio — not projections."
+        subtext="Observed performance across our managed app portfolio, not projections."
         metrics={METRICS}
       />
 

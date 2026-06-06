@@ -9,7 +9,7 @@ const PHASES = [
   {
     icon: Lightbulb, phase: "Strategy",
     title: "Content Strategy & Brand Voice",
-    body: "We define your content pillars, target audience, posting frequency, and platform priorities — the foundation of everything we create.",
+    body: "We define your content pillars, target audience, posting frequency, and platform priorities, the foundation of everything we create.",
     outputs: ["Content pillars", "Brand voice guide", "Platform strategy"],
     color: "text-brand-purple", bg: "bg-brand-purple/[0.08]", border: "border-brand-purple/[0.15]",
     gradient: "from-brand-purple/20 to-transparent",
@@ -17,7 +17,7 @@ const PHASES = [
   {
     icon: Palette, phase: "Creation",
     title: "Content Design & Copywriting",
-    body: "Our team designs platform-native visuals and writes engaging captions — every post crafted to your brand's unique voice and audience.",
+    body: "Our team designs platform-native visuals and writes engaging captions, every post crafted to your brand's unique voice and audience.",
     outputs: ["Branded graphics", "Captions & hashtags", "Video scripts"],
     color: "text-brand-blue", bg: "bg-brand-blue/[0.08]", border: "border-brand-blue/[0.15]",
     gradient: "from-brand-blue/20 to-transparent",
@@ -25,7 +25,7 @@ const PHASES = [
   {
     icon: Calendar, phase: "Scheduling",
     title: "Smart Scheduling & Publishing",
-    body: "We schedule every post at the optimal time for your audience — maximising reach, engagement, and algorithm performance automatically.",
+    body: "We schedule every post at the optimal time for your audience, maximising reach, engagement, and algorithm performance automatically.",
     outputs: ["Optimal time slots", "10+ posts/week", "4 platforms"],
     color: "text-brand-purple", bg: "bg-brand-cyan/[0.08]", border: "border-brand-cyan/[0.15]",
     gradient: "from-brand-cyan/20 to-transparent",
@@ -33,7 +33,7 @@ const PHASES = [
   {
     icon: BarChart3, phase: "Analytics",
     title: "Monthly Reporting & Growth",
-    body: "Monthly analytics reports showing follower growth, engagement rates, reach, and ROI — with strategy refinements built in every cycle.",
+    body: "Monthly analytics reports showing follower growth, engagement rates, reach, and ROI, with strategy refinements built in every cycle.",
     outputs: ["Growth metrics", "Engagement report", "Next-month plan"],
     color: "text-brand-green", bg: "bg-brand-green/[0.08]", border: "border-brand-green/[0.15]",
     gradient: "from-brand-green/20 to-transparent",

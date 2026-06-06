@@ -17,12 +17,12 @@ const STEPS = [
   {
     icon: Layers, title: "Prebid Configuration", duration: "Day 3–7",
     color: "text-brand-purple", border: "rgba(139,92,246,0.22)", glow: "rgba(139,92,246,0.14)",
-    body: "Deploy server-side Prebid.js infrastructure, configure all SSP adapters, establish initial floor logic, and connect your GAM account — zero developer effort.",
+    body: "Deploy server-side Prebid.js infrastructure, configure all SSP adapters, establish initial floor logic, and connect your GAM account, zero developer effort.",
   },
   {
     icon: Zap, title: "Latency Optimization", duration: "Day 8–14",
     color: "text-brand-purple", border: "rgba(103,232,249,0.22)", glow: "rgba(103,232,249,0.14)",
-    body: "Tune timeout thresholds, enable bid caching, configure lazy loading and lazy bidding — ensuring your Core Web Vitals improve alongside revenue.",
+    body: "Tune timeout thresholds, enable bid caching, configure lazy loading and lazy bidding, ensuring your Core Web Vitals improve alongside revenue.",
   },
   {
     icon: TrendingUp, title: "Floor & Yield Growth", duration: "Day 15+",
@@ -61,11 +61,11 @@ export function HBProcessSection() {
             Integration Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            Prebid Live in 7–14 Days,{" "}
+            Prebid Live in 2–7 days,{" "}
             <span className="text-gradient-brand">Revenue Growing in 15</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">
-            Server-side header bidding configured and managed entirely by our team. Your developers write zero code — we handle everything.
+            Server-side header bidding configured and managed entirely by our team. Your developers write zero code, we handle everything.
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export function HBProcessSection() {
                 <div className="flex flex-col items-end gap-0.5">
                   <div className="flex items-center gap-1">
                     <Info className="w-2.5 h-2.5 text-text-muted" aria-hidden="true" />
-                    <span className="text-[8px] text-text-muted">Illustrative — aggregate network view</span>
+                    <span className="text-[8px] text-text-muted">Illustrative, aggregate network view</span>
                   </div>
                   <LiveDot color="blue" size="sm" label="LIVE" />
                 </div>

@@ -39,7 +39,7 @@ export function NavMegaMenu({
   onClose,
   menuTitle      = "Publisher Solutions",
   menuSubtitle   = "AI-powered revenue tools for every publisher type",
-  footerText     = "250+ publishers trust Click Dudes",
+  footerText     = "450+ Publishers trust Click Dudes",
   footerCTALabel = "Get Started",
   footerCTAHref  = "/about/contact-us",
 }: NavMegaMenuProps) {

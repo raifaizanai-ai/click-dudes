@@ -23,7 +23,7 @@ export function RevenueSection() {
               <span className="text-gradient-brand">Growth Engine</span>
             </>
           }
-          subtext="Our platform doesn't just report — it acts. Real-time optimization across every dimension of your monetization stack, 24/7."
+          subtext="Our platform doesn't just report. It acts. Real-time optimization across every dimension of your monetization stack, 24/7."
           align="center"
           subtextWidth="md"
         />

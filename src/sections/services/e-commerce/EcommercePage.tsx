@@ -43,7 +43,7 @@ const flowSteps = [
 const whyUsItems = [
   { icon: Star, title: "Shopify & WooCommerce Certified", body: "Our team holds certifications on both leading ecommerce platforms with 500+ stores delivered.", highlight: "Certified", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
   { icon: TrendingUp, title: "Conversion-First Approach", body: "Every design and copy decision is driven by conversion data and proven ecommerce best practices.", highlight: "2x Avg Growth", accent: "text-brand-purple", bg: "rgba(103,232,249,0.08)", dotColor: "cyan" as const },
-  { icon: BarChart3, title: "Full-Stack eCommerce", body: "From store setup to SEO to paid ads — one dedicated team manages every layer of your growth.", highlight: "End-to-End", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
+  { icon: BarChart3, title: "Full-Stack eCommerce", body: "From store setup to SEO to paid ads, one dedicated team manages every layer of your growth.", highlight: "End-to-End", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
   { icon: CreditCard, title: "Transparent ROI Reporting", body: "Monthly reports showing traffic, revenue, conversion rate, and campaign performance clearly.", highlight: "Monthly Reports", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
 ]
 
@@ -62,7 +62,7 @@ export function EcommercePage() {
         badge="E-Commerce Solutions"
         badgeIcon={ShoppingCart}
         headline={<>Build, Optimize & <span className="text-gradient-brand">Scale Your Online Store</span></>}
-        subtext="Click Dudes delivers end-to-end ecommerce solutions — from Shopify and WooCommerce setup to conversion optimization and revenue growth strategy."
+        subtext="Click Dudes delivers end-to-end ecommerce solutions, from Shopify and WooCommerce setup to conversion optimization and revenue growth strategy."
         primaryCTA={{ label: "Scale Your Online Store", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Talk to Our Team", href: "/about/contact-us" }}
         caption="Shopify & WooCommerce experts · 500+ stores built · Results in 30 days"
@@ -79,7 +79,7 @@ export function EcommercePage() {
       <SolutionProblemSolution
         badge="The Problem"
         heading={<>Why Most Online Stores <span className="text-gradient-brand">Fail to Scale</span></>}
-        subtext="Most ecommerce businesses struggle with the same avoidable problems. Here's what holds them back — and how we fix it."
+        subtext="Most ecommerce businesses struggle with the same avoidable problems. Here's what holds them back, and how we fix it."
         problems={problems}
         solutions={solutions}
         problemLabel="Without Click Dudes"
@@ -102,7 +102,7 @@ export function EcommercePage() {
       <SolutionFAQ
         badge="FAQ"
         heading={<>eCommerce <span className="text-gradient-brand">Questions Answered</span></>}
-        subtext="Platform choices, launch timelines, integrations — what ecommerce clients ask us most before getting started."
+        subtext="Platform choices, launch timelines, integrations, what ecommerce clients ask us most before getting started."
         faqs={faqs}
       />
       <EcommerceCTASection />

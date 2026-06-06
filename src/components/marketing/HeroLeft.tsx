@@ -28,7 +28,7 @@ const itemVariants = {
 
 /* ── Constants ────────────────────────────────────────────────── */
 
-const TRUST_ITEMS = [`${STATS.publishers} Publishers`, `${STATS.countries} Countries`, "GCPP-Verified Partner"]
+const TRUST_ITEMS = [`${STATS.publishers} Publishers`, `${STATS.countries} Countries`, "GCPP Verified Partners Network"]
 
 const MINI_BADGES = [
   "Google AdX",

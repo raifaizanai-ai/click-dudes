@@ -16,7 +16,7 @@ const STEPS = [
   {
     icon: Layers, title: "SSAI Setup", duration: "Day 4–10",
     color: "text-brand-purple", border: "rgba(139,92,246,0.22)", glow: "rgba(139,92,246,0.14)",
-    body: "Deploy server-side ad insertion pipeline, configure VAST/VMAP compliance, connect demand partners, and establish pod and separation rules — fully managed.",
+    body: "Deploy server-side ad insertion pipeline, configure VAST/VMAP compliance, connect demand partners, and establish pod and separation rules, fully managed.",
   },
   {
     icon: BarChart3, title: "Demand Onboarding", duration: "Day 11–21",
@@ -63,7 +63,7 @@ export function CtvMonetizationProcessSection() {
             <span className="text-gradient-brand">Premium Deals in 30</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">
-            From SSAI infrastructure setup to premium advertiser onboarding — we handle every layer of your CTV monetization stack.
+            From SSAI infrastructure setup to premium advertiser onboarding, we handle every layer of your CTV monetization stack.
           </p>
         </div>
 

@@ -3,9 +3,9 @@ import { PublisherReferralPage } from "@/sections/resources/PublisherReferralPag
 
 export const metadata: Metadata = {
   title: "Publisher Referral Program — Click Dudes | Earn Commissions",
-  description: "Refer publishers to Click Dudes and earn recurring commissions. Join the publisher referral program — no limits, no minimums.",
-  openGraph: { title: "Publisher Referral Program — Click Dudes", description: "Earn commissions by referring publishers.", url: "https://clickdudes.com/resources/publisher-referral-program", siteName: "Click Dudes", type: "website" },
-  twitter: { card: "summary_large_image", title: "Publisher Referral Program — Click Dudes", description: "Earn commissions by referring publishers." },
+  description: "Refer publishers to Click Dudes and earn recurring commissions. Join the publisher referral program, no limits, no minimums.",
+  openGraph: { title: "Publisher Referral Program, Click Dudes", description: "Earn commissions by referring publishers.", url: "https://clickdudes.com/resources/publisher-referral-program", siteName: "Click Dudes", type: "website" },
+  twitter: { card: "summary_large_image", title: "Publisher Referral Program, Click Dudes", description: "Earn commissions by referring publishers." },
   alternates: { canonical: "https://clickdudes.com/resources/publisher-referral-program" },
 }
 

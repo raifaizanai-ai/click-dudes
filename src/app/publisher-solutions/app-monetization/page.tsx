@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "App Monetization — In-App Bidding & AI Optimization",
+  name: "App Monetization, In-App Bidding & AI Optimization",
   description: "Managed in-app bidding from 12+ premium networks with AI format optimization and compliance management. Average 38% eCPM uplift for mobile apps.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/publisher-solutions/app-monetization",

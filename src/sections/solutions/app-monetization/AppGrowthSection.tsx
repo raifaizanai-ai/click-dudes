@@ -22,7 +22,7 @@ const WHY_ITEMS = [
   },
   {
     icon: Zap, title: "Sub-300ms In-App Bidding",
-    body: "Auction completes before users notice — zero UX impact, maximum revenue.",
+    body: "Auction completes before users notice, zero UX impact, maximum revenue.",
     accent: "text-brand-blue", iconBg: "bg-brand-blue/10",
   },
   {

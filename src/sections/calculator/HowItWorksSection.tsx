@@ -20,9 +20,9 @@ const cardVariant = {
 const STEPS = [
   { icon: Database,   num: "01", title: "Add Your Data",      description: "Enter your monthly pageviews, content category, traffic geography, and current monetization setup.",  iconBg: "bg-brand-purple/12", iconColor: "text-brand-cyan" },
   { icon: Cpu,        num: "02", title: "AI Analysis",        description: "Our AI engine applies category-specific RPM benchmarks, geo multipliers, and quality scoring across 12 signals.", iconBg: "bg-brand-blue/12",   iconColor: "text-brand-blue"   },
-  { icon: BarChart3,  num: "03", title: "Smart Estimation",   description: "Revenue estimates are calculated across three scenarios — low, expected, and high — using market-validated multipliers.", iconBg: "bg-brand-cyan/12",   iconColor: "text-brand-cyan"   },
-  { icon: Lightbulb,  num: "04", title: "Get Insights",       description: "Receive dynamic AI insights identifying your biggest revenue levers — fill rate, viewability, platform, and demand gaps.", iconBg: "bg-brand-violet/12", iconColor: "text-brand-violet" },
-  { icon: TrendingUp, num: "05", title: "Grow Revenue",       description: "Apply today to let Click Dudes implement the optimizations — and see real revenue improvement in 30 days.",            iconBg: "bg-brand-green/12",  iconColor: "text-brand-green"  },
+  { icon: BarChart3,  num: "03", title: "Smart Estimation",   description: "Revenue estimates are calculated across three scenarios, low, expected, and high, using market-validated multipliers.", iconBg: "bg-brand-cyan/12",   iconColor: "text-brand-cyan"   },
+  { icon: Lightbulb,  num: "04", title: "Get Insights",       description: "Receive dynamic AI insights identifying your biggest revenue levers, fill rate, viewability, platform, and demand gaps.", iconBg: "bg-brand-violet/12", iconColor: "text-brand-violet" },
+  { icon: TrendingUp, num: "05", title: "Grow Revenue",       description: "Apply today to let Click Dudes implement the optimizations, and see real revenue improvement in 30 days.",            iconBg: "bg-brand-green/12",  iconColor: "text-brand-green"  },
 ]
 
 export function HowItWorksSection() {
@@ -34,7 +34,7 @@ export function HowItWorksSection() {
         <SectionHeader
           badge="How It Works"
           heading={<>Five Steps to <GradientText gradient="brand">Revenue Clarity</GradientText></>}
-          subtext="From raw traffic data to a personalized revenue estimate and AI-generated growth insights — in under 60 seconds."
+          subtext="From raw traffic data to a personalized revenue estimate and AI-generated growth insights, in under 60 seconds."
           align="center" subtextWidth="md" className="mb-14"
         />
 

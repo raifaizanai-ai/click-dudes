@@ -26,14 +26,14 @@ const STEPS = [
   {
     icon: TrendingUp, title: "Compound Optimization", duration: "Month 2+",
     color: "text-brand-green", border: "rgba(16,185,129,0.22)", glow: "rgba(16,185,129,0.14)",
-    body: "Ongoing quarterly audits, policy compliance monitoring, and upgrade planning — including readiness assessment for AdX migration when the time is right.",
+    body: "Ongoing quarterly audits, policy compliance monitoring, and upgrade planning, including readiness assessment for AdX migration when the time is right.",
   },
 ]
 
 const AB_VARIANTS = [
-  { label: "Variant A — Top leaderboard",  rpm: "$4.20", viewability: 74, winner: false, color: "text-brand-blue",   bar: "bg-brand-blue" },
-  { label: "Variant B — In-content 2x",    rpm: "$6.80", viewability: 88, winner: true,  color: "text-brand-green",  bar: "bg-brand-green" },
-  { label: "Variant C — Sidebar sticky",   rpm: "$5.10", viewability: 81, winner: false, color: "text-brand-purple", bar: "bg-brand-purple" },
+  { label: "Variant A, Top leaderboard",  rpm: "$4.20", viewability: 74, winner: false, color: "text-brand-blue",   bar: "bg-brand-blue" },
+  { label: "Variant B, In-content 2x",    rpm: "$6.80", viewability: 88, winner: true,  color: "text-brand-green",  bar: "bg-brand-green" },
+  { label: "Variant C, Sidebar sticky",   rpm: "$5.10", viewability: 81, winner: false, color: "text-brand-purple", bar: "bg-brand-purple" },
 ]
 
 const stepVariants = {
@@ -58,7 +58,7 @@ export function AdsenseProcessSection() {
             Optimization Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            Optimized in 7–14 Days,{" "}
+            Optimized in 2–7 days,{" "}
             <span className="text-gradient-brand">Compounding in 30</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">

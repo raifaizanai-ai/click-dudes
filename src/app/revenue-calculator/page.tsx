@@ -3,7 +3,7 @@ import { RevenueCalculatorPage } from "@/sections/calculator/RevenueCalculatorPa
 
 export const metadata: Metadata = {
   title: "Revenue Calculator — Click Dudes | Estimate Your Ad Revenue",
-  description: "Use Click Dudes' AI-powered revenue calculator to estimate your website's true ad revenue potential — based on your traffic, content vertical, and monetization setup.",
+  description: "Use Click Dudes' AI-powered revenue calculator to estimate your website's true ad revenue potential, based on your traffic, content vertical, and monetization setup.",
   openGraph: {
     title: "Revenue Calculator — Click Dudes",
     description: "Estimate your real ad revenue potential with AI-powered benchmarks.",

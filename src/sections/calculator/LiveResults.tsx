@@ -139,12 +139,12 @@ export function LiveResults({ results }: LiveResultsProps) {
         </div>
         <p className="text-xs text-text-secondary leading-relaxed">
           {results.opportunityLevel === "Very High"
-            ? "Significant revenue gap identified — optimization can 2× your earnings."
+            ? "Significant revenue gap identified, optimization can 2× your earnings."
             : results.opportunityLevel === "High"
             ? "Strong improvement potential with platform and quality upgrades."
             : results.opportunityLevel === "Medium"
             ? "Solid foundation with room to grow through demand diversification."
-            : "Already performing well — fine-tuning will drive incremental gains."}
+            : "Already performing well, fine-tuning will drive incremental gains."}
         </p>
       </div>
 

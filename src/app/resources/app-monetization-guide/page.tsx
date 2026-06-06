@@ -3,9 +3,9 @@ import { AppMonetizationGuidePage } from "@/sections/resources/AppMonetizationGu
 
 export const metadata: Metadata = {
   title: "App Monetization Guide — Click Dudes | In-App Advertising",
-  description: "Complete guide to app monetization — in-app bidding, rewarded ads, mediation, format strategy, and revenue optimization for iOS and Android.",
-  openGraph: { title: "App Monetization Guide — Click Dudes", description: "Complete guide to in-app advertising revenue.", url: "https://clickdudes.com/resources/app-monetization-guide", siteName: "Click Dudes", type: "website" },
-  twitter: { card: "summary_large_image", title: "App Monetization Guide — Click Dudes", description: "Complete guide to in-app advertising revenue." },
+  description: "Complete guide to app monetization, in-app bidding, rewarded ads, mediation, format strategy, and revenue optimization for iOS and Android.",
+  openGraph: { title: "App Monetization Guide, Click Dudes", description: "Complete guide to in-app advertising revenue.", url: "https://clickdudes.com/resources/app-monetization-guide", siteName: "Click Dudes", type: "website" },
+  twitter: { card: "summary_large_image", title: "App Monetization Guide, Click Dudes", description: "Complete guide to in-app advertising revenue." },
   alternates: { canonical: "https://clickdudes.com/resources/app-monetization-guide" },
 }
 

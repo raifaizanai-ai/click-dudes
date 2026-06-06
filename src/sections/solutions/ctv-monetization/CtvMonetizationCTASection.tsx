@@ -10,9 +10,9 @@ import { CountUp } from "@/components/motion/CountUp"
 import { LiveDot } from "@/components/shared/LiveDot"
 
 const BENEFITS = [
-  "Server-side ad insertion (SSAI) — zero buffering, broadcast quality",
+  "Server-side ad insertion (SSAI), zero buffering, broadcast quality",
   "Programmatic direct & PMP deals with TV-quality brand advertisers",
-  "Full VAST 4.2 and IAB CTV standards compliance — included",
+  "Full VAST 4.2 and IAB CTV standards compliance, included",
   "Dedicated CTV specialist managing your streaming revenue",
 ]
 

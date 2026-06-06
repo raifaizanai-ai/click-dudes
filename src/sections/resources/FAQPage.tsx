@@ -50,7 +50,7 @@ export function FAQPage() {
               <GradientText gradient="brand">Straight Answers</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              Everything publishers, advertisers, and partners want to know before working with Click Dudes — organized by topic.
+              Everything publishers, advertisers, and partners want to know before working with Click Dudes, organized by topic.
             </motion.p>
           </motion.div>
         </Container>

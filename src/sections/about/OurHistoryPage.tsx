@@ -36,25 +36,25 @@ interface ValueItem { icon: LucideIcon; title: string; desc: string; bg: string;
 const TIMELINE: TimelineEntry[] = [
   {
     year: "2022", badge: "The Beginning", title: "Digital Marketing Agency Founded",
-    body: "Click Dudes launched as a performance-focused digital marketing agency. Helping brands grow online gave us an intimate view of digital advertising — and where the gaps were for publishers on the other side of the equation.",
+    body: "Click Dudes launched as a performance-focused digital marketing agency. Helping brands grow online gave us an intimate view of digital advertising, and where the gaps were for publishers on the other side of the equation.",
     icon: Rocket, iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", dotBorder: "rgba(139,92,246,0.40)",
     chips: ["Performance marketing", "First brand partnerships", "Ad ecosystem research"],
   },
   {
     year: "2023", badge: "Evolution", title: "Full-Stack Advertising Agency",
-    body: "We expanded into programmatic, creative, and publisher monetization consulting. Working directly with mid-sized publishers revealed how dramatically under-monetized they were — not from lack of effort, but lack of access to the right infrastructure.",
+    body: "We expanded into programmatic, creative, and publisher monetization consulting. Working directly with mid-sized publishers revealed how dramatically under-monetized they were, not from lack of effort, but lack of access to the right infrastructure.",
     icon: TrendingUp, iconBg: "bg-brand-blue/10", iconColor: "text-brand-blue", dotBorder: "rgba(96,165,250,0.40)",
     chips: ["Programmatic build-out", "Publisher consulting", "Identified the AdX gap"],
   },
   {
     year: "2024", badge: "Breakthrough", title: "Publisher Monetization Platform Launches",
-    body: "The pivot that changed everything. Using our GCPP connections, we built enterprise-grade infrastructure for publishers of all sizes — bringing Google AdX, header bidding, and AI optimization to those who were previously locked out. Within twelve months: 250+ publishers live across web, app, and CTV.",
+    body: "The pivot that changed everything. Using our GCPP connections, we built enterprise-grade infrastructure for publishers of all sizes, bringing Google AdX, header bidding, and AI optimization to those who were previously locked out. Within twelve months: 450+ Publishers live across web, app, and CTV.",
     icon: Globe2, iconBg: "bg-brand-violet/10", iconColor: "text-brand-violet", dotBorder: "rgba(168,85,247,0.40)",
-    chips: ["Google AdX access", "250+ publishers onboarded", "Header bidding stack", "AI optimization deployed"],
+    chips: ["Google AdX access", "450+ Publishers onboarded", "Header bidding stack", "AI optimization deployed"],
   },
   {
     year: "2025", badge: "Global Scale", title: "UK Registered · Global Expansion",
-    body: "Click Dudes officially registered in the United Kingdom, establishing our London HQ at Paul Street, EC2A. The platform now serves publishers across 25+ countries — North America, Europe, Asia-Pacific, and the Middle East — with AI optimization running 24/7 across every impression.",
+    body: "Click Dudes officially registered in the United Kingdom, establishing our London HQ at Paul Street, EC2A. The platform now serves publishers across 25+ countries, North America, Europe, Asia-Pacific, and the Middle East, with AI optimization running 24/7 across every impression.",
     icon: Building2, iconBg: "bg-brand-cyan/10", iconColor: "text-brand-cyan", dotBorder: "rgba(103,232,249,0.40)",
     chips: ["UK company registered", "London HQ: EC2A", "25+ countries", "AI at full scale"],
   },
@@ -62,7 +62,7 @@ const TIMELINE: TimelineEntry[] = [
 
 const VALUES: ValueItem[] = [
   { icon: BarChart3,    title: "Performance",     desc: "Every decision is measured by publisher revenue impact.",   bg: "bg-brand-purple/10", color: "text-brand-purple" },
-  { icon: Shield,       title: "Integrity",        desc: "Full transparency — no black boxes, no hidden fees.",        bg: "bg-brand-blue/10",   color: "text-brand-blue"   },
+  { icon: Shield,       title: "Integrity",        desc: "Full transparency, no black boxes, no hidden fees.",        bg: "bg-brand-blue/10",   color: "text-brand-blue"   },
   { icon: Zap,          title: "Innovation",       desc: "We move fast, test continuously, and never stop improving.", bg: "bg-brand-violet/10", color: "text-brand-violet" },
   { icon: Target,       title: "Publisher Growth", desc: "Your success is our KPI. Full stop.",                        bg: "bg-brand-cyan/10",   color: "text-brand-purple"   },
   { icon: Star,         title: "Premium Demand",   desc: "Direct access to the highest-paying demand on the web.",    bg: "bg-brand-purple/10", color: "text-brand-purple" },
@@ -103,7 +103,7 @@ export function OurHistoryPage() {
                 From Agency to{" "}<GradientText gradient="brand">Global Platform</GradientText>
               </motion.h1>
               <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl">
-                In three years, Click Dudes evolved from a digital marketing startup into a UK-registered global publisher monetization platform — driven by one belief: every publisher deserves their inventory&apos;s true value.
+                In three years, Click Dudes evolved from a digital marketing startup into a UK-registered global publisher monetization platform, driven by one belief: every publisher deserves their inventory&apos;s true value.
               </motion.p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }} className="hidden lg:flex justify-center">
@@ -126,7 +126,7 @@ export function OurHistoryPage() {
                 Publisher-First.<br /><GradientText gradient="violet">AI-Powered.</GradientText>
               </motion.h2>
               <motion.p variants={fadeUp} className="text-body text-text-secondary leading-relaxed">
-                Click Dudes is a Google Certified Publishing Partner network that gives independent publishers access to the same premium demand, header bidding infrastructure, and AI optimization tools that enterprise media companies rely on — without the enterprise barrier to entry.
+                Click Dudes is a Google Certified Publishing Partner network that gives independent publishers access to the same premium demand, header bidding infrastructure, and AI optimization tools that enterprise media companies rely on, without the enterprise barrier to entry.
               </motion.p>
               <motion.p variants={fadeUp} className="text-body text-text-secondary leading-relaxed">
                 We&apos;re not an ad network. We&apos;re not an intermediary. We&apos;re a publisher growth engine that operates transparently on your behalf, 24 hours a day.
@@ -160,7 +160,7 @@ export function OurHistoryPage() {
         <GradientOrb color="cyan"   size="lg" blur="2xl" opacity={0.06} className="bottom-0 left-0" />
         <Container>
           <SectionHeader badge="Our Journey" heading={<>Four Years. <GradientText gradient="brand">One Mission.</GradientText></>}
-            subtext="Every chapter shaped by one conviction — publishers should earn what their audiences are worth."
+            subtext="Every chapter shaped by one conviction, publishers should earn what their audiences are worth."
             align="center" subtextWidth="lg" className="mb-14"
           />
 
@@ -236,7 +236,7 @@ export function OurHistoryPage() {
               The Next Chapter Is <GradientText gradient="violet">Just Beginning</GradientText>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-body text-text-secondary text-pretty leading-relaxed max-w-xl">
-              With 250+ publishers live and growing, we&apos;re focused on deepening our AI optimization stack, expanding into new verticals, and building the infrastructure that lets every publisher compete at the highest level.
+              With 450+ Publishers live and growing, we&apos;re focused on deepening our AI optimization stack, expanding into new verticals, and building the infrastructure that lets every publisher compete at the highest level.
             </motion.p>
             <motion.div variants={fadeUp} className="glass-strong rounded-2xl p-6 border border-brand-purple/[0.12] w-full max-w-lg"
               style={{ boxShadow: "0 8px 40px rgba(7,17,47,0.06), 0 0 0 1px rgba(139,92,246,0.07)" }}
@@ -256,7 +256,7 @@ export function OurHistoryPage() {
         </Container>
       </Section>
 
-      <SolutionCTA heading="Be Part of What Comes Next" subheading="Join 250+ publishers who chose to stop leaving money on the table and start earning what their audiences are worth." badge="Apply to Join" robotVariant="rocket" primaryCTA={{ label: "Apply Now", href: "/about/contact-us" }} />
+      <SolutionCTA heading="Be Part of What Comes Next" subheading="Join 450+ Publishers who chose to stop leaving money on the table and start earning what their audiences are worth." badge="Apply to Join" robotVariant="rocket" primaryCTA={{ label: "Apply Now", href: "/about/contact-us" }} />
     </>
   )
 }

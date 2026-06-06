@@ -22,7 +22,7 @@ const FEATURES: Feature[] = [
   {
     icon: Layers,
     title: "In-App Bidding",
-    description: "Simultaneous real-time bids from 12+ networks replace waterfall. Every impression goes to the highest bidder in under 300ms — maximum yield, zero compromise.",
+    description: "Simultaneous real-time bids from 12+ networks replace waterfall. Every impression goes to the highest bidder in under 300ms, maximum yield, zero compromise.",
     iconBg: "bg-brand-purple/12", iconColor: "text-brand-purple",
     glow: "rgba(139,92,246,0.14)",
     featured: true,
@@ -52,7 +52,7 @@ const FEATURES: Feature[] = [
   {
     icon: SlidersHorizontal,
     title: "Mediation Setup",
-    description: "Network priority, bid floors, A/B test parameters — all managed hands-free.",
+    description: "Network priority, bid floors, A/B test parameters, all managed hands-free.",
     iconBg: "bg-brand-green/12", iconColor: "text-brand-green",
     glow: "rgba(16,185,129,0.10)",
   },
@@ -111,7 +111,7 @@ export function AppFeaturesSection() {
             <span className="text-gradient-brand">Different</span>
           </h2>
           <p className="text-body text-text-secondary max-w-xl mx-auto text-pretty">
-            From in-app bidding infrastructure to ARPDAU analytics — every tool your app needs to reach its revenue ceiling.
+            From in-app bidding infrastructure to ARPDAU analytics, every tool your app needs to reach its revenue ceiling.
           </p>
         </div>
 

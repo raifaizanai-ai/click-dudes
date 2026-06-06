@@ -19,13 +19,13 @@ const problems = [
 ]
 
 const solutions = [
-  { title: "Consistent Brand Identity", body: "Every asset follows your brand guidelines — colors, fonts, style, and tone — creating a cohesive, professional presence." },
+  { title: "Consistent Brand Identity", body: "Every asset follows your brand guidelines, colors, fonts, style, and tone, creating a cohesive, professional presence." },
   { title: "Scroll-Stopping Content", body: "We design thumb-stopping social content tailored to each platform's best practices and your target audience." },
   { title: "High-Converting Ad Creatives", body: "Performance-focused ad designs engineered to maximize click-through rates and drive real business results." },
 ]
 
 const features = [
-  { icon: Image, title: "Social Media Content", description: "Platform-native designs for Instagram, Facebook, LinkedIn, TikTok, and more — built to stop the scroll.", badge: "Social", accent: "text-brand-purple", glow: "rgba(139,92,246,0.10)" },
+  { icon: Image, title: "Social Media Content", description: "Platform-native designs for Instagram, Facebook, LinkedIn, TikTok, and more, built to stop the scroll.", badge: "Social", accent: "text-brand-purple", glow: "rgba(139,92,246,0.10)" },
   { icon: Palette, title: "Personal Brand Visuals", description: "Consistent visual content packs for founders, CEOs, and personal brand builders across all platforms.", badge: "Personal Brand", accent: "text-brand-purple", glow: "rgba(103,232,249,0.10)" },
   { icon: Package, title: "Amazon A+ Content", description: "High-impact product images and A+ content designed to increase Amazon conversion rates and rankings.", badge: "Amazon", accent: "text-brand-blue", glow: "rgba(96,165,250,0.10)" },
   { icon: Layout, title: "Product Listing Images", description: "Professional product photography direction, infographic overlays, and listing images that convert browsers.", badge: "eCommerce", accent: "text-brand-violet", glow: "rgba(168,85,247,0.10)" },
@@ -35,10 +35,10 @@ const features = [
 
 
 const whyUsItems = [
-  { icon: Palette, title: "Brand-First Design Philosophy", body: "Every asset is designed with your brand identity at the core — no templates, no generic looks.", highlight: "Brand Native", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
-  { icon: Star, title: "Platform-Optimized Content", body: "We design for the exact specs and best practices of each platform — Instagram, LinkedIn, TikTok, Amazon, and more.", highlight: "Multi-Platform", accent: "text-brand-purple", bg: "rgba(103,232,249,0.08)", dotColor: "cyan" as const },
+  { icon: Palette, title: "Brand-First Design Philosophy", body: "Every asset is designed with your brand identity at the core, no templates, no generic looks.", highlight: "Brand Native", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
+  { icon: Star, title: "Platform-Optimized Content", body: "We design for the exact specs and best practices of each platform, Instagram, LinkedIn, TikTok, Amazon, and more.", highlight: "Multi-Platform", accent: "text-brand-purple", bg: "rgba(103,232,249,0.08)", dotColor: "cyan" as const },
   { icon: Zap, title: "Fast Turnaround", body: "48-hour standard turnaround with rush delivery available. We move at the speed your business demands.", highlight: "48hr Delivery", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
-  { icon: Image, title: "Unlimited Revisions", body: "We don't lock you into revision limits. We iterate until the design is exactly right — your satisfaction guaranteed.", highlight: "No Limits", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
+  { icon: Image, title: "Unlimited Revisions", body: "We don't lock you into revision limits. We iterate until the design is exactly right, your satisfaction guaranteed.", highlight: "No Limits", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
 ]
 
 const faqs = [
@@ -56,7 +56,7 @@ export function GraphicDesigningPage() {
         badge="Graphic Designing"
         badgeIcon={Palette}
         headline={<>Visuals That <span className="text-gradient-brand">Stop Scrolling & Build Brands</span></>}
-        subtext="Click Dudes creates premium visual content — from social media graphics to ad creatives, Amazon A+ content, and personal brand visuals — designed to perform."
+        subtext="Click Dudes creates premium visual content, from social media graphics to ad creatives, Amazon A+ content, and personal brand visuals, designed to perform."
         primaryCTA={{ label: "Design My Brand Content", href: "/about/contact-us" }}
         secondaryCTA={{ label: "See Our Work", href: "/about/contact-us" }}
         caption="Brand-native design · Platform-optimized · 48hr turnaround · Unlimited revisions"
@@ -73,7 +73,7 @@ export function GraphicDesigningPage() {
       <SolutionProblemSolution
         badge="The Problem"
         heading={<>Why Bad Visuals Are <span className="text-gradient-brand">Costing You Revenue</span></>}
-        subtext="Most businesses underinvest in visual content quality — and their engagement and conversion rates suffer for it."
+        subtext="Most businesses underinvest in visual content quality, and their engagement and conversion rates suffer for it."
         problems={problems}
         solutions={solutions}
         problemLabel="Without Click Dudes"
@@ -89,7 +89,7 @@ export function GraphicDesigningPage() {
       <SolutionWhyUs
         badge="Why Click Dudes"
         heading={<>The Design Partner That <span className="text-gradient-brand">Elevates Your Brand</span></>}
-        subtext="We don't just design — we build visual identities that make your brand impossible to ignore."
+        subtext="We don't just design, we build visual identities that make your brand impossible to ignore."
         items={whyUsItems}
       />
       <GraphicDesignTestimonials />

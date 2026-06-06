@@ -73,7 +73,7 @@ export function SiteLogo({
         "focus-ring inline-flex items-center rounded-md",
         isNavbar && "transition-opacity duration-200 hover:opacity-80",
       )}
-      aria-label="Click Dudes — go to homepage"
+      aria-label="Click Dudes, go to homepage"
     >
       {img}
     </Link>

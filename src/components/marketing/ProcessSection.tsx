@@ -1,8 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Send, Search, Link, Sliders, Rocket } from "lucide-react"
+import { Send, Search, Link, Sliders, Rocket, ArrowRight } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
+import NextLink from "next/link"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { GradientOrb } from "@/components/shared/GradientOrb"
@@ -12,10 +13,18 @@ import { cn } from "@/lib/utils"
 
 interface ProcessStep { number: string; icon: LucideIcon; title: string; description: string }
 
+const PROCESS_TRUST = [
+  "450+ Publishers",
+  "GCPP Verified Partners Network",
+  "2–7 Days Go-Live Time",
+  "24 Hour Review Time",
+  "25+ Countries Served",
+]
+
 const STEPS: ProcessStep[] = [
   { number: "01", icon: Send,    title: "Apply",     description: "Submit your property details. Our team reviews your traffic and inventory quality within 48 hours." },
   { number: "02", icon: Search,  title: "Analyze",   description: "We audit your existing setup, identify revenue gaps, and build a custom monetization strategy." },
-  { number: "03", icon: Link,    title: "Integrate", description: "Header bidding and AdX tags go live in 3–7 business days. Our engineers handle everything — you don't touch code." },
+  { number: "03", icon: Link,    title: "Integrate", description: "Header bidding and AdX tags go live in 2–7 days. Our engineers handle everything. You don't touch code." },
   { number: "04", icon: Sliders, title: "Optimize",  description: "AI recalibrates price floors, placement mix, and demand allocation daily. Weekly reports show exactly what's moving and why." },
   { number: "05", icon: Rocket,  title: "Scale",     description: "As your revenue grows, we bring in premium private marketplace deals and direct advertiser relationships." },
 ]
@@ -59,7 +68,7 @@ export function ProcessSection() {
         <SectionHeader
           badge="How It Works"
           heading={<>From Application to{" "}<span className="text-gradient-brand">Revenue in Days</span></>}
-          subtext="A streamlined onboarding process built for publishers who want results fast — not a months-long integration project."
+          subtext="A streamlined onboarding process built for publishers who want results fast, not a months-long integration project."
           align="center"
           subtextWidth="md"
         />
@@ -145,6 +154,66 @@ export function ProcessSection() {
             </motion.div>
           ))}
         </motion.div>
+        {/* ── Process CTA ──────────────────────────────────────── */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] as const }}
+          className="mt-14 lg:mt-16"
+        >
+          <div
+            className="relative rounded-2xl glass border border-brand-purple/[0.14] p-8 sm:p-10 text-center overflow-hidden"
+            style={{ boxShadow: "0 8px 40px rgba(7,17,47,0.07), 0 0 0 1px rgba(139,92,246,0.08)" }}
+          >
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-purple/30 to-transparent pointer-events-none" aria-hidden="true" />
+
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-brand-purple/20 text-[11px] font-semibold tracking-widest uppercase text-brand-purple mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse" aria-hidden="true" />
+              Ready to Get Started?
+            </span>
+
+            <h3 className="text-[24px] sm:text-[32px] font-bold text-text-primary tracking-tight text-balance mb-3">
+              See If Your Website{" "}
+              <span className="text-gradient-brand">Qualifies</span>
+            </h3>
+
+            <p className="text-sm sm:text-base text-text-secondary max-w-lg mx-auto text-pretty mb-8">
+              Check your eligibility for Google AdX, Header Bidding, AI Optimization, and Premium Demand access in under 2 minutes.
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
+              <NextLink
+                href="/publisher-solutions/monetization-eligibility-criteria"
+                className="group inline-flex items-center gap-2.5 rounded-full px-7 py-3.5 text-[14px] font-semibold text-white bg-gradient-to-r from-brand-purple to-brand-blue shadow-[0_4px_24px_rgba(139,92,246,0.28)] hover:shadow-[0_8px_36px_rgba(139,92,246,0.40)] hover:-translate-y-0.5 transition-all duration-300 relative overflow-hidden"
+              >
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 ease-in-out pointer-events-none"
+                  style={{ background: "linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.22) 50%, transparent 70%)" }}
+                />
+                Check Your Eligibility
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" aria-hidden="true" />
+              </NextLink>
+              <NextLink
+                href="/about/contact-us"
+                className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-[14px] font-semibold text-text-secondary border border-white/60 glass-subtle hover:text-brand-purple hover:border-brand-purple/20 hover:bg-brand-purple/[0.04] transition-all duration-300"
+              >
+                Talk To Our Team
+              </NextLink>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+              {PROCESS_TRUST.map((item) => (
+                <span key={item} className="flex items-center gap-1.5 text-[12px] text-text-muted">
+                  <span className="text-brand-green font-bold text-[11px]" aria-hidden="true">✓</span>
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
       </Container>
     </Section>
   )

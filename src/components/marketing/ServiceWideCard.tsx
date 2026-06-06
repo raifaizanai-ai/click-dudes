@@ -35,7 +35,7 @@ const STYLES: Record<WideCategory, {
 }
 
 const SERP_ROWS = [
-  { isAd: true,  title: "Premium Widgets — Free Shipping", url: "yoursite.com", desc: "Shop Now" },
+  { isAd: true,  title: "Premium Widgets, Free Shipping", url: "yoursite.com", desc: "Shop Now" },
   { isAd: false, title: "Cheap Widgets Online",            url: "competitor.com", desc: "" },
   { isAd: false, title: "Widgets On Sale",                 url: "generic.net",  desc: "" },
 ]

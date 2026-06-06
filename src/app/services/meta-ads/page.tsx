@@ -3,7 +3,7 @@ import { MetaAdsPage } from "@/sections/services/meta-ads/MetaAdsPage"
 
 export const metadata: Metadata = {
   title: "Meta Ads Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "Click Dudes manages Facebook and Instagram ad campaigns — lead generation, conversions, retargeting, ad creatives, and campaign optimization for scalable paid growth.",
+  description: "Click Dudes manages Facebook and Instagram ad campaigns, lead generation, conversions, retargeting, ad creatives, and campaign optimization for scalable paid growth.",
   openGraph: {
     title: "Meta Ads Services — Click Dudes",
     description: "Facebook and Instagram advertising campaigns that deliver leads, conversions, and ROAS.",
@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Meta Ads — Facebook & Instagram Advertising",
+  name: "Meta Ads, Facebook & Instagram Advertising",
   description: "Full-funnel Facebook and Instagram ad campaigns including lead generation, retargeting, creative strategy, and continuous ROAS optimization.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/services/meta-ads",

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Machine learning price floors, real-time anomaly detection, and predictive revenue forecasting running autonomously 24/7. Publishers see an average 28% yield lift over manual optimization.",
   openGraph: {
     title: "AI Ad Optimization — Click Dudes",
-    description: "AI that optimizes your ad revenue while you sleep — 24/7 autonomous yield optimization.",
+    description: "Autonomous yield optimization running 24/7. Machine learning price floors and real-time demand matching for qualifying publishers.",
     url: "https://clickdudes.com/publisher-solutions/ai-ad-optimization",
     siteName: "Click Dudes",
     type: "website",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AI Ad Optimization — Click Dudes",
-    description: "AI that optimizes your ad revenue while you sleep — 24/7 autonomous yield optimization.",
+    description: "Autonomous yield optimization running 24/7. Machine learning price floors and real-time demand matching for qualifying publishers.",
   },
   alternates: {
     canonical: "https://clickdudes.com/publisher-solutions/ai-ad-optimization",
@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "AI Ad Optimization — Autonomous Yield Management",
+  name: "AI Ad Optimization, Autonomous Yield Management",
   description: "Machine learning price floors, real-time anomaly detection, and predictive revenue forecasting for publishers. 24/7 autonomous optimization averaging 28% yield lift.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/publisher-solutions/ai-ad-optimization",

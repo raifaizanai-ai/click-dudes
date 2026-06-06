@@ -15,7 +15,7 @@ const STEPS = [
   },
   {
     icon: Shield, num: "02", title: "Technical Fixes & On-Page",
-    body: "We fix every technical barrier — Core Web Vitals, crawlability, page speed, schema markup — and optimise all key pages for target keywords.",
+    body: "We fix every technical barrier, Core Web Vitals, crawlability, page speed, schema markup, and optimise all key pages for target keywords.",
     rank: "#12–30", traffic: "+40% initial lift", time: "Week 2–4",
     color: "text-brand-blue", bg: "bg-brand-blue/[0.08]", border: "border-brand-blue/[0.15]",
     rankColor: "text-brand-blue",

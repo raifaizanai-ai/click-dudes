@@ -95,7 +95,7 @@ export function PartnersSection() {
               className="w-4 h-4 text-brand-green flex-shrink-0"
             />
             <span className="text-xs font-semibold tracking-widest uppercase text-brand-green">
-              GCPP Verified
+              GCPP Verified Partners Network
             </span>
           </div>
 

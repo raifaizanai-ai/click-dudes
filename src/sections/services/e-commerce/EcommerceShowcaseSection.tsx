@@ -52,7 +52,7 @@ export function EcommerceShowcaseSection() {
             <span className="text-gradient-brand">Repeat Buyers</span>
           </h2>
           <p className="text-body text-text-muted max-w-xl mx-auto text-pretty">
-            We engineer every step of your buyer journey — from landing page to checkout to post-purchase — to maximize revenue at every touchpoint.
+            We engineer every step of your buyer journey, from landing page to checkout to post-purchase, to maximize revenue at every touchpoint.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export function EcommerceShowcaseSection() {
             </div>
             <div className="mt-4 pt-4 border-t border-white/30 flex items-center gap-2">
               <CheckCircle2 className="w-3.5 h-3.5 text-brand-green" aria-hidden="true" />
-              <span className="text-[11px] text-brand-green font-semibold">8.4% store conversion rate — 3× industry average</span>
+              <span className="text-[11px] text-brand-green font-semibold">8.4% store conversion rate, 3× industry average</span>
             </div>
           </motion.div>
 

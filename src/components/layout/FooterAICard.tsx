@@ -32,7 +32,7 @@ const STATUS_ROWS = [
   { label: "Revenue Track",   pct: 100, color: "bg-brand-green" },
 ] as const
 
-const TRUST_BADGES = ["GCPP Certified", "Google AdX", "250+ Publishers"] as const
+const TRUST_BADGES = ["GCPP Verified Partners Network", "Google AdX", "450+ Publishers"] as const
 
 /* ── Sparkline path (144×48 viewBox, y inverted) ──── */
 

@@ -10,10 +10,10 @@ import { CountUp } from "@/components/motion/CountUp"
 import { LiveDot } from "@/components/shared/LiveDot"
 
 const BENEFITS = [
-  "Dynamic floor pricing — self-learning, always optimal",
-  "Revenue anomaly detection — alerts within 5 minutes",
+  "Dynamic floor pricing, self-learning, always optimal",
+  "Revenue anomaly detection, alerts within 5 minutes",
   "30-day predictive revenue forecasting included",
-  "Models improve continuously — 3–5% monthly compound yield",
+  "Models improve continuously, 3–5% monthly compound yield",
 ]
 
 const AI_METRICS = [
@@ -114,7 +114,7 @@ export function AiAdCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join publishers whose revenue compounds monthly as Click Dudes' AI learns their audience. Dynamic floors, anomaly detection, and revenue forecasting — all on autopilot.
+              Join publishers whose revenue compounds monthly as Click Dudes' AI learns their audience. Dynamic floors, anomaly detection, and revenue forecasting, all on autopilot.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

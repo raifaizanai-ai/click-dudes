@@ -82,7 +82,7 @@ export function AIOptimizationHero() {
 
             <motion.div variants={itemVariant}>
               <p className="text-base md:text-body-lg text-text-secondary leading-relaxed text-pretty max-w-lg">
-                Machine learning price floors, real-time anomaly detection, and predictive revenue forecasting — running autonomously 24/7. Publishers see an average 28% yield lift over manual optimization.
+                Machine learning price floors, real-time anomaly detection, and predictive revenue forecasting, running autonomously 24/7. Publishers see an average 28% yield lift over manual optimization.
               </p>
             </motion.div>
 

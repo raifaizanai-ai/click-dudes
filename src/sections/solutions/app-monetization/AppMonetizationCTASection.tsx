@@ -11,9 +11,9 @@ import { LiveDot } from "@/components/shared/LiveDot"
 import { STATS } from "@/lib/stats"
 
 const BENEFITS = [
-  "Lightweight SDK — under 800KB, no performance hit",
+  "Lightweight SDK, under 800KB, no performance hit",
   "iOS, Android & cross-platform (Unity, React Native, Flutter)",
-  "Managed ATT & GDPR consent — full compliance handled",
+  "Managed ATT & GDPR consent, full compliance handled",
   "Dedicated mobile monetization specialist on your account",
 ]
 
@@ -138,7 +138,7 @@ export function AppMonetizationCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join 250+ app publishers earning more with Click Dudes&rsquo; fully managed in-app bidding stack. No SDK headaches, no guesswork — just better eCPMs.
+              Join 450+ app publishers earning more with Click Dudes&rsquo; fully managed in-app bidding stack. No SDK headaches, no guesswork, just better eCPMs.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
@@ -167,7 +167,7 @@ export function AppMonetizationCTASection() {
             <motion.div custom={5} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="flex items-center gap-2 pt-1">
               <Smartphone className="w-3.5 h-3.5 text-text-muted shrink-0" aria-hidden="true" />
-              <p className="text-[11px] text-text-muted">No setup fees · Revenue share model · Go live in 7–14 days</p>
+              <p className="text-[11px] text-text-muted">No setup fees · Revenue share model · Go live in 2–7 days</p>
             </motion.div>
           </div>
         </div>

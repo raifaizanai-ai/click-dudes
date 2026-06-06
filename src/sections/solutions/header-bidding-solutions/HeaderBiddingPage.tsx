@@ -29,13 +29,13 @@ const PARTNERS = [
 ]
 
 const PROBLEMS = [
-  { title: "Waterfall Leaves Revenue Behind", body: "Legacy waterfall ad stacks process demand sequentially — the first network to meet your floor wins, not the highest bidder. Publishers using waterfalls typically realize only 60–70% of their inventory's true market value." },
+  { title: "Waterfall Leaves Revenue Behind", body: "Legacy waterfall ad stacks process demand sequentially, the first network to meet your floor wins, not the highest bidder. Publishers using waterfalls typically realize only 60–70% of their inventory's true market value." },
   { title: "Auction Latency Hurts UX and SEO", body: "Client-side header bidding with many partners adds 800ms–2000ms of page load time. This damages Core Web Vitals scores, reduces ad viewability, and can impact organic search ranking." },
   { title: "No Transparency into Bid Competition", body: "Without proper auction analytics, publishers can't see which SSPs are competing, what floors are being hit, or why revenue fluctuates. Optimization without data is impossible." },
 ]
 
 const SOLUTIONS = [
-  { title: "Simultaneous Unified Auction", body: "All 15+ demand partners bid simultaneously via our server-side infrastructure. The highest bid wins every impression — not the first one to meet a floor. Full price discovery on every auction." },
+  { title: "Simultaneous Unified Auction", body: "All 15+ demand partners bid simultaneously via our server-side infrastructure. The highest bid wins every impression, not the first one to meet a floor. Full price discovery on every auction." },
   { title: "Sub-200ms Server-Side Infrastructure", body: "Auctions run on our servers, not in the user's browser. Zero client-side JavaScript overhead, no Core Web Vitals impact, no degradation to organic search performance." },
   { title: "Complete Bid Transparency Dashboard", body: "See every bid from every partner on every impression. Identify which SSPs are competitive on your inventory, which floors are optimal, and where demand density is lowest." },
 ]
@@ -43,7 +43,7 @@ const SOLUTIONS = [
 const FEATURES = [
   {
     icon: Layers, title: "Prebid.js Unified Auction",
-    description: "Industry-standard Prebid.js implementation with our custom optimizations — 15+ SSP adapters, server-to-server bidding, and bid caching for maximum efficiency.",
+    description: "Industry-standard Prebid.js implementation with our custom optimizations, 15+ SSP adapters, server-to-server bidding, and bid caching for maximum efficiency.",
     badge: "Core Tech", accent: "text-brand-purple", glow: "rgba(139,92,246,0.12)",
   },
   {
@@ -63,7 +63,7 @@ const FEATURES = [
   },
   {
     icon: Globe, title: "Multi-Format Bid Support",
-    description: "Header bidding configured for display, video (instream/outstream), native, and sticky formats — with format-specific floor logic and demand partner matching.",
+    description: "Header bidding configured for display, video (instream/outstream), native, and sticky formats, with format-specific floor logic and demand partner matching.",
     accent: "text-brand-violet", glow: "rgba(168,85,247,0.12)",
   },
   {
@@ -76,7 +76,7 @@ const FEATURES = [
 const WHY_US_ITEMS = [
   {
     icon: Award,      title: "15+ Premium SSP Relationships",
-    body: "Pre-negotiated partnership agreements with all major SSPs mean your header bidding stack goes live with maximum demand competition from day one — no individual outreach required.",
+    body: "Pre-negotiated partnership agreements with all major SSPs mean your header bidding stack goes live with maximum demand competition from day one, no individual outreach required.",
     highlight: "Full Coverage", accent: "text-brand-purple", bg: "rgba(139,92,246,0.10)", dotColor: "purple" as const,
   },
   {
@@ -91,7 +91,7 @@ const WHY_US_ITEMS = [
   },
   {
     icon: Users,      title: "Prebid Engineering Expertise",
-    body: "Our engineers contributed to the open-source Prebid.js project. We understand the internals — not just the configuration panel.",
+    body: "Our engineers contributed to the open-source Prebid.js project. We understand the internals, not just the configuration panel.",
     highlight: "Expert Builders", accent: "text-brand-green", bg: "rgba(16,185,129,0.10)", dotColor: "green" as const,
   },
 ]
@@ -107,7 +107,7 @@ const METRICS = [
 const FAQS = [
   {
     question: "What's the difference between client-side and server-side header bidding?",
-    answer:   "Client-side header bidding runs JavaScript in the user's browser to collect bids from multiple SSPs — this adds 500–2000ms of latency. Server-side header bidding moves the auction to our servers, completing it in under 200ms with no browser-side performance impact. The revenue results are typically equivalent; the speed advantage is significant.",
+    answer:   "Client-side header bidding runs JavaScript in the user's browser to collect bids from multiple SSPs, this adds 500–2000ms of latency. Server-side header bidding moves the auction to our servers, completing it in under 200ms with no browser-side performance impact. The revenue results are typically equivalent; the speed advantage is significant.",
   },
   {
     question: "How many SSPs will be competing for my inventory?",
@@ -115,11 +115,11 @@ const FAQS = [
   },
   {
     question: "Will header bidding work with my existing Google Ad Manager setup?",
-    answer:   "Yes. Header bidding integrates with GAM as a line-item structure — the highest external bid competes against your existing AdSense and direct campaign line items in a unified auction. We handle all GAM configuration as part of the integration.",
+    answer:   "Yes. Header bidding integrates with GAM as a line-item structure, the highest external bid competes against your existing AdSense and direct campaign line items in a unified auction. We handle all GAM configuration as part of the integration.",
   },
   {
     question: "How do price floors work in header bidding?",
-    answer:   "Price floors are minimum CPM thresholds that SSPs must exceed for their bid to be accepted. Our AI sets granular floors by placement, device, geo, hour-of-day, and SSP — preventing underpricing while maintaining high fill rates. Floors are continuously optimized based on observed bid patterns.",
+    answer:   "Price floors are minimum CPM thresholds that SSPs must exceed for their bid to be accepted. Our AI sets granular floors by placement, device, geo, hour-of-day, and SSP, preventing underpricing while maintaining high fill rates. Floors are continuously optimized based on observed bid patterns.",
   },
   {
     question: "What happens if the header bidding auction times out?",
@@ -127,7 +127,7 @@ const FAQS = [
   },
   {
     question: "Can I see which SSPs win the most impressions?",
-    answer:   "Yes — our bid analytics dashboard shows win rate, average CPM, bid density, and revenue contribution by SSP, placement, device, and geography. This transparency lets us continuously optimize your demand partner mix for maximum yield.",
+    answer:   "Yes, our bid analytics dashboard shows win rate, average CPM, bid density, and revenue contribution by SSP, placement, device, and geography. This transparency lets us continuously optimize your demand partner mix for maximum yield.",
   },
 ]
 
@@ -138,7 +138,7 @@ export function HeaderBiddingPage() {
         badge="Header Bidding Solutions"
         badgeIcon={Layers}
         headline={<>Replace Your Waterfall.<br /><GradientText gradient="brand">Earn What Your Inventory Is Worth.</GradientText></>}
-        subtext="Server-side header bidding with 15+ SSPs running in parallel at sub-200ms latency. Our publishers see an average 47% CPM increase over waterfall — without touching their Core Web Vitals."
+        subtext="Server-side header bidding with 15+ SSPs running in parallel at sub-200ms latency. Our publishers see an average 47% CPM increase over waterfall, without touching their Core Web Vitals."
         stats={STATS}
         panelContent={<HBHeroPanel />}
         robotVariant="search"
@@ -157,7 +157,7 @@ export function HeaderBiddingPage() {
       <SolutionFeatures
         badge="Platform Features"
         heading={<>Enterprise Header Bidding<br /><GradientText gradient="violet">Infrastructure</GradientText></>}
-        subtext="Server-side Prebid.js, dynamic floor pricing, and complete bid analytics — the full technical stack for maximum header bidding yield."
+        subtext="Server-side Prebid.js, dynamic floor pricing, and complete bid analytics, the full technical stack for maximum header bidding yield."
         features={FEATURES}
       />
 
@@ -182,7 +182,7 @@ export function HeaderBiddingPage() {
       <SolutionWhyUs
         badge="Why Click Dudes"
         heading={<>The Header Bidding Partner<br /><GradientText gradient="violet">Built for Publishers</GradientText></>}
-        subtext="We built our infrastructure specifically for publisher yield optimization — not repurposed from a buy-side tool or a DSP."
+        subtext="We built our infrastructure specifically for publisher yield optimization, not repurposed from a buy-side tool or a DSP."
         items={WHY_US_ITEMS}
       />
 

@@ -3,10 +3,10 @@ import { SocialMediaPage } from "@/sections/services/social-media-management/Soc
 
 export const metadata: Metadata = {
   title: "Social Media Management Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "Click Dudes manages your business social media accounts — content planning, creation, scheduling, community management, and monthly growth reporting.",
+  description: "Click Dudes manages your business social media accounts, content planning, creation, scheduling, community management, and monthly growth reporting.",
   openGraph: {
     title: "Social Media Management — Click Dudes",
-    description: "Complete social media management for businesses — content, posting, engagement, and growth.",
+    description: "Complete social media management for businesses, content, posting, engagement, and growth.",
     url: "https://clickdudes.com/services/social-media-management",
     siteName: "Click Dudes",
     type: "website",

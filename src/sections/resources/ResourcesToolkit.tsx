@@ -51,7 +51,7 @@ const TOOLS: ToolCard[] = [
   {
     icon:       LayoutGrid,
     title:      "Ad Format Selector",
-    description: "Compare all ad formats — banner, interstitial, rewarded video, native — and find the best fit for your platform.",
+    description: "Compare all ad formats, banner, interstitial, rewarded video, native, and find the best fit for your platform.",
     cta:        "Explore Formats",
     href:       "/ad-formats",
     iconBg:     "bg-brand-cyan/10",
@@ -69,7 +69,7 @@ const TOOLS: ToolCard[] = [
   {
     icon:       FileSearch,
     title:      "Google Policy Checklist",
-    description: "A publisher-friendly summary of Google's content, traffic, and ad implementation policies — in plain language.",
+    description: "A publisher-friendly summary of Google's content, traffic, and ad implementation policies, in plain language.",
     cta:        "View Checklist",
     href:       "/resources/google-publisher-policy-checklist",
     iconBg:     "bg-brand-purple/10",

@@ -47,7 +47,7 @@ export function SocialShowcaseSection() {
             <span className="text-gradient-brand">Across Every Platform</span>
           </h2>
           <p className="text-body text-text-muted max-w-xl mx-auto text-pretty">
-            We manage content strategy, creation, scheduling, and analytics across all major social platforms — so your audience grows while you focus on your business.
+            We manage content strategy, creation, scheduling, and analytics across all major social platforms, so your audience grows while you focus on your business.
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export function SocialShowcaseSection() {
               className="glass rounded-3xl p-5 border border-white/50">
               <p className="text-[11px] font-bold text-text-muted uppercase tracking-wider mb-4 flex items-center gap-2">
                 <Calendar className="w-3.5 h-3.5 text-brand-purple" aria-hidden="true" />
-                Content Calendar — This Week
+                Content Calendar, This Week
               </p>
               <div className="grid grid-cols-7 gap-2">
                 {CALENDAR_WEEK.map(({ day, posts, color }) => (

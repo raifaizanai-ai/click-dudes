@@ -10,10 +10,10 @@ import { LiveDot } from "@/components/shared/LiveDot"
 import { STATS } from "@/lib/stats"
 
 const BENEFITS = [
-  "Full Google AdX demand pool — exclusive to certified MCM partners",
+  "Full Google AdX demand pool, exclusive to certified MCM partners",
   "Programmatic direct & preferred deal access at premium CPMs",
-  "Zero setup fees — revenue share on incremental gains only",
-  "Live in 7–14 days — our team handles all technical integration",
+  "Zero setup fees, revenue share on incremental gains only",
+  "Live in 2–7 days, our team handles all technical integration",
 ]
 
 const LIVE_DATA = [
@@ -56,7 +56,7 @@ export function AdxCTASection() {
                 <div className="flex flex-col items-end gap-0.5">
                   <div className="flex items-center gap-1">
                     <Info className="w-3 h-3 text-text-muted/50 flex-shrink-0" aria-hidden="true" />
-                    <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative — aggregate network view</span>
+                    <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative, aggregate network view</span>
                   </div>
                   <LiveDot color="blue" size="sm" label="" />
                 </div>
@@ -65,7 +65,7 @@ export function AdxCTASection() {
               <div className="p-5 space-y-5">
                 {/* RPM lift */}
                 <div>
-                  <p className="text-[11px] text-text-muted mb-1 uppercase tracking-wider font-semibold">Avg RPM Lift — Publisher Network</p>
+                  <p className="text-[11px] text-text-muted mb-1 uppercase tracking-wider font-semibold">Avg RPM Lift, Publisher Network</p>
                   <div className="flex items-baseline gap-1">
                     <p className="text-[40px] font-black tabular-nums leading-none" style={{ background: "linear-gradient(135deg, #60A5FA, #8B5CF6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                       {STATS.rpmLift}
@@ -101,7 +101,7 @@ export function AdxCTASection() {
                   <ShieldCheck className="w-5 h-5 text-brand-green shrink-0" aria-hidden="true" />
                   <div>
                     <p className="text-[12px] font-bold text-text-primary">Google Certified MCM Partner</p>
-                    <p className="text-[10px] text-text-muted">Full AdX demand pool access · 250+ publishers</p>
+                    <p className="text-[10px] text-text-muted">Full AdX demand pool access · 450+ Publishers</p>
                   </div>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export function AdxCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join 250+ publishers accessing the full Google AdX demand pool through Click Dudes' certified MCM partnership. Premium CPMs, programmatic direct deals, and zero setup fees.
+              Join 450+ Publishers accessing the full Google AdX demand pool through Click Dudes' certified MCM partnership. Premium CPMs, programmatic direct deals, and zero setup fees.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

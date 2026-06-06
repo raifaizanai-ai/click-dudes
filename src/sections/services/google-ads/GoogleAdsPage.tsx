@@ -15,7 +15,7 @@ import { GoogleAdsTestimonials } from "@/sections/services/google-ads/GoogleAdsT
 const problems = [
   { title: "High Cost Per Click, Low Return", body: "Broad match keywords and poor bid strategies burn budget on irrelevant searches that never convert." },
   { title: "Poor Landing Page Alignment", body: "Sending search traffic to a generic homepage instead of targeted landing pages destroys Quality Score and conversion rates." },
-  { title: "No Conversion Tracking", body: "Without proper tracking setup, you can't know which keywords and campaigns are actually generating revenue — so you can't optimize." },
+  { title: "No Conversion Tracking", body: "Without proper tracking setup, you can't know which keywords and campaigns are actually generating revenue, so you can't optimize." },
 ]
 
 const solutions = [
@@ -37,14 +37,14 @@ const features = [
 const whyUsItems = [
   { icon: Search, title: "Google Ads Certified Team", body: "Our certified Google Ads specialists manage campaigns across search, display, YouTube, and Performance Max with proven results.", highlight: "Google Certified", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
   { icon: Target, title: "Keyword & Intent Mastery", body: "We go deep on keyword research, search intent mapping, and negative keyword management to eliminate wasted spend.", highlight: "Intent-Based", accent: "text-brand-purple", bg: "rgba(103,232,249,0.08)", dotColor: "cyan" as const },
-  { icon: DollarSign, title: "ROI-Focused Optimization", body: "Every optimization decision is guided by conversion data and ROAS targets — not impressions or clicks that don't pay your bills.", highlight: "6.8% Conversion Rate", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
+  { icon: DollarSign, title: "ROI-Focused Optimization", body: "Every optimization decision is guided by conversion data and ROAS targets, not impressions or clicks that don't pay your bills.", highlight: "6.8% Conversion Rate", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
   { icon: BarChart3, title: "Full Attribution Clarity", body: "We set up complete conversion tracking so you know exactly which campaigns, ad groups, and keywords are generating revenue.", highlight: "Full Attribution", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
 ]
 
 const faqs = [
   { question: "What budget do I need for Google Ads?", answer: "We recommend a minimum monthly ad spend of $1,500–$3,000 for meaningful data. Competitive industries may need more. Management fees are separate from ad spend." },
   { question: "How long before Google Ads shows results?", answer: "Google Ads typically shows initial results within 1–2 weeks. Fully optimized campaigns with stable quality scores and conversion data usually develop within 30–60 days." },
-  { question: "Do you set up conversion tracking?", answer: "Yes. Full conversion tracking setup is included — GA4 integration, Google Ads goals, call tracking where applicable, and custom conversion events for your specific business." },
+  { question: "Do you set up conversion tracking?", answer: "Yes. Full conversion tracking setup is included, GA4 integration, Google Ads goals, call tracking where applicable, and custom conversion events for your specific business." },
   { question: "Can you manage my existing Google Ads account?", answer: "Absolutely. We frequently take over underperforming accounts. Our process starts with a full audit to identify wasted spend and quick-win opportunities before we optimize." },
   { question: "Do you create landing pages?", answer: "We can create or recommend landing page optimizations aligned to your ad groups. We offer landing page development as a separate service if needed for maximum campaign performance." },
 ]
@@ -56,7 +56,7 @@ export function GoogleAdsPage() {
         badge="Google Ads Management"
         badgeIcon={Search}
         headline={<>Google Ads Campaigns That <span className="text-gradient-brand">Convert at Scale</span></>}
-        subtext="Click Dudes manages your Google Ads from strategy to execution — search, display, YouTube, and Performance Max campaigns optimized for maximum conversions and ROAS."
+        subtext="Click Dudes manages your Google Ads from strategy to execution, search, display, YouTube, and Performance Max campaigns optimized for maximum conversions and ROAS."
         primaryCTA={{ label: "Start Google Ads Campaign", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Free Account Audit", href: "/about/contact-us" }}
         caption="Google certified · Full tracking setup · Weekly optimization · Clear reporting"
@@ -73,7 +73,7 @@ export function GoogleAdsPage() {
       <SolutionProblemSolution
         badge="The Problem"
         heading={<>Why Most Google Ads Campaigns <span className="text-gradient-brand">Bleed Budget</span></>}
-        subtext="Google Ads can be the most profitable channel in your business — or the most wasteful. Here's what separates them."
+        subtext="Google Ads can be the most profitable channel in your business, or the most wasteful. Here's what separates them."
         problems={problems}
         solutions={solutions}
         problemLabel="Without Click Dudes"
@@ -96,7 +96,7 @@ export function GoogleAdsPage() {
       <SolutionFAQ
         badge="FAQ"
         heading={<>Google Ads <span className="text-gradient-brand">Questions Answered</span></>}
-        subtext="Budget, targeting, timelines — the questions brands ask before handing over their Google Ads account."
+        subtext="Budget, targeting, timelines, the questions brands ask before handing over their Google Ads account."
         faqs={faqs}
       />
       <GoogleAdsCTASection />

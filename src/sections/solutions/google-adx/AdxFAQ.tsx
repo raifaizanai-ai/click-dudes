@@ -15,11 +15,11 @@ import { cn } from "@/lib/utils"
 const FAQS = [
   {
     question: "Do I need 100,000 daily visitors to access Google AdX?",
-    answer:   "Direct Google AdX signup requires 5+ million monthly uniques. However, as a certified MCM partner, Click Dudes can sponsor access for publishers with significantly lower traffic — typically 500K+ monthly pageviews. Traffic quality, content compliance, and audience geography matter more than raw volume in our review process.",
+    answer:   "Direct Google AdX signup requires 5+ million monthly uniques. However, as a certified MCM partner, Click Dudes can sponsor access for publishers with significantly lower traffic, typically 500K+ monthly pageviews. Traffic quality, content compliance, and audience geography matter more than raw volume in our review process.",
   },
   {
     question: "Can I run AdX alongside my existing AdSense account?",
-    answer:   "Yes — AdX can run alongside AdSense through proper GAM (Google Ad Manager) configuration. During the transition period we recommend a gradual rollout: starting with your highest-value ad positions under AdX while maintaining AdSense elsewhere. Our team manages this migration to protect revenue continuity throughout.",
+    answer:   "Yes, AdX can run alongside AdSense through proper GAM (Google Ad Manager) configuration. During the transition period we recommend a gradual rollout: starting with your highest-value ad positions under AdX while maintaining AdSense elsewhere. Our team manages this migration to protect revenue continuity throughout.",
   },
   {
     question: "How long does Google AdX approval take?",
@@ -27,11 +27,11 @@ const FAQS = [
   },
   {
     question: "What CPM uplift can I realistically expect?",
-    answer:   "Our publishers see an average 30–38% RPM increase over their previous AdSense baseline in the first 30 days. Finance, tech, and business verticals in Tier-1 geographies consistently achieve $6–$15 CPMs. Lifestyle and entertainment content typically ranges $3–$9. These are observed ranges — not guarantees — and results depend heavily on traffic geography and content quality.",
+    answer:   "Our publishers see an average 30–38% RPM increase over their previous AdSense baseline in the first 30 days. Finance, tech, and business verticals in Tier-1 geographies consistently achieve $6–$15 CPMs. Lifestyle and entertainment content typically ranges $3–$9. These are observed ranges, not guarantees, and results depend heavily on traffic geography and content quality.",
   },
   {
     question: "What does Click Dudes charge for AdX management?",
-    answer:   "We operate on a transparent revenue share model — no upfront setup fees, no monthly retainers. Our compensation is a percentage of the incremental revenue we generate for you, meaning we only earn when you earn more. The specific rate depends on your traffic volume and content vertical. We discuss this during the initial consultation.",
+    answer:   "We operate on a transparent revenue share model, no upfront setup fees, no monthly retainers. Our compensation is a percentage of the incremental revenue we generate for you, meaning we only earn when you earn more. The specific rate depends on your traffic volume and content vertical. We discuss this during the initial consultation.",
   },
   {
     question: "What content categories are prohibited from AdX access?",

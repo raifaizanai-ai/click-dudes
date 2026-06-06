@@ -74,7 +74,7 @@ export function AppEcosystemSection() {
             <span className="text-gradient-brand">App Revenue System</span>
           </h2>
           <p className="text-body text-text-secondary max-w-xl mx-auto text-pretty">
-            Every layer of your app monetization stack — integrated, optimized, and managed as a unified system.
+            Every layer of your app monetization stack, integrated, optimized, and managed as a unified system.
           </p>
         </div>
 

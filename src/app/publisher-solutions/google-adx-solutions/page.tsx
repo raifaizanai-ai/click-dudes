@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Google AdX Solutions — MCM Partnership Access",
+  name: "Google AdX Solutions, MCM Partnership Access",
   description: "Access the full Google Ad Exchange demand pool via certified MCM partnership with AI floor optimization and preferred deal access. Average 30%+ RPM uplift over AdSense.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/publisher-solutions/google-adx-solutions",

@@ -43,7 +43,7 @@ export function Footer() {
 
       <Container>
         {/* ══════════════════════════════════════════════
-            Three-panel grid — 28 / 42 / 30 proportions
+            Three-panel grid, 28 / 42 / 30 proportions
         ══════════════════════════════════════════════ */}
         <div className="pt-10 sm:pt-16 pb-8 sm:pb-10 grid grid-cols-1 lg:grid-cols-[1.35fr_2fr_1.45fr] gap-5 sm:gap-6 items-stretch">
 
@@ -129,7 +129,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-brand-green flex-shrink-0" aria-hidden="true" />
-                <span className="text-xs text-text-muted">GCPP Verified Partner</span>
+                <span className="text-xs text-text-muted">GCPP Verified Partners Network</span>
               </div>
             </div>
           </motion.div>

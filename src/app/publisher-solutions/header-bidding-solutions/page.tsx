@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Header Bidding Solutions — Server-Side Unified Auction",
+  name: "Header Bidding Solutions, Server-Side Unified Auction",
   description: "Server-side header bidding across 15+ SSPs at sub-200ms latency, replacing waterfall monetization with a true unified auction. Average 47% CPM increase.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/publisher-solutions/header-bidding-solutions",

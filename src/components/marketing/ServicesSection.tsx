@@ -44,7 +44,7 @@ export function ServicesSection() {
         <SectionHeader
           badge="Revenue Architecture"
           heading={<>One Stack. <span className="text-gradient-brand">Maximum Revenue.</span></>}
-          subtext="Your inventory, our infrastructure. Google AdX, header bidding, AI optimization, and direct demand — all connected, all working together."
+          subtext="Your inventory, our infrastructure. Google AdX, header bidding, AI optimization, and direct demand: all connected, all working together."
           align="center"
           subtextWidth="md"
         />

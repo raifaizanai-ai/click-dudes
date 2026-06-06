@@ -33,17 +33,17 @@ interface PillarCard {
 }
 
 const PILLARS: PillarCard[] = [
-  { icon: Cpu,       iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", year: "Now",  title: "AI-Native Optimization",    description: "Every impression priced by machine learning in real time — floor prices, demand allocation, and bid shading handled autonomously." },
-  { icon: Globe2,    iconBg: "bg-brand-blue/10",   iconColor: "text-brand-blue",   year: "2025", title: "Universal Publisher Access", description: "Enterprise-grade programmatic technology accessible to any publisher with quality inventory — no minimum traffic, no gatekeeping." },
-  { icon: Layers,    iconBg: "bg-brand-cyan/10",   iconColor: "text-brand-cyan",   year: "2026", title: "Unified Monetization OS",    description: "One platform that manages web, app, and CTV inventory simultaneously — unified reporting, shared AI models, single integration." },
-  { icon: TrendingUp,iconBg: "bg-brand-green/10",  iconColor: "text-brand-green",  year: "2026", title: "Predictive Revenue Intelligence", description: "Revenue forecasting powered by 1B+ impression signals — helping publishers plan content strategy, headcount, and investment with confidence." },
-  { icon: Zap,       iconBg: "bg-brand-violet/10", iconColor: "text-brand-violet", year: "2027", title: "Instant Deal Marketplace",   description: "Publishers and premium buyers negotiate and activate private deals in hours, not weeks — removing the enterprise friction from programmatic direct." },
-  { icon: Compass,   iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", year: "2027", title: "Publisher Economic Layer",    description: "A financial services layer built for digital publishers — revenue advances, working capital products, and payment optimization powered by ad data." },
+  { icon: Cpu,       iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", year: "Now",  title: "AI-Native Optimization",    description: "Every impression priced by machine learning in real time, floor prices, demand allocation, and bid shading handled autonomously." },
+  { icon: Globe2,    iconBg: "bg-brand-blue/10",   iconColor: "text-brand-blue",   year: "2025", title: "Universal Publisher Access", description: "Enterprise-grade programmatic technology accessible to any publisher with quality inventory, no minimum traffic, no gatekeeping." },
+  { icon: Layers,    iconBg: "bg-brand-cyan/10",   iconColor: "text-brand-cyan",   year: "2026", title: "Unified Monetization OS",    description: "One platform that manages web, app, and CTV inventory simultaneously, unified reporting, shared AI models, single integration." },
+  { icon: TrendingUp,iconBg: "bg-brand-green/10",  iconColor: "text-brand-green",  year: "2026", title: "Predictive Revenue Intelligence", description: "Revenue forecasting powered by 1B+ impression signals, helping publishers plan content strategy, headcount, and investment with confidence." },
+  { icon: Zap,       iconBg: "bg-brand-violet/10", iconColor: "text-brand-violet", year: "2027", title: "Instant Deal Marketplace",   description: "Publishers and premium buyers negotiate and activate private deals in hours, not weeks. No more enterprise friction from programmatic direct." },
+  { icon: Compass,   iconBg: "bg-brand-purple/10", iconColor: "text-brand-cyan", year: "2027", title: "Publisher Economic Layer",    description: "A financial services layer built for digital publishers: revenue advances, working capital products, and payment optimization powered by ad data." },
 ]
 
 const MILESTONES = [
   { year: "2020", label: "Founded",           sub: "Built the first AI floor optimizer" },
-  { year: "2022", label: "GCPP Certified",    sub: "Became Google Certified Publishing Partner" },
+  { year: "2022", label: "GCPP Verified Partners Network",    sub: "Became Google Certified Publishing Partner" },
   { year: "2023", label: "1K Publishers",     sub: "Crossed 1,000 publishers in network" },
   { year: "2024", label: "CTV Launch",        sub: "Launched connected TV monetization" },
   { year: "2025", label: "AI Platform",       sub: "Unified AI across all publisher formats" },
@@ -75,7 +75,7 @@ export function OurVisionPage() {
               <GradientText gradient="brand">Publisher Monetization</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              We envision a world where every publisher — regardless of size — earns their inventory&apos;s true value, powered by AI that works invisibly and intelligently in the background.
+              We envision a world where every publisher, regardless of size, earns their inventory&apos;s true value, powered by AI that works invisibly and intelligently in the background.
             </motion.p>
           </motion.div>
         </Container>

@@ -3,7 +3,7 @@ import { GoogleAdsPage } from "@/sections/services/google-ads/GoogleAdsPage"
 
 export const metadata: Metadata = {
   title: "Google Ads Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "Click Dudes manages Google Ads campaigns — search, display, YouTube, and Performance Max — with conversion tracking, keyword strategy, and continuous optimization.",
+  description: "Click Dudes manages Google Ads campaigns, search, display, YouTube, and Performance Max, with conversion tracking, keyword strategy, and continuous optimization.",
   openGraph: {
     title: "Google Ads Services — Click Dudes",
     description: "Search, display, YouTube, and Performance Max campaigns managed by Google certified specialists.",

@@ -15,21 +15,21 @@ const FUNNEL_STAGES = [
   },
   {
     icon: Target, label: "Build", title: "Campaign Architecture & Creatives",
-    body: "Structured campaign, ad group, and keyword architecture built for maximum Quality Score — paired with compelling ad copy for every intent.",
+    body: "Structured campaign, ad group, and keyword architecture built for maximum Quality Score, paired with compelling ad copy for every intent.",
     width: "max-w-xl", stat: "Quality Score 8.5+ avg",
     color: "text-brand-blue", bg: "bg-brand-blue/[0.08]", border: "border-brand-blue/[0.15]",
     bar: "from-brand-blue to-brand-cyan",
   },
   {
     icon: Zap, label: "Optimise", title: "Bid Strategy & A/B Testing",
-    body: "Smart bidding configuration, negative keyword lists, ad extensions, and creative A/B testing — all running continuously in the background.",
-    width: "max-w-lg", stat: "CTR 12.4% — 3× avg",
+    body: "Smart bidding configuration, negative keyword lists, ad extensions, and creative A/B testing, all running continuously in the background.",
+    width: "max-w-lg", stat: "CTR 12.4%, 3× avg",
     color: "text-brand-purple", bg: "bg-brand-cyan/[0.08]", border: "border-brand-cyan/[0.15]",
     bar: "from-brand-cyan to-brand-blue",
   },
   {
     icon: TrendingUp, label: "Scale", title: "Conversion Scaling & Reporting",
-    body: "Monthly reporting on spend, conversions, ROAS, and ranking position — with continuous budget expansion for winning keywords.",
+    body: "Monthly reporting on spend, conversions, ROAS, and ranking position, with continuous budget expansion for winning keywords.",
     width: "max-w-md", stat: "Avg ROAS 5.4× achieved",
     color: "text-brand-green", bg: "bg-brand-green/[0.08]", border: "border-brand-green/[0.15]",
     bar: "from-brand-green to-brand-cyan",
@@ -52,7 +52,7 @@ export function GoogleAdsProcessSection() {
             <span className="text-gradient-brand">Paying Customer</span>
           </h2>
           <p className="text-body text-text-muted max-w-xl mx-auto">
-            A top-down campaign system engineered at every stage — from keyword research to conversion — to maximise ROAS and minimise wasted spend.
+            A top-down campaign system engineered at every stage, from keyword research to conversion, to maximise ROAS and minimise wasted spend.
           </p>
         </div>
 

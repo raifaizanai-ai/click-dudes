@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://clickdudes.com/resources/rpm-optimization",
     siteName: "Click Dudes", type: "website",
   },
-  twitter: { card: "summary_large_image", title: "Why Your RPM Is Low — Fix It Fast" },
+  twitter: { card: "summary_large_image", title: "Why Your RPM Is Low, Fix It Fast" },
   alternates: { canonical: "https://clickdudes.com/resources/rpm-optimization" },
 }
 

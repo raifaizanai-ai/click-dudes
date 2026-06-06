@@ -29,13 +29,13 @@ const PARTNERS = [
 ]
 
 const PROBLEMS = [
-  { title: "Below-Potential Page RPM", body: "Most AdSense publishers are generating 40–70% of their inventory's theoretical RPM ceiling. Suboptimal placement, poor viewability, and missing ad format types are the primary causes — all fixable without additional traffic." },
+  { title: "Below-Potential Page RPM", body: "Most AdSense publishers are generating 40–70% of their inventory's theoretical RPM ceiling. Suboptimal placement, poor viewability, and missing ad format types are the primary causes, all fixable without additional traffic." },
   { title: "Ad Layout Hurts User Experience", body: "Aggressive ad placement increases short-term impressions but drives bounce rate, reduces session depth, and ultimately damages the organic search traffic that AdSense revenue depends on." },
   { title: "Policy Compliance Risk", body: "AdSense accounts are suspended or revenue-withheld regularly for policy violations that publishers don't know they're committing. Invalid traffic, placement violations, and auto-ads misconfiguration are the most common risks." },
 ]
 
 const SOLUTIONS = [
-  { title: "Scientifically Optimized Ad Layout", body: "We A/B test placement, size, format mix, and density against your specific content type and audience behavior — maximizing RPM while improving engagement metrics simultaneously." },
+  { title: "Scientifically Optimized Ad Layout", body: "We A/B test placement, size, format mix, and density against your specific content type and audience behavior, maximizing RPM while improving engagement metrics simultaneously." },
   { title: "User-First Ad Architecture", body: "Our optimization philosophy prioritizes viewability and authentic engagement over raw impression volume. Higher-quality impressions command higher CPMs and protect your organic search performance." },
   { title: "Policy-Safe Compliance Management", body: "We audit your current implementation for policy risks, set up monitoring for invalid traffic signals, and maintain ongoing compliance review as Google's policies evolve." },
 ]
@@ -48,27 +48,27 @@ const FEATURES = [
   },
   {
     icon: BarChart3, title: "Auto Ads Intelligence",
-    description: "We configure and tune Google Auto Ads with custom exclusion zones, density limits, and format preferences — preventing the default settings from harming your Core Web Vitals or UX.",
+    description: "We configure and tune Google Auto Ads with custom exclusion zones, density limits, and format preferences, preventing the default settings from harming your Core Web Vitals or UX.",
     badge: "AI-Assisted", accent: "text-brand-blue", glow: "rgba(96,165,250,0.12)",
   },
   {
     icon: TrendingUp, title: "Viewability Maximization",
-    description: "Lazy loading, sticky ad units, and scroll-depth targeting are configured to ensure the maximum percentage of your impressions qualify for viewable CPM — commanding the premium advertisers pay for.",
+    description: "Lazy loading, sticky ad units, and scroll-depth targeting are configured to ensure the maximum percentage of your impressions qualify for viewable CPM, commanding the premium advertisers pay for.",
     accent: "text-brand-purple", glow: "rgba(103,232,249,0.12)",
   },
   {
     icon: Shield, title: "Policy Compliance Audit",
-    description: "Comprehensive audit of your AdSense implementation against current Google Publisher Policies — including invalid traffic signals, placement rules, and content policy alignment.",
+    description: "Comprehensive audit of your AdSense implementation against current Google Publisher Policies, including invalid traffic signals, placement rules, and content policy alignment.",
     accent: "text-brand-green", glow: "rgba(16,185,129,0.12)",
   },
   {
     icon: Zap, title: "Core Web Vitals & Page Speed",
-    description: "Ad implementation that passes Core Web Vitals thresholds. We optimize ad loading to prevent CLS, LCP degradation, and FID — protecting your SEO while maximizing ad revenue.",
+    description: "Ad implementation that passes Core Web Vitals thresholds. We optimize ad loading to prevent CLS, LCP degradation, and FID, protecting your SEO while maximizing ad revenue.",
     accent: "text-brand-violet", glow: "rgba(168,85,247,0.12)",
   },
   {
     icon: Globe, title: "AdSense to AdX Migration Path",
-    description: "When you're ready to move beyond AdSense, we handle the AdX migration with zero revenue disruption — opening up premium demand channels that AdSense simply can't reach.",
+    description: "When you're ready to move beyond AdSense, we handle the AdX migration with zero revenue disruption, opening up premium demand channels that AdSense simply can't reach.",
     badge: "Growth Path", accent: "text-brand-purple", glow: "rgba(139,92,246,0.10)",
   },
 ]
@@ -76,12 +76,12 @@ const FEATURES = [
 const WHY_US_ITEMS = [
   {
     icon: Award,      title: "AdSense Optimization Track Record",
-    body: "We've optimized AdSense implementations for 400+ publishers. Our average client sees a 62% RPM improvement — and the methodology is repeatable, not luck.",
+    body: "We've optimized AdSense implementations for 400+ publishers. Our average client sees a 62% RPM improvement, and the methodology is repeatable, not luck.",
     highlight: "Proven Results", accent: "text-brand-purple", bg: "rgba(139,92,246,0.10)", dotColor: "purple" as const,
   },
   {
     icon: Shield,     title: "Policy-First Approach",
-    body: "Every optimization we recommend is reviewed against current Google Publisher Policies. We don't chase short-term gains that put your account at risk — we build sustainable revenue.",
+    body: "Every optimization we recommend is reviewed against current Google Publisher Policies. We don't chase short-term gains that put your account at risk, we build sustainable revenue.",
     highlight: "Policy Safe", accent: "text-brand-blue", bg: "rgba(96,165,250,0.10)", dotColor: "blue" as const,
   },
   {
@@ -91,7 +91,7 @@ const WHY_US_ITEMS = [
   },
   {
     icon: TrendingUp, title: "Clear Path to AdX",
-    body: "We treat AdSense optimization as the foundation, not the ceiling. When you're ready for AdX, we run the migration clean — no revenue disruption, no guesswork.",
+    body: "We treat AdSense optimization as the foundation, not the ceiling. When you're ready for AdX, we run the migration clean, no revenue disruption, no guesswork.",
     highlight: "Growth Ready", accent: "text-brand-green", bg: "rgba(16,185,129,0.10)", dotColor: "green" as const,
   },
 ]
@@ -106,7 +106,7 @@ const METRICS = [
 
 const FAQS = [
   {
-    question: "My AdSense RPM seems low — how do I know what's possible?",
+    question: "My AdSense RPM seems low, how do I know what's possible?",
     answer:   "RPM depends on content vertical, geography, session depth, viewability, and ad format mix. As a benchmark: finance content in Tier-1 geographies should generate $4–$8+ RPM with optimized placement. Lifestyle and food content typically ranges $2–$5. Our free audit establishes your specific ceiling and the gap from your current performance.",
   },
   {
@@ -119,7 +119,7 @@ const FAQS = [
   },
   {
     question: "What AdSense policy violations are most common?",
-    answer:   "The most common issues we find are: ads placed too close to navigation or interactive elements, click-incentivizing language near ads, placement that encourages accidental clicks, and ad density exceeding Google's guidelines on mobile. All are fixable once identified — and our audit catches all of them.",
+    answer:   "The most common issues we find are: ads placed too close to navigation or interactive elements, click-incentivizing language near ads, placement that encourages accidental clicks, and ad density exceeding Google's guidelines on mobile. All are fixable once identified, and our audit catches all of them.",
   },
   {
     question: "When should I consider upgrading from AdSense to AdX?",
@@ -127,7 +127,7 @@ const FAQS = [
   },
   {
     question: "Do you work with bloggers and small publishers, or only large media companies?",
-    answer:   "We work with AdSense publishers across all sizes — from individual bloggers generating $500/month to niche media companies generating $50,000/month. Our optimization methodology scales from single-author sites to large editorial teams.",
+    answer:   "We work with AdSense publishers across all sizes, from individual bloggers generating $500/month to niche media companies generating $50,000/month. Our optimization methodology scales from single-author sites to large editorial teams.",
   },
 ]
 
@@ -149,7 +149,7 @@ export function AdsenseOptimizationPage() {
       <SolutionProblemSolution
         badge="The Problem"
         heading={<>Why Your AdSense RPM<br /><GradientText gradient="brand">Isn't What It Should Be</GradientText></>}
-        subtext="Most AdSense publishers are operating well below their RPM ceiling. The gap is almost never about traffic volume — it's about implementation quality."
+        subtext="Most AdSense publishers are operating well below their RPM ceiling. The gap is almost never about traffic volume, it's about implementation quality."
         problems={PROBLEMS}
         solutions={SOLUTIONS}
       />
@@ -164,7 +164,7 @@ export function AdsenseOptimizationPage() {
       <SolutionAnalytics
         badge="Revenue Intelligence"
         heading={<>AdSense Analytics That<br /><GradientText gradient="brand">Reveal the Real Picture</GradientText></>}
-        subtext="Beyond RPM totals — understand exactly which placements, pages, and user segments are generating revenue and which are leaving money behind."
+        subtext="Beyond RPM totals, understand exactly which placements, pages, and user segments are generating revenue and which are leaving money behind."
         bullets={[
           "Page-level RPM breakdown by content category and template",
           "Ad unit viewability rate and active view CPM tracking",

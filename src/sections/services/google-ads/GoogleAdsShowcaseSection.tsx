@@ -8,12 +8,12 @@ import { CountUp } from "@/components/motion/CountUp"
 
 const SERP_RESULTS = [
   {
-    isAd: true, url: "yourstore.com", title: "Best Widgets — Official Store | Free Shipping",
+    isAd: true, url: "yourstore.com", title: "Best Widgets, Official Store | Free Shipping",
     desc: "Award-winning collection. 4.9★ · 50K+ Happy Customers · Same-Day Delivery Available.",
     extensions: ["Free Shipping", "4.9 ★ Reviews", "Same Day Delivery", "30-Day Returns"],
   },
-  { isAd: false, url: "competitor-one.com",  title: "Cheap Widgets — Up to 30% Off Now" },
-  { isAd: false, url: "randomstore.net",      title: "Buy Widgets Online — Huge Selection"  },
+  { isAd: false, url: "competitor-one.com",  title: "Cheap Widgets, Up to 30% Off Now" },
+  { isAd: false, url: "randomstore.net",      title: "Buy Widgets Online, Huge Selection"  },
 ]
 
 const KEYWORD_INTELLIGENCE = [

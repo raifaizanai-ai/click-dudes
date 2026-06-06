@@ -1,6 +1,6 @@
 export const STATS = {
   // Network scale
-  publishers:          '250+',
+  publishers:          '450+',
   publishersLabel:     'Publishers in Network',
   countries:           '25+',
   countriesLabel:      'Publisher Countries',
@@ -18,7 +18,7 @@ export const STATS = {
   uptimeLabel:   'Network Uptime',
 
   // Process
-  goLive:            '7–14 Days',
+  goLive:            '2–7 Days',
   goLiveLabel:       'Average Go-Live Time',
   integration:       '3–7 Days',
   integrationLabel:  'Technical Integration',
@@ -26,7 +26,7 @@ export const STATS = {
   responseTimeLabel: 'Response Time (business days)',
 
   // Partnership
-  partnership:      'GCPP-Verified',
+  partnership:      'GCPP Verified Partners Network',
   partnershipLabel: 'Google MCM Partner',
   payoutTerms:      'Net-30',
   payoutTermsLabel: 'Monthly Payouts',

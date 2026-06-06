@@ -19,7 +19,7 @@ const stagger = {
 }
 
 const STATS = [
-  { value: "250+", label: "Publishers" },
+  { value: "450+", label: "Publishers" },
   { value: "50+",  label: "Demand Partners" },
   { value: "25+",  label: "Countries" },
   { value: "+40%", label: "RPM Lift" },
@@ -42,19 +42,18 @@ export function ContactHeroSection() {
             <motion.span variants={fadeUp}
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-brand-purple/20 text-xs font-semibold tracking-widest uppercase text-brand-purple w-fit">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse" aria-hidden="true" />
-              ClickBot™ AI — Online
+              ClickBot™ AI, Online
             </motion.span>
 
             <motion.h1 variants={fadeUp}
               className="text-h2 sm:text-h1 lg:text-display font-bold text-text-primary tracking-display text-balance leading-tight">
-              Unlock More Revenue<br className="hidden sm:block" />
-              With{" "}<GradientText gradient="brand">ClickBot™ AI</GradientText>
+              More Revenue,<br className="hidden sm:block" />
+              Managed by{" "}<GradientText gradient="brand">ClickBot™ AI</GradientText>
             </motion.h1>
 
             <motion.p variants={fadeUp}
               className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-xl">
-              The AI-powered monetization assistant helping publishers maximize revenue through Google AdX,
-              Header Bidding, Premium Demand, and AI Optimization.
+              Click Dudes manages your full ad stack, Google AdX, Header Bidding, Premium Demand, and AI optimization, so you earn more without touching a line of code.
             </motion.p>
 
             {/* Stats grid */}

@@ -35,7 +35,7 @@ const features = [
 
 const flowSteps = [
   { icon: Layout, title: "Discovery & Wireframing", body: "We understand your goals, audience, and competitors, then create a clear website structure and wireframe.", duration: "Day 1–3" },
-  { icon: Code2, title: "Design & Development", body: "Custom design mockups followed by full development on your chosen platform — no generic templates.", duration: "Week 1–3" },
+  { icon: Code2, title: "Design & Development", body: "Custom design mockups followed by full development on your chosen platform, no generic templates.", duration: "Week 1–3" },
   { icon: Zap, title: "Testing & Optimization", body: "Cross-browser testing, mobile QA, speed optimization, and SEO foundation setup before launch.", duration: "Week 3–4" },
   { icon: Globe, title: "Launch & Handover", body: "We deploy to production, set up analytics, train your team, and provide post-launch support.", duration: "Week 4+" },
 ]
@@ -50,7 +50,7 @@ const whyUsItems = [
 const faqs = [
   { question: "Which platforms do you build on?", answer: "We specialize in WordPress, Shopify, and custom full-stack builds using modern frameworks like Next.js. We recommend the best platform based on your specific business needs." },
   { question: "How long does a website project take?", answer: "A standard business website or landing page takes 2–4 weeks. Shopify stores take 2–4 weeks. Complex custom-coded web apps or SaaS platforms may take 6–12 weeks depending on scope." },
-  { question: "Will my website be mobile-friendly?", answer: "Absolutely. Every site we build is designed mobile-first and tested across all major devices — iPhone, Android, tablets, and desktops — before launch." },
+  { question: "Will my website be mobile-friendly?", answer: "Absolutely. Every site we build is designed mobile-first and tested across all major devices, iPhone, Android, tablets, and desktops, before launch." },
   { question: "Do you handle hosting and domain setup?", answer: "Yes. We guide you through hosting selection (or use your existing provider), configure your domain, SSL certificate, CDN, and all technical infrastructure needed to go live." },
   { question: "What happens after the website launches?", answer: "We offer post-launch support packages that include bug fixes, content updates, plugin maintenance, security monitoring, and performance reporting to keep your site running perfectly." },
 ]
@@ -62,7 +62,7 @@ export function WebDevelopmentPage() {
         badge="Web Development"
         badgeIcon={Code2}
         headline={<>Premium Websites Built to <span className="text-gradient-brand">Convert & Perform</span></>}
-        subtext="Click Dudes builds fast, beautiful, fully custom websites on WordPress, Shopify, and modern tech stacks — engineered for performance and designed to convert."
+        subtext="Click Dudes builds fast, beautiful, fully custom websites on WordPress, Shopify, and modern tech stacks, engineered for performance and designed to convert."
         primaryCTA={{ label: "Build My Website", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Talk to Our Team", href: "/about/contact-us" }}
         caption="Custom builds · 90+ Lighthouse scores · Mobile-first · Post-launch support"
@@ -79,7 +79,7 @@ export function WebDevelopmentPage() {
       <SolutionProblemSolution
         badge="The Problem"
         heading={<>Why Most Business Websites <span className="text-gradient-brand">Underperform</span></>}
-        subtext="Most websites are built fast and cheap — and they perform that way too. Here's what goes wrong and how Click Dudes fixes it."
+        subtext="Most websites are built fast and cheap, and they perform that way too. Here's what goes wrong and how Click Dudes fixes it."
         problems={problems}
         solutions={solutions}
         problemLabel="Without Click Dudes"

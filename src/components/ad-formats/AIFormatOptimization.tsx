@@ -26,7 +26,7 @@ const AI_CARDS: AICard[] = [
   {
     icon:      Cpu,
     title:     "Device Detection",
-    body:      "Identifies screen size, OS, and connection type in real time to serve the optimal format — banner for mobile, video for desktop, CTV for streaming.",
+    body:      "Identifies screen size, OS, and connection type in real time to serve the optimal format: banner for mobile, video for desktop, CTV for streaming.",
     stat:      "99.8%",
     statLabel: "Detection accuracy",
     dotColor:  "green",
@@ -46,7 +46,7 @@ const AI_CARDS: AICard[] = [
   {
     icon:      Eye,
     title:     "Viewability Prediction",
-    body:      "Predicts ad viewability before serving — placing formats only in positions with high historical in-view rates to maximize CPM and advertiser satisfaction.",
+    body:      "Predicts ad viewability before serving, placing formats only in positions with high historical in-view rates to maximize CPM and advertiser satisfaction.",
     stat:      "84%",
     statLabel: "Predicted viewability",
     dotColor:  "cyan",
@@ -87,7 +87,7 @@ export function AIFormatOptimization() {
             <SectionHeader
               badge="AI Intelligence"
               heading={<>AI Chooses the Best<br /><GradientText gradient="brand">Format for Every Impression</GradientText></>}
-              subtext="Click Dudes analyzes traffic, device type, content layout, viewability potential, and demand competition to serve the highest-yield ad format for each page and placement — automatically."
+              subtext="Click Dudes analyzes traffic, device type, content layout, viewability potential, and demand competition to serve the highest-yield ad format for each page and placement. Automatically."
               align="left"
               subtextWidth="full"
             />

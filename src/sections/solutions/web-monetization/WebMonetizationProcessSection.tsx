@@ -16,7 +16,7 @@ const STEPS = [
   {
     icon: Layers, title: "Ad Stack Setup", duration: "Day 3–7",
     color: "text-brand-blue", border: "rgba(96,165,250,0.22)", glow: "rgba(96,165,250,0.14)",
-    body: "We configure GAM, deploy header bidding wrappers, integrate demand partners, and establish price floor baselines — zero developer effort required.",
+    body: "We configure GAM, deploy header bidding wrappers, integrate demand partners, and establish price floor baselines, zero developer effort required.",
   },
   {
     icon: BarChart3, title: "Calibration Phase", duration: "Day 8–21",
@@ -61,11 +61,11 @@ export function WebMonetizationProcessSection() {
             Integration Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            Live in 7–14 Days,{" "}
+            Live in 2–7 days,{" "}
             <span className="text-gradient-brand">Optimized in 30</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">
-            Our managed integration means your team doesn't write a single line of code. We configure everything — then hand you a dashboard and a dedicated manager.
+            Our managed integration means your team doesn't write a single line of code. We configure everything, then hand you a dashboard and a dedicated manager.
           </p>
         </div>
 

@@ -141,7 +141,7 @@ const websiteSchema = {
   "@id": "https://clickdudes.com/#website",
   name: "Click Dudes",
   url: "https://clickdudes.com",
-  description: "AI-powered monetization, advertising, SEO, and publisher growth platform — Google AdX, Header Bidding, AI Optimization, and digital growth solutions.",
+  description: "AI-powered monetization, advertising, SEO, and publisher growth platform, Google AdX, Header Bidding, AI Optimization, and digital growth solutions.",
   inLanguage: "en",
   publisher: { "@id": "https://clickdudes.com/#organization" },
   potentialAction: {

@@ -61,10 +61,10 @@ const CARDS: SatCard[] = [
 ]
 
 const STAT_PILLS = [
-  { label: "Apps Monetized", value: "250+",   color: "text-brand-purple" },
+  { label: "Apps Monetized", value: "450+",   color: "text-brand-purple" },
   { label: "eCPM Lift",      value: "+25–40%",  color: "text-brand-blue" },
   { label: "Fill Rate",      value: "90%+",    color: "text-brand-green" },
-  { label: "SDK Live In",    value: "7–14 Days", color: "text-brand-purple" },
+  { label: "SDK Live In",    value: "2–7 days", color: "text-brand-purple" },
 ]
 
 export function AppHeroSection() {
@@ -116,7 +116,7 @@ export function AppHeroSection() {
             </h1>
 
             <p className="text-body-lg text-text-secondary leading-relaxed mb-8 max-w-lg text-pretty">
-              In-app bidding from 12+ premium networks, AI format optimization, and managed compliance — all handled by our mobile monetization specialists.{" "}
+              In-app bidding from 12+ premium networks, AI format optimization, and managed compliance, all handled by our mobile monetization specialists.{" "}
               <strong className="text-text-primary font-semibold">Average apps see 38% eCPM uplift.</strong>
             </p>
 

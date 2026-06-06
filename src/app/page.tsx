@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card:        "summary_large_image",
     title:       "Click Dudes | Turning Clicks Into Revenue",
-    description: "AI-powered monetization, advertising, and publisher growth for websites, apps, and CTV — Google AdX, Header Bidding, SEO, and AI optimization.",
+    description: "AI-powered monetization, advertising, and publisher growth for websites, apps, and CTV, Google AdX, Header Bidding, SEO, and AI optimization.",
     images:      ["/opengraph-image"],
   },
   alternates: {

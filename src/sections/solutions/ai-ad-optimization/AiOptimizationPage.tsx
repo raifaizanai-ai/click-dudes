@@ -21,14 +21,14 @@ const PARTNERS = [
 ]
 
 const PROBLEMS = [
-  { title: "Static Floors Leave Revenue Behind", body: "Manual price floor configurations set once and forgotten. They don't adapt to hourly CPM patterns, seasonal variance, or demand shifts — leaving money on the table every time market conditions change." },
-  { title: "Revenue Anomalies Go Undetected", body: "Without automated monitoring, CPM drops, fill rate crashes, and demand partner outages can run undetected for days — costing thousands in missed revenue before anyone investigates." },
-  { title: "No Predictive Revenue Visibility", body: "Publishers manage monetization reactively — looking at yesterday's data to make today's decisions. Without revenue forecasting, budget planning, deal negotiation, and seasonal preparation are all done blind." },
+  { title: "Static Floors Leave Revenue Behind", body: "Manual price floor configurations set once and forgotten. They don't adapt to hourly CPM patterns, seasonal variance, or demand shifts, leaving money on the table every time market conditions change." },
+  { title: "Revenue Anomalies Go Undetected", body: "Without automated monitoring, CPM drops, fill rate crashes, and demand partner outages can run undetected for days, costing thousands in missed revenue before anyone investigates." },
+  { title: "No Predictive Revenue Visibility", body: "Publishers manage monetization reactively, looking at yesterday's data to make today's decisions. Without revenue forecasting, budget planning, deal negotiation, and seasonal preparation are all done blind." },
 ]
 
 const SOLUTIONS = [
-  { title: "Self-Learning Dynamic Floor Pricing", body: "AI models continuously update price floors based on real-time bid patterns, session context, and historical CPM curves — no human intervention required. Floors that are always in the optimal range." },
-  { title: "Real-Time Revenue Anomaly Detection", body: "Machine learning monitors every metric in real time. When a CPM drop, fill rate spike, or demand partner outage is detected, alerts fire within 5 minutes — before significant revenue is lost." },
+  { title: "Self-Learning Dynamic Floor Pricing", body: "AI models continuously update price floors based on real-time bid patterns, session context, and historical CPM curves, no human intervention required. Floors that are always in the optimal range." },
+  { title: "Real-Time Revenue Anomaly Detection", body: "Machine learning monitors every metric in real time. When a CPM drop, fill rate spike, or demand partner outage is detected, alerts fire within 5 minutes, before significant revenue is lost." },
   { title: "Predictive Revenue Intelligence", body: "30-day revenue forecasts, seasonal CPM projection models, and demand scenario analysis give you forward visibility to plan, negotiate, and optimize proactively rather than reactively." },
 ]
 
@@ -40,7 +40,7 @@ const FEATURES = [
   },
   {
     icon: Zap, title: "Revenue Anomaly Detection",
-    description: "Statistical anomaly detection monitors 40+ metrics simultaneously. CPM drops, fill rate crashes, and demand outages trigger alerts within 5 minutes — day or night.",
+    description: "Statistical anomaly detection monitors 40+ metrics simultaneously. CPM drops, fill rate crashes, and demand outages trigger alerts within 5 minutes, day or night.",
     badge: "24/7 Guard", accent: "text-brand-blue", glow: "rgba(96,165,250,0.12)",
   },
   {
@@ -50,17 +50,17 @@ const FEATURES = [
   },
   {
     icon: Layers, title: "Automated A/B Testing Engine",
-    description: "Continuous multivariate testing across floor configurations, timeout settings, demand partner order, and ad format parameters — running in the background without manual setup.",
+    description: "Continuous multivariate testing across floor configurations, timeout settings, demand partner order, and ad format parameters, running in the background without manual setup.",
     accent: "text-brand-green", glow: "rgba(16,185,129,0.12)",
   },
   {
     icon: Shield, title: "Yield Protection System",
-    description: "AI identifies undervalued inventory, over-suppressed floors, and demand partner imbalances that are costing revenue — then corrects them automatically within your defined guardrails.",
+    description: "AI identifies undervalued inventory, over-suppressed floors, and demand partner imbalances that are costing revenue, then corrects them automatically within your defined guardrails.",
     accent: "text-brand-violet", glow: "rgba(168,85,247,0.12)",
   },
   {
     icon: TrendingUp, title: "AI Revenue Intelligence Reports",
-    description: "Weekly AI-generated revenue reports highlight yield opportunities, anomaly summaries, A/B test conclusions, and recommended configuration changes — in plain English.",
+    description: "Weekly AI-generated revenue reports highlight yield opportunities, anomaly summaries, A/B test conclusions, and recommended configuration changes, in plain English.",
     badge: "Premium", accent: "text-brand-purple", glow: "rgba(139,92,246,0.10)",
   },
 ]
@@ -78,7 +78,7 @@ const WHY_US_ITEMS = [
   },
   {
     icon: BarChart3,  title: "98% Floor Prediction Accuracy",
-    body: "Our floor pricing AI achieves 98% accuracy in predicting optimal CPM floors across diverse inventory types — a benchmark built through years of iterative model refinement.",
+    body: "Our floor pricing AI achieves 98% accuracy in predicting optimal CPM floors across diverse inventory types, a benchmark built through years of iterative model refinement.",
     highlight: "98% Accuracy", accent: "text-brand-purple", bg: "rgba(103,232,249,0.10)", dotColor: "cyan" as const,
   },
   {
@@ -99,7 +99,7 @@ const METRICS = [
 const FAQS = [
   {
     question: "How is AI optimization different from just setting better price floors manually?",
-    answer:   "Manual floors are updated infrequently — weekly or monthly at best — and apply the same rate across all contexts. Our AI updates floors every 30 minutes with separate configurations for each placement, device type, geographic market, hour of day, and day of week. The optimization depth is thousands of times more granular than any analyst could manage manually.",
+    answer:   "Manual floors are updated infrequently, weekly or monthly at best, and apply the same rate across all contexts. Our AI updates floors every 30 minutes with separate configurations for each placement, device type, geographic market, hour of day, and day of week. The optimization depth is thousands of times more granular than any analyst could manage manually.",
   },
   {
     question: "What data does the AI need to work effectively?",
@@ -115,7 +115,7 @@ const FAQS = [
   },
   {
     question: "Can the AI work with my existing header bidding or GAM setup?",
-    answer:   "Yes. Our AI layer integrates with your existing Prebid.js or Google Ad Manager configuration through API and log-level data access. It doesn't replace your ad stack — it optimizes on top of it.",
+    answer:   "Yes. Our AI layer integrates with your existing Prebid.js or Google Ad Manager configuration through API and log-level data access. It doesn't replace your ad stack, it optimizes on top of it.",
   },
   {
     question: "What if the AI makes a bad recommendation?",
@@ -141,14 +141,14 @@ export function AiOptimizationPage() {
       <SolutionFeatures
         badge="AI Platform Features"
         heading={<>The Full AI Yield<br /><GradientText gradient="violet">Optimization Stack</GradientText></>}
-        subtext="Every AI capability your ad operation needs to optimize autonomously — from real-time floor adjustment to 30-day revenue forecasting."
+        subtext="Every AI capability your ad operation needs to optimize autonomously, from real-time floor adjustment to 30-day revenue forecasting."
         features={FEATURES}
       />
 
       <SolutionAnalytics
         badge="Revenue Intelligence"
         heading={<>AI-Powered Analytics<br /><GradientText gradient="brand">That See the Future</GradientText></>}
-        subtext="Not just what happened — what's going to happen. Our AI dashboard shows current performance alongside 30-day projections and proactive optimization recommendations."
+        subtext="Not just what happened, what's going to happen. Our AI dashboard shows current performance alongside 30-day projections and proactive optimization recommendations."
         bullets={[
           "Real-time CPM and fill rate monitoring with AI anomaly scoring",
           "30-day revenue forecast with seasonal adjustment overlays",
@@ -166,7 +166,7 @@ export function AiOptimizationPage() {
       <SolutionWhyUs
         badge="Why Click Dudes AI"
         heading={<>Publisher AI Built on<br /><GradientText gradient="violet">Real Auction Data</GradientText></>}
-        subtext="Not a generic ML framework applied to ad tech — an AI system built specifically for publisher yield optimization, trained on years of real auction data."
+        subtext="Not a generic ML framework applied to ad tech, an AI system built specifically for publisher yield optimization, trained on years of real auction data."
         items={WHY_US_ITEMS}
       />
 

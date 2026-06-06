@@ -27,7 +27,7 @@ const solutions = [
 const features = [
   { icon: Calendar, title: "Monthly Content Calendar", description: "A fully planned content calendar aligned with your business goals, campaigns, and seasonal trends.", badge: "Strategy", accent: "text-brand-purple", glow: "rgba(139,92,246,0.10)" },
   { icon: Share2, title: "Multi-Platform Posting", description: "Scheduled publishing across Instagram, Facebook, LinkedIn, TikTok, Twitter, and Pinterest.", badge: "Multi-Platform", accent: "text-brand-purple", glow: "rgba(103,232,249,0.10)" },
-  { icon: MessageSquare, title: "Community Management", description: "Active engagement — comments, DMs, mentions, and brand sentiment monitoring daily.", badge: "Engagement", accent: "text-brand-blue", glow: "rgba(96,165,250,0.10)" },
+  { icon: MessageSquare, title: "Community Management", description: "Active engagement, comments, DMs, mentions, and brand sentiment monitoring daily.", badge: "Engagement", accent: "text-brand-blue", glow: "rgba(96,165,250,0.10)" },
   { icon: TrendingUp, title: "Growth Strategy", description: "Follower acquisition strategies, hashtag research, and collaboration opportunities to grow your audience.", badge: "Growth", accent: "text-brand-violet", glow: "rgba(168,85,247,0.10)" },
   { icon: BarChart3, title: "Analytics & Reporting", description: "Monthly performance reports covering reach, engagement, follower growth, and content insights.", badge: "Reporting", accent: "text-brand-green", glow: "rgba(16,185,129,0.10)" },
   { icon: Zap, title: "Brand Consistency", description: "Visual templates, brand voice guidelines, and content themes that keep your brand consistent at scale.", badge: "Brand", accent: "text-brand-purple", glow: "rgba(139,92,246,0.10)" },
@@ -35,8 +35,8 @@ const features = [
 
 
 const whyUsItems = [
-  { icon: Share2, title: "Platform-Native Expertise", body: "We know the algorithms, best practices, and content formats for every major platform — not generic social media management.", highlight: "Platform Experts", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
-  { icon: Star, title: "Brand-First Content", body: "Every post reflects your brand voice, visual identity, and business goals — no off-brand template content.", highlight: "100% On-Brand", accent: "text-brand-purple", bg: "rgba(103,232,249,0.08)", dotColor: "cyan" as const },
+  { icon: Share2, title: "Platform-Native Expertise", body: "We know the algorithms, best practices, and content formats for every major platform, not generic social media management.", highlight: "Platform Experts", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
+  { icon: Star, title: "Brand-First Content", body: "Every post reflects your brand voice, visual identity, and business goals, no off-brand template content.", highlight: "100% On-Brand", accent: "text-brand-purple", bg: "rgba(103,232,249,0.08)", dotColor: "cyan" as const },
   { icon: TrendingUp, title: "Measurable Growth", body: "We track follower growth, reach, engagement, and conversions monthly to prove the ROI of your social investment.", highlight: "42% Avg Growth", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
   { icon: MessageSquare, title: "Proactive Community Building", body: "We actively build your community through engagement, partnerships, and relationship management that creates loyal customers.", highlight: "Community First", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
 ]
@@ -56,7 +56,7 @@ export function SocialMediaPage() {
         badge="Social Media Management"
         badgeIcon={Share2}
         headline={<>Consistent Brand Presence <span className="text-gradient-brand">Across Every Platform</span></>}
-        subtext="Click Dudes manages your business social media end-to-end — content strategy, creation, scheduling, community management, and monthly reporting."
+        subtext="Click Dudes manages your business social media end-to-end, content strategy, creation, scheduling, community management, and monthly reporting."
         primaryCTA={{ label: "Manage My Social Media", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Get a Free Audit", href: "/about/contact-us" }}
         caption="Multi-platform management · Brand-native content · Community management · Monthly reporting"
@@ -96,7 +96,7 @@ export function SocialMediaPage() {
       <SolutionFAQ
         badge="FAQ"
         heading={<>Social Media Management <span className="text-gradient-brand">Questions Answered</span></>}
-        subtext="How we handle content, posting schedules, approvals, and results. No vague promises — just how it works."
+        subtext="How we handle content, posting schedules, approvals, and results. No vague promises, just how it works."
         faqs={faqs}
       />
       <SocialMediaCTASection />

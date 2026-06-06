@@ -41,7 +41,7 @@ const FORMATS: FormatCard[] = [
 
 const TIPS = [
   { icon: Zap,        tip: "Implement in-app bidding to create real-time competition across 15+ demand sources simultaneously." },
-  { icon: BarChart2,  tip: "Use frequency capping — 3–5 rewarded video impressions per user/day maximizes revenue without churn." },
+  { icon: BarChart2,  tip: "Use frequency capping, 3–5 rewarded video impressions per user/day maximizes revenue without churn." },
   { icon: TrendingUp, tip: "Enable A/B testing for ad placement positions. Small changes in placement can yield 15–40% eCPM lifts." },
   { icon: CheckCircle2, tip: "Integrate mediation with at least 8 demand adapters. Diversity prevents fill gaps and improves overall eCPM." },
 ]
@@ -71,7 +71,7 @@ export function AppMonetizationGuidePage() {
               <GradientText gradient="brand">App Revenue</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              The complete guide to in-app advertising — format strategy, mediation setup, in-app bidding, and revenue optimization for iOS and Android.
+              The complete guide to in-app advertising, format strategy, mediation setup, in-app bidding, and revenue optimization for iOS and Android.
             </motion.p>
             <motion.div variants={stagger} className="flex flex-wrap justify-center gap-4 mt-2">
               {["iOS & Android", "In-App Bidding", "Mediation", "Format Strategy", "eCPM Optimization"].map((tag) => (

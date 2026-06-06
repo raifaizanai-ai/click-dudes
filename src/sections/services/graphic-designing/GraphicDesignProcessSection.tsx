@@ -9,7 +9,7 @@ const PHASES = [
   {
     col: "Brand Brief", status: "Briefing", statusColor: "text-brand-purple",
     cards: [
-      { icon: Star, title: "Brand Discovery", body: "Goals, audience, competitors, tone of voice — we build the full creative brief.", color: "text-brand-purple", bg: "bg-brand-purple/[0.08]" },
+      { icon: Star, title: "Brand Discovery", body: "Goals, audience, competitors, tone of voice, we build the full creative brief.", color: "text-brand-purple", bg: "bg-brand-purple/[0.08]" },
       { icon: Palette, title: "Style Exploration", body: "Mood boards, colour palettes, and reference curation aligned to your brand.", color: "text-brand-violet", bg: "bg-brand-violet/[0.08]" },
     ],
   },
@@ -30,7 +30,7 @@ const PHASES = [
   {
     col: "Delivery", status: "Delivered", statusColor: "text-brand-green",
     cards: [
-      { icon: Layers, title: "All Formats", body: "PNG, SVG, PDF, AI — every format you need, export-ready and organised.", color: "text-brand-green", bg: "bg-brand-green/[0.08]" },
+      { icon: Layers, title: "All Formats", body: "PNG, SVG, PDF, AI, every format you need, export-ready and organised.", color: "text-brand-green", bg: "bg-brand-green/[0.08]" },
       { icon: Zap, title: "Asset Library", body: "Structured library with naming conventions for easy ongoing management.", color: "text-brand-purple", bg: "bg-brand-purple/[0.08]" },
     ],
   },

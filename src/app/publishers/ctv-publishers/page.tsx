@@ -3,7 +3,7 @@ import { PublisherPlaceholderPage } from "@/sections/publishers/PublisherPlaceho
 
 export const metadata: Metadata = {
   title: "CTV Publishers — Click Dudes | Connected TV Monetization",
-  description: "Connected TV and OTT monetization with premium brand-safe demand and transparent performance reporting — powered by Click Dudes.",
+  description: "Connected TV and OTT monetization with premium brand-safe demand and transparent performance reporting, powered by Click Dudes.",
   openGraph: {
     title: "CTV Publishers — Click Dudes",
     description: "Connected TV and OTT monetization with premium brand-safe demand and transparent performance reporting.",

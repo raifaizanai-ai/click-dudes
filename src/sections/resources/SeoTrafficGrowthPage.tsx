@@ -23,11 +23,11 @@ const PLAYBOOK: PlaybookSection[] = [
     icon: Zap, title: "Technical SEO Foundations", color: "text-brand-purple", bg: "bg-brand-purple/10",
     items: [
       "Pass Core Web Vitals: LCP under 2.5s, INP under 200ms, CLS under 0.1",
-      "Ensure HTTPS is enabled across all pages — this is also required for ad serving",
+      "Ensure HTTPS is enabled across all pages, this is also required for ad serving",
       "Submit XML sitemap to Google Search Console and verify all pages indexed",
       "Fix crawl errors, redirect chains, and broken internal links monthly",
       "Use structured data (Article, HowTo, FAQ schema) for enhanced search visibility",
-      "Set canonical tags correctly — especially important for paginated or filtered content",
+      "Set canonical tags correctly, especially important for paginated or filtered content",
     ],
   },
   {
@@ -35,20 +35,20 @@ const PLAYBOOK: PlaybookSection[] = [
     items: [
       "Target long-tail keywords with commercial or informational intent relevant to your niche",
       "Write at least 1,200 words of original, well-researched content per article",
-      "Update existing content annually — freshness signals improve rankings and CTR",
-      "Cover topics comprehensively — use related terms, FAQs, and comparison tables",
+      "Update existing content annually, freshness signals improve rankings and CTR",
+      "Cover topics comprehensively, use related terms, FAQs, and comparison tables",
       "Optimize meta titles (50–60 chars) and meta descriptions (120–155 chars) for each page",
-      "Use descriptive image alt text — images appear in Google Search and drive discovery traffic",
+      "Use descriptive image alt text, images appear in Google Search and drive discovery traffic",
     ],
   },
   {
     icon: Globe, title: "Traffic Quality for Monetization", color: "text-brand-cyan", bg: "bg-brand-cyan/10",
     items: [
       "Prioritize Tier-1 traffic: US, UK, CA, AU, Germany yield 3–8x more CPM than Tier-3",
-      "Measure session duration and pages/session — engaged users deliver better viewability",
-      "Avoid buying bulk traffic — it hurts both SEO and ad quality scores simultaneously",
+      "Measure session duration and pages/session, engaged users deliver better viewability",
+      "Avoid buying bulk traffic, it hurts both SEO and ad quality scores simultaneously",
       "Use Google Analytics to identify highest-RPM content segments and produce more of it",
-      "Track organic traffic by content vertical — match content growth to high-CPM ad categories",
+      "Track organic traffic by content vertical, match content growth to high-CPM ad categories",
       "Reduce bounce rate with stronger internal linking and related content recommendations",
     ],
   },
@@ -59,8 +59,8 @@ const PLAYBOOK: PlaybookSection[] = [
       "Publish original research, data studies, or unique industry surveys to earn natural links",
       "Guest post on high-authority niche publications with real audience overlap",
       "Create content hubs (topic clusters) to signal authority on your core subjects",
-      "Use social media to amplify content — traffic signals help SEO rankings",
-      "Apply for Google News (for news publishers) — it unlocks Discover and news carousel traffic",
+      "Use social media to amplify content, traffic signals help SEO rankings",
+      "Apply for Google News (for news publishers), it unlocks Discover and news carousel traffic",
     ],
   },
 ]
@@ -89,7 +89,7 @@ export function SeoTrafficGrowthPage() {
               SEO Traffic Growth <GradientText gradient="brand">Playbook</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              How publishers grow organic traffic that converts to ad revenue — technical SEO, content strategy, Core Web Vitals, traffic quality, and authority building.
+              How publishers grow organic traffic that converts to ad revenue, technical SEO, content strategy, Core Web Vitals, traffic quality, and authority building.
             </motion.p>
             <motion.div variants={stagger} className="flex flex-wrap justify-center gap-4 mt-2">
               {["Technical SEO", "Content Strategy", "Core Web Vitals", "Traffic Quality", "Link Building"].map((tag) => (

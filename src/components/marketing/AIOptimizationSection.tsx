@@ -44,8 +44,8 @@ export function AIOptimizationSection() {
       <Container size="xl">
         <SectionHeader
           badge="Neural Command Center"
-          heading={<>Your Revenue Stack<br /><span className="text-gradient-brand">Never Sleeps.</span></>}
-          subtext="While you focus on content, our AI is recalculating floor prices, running A/B tests, and matching demand — 24/7, across every publisher in the network."
+          heading={<>Your Revenue,<br /><span className="text-gradient-brand">Optimized 24/7.</span></>}
+          subtext="While you focus on content, our AI recalculates floor prices, runs A/B tests, and matches demand across every publisher in the network, all day, every day."
           align="center"
           subtextWidth="md"
         />
@@ -137,7 +137,7 @@ export function AIOptimizationSection() {
                 <div className="flex flex-col items-end gap-0.5">
                   <div className="flex items-center gap-1">
                     <Info className="w-3 h-3 text-text-muted/50 flex-shrink-0" aria-hidden="true" />
-                    <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative — aggregate network view</span>
+                    <span className="text-[9px] text-text-muted/60 leading-tight">Illustrative, aggregate network view</span>
                   </div>
                   <LiveDot color="purple" size="sm" label="ACTIVE" />
                 </div>

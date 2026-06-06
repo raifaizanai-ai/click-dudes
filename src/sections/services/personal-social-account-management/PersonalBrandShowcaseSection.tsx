@@ -48,7 +48,7 @@ export function PersonalBrandShowcaseSection() {
             <span className="text-gradient-brand">That Opens Doors</span>
           </h2>
           <p className="text-body text-text-muted max-w-xl mx-auto text-pretty">
-            We help founders and executives become recognized category leaders — building audience, growing authority, and generating real business from their personal brand.
+            We help founders and executives become recognized category leaders, building audience, growing authority, and generating real business from their personal brand.
           </p>
         </div>
 

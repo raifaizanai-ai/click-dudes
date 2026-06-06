@@ -26,7 +26,7 @@ const DIFFERENTIATORS: Differentiator[] = [
     icon:      ShieldCheck,
     title:     "Google Certified MCM Partner",
     body:      "We are an officially vetted Google Multiple Customer Management partner. Publishers managed through our network receive full AdX access without the 5M monthly visitor threshold for direct signup.",
-    highlight: "GCPP Verified",
+    highlight: "GCPP Verified Partners Network",
     accent:    "text-brand-green",
     bg:        "rgba(16,185,129,0.09)",
     dotColor:  "green",
@@ -34,7 +34,7 @@ const DIFFERENTIATORS: Differentiator[] = [
   {
     icon:      Brain,
     title:     "Proprietary AI Yield Engine",
-    body:      "Our AI analyzes 47 demand signals every 15 minutes — adjusting price floors, timing bid requests, and reconfiguring SSP priority in real-time. It never stops optimizing.",
+    body:      "Our AI analyzes 47 demand signals every 15 minutes, adjusting price floors, timing bid requests, and reconfiguring SSP priority in real-time. Every impression is an optimization opportunity.",
     highlight: "AI Optimizing",
     accent:    "text-brand-purple",
     bg:        "rgba(139,92,246,0.09)",
@@ -43,7 +43,7 @@ const DIFFERENTIATORS: Differentiator[] = [
   {
     icon:      UserCheck,
     title:     "Named Publisher Success Manager",
-    body:      "Every publisher gets a dedicated human expert — not a ticketing system. Your manager runs weekly yield reviews, flags anomalies, and proactively recommends improvements.",
+    body:      "Every publisher gets a dedicated human expert, not a ticketing system. Your manager runs weekly yield reviews, flags anomalies, and proactively recommends improvements.",
     highlight: "1-on-1 Support",
     accent:    "text-brand-blue",
     bg:        "rgba(96,165,250,0.09)",
@@ -82,7 +82,7 @@ export function AdxWhyUs() {
         <SectionHeader
           badge="Why Click Dudes"
           heading={<>The Publisher's{" "}<GradientText gradient="cyan">Unfair Advantage</GradientText></>}
-          subtext="We're not a self-serve platform. We're a managed growth partner — built exclusively to maximize revenue for serious publishers."
+          subtext="We're not a self-serve platform. We're a managed growth partner, built exclusively to maximize revenue for serious publishers."
           align="center"
           subtextWidth="md"
           className="mb-14"

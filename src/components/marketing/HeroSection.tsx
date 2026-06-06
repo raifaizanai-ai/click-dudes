@@ -9,7 +9,7 @@ export function HeroSection() {
     <Section
       background="transparent"
       padding="none"
-      aria-label="Hero — AI-Powered Monetization Platform"
+      aria-label="Hero, AI-Powered Monetization Platform"
       className="pt-10 pb-14 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-24 mesh-animated"
     >
       {/* ── Layered background atmosphere ─────────────────── */}

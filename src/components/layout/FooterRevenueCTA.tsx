@@ -8,7 +8,7 @@ import Link from "next/link"
 /* ── Data ───────────────────────────────────────────── */
 
 const CTA_STATS = [
-  { value: "250+", label: "Publishers"      },
+  { value: "450+", label: "Publishers"      },
   { value: "50+",  label: "Demand Partners" },
   { value: "+40%", label: "Avg RPM Lift"    },
 ] as const
@@ -57,7 +57,7 @@ export function FooterRevenueCTA() {
       <div className="px-0.5 pt-0.5">
         <p className="text-[12px] font-bold text-text-primary leading-snug">Ready To Grow Revenue?</p>
         <p className="text-[10px] text-text-secondary leading-relaxed mt-0.5">
-          Discover how much your website, app, or CTV platform could unlock with Click Dudes.
+          See how much more your website, app, or CTV platform could earn with Click Dudes.
         </p>
       </div>
 

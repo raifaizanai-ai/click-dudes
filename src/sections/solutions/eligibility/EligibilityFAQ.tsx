@@ -37,7 +37,7 @@ const FAQS: FAQItem[] = [
   },
   {
     question: "How long does review take?",
-    answer:   "Initial review typically takes 3–7 business days. Properties requiring additional verification may take longer. We communicate status updates throughout the process.",
+    answer:   "Initial review typically takes 2–7 days. Properties requiring additional verification may take longer. We communicate status updates throughout the process.",
   },
   {
     question: "Do you accept all publishers?",

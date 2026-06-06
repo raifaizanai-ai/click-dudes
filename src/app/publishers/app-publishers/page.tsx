@@ -3,7 +3,7 @@ import { PublisherPlaceholderPage } from "@/sections/publishers/PublisherPlaceho
 
 export const metadata: Metadata = {
   title: "App Publishers — Click Dudes | In-App Ad Monetization",
-  description: "High-performance in-app advertising across interstitials, banners, native, and rewarded video formats — managed by Click Dudes.",
+  description: "High-performance in-app advertising across interstitials, banners, native, and rewarded video formats, managed by Click Dudes.",
   openGraph: {
     title: "App Publishers — Click Dudes",
     description: "High-performance in-app advertising across interstitials, banners, native, and rewarded video formats.",
@@ -36,7 +36,7 @@ export default function Page() {
       <PublisherPlaceholderPage
         iconKey="smartphone"
         title="App Publishers"
-        description="High-performance in-app advertising across interstitials, banners, native, and rewarded video — engineered to maximize your app's revenue potential."
+        description="High-performance in-app advertising across interstitials, banners, native, and rewarded video, engineered to maximize your app's revenue potential."
       />
     </>
   )

@@ -8,21 +8,21 @@ import { Container } from "@/components/layout/Container"
 const PIPELINE = [
   {
     num: "01", icon: Compass, title: "Discovery & Wireframes",
-    body: "We deep-dive into your goals, users, and competitors — then map a clear site structure and wireframe before a single line of code is written.",
+    body: "We deep-dive into your goals, users, and competitors, then map a clear site structure and wireframe before a single line of code is written.",
     time: "Day 1–3", badge: "Research",
     chips: ["Business goals", "Competitor audit", "Wireframe"], color: "text-brand-purple",
     bg: "bg-brand-purple/[0.07]", border: "border-brand-purple/[0.12]",
   },
   {
     num: "02", icon: Code2, title: "Design & Development",
-    body: "Custom design mockups approved by you, then full development on your chosen platform — no templates, no shortcuts.",
+    body: "Custom design mockups approved by you, then full development on your chosen platform, no templates, no shortcuts.",
     time: "Week 1–3", badge: "Build",
     chips: ["UI design", "Frontend", "Backend"], color: "text-brand-blue",
     bg: "bg-brand-blue/[0.07]", border: "border-brand-blue/[0.12]",
   },
   {
     num: "03", icon: Zap, title: "Testing & Performance",
-    body: "Cross-browser QA, mobile testing, Core Web Vitals optimisation, Lighthouse scoring, and SEO foundation — all before a single user sees your site.",
+    body: "Cross-browser QA, mobile testing, Core Web Vitals optimisation, Lighthouse scoring, and SEO foundation, all before a single user sees your site.",
     time: "Week 3–4", badge: "QA",
     chips: ["Lighthouse 90+", "Mobile QA", "Speed"], color: "text-brand-purple",
     bg: "bg-brand-cyan/[0.07]", border: "border-brand-cyan/[0.12]",
@@ -51,7 +51,7 @@ export function WebDevProcessSection() {
             From Brief to <span className="text-gradient-brand">Live Site in Weeks</span>
           </h2>
           <p className="text-body text-text-muted max-w-xl mx-auto">
-            A structured development pipeline that delivers on time, on budget, and above expectations — every time.
+            A structured development pipeline that delivers on time, on budget, and above expectations, every time.
           </p>
         </div>
 

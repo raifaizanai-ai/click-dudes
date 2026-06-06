@@ -10,10 +10,10 @@ import { LiveDot } from "@/components/shared/LiveDot"
 import { STATS } from "@/lib/stats"
 
 const BENEFITS = [
-  "Server-side Prebid.js — zero client-side JavaScript overhead",
+  "Server-side Prebid.js, zero client-side JavaScript overhead",
   "15+ premium SSPs competing simultaneously for every impression",
-  "AI floor pricing — always optimal, never stale",
-  "Zero developer effort — we handle all configuration and updates",
+  "AI floor pricing, always optimal, never stale",
+  "Zero developer effort, we handle all configuration and updates",
 ]
 
 const AUCTION_LOG = [
@@ -57,7 +57,7 @@ export function HBCTASection() {
                 <div className="flex flex-col items-end gap-0.5">
                   <div className="flex items-center gap-1">
                     <Info className="w-2.5 h-2.5 text-text-muted" aria-hidden="true" />
-                    <span className="text-[8px] text-text-muted">Illustrative — aggregate network view</span>
+                    <span className="text-[8px] text-text-muted">Illustrative, aggregate network view</span>
                   </div>
                   <LiveDot color="blue" size="sm" label="" />
                 </div>
@@ -75,7 +75,7 @@ export function HBCTASection() {
 
                 {/* Auction log */}
                 <div className="space-y-2">
-                  <p className="text-[10px] text-text-muted font-medium uppercase tracking-wider">Latest Auction — 187ms</p>
+                  <p className="text-[10px] text-text-muted font-medium uppercase tracking-wider">Latest Auction, 187ms</p>
                   {AUCTION_LOG.map((row, i) => (
                     <motion.div key={row.ssp}
                       initial={{ opacity: 0, x: 10 }}
@@ -128,7 +128,7 @@ export function HBCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join 250+ publishers running Click Dudes' server-side header bidding infrastructure. Sub-200ms auctions, 15+ SSPs, and AI floor optimization — all managed for you.
+              Join 450+ Publishers running Click Dudes' server-side header bidding infrastructure. Sub-200ms auctions, 15+ SSPs, and AI floor optimization, all managed for you.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

@@ -3,10 +3,10 @@ import { PublisherPlaceholderPage } from "@/sections/publishers/PublisherPlaceho
 
 export const metadata: Metadata = {
   title: "Google AdX — Click Dudes | Premium Programmatic Demand",
-  description: "Access Google's premium programmatic marketplace with industry-leading fill rates and CPMs — fully managed by Click Dudes.",
+  description: "Access Google's premium programmatic marketplace with high fill rates and competitive CPMs, fully managed by Click Dudes.",
   openGraph: {
     title: "Google AdX — Click Dudes",
-    description: "Access Google's premium programmatic marketplace with industry-leading fill rates and CPMs.",
+    description: "Access Google's premium programmatic marketplace with high fill rates and competitive CPMs.",
     url: "https://clickdudes.com/publishers/google-adx",
     siteName: "Click Dudes",
     type: "website",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Google AdX — Click Dudes",
-    description: "Access Google's premium programmatic marketplace with industry-leading fill rates and CPMs.",
+    description: "Access Google's premium programmatic marketplace with high fill rates and competitive CPMs.",
   },
   alternates: { canonical: "https://clickdudes.com/publishers/google-adx" },
 }
@@ -36,7 +36,7 @@ export default function Page() {
       <PublisherPlaceholderPage
         iconKey="zap"
         title="Google AdX"
-        description="Access Google's premium programmatic marketplace with industry-leading fill rates and CPMs — fully managed by the Click Dudes team."
+        description="Access Google's premium programmatic marketplace with high fill rates and competitive CPMs, fully managed by the Click Dudes team."
       />
     </>
   )

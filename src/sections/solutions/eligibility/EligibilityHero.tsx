@@ -22,7 +22,7 @@ const itemVariants = {
 }
 
 const TRUST_STATS = [
-  { value: 250, suffix: "+", label: "Publishers Network",       floatDelay: 0 },
+  { value: 450, suffix: "+", label: "Publishers Network",       floatDelay: 0 },
   { value: 50,  suffix: "+", label: "Premium Demand Partners",  floatDelay: 0.5 },
   { value: 25,  suffix: "+", label: "Countries",                floatDelay: 1.0 },
   { value: 5,   suffix: "+", label: "Years Experience",         floatDelay: 1.5 },

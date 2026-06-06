@@ -119,7 +119,7 @@ export function PublisherPlaceholderPage({
             </div>
             <p className="text-sm text-text-secondary leading-relaxed">
               We&apos;re building dedicated content for this service. Our team is ready to walk you
-              through everything — apply to get started or reach out directly.
+              through everything, apply to get started or reach out directly.
             </p>
           </motion.div>
 

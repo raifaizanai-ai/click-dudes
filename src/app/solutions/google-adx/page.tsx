@@ -12,7 +12,7 @@ import { FinalCTASection }     from "@/components/marketing/FinalCTASection"
 
 export const metadata: Metadata = {
   title:       "Google AdX Solutions — Earn 30%+ More Revenue",
-  description: "Access Google AdX premium demand through Click Dudes — a certified Google MCM partner. AI-powered price floors, preferred deals, private auctions, and 24/7 yield optimization for qualifying publishers.",
+  description: "Access Google AdX premium demand through Click Dudes, a certified Google MCM partner. AI-powered price floors, preferred deals, private auctions, and 24/7 yield optimization for qualifying publishers.",
   openGraph: {
     title:       "Google AdX Solutions | Click Dudes",
     description: "Access Google AdX through a certified MCM partner. Average 30%+ revenue uplift over AdSense. Includes AI price floors, preferred deals, and header bidding.",

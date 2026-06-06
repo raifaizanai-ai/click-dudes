@@ -76,7 +76,7 @@ export function AdxHero() {
 
             <motion.div variants={itemVariant}>
               <p className="text-body-lg text-text-secondary leading-relaxed text-pretty max-w-lg">
-                Skip the AdSense plateau. Click Dudes is a certified Google Multiple Customer Management partner — bringing premium AdX demand, private deals, and AI-powered price floors to qualifying publishers.
+                Skip the AdSense plateau. Click Dudes is a certified Google Multiple Customer Management partner, bringing premium AdX demand, private deals, and AI-powered price floors to qualifying publishers.
               </p>
             </motion.div>
 

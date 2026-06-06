@@ -38,7 +38,7 @@ export function RevenueTiers() {
               <span className="text-gradient-brand">Tiers</span>
             </>
           }
-          subtext="Higher quality, stronger revenue, and long-term performance may unlock better commercial terms."
+          subtext="Publishers with stronger traffic quality and consistent revenue may qualify for improved revenue share terms over time."
           align="center"
           subtextWidth="md"
         />

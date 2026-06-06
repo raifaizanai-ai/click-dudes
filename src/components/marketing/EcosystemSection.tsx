@@ -42,7 +42,7 @@ export function EcosystemSection() {
         <SectionHeader
           badge="Monetization Ecosystem"
           heading={<>One Platform. <span className="text-gradient-brand">Every Channel.</span></>}
-          subtext="From web to app to CTV — Click Dudes connects your inventory to the world's most valuable demand sources, powered by AI that never sleeps."
+          subtext="Click Dudes connects web, app, and CTV publishers to premium programmatic demand. One managed platform covering every channel and every format."
           align="center"
           subtextWidth="md"
         />

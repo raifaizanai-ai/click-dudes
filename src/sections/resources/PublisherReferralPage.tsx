@@ -28,9 +28,9 @@ const cardVariant = {
 
 const STEPS = [
   { icon: Share2,    color: "text-brand-purple", bg: "bg-brand-purple/10", num: "01", title: "Share Your Referral Link",  description: "Get your unique referral URL from your dashboard. Share it with publisher friends, in communities, or on social." },
-  { icon: Users,     color: "text-brand-blue",   bg: "bg-brand-blue/10",   num: "02", title: "Publisher Signs Up",         description: "When a publisher applies using your link, they&apos;re tagged to your account. No complex tracking — it&apos;s automatic." },
+  { icon: Users,     color: "text-brand-blue",   bg: "bg-brand-blue/10",   num: "02", title: "Publisher Signs Up",         description: "When a publisher applies using your link, they&apos;re tagged to your account. No complex tracking, it&apos;s automatic." },
   { icon: CheckCircle2, color: "text-brand-green", bg: "bg-brand-green/10", num: "03", title: "They Go Live",             description: "Once your referral is onboarded and live, your commission period begins. No payout until they&apos;re earning." },
-  { icon: DollarSign, color: "text-brand-purple",  bg: "bg-brand-cyan/10",   num: "04", title: "Earn Recurring Commission", description: "Receive 5% of their managed revenue for the first 12 months — paid monthly alongside your regular revenue." },
+  { icon: DollarSign, color: "text-brand-purple",  bg: "bg-brand-cyan/10",   num: "04", title: "Earn Recurring Commission", description: "Receive 5% of their managed revenue for the first 12 months, paid monthly alongside your regular revenue." },
 ]
 
 interface EarningsRow { publishers: number; avgMonthly: string; commission: string; annual: string }
@@ -73,7 +73,7 @@ export function PublisherReferralPage() {
               <GradientText gradient="brand">Earn Commissions</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              Earn 5% of referred publisher revenue for 12 months — no minimums, no limits, paid monthly. The more publishers you refer, the more you earn.
+              Earn 5% of referred publisher revenue for 12 months, no minimums, no limits, paid monthly. The more publishers you refer, the more you earn.
             </motion.p>
 
             <motion.div variants={stagger} className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 w-full">
@@ -99,7 +99,7 @@ export function PublisherReferralPage() {
           <SectionHeader
             badge="How It Works"
             heading={<>Four Simple <GradientText gradient="violet">Steps to Earn</GradientText></>}
-            subtext="From sharing your link to receiving monthly commission payments — here&apos;s the exact process."
+            subtext="From sharing your link to receiving monthly commission payments, here&apos;s the exact process."
             align="center" subtextWidth="sm" className="mb-10"
           />
           <div className="flex flex-col gap-4">
@@ -156,7 +156,7 @@ export function PublisherReferralPage() {
 
       <SolutionCTA
         heading="Start Earning With Your First Referral"
-        subheading="Apply to the network and access your referral dashboard — start sharing and earning immediately."
+        subheading="Apply to the network and access your referral dashboard, start sharing and earning immediately."
         badge="Join the Program"
         robotVariant="celebrate"
         primaryCTA={{ label: "Join Publisher Referral Program", href: "/about/contact-us" }}

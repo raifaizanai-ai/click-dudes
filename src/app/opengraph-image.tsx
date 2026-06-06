@@ -143,7 +143,7 @@ export default function OgImage() {
             [STATS.publishers, "Active Publishers"],
             [STATS.rpmLift, "Avg RPM Uplift"],
             ["GCPP", "Google Certified"],
-            [STATS.goLive, "Avg Go-Live"],
+            [STATS.goLive, "Go-Live Time"],
           ].map(([value, label]) => (
             <div key={label} style={{ textAlign: "center", display: "flex", flexDirection: "column", gap: "4px" }}>
               <span

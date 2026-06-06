@@ -88,7 +88,7 @@ export function ContactSmartForm() {
             </div>
             <div>
               <h3 className="text-lg font-bold text-text-primary">Message Ready to Send</h3>
-              <p className="text-sm text-text-secondary mt-1">Your email client has opened. Hit send — we&apos;ll reply within 24 hours.</p>
+              <p className="text-sm text-text-secondary mt-1">Your email client has opened. Hit send, we&apos;ll reply within 24 hours.</p>
             </div>
             <button onClick={() => setSubmitted(false)} className="text-xs text-brand-purple underline underline-offset-2 hover:text-brand-violet transition-colors">Send another message</button>
           </motion.div>
@@ -186,7 +186,7 @@ export function ContactSmartForm() {
                 {([
                   { icon: Mail,   label: "Email",    value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, color: "text-brand-purple" },
                   { icon: Phone,  label: "Phone",    value: PHONE,         href: PHONE_HREF,                 color: "text-brand-blue"   },
-                  { icon: MapPin, label: "Location", value: "London, UK — EC2A 4NE", href: undefined,        color: "text-brand-purple" },
+                  { icon: MapPin, label: "Location", value: "London, UK, EC2A 4NE", href: undefined,        color: "text-brand-purple" },
                   { icon: Clock,  label: "Hours",    value: "Mon–Fri, 9am–6pm GMT",  href: undefined,        color: "text-text-secondary" },
                 ] as const).map(({ icon: Icon, label, value, href, color }) => (
                   <div key={label} className="flex items-start gap-3">

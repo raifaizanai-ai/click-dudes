@@ -21,10 +21,10 @@ interface RPMIssue { icon: React.ElementType; title: string; diagnosis: string; 
 const RPM_ISSUES: RPMIssue[] = [
   { icon: Globe,      iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", title: "Low-Value GEO Mix",          diagnosis: "More than 40% traffic from Tier-3 GEOs (South Asia, Southeast Asia, sub-Saharan Africa) severely depresses CPM.", fix: "Diversify traffic acquisition toward Tier-1/2 markets through SEO, content localization, and targeted social content." },
   { icon: BarChart2,  iconBg: "bg-brand-blue/10",   iconColor: "text-brand-blue",   title: "Single Demand Source",       diagnosis: "Using AdSense alone means you're missing 500+ additional DSPs and private marketplace buyers that AdX unlocks.", fix: "Upgrade to Google AdX through a certified partner like Click Dudes to access full programmatic demand." },
-  { icon: Target,     iconBg: "bg-brand-violet/10", iconColor: "text-brand-violet", title: "No Header Bidding",          diagnosis: "Without header bidding, demand partners bid sequentially — meaning the first buyer sets the floor, not market competition.", fix: "Implement header bidding with Prebid.js to create real-time competition across 15+ SSPs simultaneously." },
+  { icon: Target,     iconBg: "bg-brand-violet/10", iconColor: "text-brand-violet", title: "No Header Bidding",          diagnosis: "Without header bidding, demand partners bid sequentially, meaning the first buyer sets the floor, not market competition.", fix: "Implement header bidding with Prebid.js to create real-time competition across 15+ SSPs simultaneously." },
   { icon: Search,     iconBg: "bg-brand-cyan/10",   iconColor: "text-brand-cyan",   title: "Poor Ad Placement",          diagnosis: "Ads below the fold, in content that users don't read, or with low viewability score below 60% earn far less.", fix: "Move core ad units above the fold, within article content, or use sticky units for sustained viewability." },
-  { icon: Smartphone, iconBg: "bg-brand-green/10",  iconColor: "text-brand-green",  title: "Heavy Mobile Traffic",       diagnosis: "Mobile RPMs run 30–60% lower than desktop in most verticals. A mobile-dominant audience suppresses blended RPM.", fix: "Optimize mobile ad formats — interstitials, anchor ads, and sticky banners perform significantly better than standard mobile display." },
-  { icon: Clock,      iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", title: "No AI Floor Optimization",   diagnosis: "Static floor prices leave money on the table — floors set too low undervalue inventory; too high kills fill rate.", fix: "Use AI-powered price floor optimization to set dynamic floors per GEO, device, time of day, and content category." },
+  { icon: Smartphone, iconBg: "bg-brand-green/10",  iconColor: "text-brand-green",  title: "Heavy Mobile Traffic",       diagnosis: "Mobile RPMs run 30–60% lower than desktop in most verticals. A mobile-dominant audience suppresses blended RPM.", fix: "Optimize mobile ad formats, interstitials, anchor ads, and sticky banners perform significantly better than standard mobile display." },
+  { icon: Clock,      iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", title: "No AI Floor Optimization",   diagnosis: "Static floor prices leave money on the table, floors set too low undervalue inventory; too high kills fill rate.", fix: "Use AI-powered price floor optimization to set dynamic floors per GEO, device, time of day, and content category." },
 ]
 
 export function RpmOptimizationPage() {
@@ -39,10 +39,10 @@ export function RpmOptimizationPage() {
               <TrendingUp aria-hidden="true" className="w-3.5 h-3.5" /> RPM Optimization Guide
             </motion.span>
             <motion.h1 variants={fadeUp} className="text-h2 sm:text-h1 md:text-display font-bold text-text-primary tracking-display text-balance leading-tight">
-              Why Your RPM Is Low <GradientText gradient="brand">— Fix It Fast</GradientText>
+              Why Your RPM Is Low.<br className="hidden sm:block" />{" "}<GradientText gradient="brand">Here Is How to Fix It.</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              Six proven causes of low publisher RPM — and the exact steps to diagnose and fix each one to recover lost ad revenue.
+              Six proven causes of low publisher RPM, and the exact steps to diagnose and fix each one to recover lost ad revenue.
             </motion.p>
             <motion.div variants={stagger} className="flex flex-wrap justify-center gap-4 mt-2">
               {["GEO Mix", "Demand Sources", "Header Bidding", "Ad Placement", "Floor Prices", "AI Optimization"].map((tag) => (

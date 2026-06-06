@@ -36,7 +36,7 @@ export function SocialMediaCTASection() {
               Your Social, <span className="text-gradient-brand">Handled End to End</span>
             </h2>
             <p className="text-body-lg text-text-muted leading-relaxed mb-8 max-w-md text-pretty">
-              Click Dudes manages your social media presence — strategy, content, scheduling, engagement, and reporting — so you grow your audience while you focus on running your business.
+              Click Dudes manages your social media presence, strategy, content, scheduling, engagement, and reporting, so you grow your audience while you focus on running your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
               <Link href="/about/contact-us"

@@ -3,7 +3,7 @@ import { PublisherPlaceholderPage } from "@/sections/publishers/PublisherPlaceho
 
 export const metadata: Metadata = {
   title: "Ad Formats — Click Dudes | Every Format for Every Publisher",
-  description: "Every ad format from IAB standard display to high-impact video, rich media, and custom units — all managed through one Click Dudes integration.",
+  description: "Every ad format from IAB standard display to high-impact video, rich media, and custom units, all managed through one Click Dudes integration.",
   openGraph: {
     title: "Ad Formats — Click Dudes",
     description: "Every ad format from IAB standard display to high-impact video, rich media, and custom units.",
@@ -36,7 +36,7 @@ export default function Page() {
       <PublisherPlaceholderPage
         iconKey="layout-grid"
         title="Ad Formats"
-        description="Every format from IAB standard display to high-impact video, rich media, and custom units — all served through a single, lightweight integration."
+        description="Every format from IAB standard display to high-impact video, rich media, and custom units, all served through a single, lightweight integration."
       />
     </>
   )

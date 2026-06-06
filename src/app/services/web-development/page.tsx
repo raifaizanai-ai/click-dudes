@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Web Development — WordPress, Shopify & Custom",
+  name: "Web Development, WordPress, Shopify & Custom",
   description: "Premium website development on WordPress, Shopify, and custom stacks. Fast, mobile-first, conversion-focused builds for businesses, SaaS, and ecommerce.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/services/web-development",

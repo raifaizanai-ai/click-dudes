@@ -55,7 +55,7 @@ export function RevenueCalculator() {
             Estimate Your{" "}<GradientText gradient="brand">Revenue Potential</GradientText>
           </h2>
           <p className="text-sm text-text-secondary mt-3 max-w-lg mx-auto">
-            See how much additional revenue you could unlock with Click Dudes. Based on average publisher results.
+            See how much more your site could earn with Click Dudes. Estimates based on average publisher results.
           </p>
         </motion.div>
 
@@ -103,7 +103,7 @@ export function RevenueCalculator() {
             <div className="flex items-start gap-3 p-3.5 rounded-xl bg-brand-purple/5 border border-brand-purple/10">
               <Zap aria-hidden="true" className="w-4 h-4 text-brand-purple flex-shrink-0 mt-0.5" />
               <p className="text-xs text-text-secondary leading-relaxed">
-                Based on our average +25–40% RPM lift across 250+ publishers using Google AdX and Header Bidding.
+                Based on our average +25–40% RPM lift across 450+ Publishers using Google AdX and Header Bidding.
               </p>
             </div>
           </motion.div>

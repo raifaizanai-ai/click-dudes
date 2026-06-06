@@ -55,7 +55,7 @@ export function ResourcesHubCTA() {
             className="text-body-lg text-text-secondary max-w-xl text-pretty leading-relaxed"
           >
             Our team can review your monetization, traffic quality, SEO, or advertising setup and
-            suggest the next best growth move — at no cost.
+            suggest the next best growth move, at no cost.
           </motion.p>
 
           <motion.div variants={item} className="flex flex-col sm:flex-row gap-3 items-center">

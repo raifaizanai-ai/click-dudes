@@ -18,7 +18,7 @@ const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.08, de
 
 const BENEFITS = [
   { title: "+20–40% Average RPM Uplift",    desc: "Real-time competition across 15+ demand sources drives prices up on every impression.",         color: "text-brand-purple", bg: "bg-brand-purple/10" },
-  { title: "Simultaneous Demand Bidding",   desc: "All buyers see the impression at the same time — no more sequential waterfalls losing revenue.", color: "text-brand-blue",   bg: "bg-brand-blue/10"   },
+  { title: "Simultaneous Demand Bidding",   desc: "All buyers see the impression at the same time, no more sequential waterfalls losing revenue.", color: "text-brand-blue",   bg: "bg-brand-blue/10"   },
   { title: "Faster Ad Decisioning",         desc: "Unified auctions complete in milliseconds, reducing latency vs sequential waterfall setups.",     color: "text-brand-cyan",   bg: "bg-brand-cyan/10"   },
   { title: "Real-Time Reporting",           desc: "Live dashboards showing which demand partners are winning and at what CPMs.",                    color: "text-brand-green",  bg: "bg-brand-green/10"  },
 ]
@@ -61,7 +61,7 @@ export function HeaderBiddingGuidePage() {
 
       <Section background="base" padding="lg" aria-label="Benefits">
         <Container size="lg">
-          <SectionHeader badge="Why Header Bidding" heading={<>The Revenue <GradientText gradient="brand">Advantages</GradientText></>} subtext="Header bidding doesn't just add more demand — it forces every buyer to compete simultaneously for each impression." align="center" subtextWidth="md" className="mb-12" />
+          <SectionHeader badge="Why Header Bidding" heading={<>The Revenue <GradientText gradient="brand">Advantages</GradientText></>} subtext="Header bidding doesn't just add more demand, it forces every buyer to compete simultaneously for each impression." align="center" subtextWidth="md" className="mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {BENEFITS.map((b, i) => (
               <motion.div key={b.title} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-40px" }}
@@ -82,7 +82,7 @@ export function HeaderBiddingGuidePage() {
 
       <Section background="section" padding="lg" aria-label="How it works">
         <Container size="md">
-          <SectionHeader badge="The Process" heading={<>How Header Bidding <GradientText gradient="cyan">Works</GradientText></>} subtext="A real-time auction that happens in milliseconds — every time a user loads a page." align="center" subtextWidth="sm" className="mb-10" />
+          <SectionHeader badge="The Process" heading={<>How Header Bidding <GradientText gradient="cyan">Works</GradientText></>} subtext="A real-time auction that happens in milliseconds, every time a user loads a page." align="center" subtextWidth="sm" className="mb-10" />
           <div className="flex flex-col gap-4">
             {HOW_IT_WORKS.map((s) => (
               <motion.div key={s.step} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-30px" }}

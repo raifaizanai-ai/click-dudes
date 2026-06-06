@@ -15,7 +15,7 @@ const FAQS = [
   },
   {
     q: "Do I need an existing AdSense account first?",
-    a: "No. While many publishers come from AdSense, we onboard publishers directly onto Google AdX through our GCPP network — regardless of your current monetization setup.",
+    a: "No. While many publishers come from AdSense, we onboard publishers directly onto Google AdX through our GCPP network, regardless of your current monetization setup.",
   },
   {
     q: "What monthly traffic is required?",
@@ -31,7 +31,7 @@ const FAQS = [
   },
   {
     q: "What is the revenue share model?",
-    a: "Fully transparent — we retain a small management fee from incremental revenue we generate. You only pay us when you earn more. No flat fees, no monthly commitments.",
+    a: "Fully transparent, we retain a small management fee from incremental revenue we generate. You only pay us when you earn more. No flat fees, no monthly commitments.",
   },
   {
     q: "How long does onboarding take?",

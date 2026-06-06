@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "AdSense Revenue Optimization — Layout & Viewability",
+  name: "AdSense Revenue Optimization, Layout & Viewability",
   description: "Expert AdSense layout optimization, viewability maximization, and policy compliance management. Publishers see an average 62% RPM increase without changing traffic or content.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/publisher-solutions/adsense-revenue-optimization",

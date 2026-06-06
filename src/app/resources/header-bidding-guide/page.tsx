@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://clickdudes.com/resources/header-bidding-guide",
     siteName: "Click Dudes", type: "website",
   },
-  twitter: { card: "summary_large_image", title: "Header Bidding Explained — Click Dudes" },
+  twitter: { card: "summary_large_image", title: "Header Bidding Explained, Click Dudes" },
   alternates: { canonical: "https://clickdudes.com/resources/header-bidding-guide" },
 }
 

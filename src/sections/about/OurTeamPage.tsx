@@ -75,7 +75,7 @@ export function OurTeamPage() {
               <GradientText gradient="brand">Click Dudes</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              Ad-tech veterans, engineers, and publisher advocates — unified by one goal: giving every publisher the technology and expertise to earn their true inventory value.
+              Ad-tech veterans, engineers, and publisher advocates, unified by one goal: giving every publisher the technology and expertise to earn their true inventory value.
             </motion.p>
           </motion.div>
         </Container>

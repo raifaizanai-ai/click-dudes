@@ -33,23 +33,23 @@ const CHECKLIST: ChecklistSection[] = [
   {
     title: "Format Selection", color: "text-brand-blue", bg: "bg-brand-blue/10",
     items: [
-      "Rewarded Video — highest eCPM ($8–$25), opt-in format, use at natural reward points",
-      "Interstitial — high fill ($4–$14 eCPM), show only at natural transition points",
-      "Rewarded Interstitial — strong hybrid ($5–$16 eCPM), opt-in full-screen",
-      "Banner — lowest eCPM ($0.50–$2), but 100% fill rate for session-heavy apps",
-      "Native Ads — matches app design, good for content/utility apps",
-      "Avoid excessive banner use — it cannibalizes rewarded and interstitial eCPMs",
+      "Rewarded Video, highest eCPM ($8–$25), opt-in format, use at natural reward points",
+      "Interstitial, high fill ($4–$14 eCPM), show only at natural transition points",
+      "Rewarded Interstitial, strong hybrid ($5–$16 eCPM), opt-in full-screen",
+      "Banner, lowest eCPM ($0.50–$2), but 100% fill rate for session-heavy apps",
+      "Native Ads, matches app design, good for content/utility apps",
+      "Avoid excessive banner use, it cannibalizes rewarded and interstitial eCPMs",
     ],
   },
   {
     title: "eCPM Optimization", color: "text-brand-violet", bg: "bg-brand-violet/10",
     items: [
       "Set frequency caps: rewarded video 3–5 impressions/user/day; interstitials 2–3/session",
-      "A/B test ad placement positions — small changes yield 15–40% eCPM differences",
-      "Use floor prices per GEO — US/UK/AU floors can be 3–5x higher than global defaults",
+      "A/B test ad placement positions, small changes yield 15–40% eCPM differences",
+      "Use floor prices per GEO, US/UK/AU floors can be 3–5x higher than global defaults",
       "Review mediation waterfall daily; remove adapters with <5% fill and low eCPM",
       "Implement user segmentation: VIP/paying users should see fewer ads",
-      "Monitor session length after ad events — reduce frequency if churn increases",
+      "Monitor session length after ad events, reduce frequency if churn increases",
     ],
   },
   {
@@ -57,9 +57,9 @@ const CHECKLIST: ChecklistSection[] = [
     items: [
       "Follow Google AdMob program policies for all ad formats",
       "Ensure app content is appropriate for all audiences (or use content rating correctly)",
-      "Do not incentivize users to click ads — rewarded video must reward for viewing, not clicking",
-      "Maintain app store rating above 3.5 stars — poor reviews correlate with lower eCPM",
-      "Submit app updates regularly — apps with no updates in 6+ months see demand degradation",
+      "Do not incentivize users to click ads, rewarded video must reward for viewing, not clicking",
+      "Maintain app store rating above 3.5 stars, poor reviews correlate with lower eCPM",
+      "Submit app updates regularly, apps with no updates in 6+ months see demand degradation",
       "Set up invalid traffic monitoring alerts in your mediation dashboard",
     ],
   },
@@ -80,7 +80,7 @@ export function AppMonetizationChecklistPage() {
               App Monetization <GradientText gradient="brand">Checklist</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              Complete pre-launch and optimization checklist for iOS and Android publishers — from SDK integration to eCPM maximization.
+              Complete pre-launch and optimization checklist for iOS and Android publishers, from SDK integration to eCPM maximization.
             </motion.p>
           </motion.div>
         </Container>

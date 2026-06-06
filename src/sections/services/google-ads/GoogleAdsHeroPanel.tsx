@@ -7,12 +7,12 @@ import { LiveDot } from "@/components/shared/LiveDot"
 
 const SERP = [
   {
-    isAd: true, url: "yourstore.com", title: "Premium Widgets — Official Store",
+    isAd: true, url: "yourstore.com", title: "Premium Widgets, Official Store",
     desc: "Free shipping on orders $50+. 50K happy customers. Shop the #1 rated collection.",
     extensions: ["Free Shipping", "4.9 ★ Reviews", "Same Day Delivery"],
   },
-  { isAd: false, url: "competitor.com",  title: "Cheap Widgets Online — Up to 30% Off" },
-  { isAd: false, url: "randomstore.net", title: "Buy Widgets — Large Selection"          },
+  { isAd: false, url: "competitor.com",  title: "Cheap Widgets Online, Up to 30% Off" },
+  { isAd: false, url: "randomstore.net", title: "Buy Widgets, Large Selection"          },
 ]
 
 const KEYWORDS = [

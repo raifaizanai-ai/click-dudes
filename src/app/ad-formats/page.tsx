@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Premium web, mobile, app, and CTV ad formats managed by Click Dudes. Leaderboard, native, sticky, video, interstitial, rewarded, and CTV formats optimized by AI.",
   openGraph: {
     title: "Ad Formats — Click Dudes",
-    description: "14+ premium ad formats for every screen — web, mobile, app, and CTV.",
+    description: "14+ premium ad formats for every screen, web, mobile, app, and CTV.",
     url: "https://clickdudes.com/ad-formats",
     siteName: "Click Dudes",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ad Formats — Click Dudes",
-    description: "14+ premium ad formats for every screen — web, mobile, app, and CTV.",
+    description: "14+ premium ad formats for every screen, web, mobile, app, and CTV.",
   },
   alternates: { canonical: "https://clickdudes.com/ad-formats" },
 }
@@ -59,7 +59,7 @@ const DESKTOP_FORMATS: AdFormatItem[] = [
   },
   {
     id: "in-content", name: "In-Content Ad",
-    description: "Native-feeling placement inserted naturally between article content. Readers are engaged in the content flow — higher attention and CTR than sidebar units.",
+    description: "Native-feeling placement inserted naturally between article content. Readers are engaged in the content flow, higher attention and CTR than sidebar units.",
     bestFor: "Articles, editorial content, review sites",
     rpmPotential: "High", viewability: "High", uxImpact: "Minimal", adPosition: "in-content",
   },
@@ -74,7 +74,7 @@ const DESKTOP_FORMATS: AdFormatItem[] = [
 const MOBILE_FORMATS: AdFormatItem[] = [
   {
     id: "mobile-banner", name: "Mobile Banner", size: "320×50",
-    description: "Lightweight mobile banner for consistent fill and clean UX. The most universally supported mobile format — always-on demand from all major DSPs.",
+    description: "Lightweight mobile banner for consistent fill and clean UX. The most universally supported mobile format, always-on demand from all major DSPs.",
     bestFor: "All mobile sites and apps",
     rpmPotential: "Standard", viewability: "Good", uxImpact: "Minimal", adPosition: "mobile-banner",
   },
@@ -86,25 +86,25 @@ const MOBILE_FORMATS: AdFormatItem[] = [
   },
   {
     id: "interstitial", name: "Interstitial Ad",
-    description: "Full-screen ad experience shown at natural transition moments — page loads, level completions, or article breaks. Highest mobile CPMs when placed correctly.",
+    description: "Full-screen ad experience shown at natural transition moments, page loads, level completions, or article breaks. Highest mobile CPMs when placed correctly.",
     bestFor: "Apps, games, multi-page mobile content",
     rpmPotential: "Premium", viewability: "Very High", uxImpact: "Noticeable", adPosition: "interstitial",
   },
   {
     id: "native-mobile", name: "Native Mobile Ad",
-    description: "Content-style ad placement that blends naturally into mobile feeds. Matches your app or site's visual language — higher CTR with lower UX friction.",
+    description: "Content-style ad placement that blends naturally into mobile feeds. Matches your app or site's visual language, higher CTR with lower UX friction.",
     bestFor: "Feed-based apps, lifestyle content, news",
     rpmPotential: "High", viewability: "High", uxImpact: "Minimal", adPosition: "native-mobile",
   },
   {
     id: "in-article", name: "In-Article Ad",
-    description: "Placed inside article content for high engagement and better RPM. Readers are in active reading mode — attention levels are higher than sidebar placements.",
+    description: "Placed inside article content for high engagement and better RPM. Readers are in active reading mode, attention levels are higher than sidebar placements.",
     bestFor: "Mobile editorial sites, long-form content",
     rpmPotential: "High", viewability: "High", uxImpact: "Minimal", adPosition: "in-article",
   },
   {
     id: "rewarded", name: "Rewarded Ad",
-    description: "User-initiated ad experience ideal for apps and engagement-based monetization. Users opt in to watch in exchange for in-app rewards — highest completion rates.",
+    description: "User-initiated ad experience ideal for apps and engagement-based monetization. Users opt in to watch in exchange for in-app rewards, highest completion rates.",
     bestFor: "Gaming apps, productivity apps, freemium content",
     rpmPotential: "Premium", viewability: "Very High", uxImpact: "Minimal", adPosition: "rewarded",
   },
@@ -135,7 +135,7 @@ export default function AdFormatsPage() {
         <AdFormatSlider
           badge="Desktop Formats"
           heading={<>Desktop<br /><GradientText gradient="brand">Ad Formats</GradientText></>}
-          subtext="High-impact placements built for larger screens — maximum visibility, premium demand competition, and consistently strong CPMs across all verticals."
+          subtext="High-impact placements built for larger screens: maximum visibility, premium demand competition, and consistently strong CPMs across all verticals."
           formats={DESKTOP_FORMATS}
           variant="desktop"
           background="section"

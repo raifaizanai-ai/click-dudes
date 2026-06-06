@@ -14,19 +14,19 @@ const STEPS = [
   },
   {
     num: "02", icon: Pen, title: "Content Identity & Voice",
-    body: "We define your unique perspective, content pillars, and posting cadence — building the authentic voice that positions you as the authority in your niche.",
+    body: "We define your unique perspective, content pillars, and posting cadence, building the authentic voice that positions you as the authority in your niche.",
     metric: { label: "Posts live", value: "Week 1" },
     color: "text-brand-blue", bg: "from-brand-blue/[0.10] to-brand-cyan/[0.06]", border: "border-brand-blue/[0.15]",
   },
   {
     num: "03", icon: TrendingUp, title: "Content Creation & Publishing",
-    body: "Our team produces articles, carousels, videos, and threads — then publishes consistently at the optimal times for maximum algorithmic reach.",
+    body: "Our team produces articles, carousels, videos, and threads, then publishes consistently at the optimal times for maximum algorithmic reach.",
     metric: { label: "Avg reach/post", value: "10K+" },
     color: "text-brand-purple", bg: "from-brand-cyan/[0.10] to-brand-blue/[0.06]", border: "border-brand-cyan/[0.15]",
   },
   {
     num: "04", icon: Award, title: "Audience Growth & Authority",
-    body: "Monthly strategy reviews, engagement management, and content iteration — continuously building your authority score and audience until your brand becomes the name people know.",
+    body: "Monthly strategy reviews, engagement management, and content iteration, continuously building your authority score and audience until your brand becomes the name people know.",
     metric: { label: "6-month growth", value: "+34%" },
     color: "text-brand-green", bg: "from-brand-green/[0.10] to-brand-cyan/[0.06]", border: "border-brand-green/[0.15]",
   },

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://clickdudes.com/resources/google-publisher-policy-checklist",
     siteName: "Click Dudes", type: "website",
   },
-  twitter: { card: "summary_large_image", title: "Google Publisher Policy Checklist — Click Dudes" },
+  twitter: { card: "summary_large_image", title: "Google Publisher Policy Checklist, Click Dudes" },
   alternates: { canonical: "https://clickdudes.com/resources/google-publisher-policy-checklist" },
 }
 

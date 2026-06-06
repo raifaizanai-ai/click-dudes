@@ -3,10 +3,10 @@ import { ContactUsPage } from "@/sections/about/ContactUsPage"
 
 export const metadata: Metadata = {
   title:       "Contact Click Dudes | ClickBot™ AI Monetization Platform",
-  description: "Talk to ClickBot™ AI — Get publisher onboarding, revenue estimates, eligibility checks, and expert monetization advice from Click Dudes.",
+  description: "Talk to ClickBot™ AI, Get publisher onboarding, revenue estimates, eligibility checks, and expert monetization advice from Click Dudes.",
   openGraph: {
     title:       "Contact Click Dudes | ClickBot™ AI Monetization",
-    description: "Apply for monetization, check eligibility, or talk to our team. ClickBot™ AI helps 250+ publishers maximize RPM via Google AdX and Header Bidding.",
+    description: "Apply for monetization, check eligibility, or talk to our team. ClickBot™ AI helps 450+ Publishers maximize RPM via Google AdX and Header Bidding.",
     url:         "https://clickdudes.com/about/contact-us",
     siteName:    "Click Dudes",
     type:        "website",

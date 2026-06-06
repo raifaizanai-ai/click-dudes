@@ -48,7 +48,7 @@ export function RevenueChart({ breakdown, expectedRevenue }: RevenueChartProps) 
         <SectionHeader
           badge="Revenue Breakdown"
           heading={<>Where Your Revenue <GradientText gradient="violet">Comes From</GradientText></>}
-          subtext="Estimated monthly revenue split across ad formats — based on your inventory profile and market benchmarks."
+          subtext="Estimated monthly revenue split across ad formats, based on your inventory profile and market benchmarks."
           align="center" subtextWidth="md" className="mb-12"
         />
 

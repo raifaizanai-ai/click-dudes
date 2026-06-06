@@ -3,7 +3,7 @@ import { PublisherPlaceholderPage } from "@/sections/publishers/PublisherPlaceho
 
 export const metadata: Metadata = {
   title: "Ad Optimization — Click Dudes | AI-Powered Revenue Maximization",
-  description: "AI-powered floor pricing, layout testing, and demand matching engineered to maximize your revenue per impression — by Click Dudes.",
+  description: "AI-powered floor pricing, layout testing, and demand matching engineered to maximize your revenue per impression, by Click Dudes.",
   openGraph: {
     title: "Ad Optimization — Click Dudes",
     description: "AI-powered floor pricing, layout testing, and demand matching engineered to maximize your revenue per impression.",
@@ -36,7 +36,7 @@ export default function Page() {
       <PublisherPlaceholderPage
         iconKey="cpu"
         title="Ad Optimization"
-        description="AI-powered floor pricing, layout testing, and demand matching engineered to maximize your revenue per impression — continuously tuned by our platform."
+        description="AI-powered floor pricing, layout testing, and demand matching engineered to maximize your revenue per impression, continuously tuned by our platform."
       />
     </>
   )

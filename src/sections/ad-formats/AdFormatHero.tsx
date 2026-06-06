@@ -81,7 +81,7 @@ export function AdFormatHero() {
 
             <motion.div variants={itemVariant}>
               <p className="text-base md:text-body-lg text-text-secondary leading-relaxed text-pretty max-w-lg">
-                Monetize web, mobile, app, and CTV inventory with high-performing ad formats designed to increase RPM, viewability, engagement, and revenue — all managed by Click Dudes.
+                Monetize web, mobile, app, and CTV inventory with high-performing ad formats designed to increase RPM, viewability, engagement, and revenue, all managed by Click Dudes.
               </p>
             </motion.div>
 

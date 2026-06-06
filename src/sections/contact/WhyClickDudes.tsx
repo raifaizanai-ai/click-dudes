@@ -36,7 +36,7 @@ const METRICS = [
     icon: Shield,
     color: "text-brand-violet", bg: "bg-brand-violet/10",
     value: 100, suffix: "%", prefix: "",
-    label: "GCPP Verified",
+    label: "GCPP Verified Partners Network",
     sub: "Google Certified Partner",
   },
   {

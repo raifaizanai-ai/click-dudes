@@ -4,8 +4,8 @@ import { MonetizationGuidesPage } from "@/sections/resources/MonetizationGuidesP
 export const metadata: Metadata = {
   title: "Monetization Guides — Click Dudes | Publisher Learning Hub",
   description: "In-depth monetization guides for web publishers, app developers, and CTV operators. Learn header bidding, AdX, AI optimization, and more.",
-  openGraph: { title: "Monetization Guides — Click Dudes", description: "In-depth guides for every publisher type.", url: "https://clickdudes.com/resources/monetization-guides", siteName: "Click Dudes", type: "website" },
-  twitter: { card: "summary_large_image", title: "Monetization Guides — Click Dudes", description: "In-depth guides for every publisher type." },
+  openGraph: { title: "Monetization Guides, Click Dudes", description: "In-depth guides for every publisher type.", url: "https://clickdudes.com/resources/monetization-guides", siteName: "Click Dudes", type: "website" },
+  twitter: { card: "summary_large_image", title: "Monetization Guides, Click Dudes", description: "In-depth guides for every publisher type." },
   alternates: { canonical: "https://clickdudes.com/resources/monetization-guides" },
 }
 

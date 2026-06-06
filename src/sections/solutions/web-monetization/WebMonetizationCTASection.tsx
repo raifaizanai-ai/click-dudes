@@ -11,7 +11,7 @@ import { STATS } from "@/lib/stats"
 
 const BENEFITS = [
   "No setup fees or monthly minimums",
-  "Live in 7–14 days — no developer needed",
+  "Live in 2–7 days, no developer needed",
   "Google Certified MCM partner access",
   "Dedicated publisher manager included",
 ]
@@ -52,7 +52,7 @@ export function WebMonetizationCTASection() {
                 <div className="flex flex-col items-end gap-0.5">
                   <div className="flex items-center gap-1">
                     <Info className="w-2.5 h-2.5 text-text-muted" aria-hidden="true" />
-                    <span className="text-[8px] text-text-muted">Illustrative — aggregate network view</span>
+                    <span className="text-[8px] text-text-muted">Illustrative, aggregate network view</span>
                   </div>
                   <LiveDot color="green" size="sm" label="" />
                 </div>
@@ -121,7 +121,7 @@ export function WebMonetizationCTASection() {
 
             <motion.p custom={2} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
               className="text-base text-text-secondary leading-relaxed text-pretty max-w-md">
-              Join 250+ web publishers already earning more with Click Dudes' fully managed premium ad stack. No setup fees, no lock-in, results in 30 days.
+              Join 450+ web publishers already earning more with Click Dudes' fully managed premium ad stack. No setup fees, no lock-in, results in 30 days.
             </motion.p>
 
             <motion.ul custom={3} variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}

@@ -23,7 +23,7 @@ const FEATURES: Feature[] = [
   {
     icon:        BrainCircuit,
     title:       "AI Price Floor Management",
-    description: "Our AI recalibrates minimum CPMs every 15 minutes per position, geo, device, and content vertical — squeezing maximum yield from every impression.",
+    description: "Our AI recalibrates minimum CPMs every 15 minutes per position, geo, device, and content vertical, squeezing maximum yield from every impression.",
     badge:       "AI-Powered",
     accent:      "text-brand-purple",
     glow:        "rgba(139,92,246,0.12)",
@@ -46,14 +46,14 @@ const FEATURES: Feature[] = [
   {
     icon:        BarChart3,
     title:       "Real-Time Analytics",
-    description: "Live RPM, eCPM, fill rate, and viewability broken down by placement, device, geography, and demand partner — updated every 60 seconds.",
+    description: "Live RPM, eCPM, fill rate, and viewability broken down by placement, device, geography, and demand partner, updated every 60 seconds.",
     accent:      "text-brand-purple",
     glow:        "rgba(103,232,249,0.10)",
   },
   {
     icon:        Sparkles,
     title:       "Unified Header Bidding",
-    description: "Prebid.js wrapper pre-configured with 50+ SSP adapters runs alongside AdX in a parallel real-time auction — maximizing competition on every request.",
+    description: "Prebid.js wrapper pre-configured with 50+ SSP adapters runs alongside AdX in a parallel real-time auction, maximizing competition on every request.",
     badge:       "Included",
     accent:      "text-brand-green",
     glow:        "rgba(16,185,129,0.10)",
@@ -89,7 +89,7 @@ export function AdxFeatures() {
         <SectionHeader
           badge="Platform Features"
           heading={<>What AdX Gives You<br /><GradientText gradient="violet">Out of the Box</GradientText></>}
-          subtext="One integration. Every premium monetization capability Google's premium exchange has to offer — plus Click Dudes AI running on top."
+          subtext="One integration. Every premium monetization capability Google's premium exchange has to offer, plus Click Dudes AI running on top."
           align="center"
           subtextWidth="md"
           className="mb-14"

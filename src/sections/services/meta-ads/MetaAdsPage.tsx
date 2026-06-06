@@ -21,7 +21,7 @@ const problems = [
 const solutions = [
   { title: "Data-Driven Campaign Architecture", body: "We build campaigns with proper audience segmentation, creative testing, and conversion-focused structures from the start." },
   { title: "High-Intent Audience Targeting", body: "Advanced interest, lookalike, and custom audience targeting that finds the people most likely to buy what you're selling." },
-  { title: "Scalable Campaign Framework", body: "We build campaigns designed to scale — with proper testing phases, budget allocation strategies, and creative refresh cycles." },
+  { title: "Scalable Campaign Framework", body: "We build campaigns designed to scale, with proper testing phases, budget allocation strategies, and creative refresh cycles." },
 ]
 
 const features = [
@@ -37,14 +37,14 @@ const features = [
 const whyUsItems = [
   { icon: Target, title: "Meta Ads Certified Team", body: "Our Meta Ads specialists are certified and actively manage millions in ad spend across industries with proven results.", highlight: "Meta Certified", accent: "text-brand-purple", bg: "rgba(139,92,246,0.08)", dotColor: "purple" as const },
   { icon: DollarSign, title: "ROAS-Obsessed Approach", body: "We don't optimize for vanity metrics. Every decision is driven by return on ad spend and bottom-line business results.", highlight: "5.8x Avg ROAS", accent: "text-brand-purple", bg: "rgba(103,232,249,0.08)", dotColor: "cyan" as const },
-  { icon: Megaphone, title: "In-House Creative Production", body: "We produce ad creatives in-house — no outsourcing — ensuring fast iteration cycles and creatives built for performance.", highlight: "In-House Creatives", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
-  { icon: BarChart3, title: "Full Transparency", body: "Monthly reports with clear numbers — spend, impressions, clicks, leads, conversions, and ROAS broken down simply.", highlight: "Clear Reporting", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
+  { icon: Megaphone, title: "In-House Creative Production", body: "We produce ad creatives in-house, no outsourcing, ensuring fast iteration cycles and creatives built for performance.", highlight: "In-House Creatives", accent: "text-brand-blue", bg: "rgba(96,165,250,0.08)", dotColor: "blue" as const },
+  { icon: BarChart3, title: "Full Transparency", body: "Monthly reports with clear numbers, spend, impressions, clicks, leads, conversions, and ROAS broken down simply.", highlight: "Clear Reporting", accent: "text-brand-green", bg: "rgba(16,185,129,0.08)", dotColor: "green" as const },
 ]
 
 const faqs = [
   { question: "What budget do I need to start Meta Ads?", answer: "We typically recommend a minimum monthly ad spend of $1,000–$2,000 to gather meaningful data. Management fees are separate. For ecommerce, $2,000+ tends to show clear results faster." },
   { question: "How long before I see results?", answer: "Meta's algorithm needs a learning phase of 1–2 weeks. Most clients see meaningful data by week 3 and optimized results by month 2 as we refine targeting and creatives." },
-  { question: "Do you create the ad creatives?", answer: "Yes. We produce all required ad creatives — static images, carousel ads, and video ad scripts/production guidance — as part of our Meta Ads service." },
+  { question: "Do you create the ad creatives?", answer: "Yes. We produce all required ad creatives, static images, carousel ads, and video ad scripts/production guidance, as part of our Meta Ads service." },
   { question: "Can you run both Facebook and Instagram ads?", answer: "Yes. Meta Ads Manager runs campaigns across Facebook, Instagram, Messenger, and the Audience Network. We optimize placement allocation based on where your audience converts best." },
   { question: "What industries do you work with?", answer: "We run Meta Ads for ecommerce, SaaS, service businesses, coaches, consultants, real estate, and more. The targeting and creative strategy are tailored to each industry and audience." },
 ]
@@ -56,7 +56,7 @@ export function MetaAdsPage() {
         badge="Meta Ads Management"
         badgeIcon={Megaphone}
         headline={<>Facebook & Instagram Ads That <span className="text-gradient-brand">Drive Real Results</span></>}
-        subtext="Click Dudes manages your Meta advertising campaigns — strategy, creative, targeting, optimization, and reporting — to deliver consistent leads and revenue growth."
+        subtext="Click Dudes manages your Meta advertising campaigns, strategy, creative, targeting, optimization, and reporting, to deliver consistent leads and revenue growth."
         primaryCTA={{ label: "Launch Meta Ads Campaign", href: "/about/contact-us" }}
         secondaryCTA={{ label: "Free Account Audit", href: "/about/contact-us" }}
         caption="Meta certified · In-house creatives · ROAS-focused · Full transparency"
@@ -73,7 +73,7 @@ export function MetaAdsPage() {
       <SolutionProblemSolution
         badge="The Problem"
         heading={<>Why Most Meta Ads <span className="text-gradient-brand">Waste Your Budget</span></>}
-        subtext="Facebook and Instagram ads can work extremely well — or drain your budget fast. Here's what separates the two, and how we fix it."
+        subtext="Facebook and Instagram ads can work extremely well, or drain your budget fast. Here's what separates the two, and how we fix it."
         problems={problems}
         solutions={solutions}
         problemLabel="Without Click Dudes"
@@ -96,7 +96,7 @@ export function MetaAdsPage() {
       <SolutionFAQ
         badge="FAQ"
         heading={<>Meta Ads <span className="text-gradient-brand">Questions Answered</span></>}
-        subtext="Ad spend, creative strategy, tracking setup — the questions clients ask before we touch their Meta account."
+        subtext="Ad spend, creative strategy, tracking setup, the questions clients ask before we touch their Meta account."
         faqs={faqs}
       />
       <MetaAdsCTASection />

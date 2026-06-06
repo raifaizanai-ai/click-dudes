@@ -38,7 +38,7 @@ const PROHIBITED: string[] = [
 
 const TRAFFIC_RULES: string[] = [
   "Traffic must come from real users clicking on organic links, not bots or scripts",
-  "Do not incentivise users to click ads — neither directly nor through UI patterns",
+  "Do not incentivise users to click ads, neither directly nor through UI patterns",
   "Do not purchase traffic solely to increase ad impressions",
   "Avoid traffic exchange schemes where publishers visit each other's sites for clicks",
   "Do not use misleading navigation to funnel users into accidental ad clicks",
@@ -46,17 +46,17 @@ const TRAFFIC_RULES: string[] = [
 ]
 
 const AD_IMPL: string[] = [
-  "Ads must be clearly distinguishable from site content — no disguising ads as menus or navigation",
+  "Ads must be clearly distinguishable from site content, no disguising ads as menus or navigation",
   "No more than 3 display ad units per page (AdSense policy; AdX has different rules managed by partner)",
   "Ads must not obscure content, require interaction to dismiss, or auto-play audio without user action",
   "Do not place ads on error pages, login pages, or pages with no real content",
-  "Ads.txt must be published and kept accurate — missing entries can block demand",
+  "Ads.txt must be published and kept accurate, missing entries can block demand",
   "Do not modify ad code to alter sizing, behavior, or appearance beyond allowed customisation",
 ]
 
 const VIOLATIONS = [
   { severity: "Critical", label: "Invalid Click Activity",         desc: "Clicking your own ads or encouraging others to click. Leads to immediate account suspension." },
-  { severity: "Critical", label: "Adult Content on Ad Pages",      desc: "Any adult content on pages serving Google ads — zero tolerance, immediate suspension." },
+  { severity: "Critical", label: "Adult Content on Ad Pages",      desc: "Any adult content on pages serving Google ads, zero tolerance, immediate suspension." },
   { severity: "High",     label: "Copyright Infringement",         desc: "Hosting pirated video, audio, or articles triggers DMCA takedowns and policy strikes." },
   { severity: "Medium",   label: "Insufficient Unique Content",    desc: "Primarily scraped or template content without original value. Leads to account warning." },
   { severity: "Medium",   label: "Deceptive Ad Implementation",    desc: "Placing ads in ways that trick users into clicking. Triggers immediate policy review." },
@@ -178,7 +178,7 @@ export function GooglePolicyChecklistPage() {
         </Container>
       </Section>
 
-      <SolutionCTA heading="Need a Compliance Review?" subheading="Our team reviews your property for policy compliance before AdX submission — protecting your account from day one." badge="Policy Compliance" robotVariant="wave" primaryCTA={{ label: "Request Compliance Review", href: "/about/contact-us" }} />
+      <SolutionCTA heading="Need a Compliance Review?" subheading="Our team reviews your property for policy compliance before AdX submission, protecting your account from day one." badge="Policy Compliance" robotVariant="wave" primaryCTA={{ label: "Request Compliance Review", href: "/about/contact-us" }} />
     </>
   )
 }

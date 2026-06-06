@@ -94,7 +94,7 @@ export function ContactForm() {
         <div>
           <h3 className="text-lg font-bold text-text-primary">Message Ready to Send</h3>
           <p className="text-sm text-text-secondary mt-1">
-            Your email client has opened. Hit send — we&apos;ll reply within 24 hours.
+            Your email client has opened. Hit send, we&apos;ll reply within 24 hours.
           </p>
         </div>
         <button

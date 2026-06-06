@@ -93,7 +93,7 @@ export function SuccessStoriesPage() {
           <SectionHeader
             badge="Case Studies"
             heading={<>Stories of <GradientText gradient="violet">Monetization Growth</GradientText></>}
-            subtext="Every publisher here started exactly where you are — and reached results that changed their business."
+            subtext="Every publisher here started exactly where you are, and reached results that changed their business."
             align="center" subtextWidth="md" className="mb-12"
           />
           <motion.div
@@ -135,7 +135,7 @@ export function SuccessStoriesPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {([
               { icon: Award,     color: "text-brand-purple", bg: "bg-brand-purple/10", title: "Google Certified Publishing Partner", sub: "Verified premium demand, direct AdX access"    },
-              { icon: TrendingUp,color: "text-brand-blue",   bg: "bg-brand-blue/10",   title: "250+ Publishers Monetizing",           sub: "Across web, app, and CTV verticals"           },
+              { icon: TrendingUp,color: "text-brand-blue",   bg: "bg-brand-blue/10",   title: "450+ Publishers Monetizing",           sub: "Across web, app, and CTV verticals"           },
               { icon: Users,     color: "text-brand-purple",   bg: "bg-brand-cyan/10",   title: "Dedicated Account Management",         sub: "Real humans, not just an algorithm"           },
             ] as const).map(({ icon: Icon, color, bg, title, sub }) => (
               <div key={title} className="flex items-center gap-4">
@@ -154,7 +154,7 @@ export function SuccessStoriesPage() {
 
       <SolutionCTA
         heading="Ready to Write Your Success Story?"
-        subheading="Join 250+ publishers who upgraded their monetization with Click Dudes and saw results within 30 days."
+        subheading="Join 450+ Publishers who upgraded their monetization with Click Dudes and saw results within 30 days."
         robotVariant="celebrate"
       />
     </>

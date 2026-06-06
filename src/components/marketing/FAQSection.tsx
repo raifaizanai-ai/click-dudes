@@ -15,12 +15,12 @@ const FAQS: FAQItem[] = [
   {
     tag: "traffic",
     question: "What traffic requirements do I need to apply?",
-    answer: "We work with publishers generating a minimum of 500K monthly pageviews (web/app) or 250K monthly impressions (CTV). Traffic must originate from Tier-1 or Tier-2 geographies, be brand-safe, and comply with Google policies. Quality matters more than raw volume — we review each application individually.",
+    answer: "We work with publishers generating a minimum of 500K monthly pageviews (web/app) or 250K monthly impressions (CTV). Traffic must originate from Tier-1 or Tier-2 geographies, be brand-safe, and comply with Google policies. Quality matters more than raw volume. We review each application individually.",
   },
   {
     tag: "adx",
     question: "How does the Google AdX approval process work?",
-    answer: "Google AdX access requires approval through a certified publishing partner — which Click Dudes is. We review your property, ensure policy compliance, and submit your site through our managed partner account. Approval typically takes 5–10 business days once your property meets requirements. We guide you through every step.",
+    answer: "Google AdX access requires approval through a certified publishing partner, which Click Dudes is. We review your property, ensure policy compliance, and submit your site through our managed partner account. Approval typically takes 5–10 business days once your property meets requirements. We guide you through every step.",
   },
   {
     tag: "payments",
@@ -35,7 +35,7 @@ const FAQS: FAQItem[] = [
   {
     tag: "setup",
     question: "How long does the full setup and integration take?",
-    answer: "Most publishers go live within 3–7 business days after approval. This includes header bidding wrapper setup, AdX tag integration, and initial AI calibration. We provide a dedicated onboarding specialist who manages all technical setup end to end — you don't need a developer on your team.",
+    answer: "Most publishers go live within 2–7 days after approval. This includes header bidding wrapper setup, AdX tag integration, and initial AI calibration. We provide a dedicated onboarding specialist who manages all technical setup. You don't need a developer on your team.",
   },
 ]
 

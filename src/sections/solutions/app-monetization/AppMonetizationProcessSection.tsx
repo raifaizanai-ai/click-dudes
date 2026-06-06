@@ -16,7 +16,7 @@ const STEPS = [
   {
     icon: Layers, title: "SDK Integration", duration: "Day 3–7",
     color: "text-brand-blue", border: "rgba(96,165,250,0.22)", glow: "rgba(96,165,250,0.14)",
-    body: "Lightweight SDK deployment with in-app bidding configuration, demand network onboarding, and consent management setup — minimal developer effort.",
+    body: "Lightweight SDK deployment with in-app bidding configuration, demand network onboarding, and consent management setup, minimal developer effort.",
   },
   {
     icon: BarChart3, title: "Format Calibration", duration: "Day 8–21",
@@ -67,11 +67,11 @@ export function AppMonetizationProcessSection() {
             Integration Process
           </span>
           <h2 className="font-bold text-text-primary tracking-heading text-balance text-h3 sm:text-h2 lg:text-h1" style={{ letterSpacing: "-0.025em" }}>
-            SDK Live in 7–14 Days,{" "}
+            SDK Live in 2–7 days,{" "}
             <span className="text-gradient-brand">ARPDAU Growing in 30</span>
           </h2>
           <p className="text-text-secondary text-body-lg leading-relaxed max-w-xl text-pretty">
-            Minimal developer effort. Our team handles SDK configuration, network onboarding, and compliance setup — you focus on your app.
+            Minimal developer effort. Our team handles SDK configuration, network onboarding, and compliance setup, you focus on your app.
           </p>
         </div>
 

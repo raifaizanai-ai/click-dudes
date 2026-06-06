@@ -50,7 +50,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Publisher Monetization Eligibility Review — Click Dudes",
+  name: "Publisher Monetization Eligibility Review, Click Dudes",
   description:
     "Click Dudes reviews publishers for Google AdX, Header Bidding, and AI ad optimization eligibility. Learn traffic, content, and compliance requirements.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },

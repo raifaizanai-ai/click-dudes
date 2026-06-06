@@ -3,7 +3,7 @@ import { GraphicDesigningPage } from "@/sections/services/graphic-designing/Grap
 
 export const metadata: Metadata = {
   title: "Graphic Designing Services — Click Dudes | Turning Clicks Into Revenue",
-  description: "Click Dudes creates premium graphic design content — social media visuals, personal brand content, Amazon A+ content, product listing images, and advertising creatives.",
+  description: "Click Dudes creates premium graphic design content, social media visuals, personal brand content, Amazon A+ content, product listing images, and advertising creatives.",
   openGraph: {
     title: "Graphic Designing Services — Click Dudes",
     description: "Social media content, brand visuals, Amazon A+ content, and ad creatives designed to perform.",
@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Graphic Designing — Brand Visuals & Ad Creatives",
+  name: "Graphic Designing, Brand Visuals & Ad Creatives",
   description: "Premium graphic design for social media, personal branding, Amazon A+ content, product listing images, and high-converting advertising creatives.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/services/graphic-designing",

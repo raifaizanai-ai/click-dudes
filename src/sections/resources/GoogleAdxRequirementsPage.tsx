@@ -29,7 +29,7 @@ const REQUIREMENTS = [
 
 const REJECTIONS = [
   "Traffic below 500K monthly pageviews or heavy bot/incentivised traffic presence",
-  "Content policy violations — adult, hateful, illegal, or copyright-infringing content",
+  "Content policy violations, adult, hateful, illegal, or copyright-infringing content",
   "Recent AdSense policy strike or account suspension within 12 months",
   "Sites with no real user engagement (built-for-ads properties)",
   "Missing or incorrect ads.txt entries",
@@ -58,7 +58,7 @@ export function GoogleAdxRequirementsPage() {
               Google AdX <GradientText gradient="brand">Requirements Guide</GradientText>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-base md:text-body-lg text-text-secondary text-pretty leading-relaxed max-w-2xl">
-              Everything independent publishers need to know about qualifying for Google AdX — traffic thresholds, content policies, technical setup, and the exact approval process.
+              Everything independent publishers need to know about qualifying for Google AdX, traffic thresholds, content policies, technical setup, and the exact approval process.
             </motion.p>
           </motion.div>
         </Container>
@@ -97,7 +97,7 @@ export function GoogleAdxRequirementsPage() {
             </div>
             <div className="mt-5 flex items-start gap-2.5 p-3 rounded-xl bg-amber-50/80 border border-amber-200/60">
               <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" aria-hidden="true" />
-              <p className="text-xs text-text-secondary">AdX access requires a Google Certified Publishing Partner (GCPP). Individual publishers cannot apply directly — the partner sponsors your application.</p>
+              <p className="text-xs text-text-secondary">AdX access requires a Google Certified Publishing Partner (GCPP). Individual publishers cannot apply directly, the partner sponsors your application.</p>
             </div>
           </GlassCard>
         </Container>
@@ -130,7 +130,7 @@ export function GoogleAdxRequirementsPage() {
         </Container>
       </Section>
 
-      <SolutionCTA heading="Ready to Access Google AdX?" subheading="Apply today — we handle the full AdX approval and technical integration so you can focus on content." badge="Get AdX Access" robotVariant="rocket" primaryCTA={{ label: "Apply for AdX Access", href: "/about/contact-us" }} />
+      <SolutionCTA heading="Ready to Access Google AdX?" subheading="Apply today, we handle the full AdX approval and technical integration so you can focus on content." badge="Get AdX Access" robotVariant="rocket" primaryCTA={{ label: "Apply for AdX Access", href: "/about/contact-us" }} />
     </>
   )
 }

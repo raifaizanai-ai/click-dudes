@@ -18,7 +18,7 @@ export const NAV_LINKS: NavLink[] = [
     megaMenu:           true,
     megaMenuTitle:      "Publisher Solutions",
     megaMenuSub:        "AI-powered revenue tools for every publisher type",
-    megaMenuFooterText: "250+ publishers trust Click Dudes — GCPP Certified",
+    megaMenuFooterText: "450+ Publishers trust Click Dudes, GCPP Verified Partners Network",
     megaMenuCTALabel:   "Check Your Eligibility",
     megaMenuCTAHref:    "/publisher-solutions/monetization-eligibility-criteria",
     children: [
@@ -161,7 +161,7 @@ export const NAV_LINKS: NavLink[] = [
     megaMenu:           true,
     megaMenuTitle:      "About Click Dudes",
     megaMenuSub:        "The team turning publisher clicks into revenue",
-    megaMenuFooterText: "GCPP Certified · London, United Kingdom",
+    megaMenuFooterText: "GCPP Verified Partners Network · London, United Kingdom",
     megaMenuCTALabel:   "Meet the Team",
     megaMenuCTAHref:    "/about/our-team",
     children: [

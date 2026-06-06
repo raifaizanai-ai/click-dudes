@@ -55,7 +55,7 @@ export function WebDevTechSection() {
             <span className="text-gradient-brand">Every Modern Stack</span>
           </h2>
           <p className="text-body text-text-muted max-w-xl mx-auto text-pretty">
-            From WordPress sites to custom SaaS dashboards — we build on the right platform for your business with modern, performance-first technology.
+            From WordPress sites to custom SaaS dashboards, we build on the right platform for your business with modern, performance-first technology.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export function WebDevTechSection() {
             </div>
             <div className="mt-5 pt-4 border-t border-white/40 flex items-center gap-2">
               <CheckCircle2 className="w-3.5 h-3.5 text-brand-green shrink-0" aria-hidden="true" />
-              <span className="text-[11px] text-text-muted">Every site audited before launch — no exceptions</span>
+              <span className="text-[11px] text-text-muted">Every site audited before launch, no exceptions</span>
             </div>
           </motion.div>
         </div>

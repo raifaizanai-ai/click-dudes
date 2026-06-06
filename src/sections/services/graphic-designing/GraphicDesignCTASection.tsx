@@ -97,7 +97,7 @@ export function GraphicDesignCTASection() {
                     className={`flex-1 h-8 rounded-lg ${c}`} />
                 ))}
               </div>
-              <p className="text-[10px] text-text-muted mt-2">Brand-native design — every asset on-brand, every time</p>
+              <p className="text-[10px] text-text-muted mt-2">Brand-native design, every asset on-brand, every time</p>
             </div>
           </motion.div>
         </div>

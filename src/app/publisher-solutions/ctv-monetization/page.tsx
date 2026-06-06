@@ -34,7 +34,7 @@ const breadcrumbSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "CTV Monetization — SSAI & Programmatic Direct",
+  name: "CTV Monetization, SSAI & Programmatic Direct",
   description: "Server-side ad insertion, programmatic direct deal management, and AI floor pricing for connected TV publishers. Average network CTV CPM of $28.",
   provider: { "@type": "Organization", name: "Click Dudes", url: "https://clickdudes.com" },
   url: "https://clickdudes.com/publisher-solutions/ctv-monetization",

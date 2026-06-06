@@ -7,11 +7,11 @@ import { LiveDot } from "@/components/shared/LiveDot"
 
 const CAMPAIGNS = [
   {
-    name: "Summer Sale — Conv",  status: "Active",  budget: "$4,200/mo", roas: "6.8x",
+    name: "Summer Sale, Conv",  status: "Active",  budget: "$4,200/mo", roas: "6.8x",
     bar: 82, dot: "green" as const, barColor: "from-brand-purple to-brand-violet",
   },
   {
-    name: "Lead Gen — Retarget", status: "Scaling", budget: "$1,800/mo", roas: "4.2x",
+    name: "Lead Gen, Retarget", status: "Scaling", budget: "$1,800/mo", roas: "4.2x",
     bar: 61, dot: "purple" as const, barColor: "from-brand-blue to-brand-cyan",
   },
 ]
@@ -68,7 +68,7 @@ export function MetaAdsHeroPanel() {
           <div className="relative h-20 bg-gradient-to-br from-brand-blue/[0.10] via-brand-purple/[0.07] to-brand-cyan/[0.08] flex items-center justify-center overflow-hidden">
             <div aria-hidden="true" className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 40% 40%, rgba(96,165,250,0.25) 0%, transparent 55%), radial-gradient(circle at 75% 65%, rgba(139,92,246,0.20) 0%, transparent 55%)" }} />
             <div className="relative text-center z-10">
-              <p className="text-[13px] font-bold text-text-primary">Summer Sale — Up to 50% Off</p>
+              <p className="text-[13px] font-bold text-text-primary">Summer Sale, Up to 50% Off</p>
               <p className="text-[10px] text-text-secondary mt-0.5">Limited time. Shop now →</p>
             </div>
             <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">

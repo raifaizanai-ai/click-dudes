@@ -71,7 +71,7 @@ export function MetaAdsShowcaseSection() {
             <span className="text-gradient-brand">Maximum Impact</span>
           </h2>
           <p className="text-body text-text-secondary max-w-xl mx-auto text-pretty">
-            We produce and optimise every Meta ad format — Feed, Story, Reel, Carousel — engineered for your audience and your revenue goals.
+            We produce and optimise every Meta ad format, Feed, Story, Reel, Carousel, engineered for your audience and your revenue goals.
           </p>
         </div>
 
@@ -149,7 +149,7 @@ export function MetaAdsShowcaseSection() {
               <TrendingUp className="w-5 h-5 text-brand-green shrink-0" aria-hidden="true" />
               <div>
                 <p className="text-[12px] font-bold text-text-primary">Meta Pixel + CAPI Integration</p>
-                <p className="text-[10px] text-text-muted">Full attribution tracking — every conversion measured accurately</p>
+                <p className="text-[10px] text-text-muted">Full attribution tracking, every conversion measured accurately</p>
               </div>
               <LiveDot color="green" size="sm" />
             </motion.div>
