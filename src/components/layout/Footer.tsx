@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Brain, Zap } from "lucide-react"
+import { FooterAICard } from "@/components/layout/FooterAICard"
 import { SiteLogo } from "@/components/shared/SiteLogo"
 import { Divider } from "@/components/shared/Divider"
 import { RobotImage } from "@/components/shared/RobotImage"
@@ -11,30 +11,6 @@ import { GradientOrb } from "@/components/shared/GradientOrb"
 import { LiveDot } from "@/components/shared/LiveDot"
 import { FOOTER_COLUMNS, LEGAL_LINKS } from "@/lib/constants"
 import { STATS } from "@/lib/stats"
-
-/* ── Static data ─────────────────────────────────────────── */
-
-const AI_PRIMARY = [
-  { label: "Publishers Live",  value: STATS.publishers },
-  { label: "AI Optimization",  value: "24/7"           },
-  { label: "Avg RPM Lift",     value: STATS.rpmLift    },
-]
-
-const AI_SECONDARY = [
-  { label: "Network Uptime",  value: STATS.uptime },
-  { label: "AI Monitoring",   value: "24/7"       },
-]
-
-const ACTIVITY = [
-  { text: "RPM floor recalculated",        detail: "US · Desktop +$0.42",         live: true  },
-  { text: "Premium PMPs matched",           detail: "CTV · 14.5 avg CPM",          live: false },
-  { text: "New publisher onboarded",        detail: "News · 2.4M pageviews",       live: false },
-  { text: "Header bid timeout optimized",   detail: "650ms → 720ms optimal",       live: true  },
-  { text: "Google AdX demand refreshed",    detail: "Fill rate +3.2%",             live: false },
-  { text: "Viewability score improved",     detail: "+12% viewable impressions",   live: false },
-  { text: "CTV inventory synced",           detail: "Premium demand · 3 partners", live: true  },
-  { text: "Fraud protection scan complete", detail: "0 threats detected",          live: false },
-] as const
 
 /* ── Motion variants ─────────────────────────────────────── */
 
@@ -75,16 +51,33 @@ export function Footer() {
           <motion.div
             custom={0} variants={panelVariants} initial="hidden"
             whileInView="visible" viewport={{ once: true, margin: "-40px" }}
-            className="glass-elevated rounded-3xl p-5 sm:p-7 flex flex-col items-center text-center overflow-hidden"
+            className="glass-elevated rounded-3xl p-5 sm:p-7 flex flex-col items-start text-left overflow-hidden"
             style={{ boxShadow: "0 32px 80px rgba(7,17,47,0.12), 0 0 0 1px rgba(139,92,246,0.13), inset 0 1px 0 rgba(255,255,255,0.97)" }}
           >
             <div className="self-start mb-4"><SiteLogo context="footer" /></div>
-            <p className="text-sm text-text-secondary leading-relaxed max-w-[200px] mb-5">
-              The premium AI-powered monetization platform for web, app, and CTV publishers.
+            {/* Tagline */}
+            <p className="text-sm font-bold text-text-primary tracking-tight leading-tight mb-2.5">
+              Turning Clicks Into Revenue™
+            </p>
+
+            {/* Feature list */}
+            <ul className="flex flex-col gap-1.5 mb-3">
+              {(["Google AdX", "Header Bidding", "Premium Demand", "AI Optimization"] as const).map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-brand-purple flex-shrink-0" aria-hidden="true" />
+                  <span className="text-[13px] text-text-secondary">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* Closing line */}
+            <p className="text-[11px] text-text-muted mb-5 leading-snug">
+              Built for publishers, apps, and CTV platforms.
             </p>
             <div className="flex items-center gap-2 mb-4">
-              <FooterSocialLink href="https://twitter.com/Click Dudes"        label="Twitter"  icon={<TwitterIcon />}  />
-              <FooterSocialLink href="https://linkedin.com/company/Click Dudes" label="LinkedIn" icon={<LinkedInIcon />} />
+              <FooterSocialLink href="https://x.com/ClickDudes"                            label="X"        icon={<TwitterIcon />}   />
+              <FooterSocialLink href="https://www.linkedin.com/company/clickdudes"          label="LinkedIn" icon={<LinkedInIcon />}  />
+              <FooterSocialLink href="https://facebook.com/ClickDudesOfficial"             label="Facebook" icon={<FacebookIcon />}  />
             </div>
             {/* Rocket robot — primary hero visual */}
             <div className="flex-1 flex items-end justify-center w-full pt-2">
@@ -141,75 +134,8 @@ export function Footer() {
             </div>
           </motion.div>
 
-          {/* ─── RIGHT: AI Revenue Intelligence ───────── */}
-          <motion.div
-            custom={2} variants={panelVariants} initial="hidden"
-            whileInView="visible" viewport={{ once: true, margin: "-40px" }}
-            className="glass-elevated rounded-3xl overflow-hidden flex flex-col border border-brand-purple/[0.18]"
-            style={{ boxShadow: "0 32px 80px rgba(7,17,47,0.12), 0 0 0 1px rgba(139,92,246,0.10), inset 0 1px 0 rgba(255,255,255,0.97)" }}
-          >
-            {/* Header */}
-            <div className="flex items-center justify-between px-5 py-4 border-b border-brand-purple/[0.10]">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-brand-purple/10 flex items-center justify-center">
-                  <Brain aria-hidden="true" className="w-4 h-4 text-brand-purple" />
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-text-primary leading-none">AI Revenue Engine</p>
-                  <p className="text-[10px] text-text-muted mt-0.5">Click Dudes Intelligence v4</p>
-                </div>
-              </div>
-              <LiveDot color="purple" size="sm" label="LIVE" />
-            </div>
-
-            {/* Primary stats — 3 col */}
-            <div className="grid grid-cols-3 divide-x divide-brand-purple/[0.07] border-b border-brand-purple/[0.07]">
-              {AI_PRIMARY.map((s) => (
-                <div key={s.label} className="flex flex-col items-center py-3 px-2 text-center bg-white/60">
-                  <span className="text-sm font-bold text-gradient-brand leading-none">{s.value}</span>
-                  <span className="text-[9px] text-text-muted mt-0.5 leading-tight">{s.label}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Secondary stats — 2 col */}
-            <div className="grid grid-cols-2 divide-x divide-brand-purple/[0.07] border-b border-brand-purple/[0.08]">
-              {AI_SECONDARY.map((s) => (
-                <div key={s.label} className="flex items-center gap-2 px-4 py-2.5 bg-brand-purple/[0.02]">
-                  <span className="text-sm font-bold text-brand-purple leading-none">{s.value}</span>
-                  <span className="text-[9px] text-text-muted leading-tight">{s.label}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Activity feed */}
-            <div className="flex flex-col gap-0 px-2 py-2 flex-1">
-              {ACTIVITY.map((item, i) => (
-                <div key={i}
-                  className="flex items-start gap-2.5 px-3 py-2 rounded-xl hover:bg-brand-purple/[0.04] transition-colors duration-150"
-                >
-                  <div className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${
-                    item.live
-                      ? "bg-brand-green animate-[ping-slow_2s_ease-in-out_infinite]"
-                      : "bg-brand-purple/35"
-                  }`} />
-                  <div className="min-w-0">
-                    <p className="text-[10.5px] font-medium text-text-primary leading-snug truncate">{item.text}</p>
-                    <p className="text-[9.5px] text-text-muted">{item.detail}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Status bar */}
-            <div className="flex items-center gap-2 px-5 py-3 border-t border-brand-purple/[0.08] bg-brand-purple/[0.03]">
-              <Zap aria-hidden="true" className="w-3 h-3 text-brand-purple flex-shrink-0" />
-              <p className="text-[10px] text-text-secondary">
-                System nominal ·{" "}
-                <span className="font-semibold text-brand-green">{STATS.uptime} uptime</span>
-              </p>
-            </div>
-          </motion.div>
+          {/* ─── RIGHT: ClickBot™ AI Agent ─────────────── */}
+          <FooterAICard />
 
         </div>
 
@@ -242,7 +168,7 @@ interface FooterSocialLinkProps { href: string; label: string; icon: React.React
 function FooterSocialLink({ href, label, icon }: FooterSocialLinkProps) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer"
-      aria-label={`Click Dudes on ${label}`}
+      aria-label={`Follow Click Dudes on ${label}`}
       className="p-2.5 rounded-xl text-text-muted hover:text-brand-purple bg-transparent hover:bg-brand-purple/[0.08] border border-transparent hover:border-brand-purple/[0.18] hover:shadow-[0_4px_20px_rgba(139,92,246,0.18)] transition-all duration-200 focus-ring">
       {icon}
     </a>
@@ -261,6 +187,14 @@ function LinkedInIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  )
+}
+
+function FacebookIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.887v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
     </svg>
   )
 }

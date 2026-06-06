@@ -6,7 +6,19 @@
       "Read(//tmp/**)",
       "Bash(curl -s http://localhost:3001/)",
       "PowerShell(head *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "PowerShell($components = @\\(\\); Get-ChildItem -Path \"C:\\\\Users\\\\PC\\\\click-dudes\\\\src\\\\components\" -Recurse -File | ForEach-Object { $components += $_.FullName.Replace\\(\"C:\\\\Users\\\\PC\\\\click-dudes\\\\src\\\\components\\\\\", \"\"\\) }; $components | Sort-Object)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\PC\\\\click-dudes\\\\src\\\\sections\\\\solutions\\\\eligibility\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\PC\\\\click-dudes\\\\src\\\\app\\\\publisher-solutions\\\\monetization-eligibility-criteria\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\PC\\\\click-dudes\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\PC\\\\click-dudes\\\\src\\\\sections\\\\about\" -ErrorAction SilentlyContinue)",
+      "Bash(Get-Content src\\\\components\\\\marketing\\\\HeroSection.tsx)",
+      "Bash(Select-String -Pattern \"href\")",
+      "Bash(Select-Object -First 50)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\PC\\\\click-dudes\\\\src\\\\app\" -Recurse -Filter \"page.tsx\")",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)"
     ]
   }
 }

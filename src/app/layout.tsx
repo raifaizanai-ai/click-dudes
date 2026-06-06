@@ -79,10 +79,11 @@ const orgSchema = {
   image: "https://clickdudes.com/opengraph-image",
   slogan: "Turning Clicks Into Revenue",
   foundingDate: "2021",
-  description: "Click Dudes is an AI-powered monetization, advertising, SEO, and publisher growth platform helping websites, apps, brands, and CTV publishers scale traffic, engagement, and revenue through intelligent digital growth solutions.",
+  description: "Click Dudes is an AI-powered monetization and digital growth platform helping publishers, apps, brands, and CTV networks maximize revenue through premium demand, Google AdX, Header Bidding, AI optimization, and growth solutions.",
   sameAs: [
     "https://twitter.com/clickdudes",
-    "https://linkedin.com/company/clickdudes",
+    "https://www.linkedin.com/company/clickdudes",
+    "https://clickdudes.com",
   ],
   contactPoint: [
     {
@@ -116,15 +117,20 @@ const orgSchema = {
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Click Dudes Services",
+    name: "Click Dudes Services & Solutions",
     itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Web Publisher Monetization", url: "https://clickdudes.com/publisher-solutions/web-monetization" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "App Monetization", url: "https://clickdudes.com/publisher-solutions/app-monetization" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "CTV Monetization", url: "https://clickdudes.com/publisher-solutions/ctv-monetization" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google AdX Access & Managed Monetization", url: "https://clickdudes.com/publisher-solutions/google-adx-solutions" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Header Bidding Solutions", url: "https://clickdudes.com/publisher-solutions/header-bidding-solutions" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI Ad Optimization", url: "https://clickdudes.com/publisher-solutions/ai-ad-optimization" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "App Monetization", url: "https://clickdudes.com/publisher-solutions/app-monetization" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "CTV Monetization", url: "https://clickdudes.com/publisher-solutions/ctv-monetization" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "AdSense Revenue Optimization", url: "https://clickdudes.com/publisher-solutions/adsense-revenue-optimization" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO Services", url: "https://clickdudes.com/services/seo-services" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Media Buying & Paid Ads", url: "https://clickdudes.com/services" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads Management", url: "https://clickdudes.com/services/google-ads" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Meta Ads Management", url: "https://clickdudes.com/services/meta-ads" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Web Development", url: "https://clickdudes.com/services/web-development" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "E-Commerce Solutions", url: "https://clickdudes.com/services/e-commerce" } },
     ],
   },
 }

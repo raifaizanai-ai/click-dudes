@@ -1,4 +1,4 @@
-import { Globe, Smartphone, Tv2, BarChart3, Layers, BrainCircuit, TrendingUp, Star, HelpCircle, BookOpen, BarChart2, Gift, Target, Compass, Users, Mail, History, ShoppingCart, Code2, Palette, Share2, User2, Megaphone, Search, LineChart } from "lucide-react"
+import { Globe, Smartphone, Tv2, BarChart3, Layers, BrainCircuit, TrendingUp, Star, HelpCircle, BookOpen, BarChart2, Gift, Target, Compass, Users, Mail, History, ShoppingCart, Code2, Palette, Share2, User2, Megaphone, Search, LineChart, ClipboardCheck, Shield, Zap } from "lucide-react"
 import type { NavLink } from "@/types"
 
 export const SITE = {
@@ -19,8 +19,8 @@ export const NAV_LINKS: NavLink[] = [
     megaMenuTitle:      "Publisher Solutions",
     megaMenuSub:        "AI-powered revenue tools for every publisher type",
     megaMenuFooterText: "250+ publishers trust Click Dudes — GCPP Certified",
-    megaMenuCTALabel:   "Apply for monetization",
-    megaMenuCTAHref:    "/apply",
+    megaMenuCTALabel:   "Check Your Eligibility",
+    megaMenuCTAHref:    "/publisher-solutions/monetization-eligibility-criteria",
     children: [
       {
         label:       "Web Monetization",
@@ -64,6 +64,12 @@ export const NAV_LINKS: NavLink[] = [
         description: "~40% avg uplift on existing AdSense with AI A/B testing",
         icon:        TrendingUp,
       },
+      {
+        label:       "Monetization Eligibility Criteria",
+        href:        "/publisher-solutions/monetization-eligibility-criteria",
+        description: "Check if your site, app, or CTV platform qualifies for premium monetization",
+        icon:        ClipboardCheck,
+      },
     ],
   },
   {
@@ -73,8 +79,8 @@ export const NAV_LINKS: NavLink[] = [
     megaMenuTitle:      "Digital Services",
     megaMenuSub:        "Full-service agency solutions for brands that want to grow",
     megaMenuFooterText: "Trusted by 500+ businesses worldwide",
-    megaMenuCTALabel:   "View All Services",
-    megaMenuCTAHref:    "/services",
+    megaMenuCTALabel:   "Contact Us for Services",
+    megaMenuCTAHref:    "/about/contact-us",
     children: [
       {
         label:       "E-Commerce",
@@ -137,12 +143,14 @@ export const NAV_LINKS: NavLink[] = [
     megaMenuCTALabel:   "Try Revenue Calculator",
     megaMenuCTAHref:    "/revenue-calculator",
     children: [
-      { label: "Success Stories",          href: "/resources/success-stories",          description: "Real publisher results and case studies",        icon: Star       },
-      { label: "FAQs",                     href: "/resources/faqs",                     description: "Answers to common monetization questions",       icon: HelpCircle },
-      { label: "Monetization Guides",      href: "/resources/monetization-guides",      description: "In-depth guides for every publisher type",       icon: BookOpen   },
-      { label: "AdSense vs AdX",           href: "/resources/adsense-vs-adx",           description: "Full comparison — when to upgrade and why",      icon: BarChart2  },
-      { label: "App Monetization Guide",   href: "/resources/app-monetization-guide",   description: "Complete guide to in-app advertising revenue",   icon: Smartphone },
-      { label: "Publisher Referral Program", href: "/resources/publisher-referral-program", description: "Earn commissions by referring publishers", icon: Gift       },
+      { label: "Resources Hub",              href: "/resources",                          description: "All guides, tools, and knowledge in one place",  icon: BookOpen   },
+      { label: "Success Stories",            href: "/resources/success-stories",          description: "Real publisher results and case studies",        icon: Star       },
+      { label: "Monetization Guides",        href: "/resources/monetization-guides",      description: "In-depth guides for every publisher type",       icon: BookOpen   },
+      { label: "FAQs",                       href: "/resources/faqs",                     description: "Answers to common monetization questions",       icon: HelpCircle },
+      { label: "Google AdX Requirements",    href: "/resources/google-adx-requirements",  description: "Traffic, content & policy requirements for AdX", icon: BarChart2  },
+      { label: "Header Bidding Guide",       href: "/resources/header-bidding-guide",     description: "How header bidding works and delivers +20–40% RPM", icon: Zap     },
+      { label: "Google Policy Checklist",    href: "/resources/google-publisher-policy-checklist", description: "Stay compliant with Google Publisher Policies", icon: Shield },
+      { label: "Publisher Referral Program", href: "/resources/publisher-referral-program", description: "Earn commissions by referring publishers",    icon: Gift       },
     ],
   },
   { label: "Revenue Calculator", href: "/revenue-calculator" },
@@ -154,8 +162,8 @@ export const NAV_LINKS: NavLink[] = [
     megaMenuTitle:      "About Click Dudes",
     megaMenuSub:        "The team turning publisher clicks into revenue",
     megaMenuFooterText: "GCPP Certified · London, United Kingdom",
-    megaMenuCTALabel:   "Contact our team",
-    megaMenuCTAHref:    "/about/contact-us",
+    megaMenuCTALabel:   "Meet the Team",
+    megaMenuCTAHref:    "/about/our-team",
     children: [
       { label: "Our Mission", href: "/about/our-mission",  description: "Our publisher-first philosophy and purpose", icon: Target  },
       { label: "Our Vision",  href: "/about/our-vision",   description: "The future of AI-powered monetization",     icon: Compass },
@@ -167,54 +175,64 @@ export const NAV_LINKS: NavLink[] = [
 ]
 
 export const SOCIAL_LINKS = [
-  { label: "Twitter",  href: "https://twitter.com/Click Dudes" },
-  { label: "LinkedIn", href: "https://linkedin.com/company/Click Dudes" },
+  { label: "X",        href: "https://x.com/ClickDudes" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/clickdudes" },
+  { label: "Facebook", href: "https://facebook.com/ClickDudesOfficial" },
 ] as const
 
 export const FOOTER_COLUMNS = [
   {
     heading: "Solutions",
     links: [
-      { label: "Web Publishers", href: "/publisher-solutions/web-monetization" },
-      { label: "App Publishers", href: "/publisher-solutions/app-monetization" },
-      { label: "CTV Publishers", href: "/publisher-solutions/ctv-monetization" },
-      { label: "AdSense",        href: "/publisher-solutions/adsense-revenue-optimization" },
+      { label: "Web Monetization",   href: "/publisher-solutions/web-monetization" },
+      { label: "App Monetization",   href: "/publisher-solutions/app-monetization" },
+      { label: "CTV Monetization",   href: "/publisher-solutions/ctv-monetization" },
+      { label: "Google AdX",         href: "/publisher-solutions/google-adx-solutions" },
+      { label: "Header Bidding",     href: "/publisher-solutions/header-bidding-solutions" },
+      { label: "AI Optimization",    href: "/publisher-solutions/ai-ad-optimization" },
+      { label: "Eligibility Criteria",href: "/publisher-solutions/monetization-eligibility-criteria" },
     ],
   },
   {
     heading: "Services",
     links: [
-      { label: "E-Commerce",         href: "/services/e-commerce" },
-      { label: "Web Development",    href: "/services/web-development" },
-      { label: "Meta Ads",           href: "/services/meta-ads" },
-      { label: "SEO Services",       href: "/services/seo-services" },
-    ],
-  },
-  {
-    heading: "Company",
-    links: [
-      { label: "About Us", href: "/about/our-mission" },
-      { label: "Blog",     href: "/blog" },
-      { label: "Careers",  href: "/apply" },
-      { label: "Contact",  href: "/about/contact-us" },
-    ],
-  },
-  {
-    heading: "Platform",
-    links: [
-      { label: "Header Bidding",  href: "/publisher-solutions/header-bidding-solutions" },
-      { label: "Google AdX",      href: "/publisher-solutions/google-adx-solutions" },
-      { label: "AI Optimization", href: "/publisher-solutions/ai-ad-optimization" },
-      { label: "Ad Formats",      href: "/ad-formats" },
+      { label: "SEO Services",    href: "/services/seo-services" },
+      { label: "Google Ads",      href: "/services/google-ads" },
+      { label: "Meta Ads",        href: "/services/meta-ads" },
+      { label: "Web Development", href: "/services/web-development" },
+      { label: "Social Media",    href: "/services/social-media-management" },
+      { label: "E-Commerce",      href: "/services/e-commerce" },
     ],
   },
   {
     heading: "Resources",
     links: [
-      { label: "Revenue Calculator", href: "/revenue-calculator" },
-      { label: "Success Stories",    href: "/resources/success-stories" },
-      { label: "Monetization Guides", href: "/resources/monetization-guides" },
-      { label: "Partner Program",    href: "/resources/publisher-referral-program" },
+      { label: "Resources Hub",          href: "/resources" },
+      { label: "Revenue Calculator",     href: "/revenue-calculator" },
+      { label: "Monetization Guides",    href: "/resources/monetization-guides" },
+      { label: "Google AdX Guide",       href: "/resources/google-adx-requirements" },
+      { label: "Publisher Referral",     href: "/resources/publisher-referral-program" },
+      { label: "FAQs",                   href: "/resources/faqs" },
+    ],
+  },
+  {
+    heading: "Company",
+    links: [
+      { label: "Our History", href: "/about/our-history" },
+      { label: "Mission",     href: "/about/our-mission" },
+      { label: "Vision",      href: "/about/our-vision" },
+      { label: "Our Team",    href: "/about/our-team" },
+      { label: "Contact Us",  href: "/about/contact-us" },
+    ],
+  },
+  {
+    heading: "Platform",
+    links: [
+      { label: "AI Revenue Engine",    href: "/publisher-solutions/ai-ad-optimization" },
+      { label: "Google AdX",           href: "/publisher-solutions/google-adx-solutions" },
+      { label: "Header Bidding",       href: "/publisher-solutions/header-bidding-solutions" },
+      { label: "Revenue Optimization", href: "/resources/rpm-optimization" },
+      { label: "Ad Formats",           href: "/ad-formats" },
     ],
   },
 ] as const

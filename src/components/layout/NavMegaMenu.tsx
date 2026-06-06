@@ -40,8 +40,8 @@ export function NavMegaMenu({
   menuTitle      = "Publisher Solutions",
   menuSubtitle   = "AI-powered revenue tools for every publisher type",
   footerText     = "250+ publishers trust Click Dudes",
-  footerCTALabel = "Apply now",
-  footerCTAHref  = "/apply",
+  footerCTALabel = "Get Started",
+  footerCTAHref  = "/about/contact-us",
 }: NavMegaMenuProps) {
   return (
     <motion.div
