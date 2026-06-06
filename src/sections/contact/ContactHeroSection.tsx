@@ -71,7 +71,7 @@ export function ContactHeroSection() {
 
             {/* CTA buttons */}
             <motion.div variants={fadeUp} className="flex flex-wrap gap-3 pt-1">
-              <a href="/apply"
+              <a href="/about/contact-us"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-brand hover:shadow-[0_4px_24px_rgba(139,92,246,0.35)] transition-shadow duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple/60">
                 Apply For Monetization
                 <ArrowRight aria-hidden="true" className="w-4 h-4" />

@@ -35,7 +35,7 @@ export function ArticleCTA({ content }: ArticleCTAProps) {
           <p className="text-body text-text-secondary text-pretty">{body}</p>
         </div>
         <Link
-          href="/apply"
+          href="/about/contact-us"
           className={cn(
             buttonVariants({ variant: "glow", size: "sm" }),
             "shrink-0 rounded-full group"

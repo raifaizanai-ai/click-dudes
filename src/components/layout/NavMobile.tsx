@@ -167,7 +167,7 @@ export function NavMobile({ id, open, onClose }: NavMobileProps) {
               {/* ── CTA ── */}
               <div className="mt-2 pt-3 border-t border-brand-purple/[0.08]">
                 <Link
-                  href="/apply"
+                  href="/about/contact-us"
                   onClick={onClose}
                   className={cn(
                     buttonVariants({ variant: "glow", size: "md" }),

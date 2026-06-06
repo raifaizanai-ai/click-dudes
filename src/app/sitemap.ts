@@ -16,7 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     // Core
     route("/",                                                 "weekly",  1.0, today),
-    route("/apply",                                            "monthly", 0.9),
     route("/ad-formats",                                       "monthly", 0.8),
     route("/revenue-calculator",                               "monthly", 0.8),
 

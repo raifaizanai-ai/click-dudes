@@ -122,7 +122,7 @@ export function EligibilityChecker() {
                   <CheckCircle2 aria-hidden="true" className="w-4 h-4 text-brand-green" />
                   <span className="text-sm font-bold text-brand-green">Eligible for Monetization!</span>
                 </div>
-                <a href="/apply"
+                <a href="/about/contact-us"
                   className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-brand hover:shadow-[0_4px_24px_rgba(139,92,246,0.35)] transition-shadow duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple/60">
                   Apply For Monetization
                   <ArrowRight aria-hidden="true" className="w-4 h-4" />

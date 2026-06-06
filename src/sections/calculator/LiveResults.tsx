@@ -149,7 +149,7 @@ export function LiveResults({ results }: LiveResultsProps) {
       </div>
 
       {/* CTA */}
-      <motion.a href="/apply"
+      <motion.a href="/about/contact-us"
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
         className="flex items-center justify-center gap-2 w-full px-5 py-3.5 rounded-xl text-sm font-semibold text-white bg-gradient-brand hover:shadow-[0_4px_24px_rgba(139,92,246,0.35)] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-purple/60"

@@ -196,7 +196,7 @@ export function Navbar() {
 
           {/* ── CTA — glow pill with shine sweep ── */}
           <Link
-            href="/apply"
+            href="/about/contact-us"
             className={cn(
               buttonVariants({ variant: "glow", size: "sm" }),
               "hidden lg:inline-flex ml-auto shrink-0",
