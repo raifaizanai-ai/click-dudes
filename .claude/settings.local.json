@@ -42,7 +42,14 @@
       "Bash(node *)",
       "Bash(git mv *)",
       "Bash(mv \"Rai Faizan- Founder & CEO .png\" \"rai-faizan.png\")",
-      "Bash(mv \"Syed Umer - Co-Founder & CFO.png\" \"syed-umer.png\")"
+      "Bash(mv \"Syed Umer - Co-Founder & CFO.png\" \"syed-umer.png\")",
+      "Bash(gh repo *)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(command -v tmux)",
+      "Bash(command -v wsl)",
+      "Bash(command -v pacman)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(winget search *)"
     ]
   }
 }
