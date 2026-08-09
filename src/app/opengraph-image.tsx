@@ -1,7 +1,6 @@
 import { ImageResponse } from "next/og"
 import { STATS } from "@/lib/stats"
 
-export const runtime = "edge"
 export const alt = "Click Dudes — Turning Clicks Into Revenue"
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"

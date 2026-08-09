@@ -33,7 +33,12 @@
       "Bash(curl *)",
       "Bash(grep -B1 \"^C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\PC\\\\\\\\\\\\\\\\click-dudes\\\\\\\\\\\\\\\\src\")",
       "Bash(grep -iE \"legal|BrandMarkNode|FlowChain|FanFlow|FooterLaptop|FooterPartnerCard|PartnerDashboardHomeSection|BecomePartnerHomeSection|FinalCTASection|IdentityVisualStage|ChaosToSystemDiagram|WhyClickDudesSection|CommunicationStack|AnalyticsSpotlight|WhoCanPartnerSection|cookies\\\\\\\\\\\\\\\\page|privacy\\\\\\\\\\\\\\\\page|terms\\\\\\\\\\\\\\\\page\")",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(command -v vercel)",
+      "Bash(vercel --version)",
+      "Bash(corepack *)"
     ]
   }
 }
