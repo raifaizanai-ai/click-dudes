@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Send, Search, Target, Wrench, Activity } from "lucide-react"
+import { Send, Search, Target, Wrench, Activity, type LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
@@ -11,7 +11,7 @@ import { staggerContainer, fadeUp } from "@/lib/animations"
 
 interface Step {
   number: number
-  icon: React.ElementType
+  icon: LucideIcon
   title: string
   description: string
   isLive?: boolean

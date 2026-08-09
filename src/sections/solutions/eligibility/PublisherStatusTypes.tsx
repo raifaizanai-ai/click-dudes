@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Clock, CheckCircle2, Star } from "lucide-react"
+import { Clock, CheckCircle2, Star, type LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
@@ -11,7 +11,7 @@ import { staggerContainer, fadeUp } from "@/lib/animations"
 import { cn } from "@/lib/utils"
 
 interface StatusCard {
-  icon: React.ElementType
+  icon: LucideIcon
   title: string
   description: string
   dotColor: "purple" | "green" | "cyan"

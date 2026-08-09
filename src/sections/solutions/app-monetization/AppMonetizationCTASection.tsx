@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Smartphone, Sparkles, CheckCircle2, TrendingUp, BarChart3, DollarSign } from "lucide-react"
+import { ArrowRight, Smartphone, Sparkles, CheckCircle2, TrendingUp, BarChart3, DollarSign, type LucideIcon } from "lucide-react"
 import Link from "next/link"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
@@ -19,7 +19,7 @@ const BENEFITS = [
 
 interface FloatBadge {
   id: string; label: string; value: string; delta: string
-  deltaColor: string; Icon: React.ElementType
+  deltaColor: string; Icon: LucideIcon
   iconBg: string; iconColor: string; pos: string; dur: number
 }
 

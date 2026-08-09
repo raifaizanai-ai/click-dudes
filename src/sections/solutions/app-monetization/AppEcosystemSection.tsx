@@ -1,14 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Smartphone, Code2, Layers, Network, BrainCircuit, LayoutDashboard, ArrowRight } from "lucide-react"
+import { Smartphone, Code2, Layers, Network, BrainCircuit, LayoutDashboard, ArrowRight, type LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { LiveDot } from "@/components/shared/LiveDot"
 import { STATS } from "@/lib/stats"
 
 interface EcoNode {
-  icon: React.ElementType
+  icon: LucideIcon
   label: string
   sub: string
   color: string

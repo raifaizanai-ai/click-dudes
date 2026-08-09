@@ -81,7 +81,7 @@ export function NavMegaMenu({
           const isActive = pathname === item.href
 
           return (
-            <motion.div key={item.href} variants={itemVariants}>
+            <motion.div key={`${item.label}-${item.href}`} variants={itemVariants}>
               <Link
                 href={item.href}
                 role="menuitem"

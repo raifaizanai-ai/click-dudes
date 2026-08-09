@@ -10,6 +10,7 @@ import {
   Zap,
   LayoutGrid,
   BarChart3,
+  type LucideIcon,
 } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
@@ -19,7 +20,7 @@ import { LiveDot } from "@/components/shared/LiveDot"
 import { staggerContainer, fadeUp } from "@/lib/animations"
 
 interface QualityFeature {
-  icon: React.ElementType
+  icon: LucideIcon
   title: string
   description: string
 }

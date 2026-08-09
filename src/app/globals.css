@@ -158,7 +158,11 @@ body {
   color: #07112F;
   font-family: var(--font-sans), system-ui, sans-serif;
   min-height: 100dvh;
-  overflow-x: hidden;
+  /* No overflow-x here on purpose: per the CSS Overflow spec, setting either
+     axis to anything but "visible" forces the OTHER axis to compute as "auto",
+     which would turn body into a non-scrolling scroll container and break every
+     position:sticky descendant (the real scrollbar lives on <html>, which
+     already clips horizontal overflow via its own overflow-x:hidden above). */
   /* Prevent pull-to-refresh rubber-band causing horizontal shift */
   overscroll-behavior-x: none;
 }
@@ -272,6 +276,34 @@ body {
 }
 .glow-hover:hover {
   box-shadow: var(--glow-purple);
+}
+
+/* ═══════════════════════════════════════════════════════
+   GLASS ON NAVY — translucent card surface for use on top of
+   bg-gradient-navy / dark sections. Unlike .glass-dark (which is
+   actually a light ~84%-opaque white surface despite its name and
+   is meant for light backgrounds), this is genuinely dark-tinted so
+   white text stays high-contrast.
+   ═══════════════════════════════════════════════════════ */
+
+.glass-on-navy {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.10);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.glass-on-navy-active {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(103, 232, 249, 0.35);
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 0 0 1px rgba(103, 232, 249, 0.12);
 }
 
 /* ═══════════════════════════════════════════════════════

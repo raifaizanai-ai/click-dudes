@@ -1,11 +1,9 @@
 "use client"
 
-import { useState } from "react"
-import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ChevronDown } from "lucide-react"
 import { AnimatePresence, motion } from "framer-motion"
 import { NAV_LINKS } from "@/lib/constants"
+import { NavMobileAccordionItem } from "@/components/layout/NavMobileAccordionItem"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -17,10 +15,6 @@ interface NavMobileProps {
 
 export function NavMobile({ id, open, onClose }: NavMobileProps) {
   const pathname = usePathname()
-  const [activeAccordion, setActiveAccordion] = useState<string | null>(null)
-
-  const toggleAccordion = (label: string) =>
-    setActiveAccordion((prev) => (prev === label ? null : label))
 
   return (
     <AnimatePresence>
@@ -63,119 +57,22 @@ export function NavMobile({ id, open, onClose }: NavMobileProps) {
             />
 
             <div className="flex flex-col px-3 py-3 gap-0.5">
-              {NAV_LINKS.map((item) => {
-                const isActive =
-                  pathname === item.href ||
-                  item.children?.some((c) => pathname === c.href)
-
-                /* ── Item with children ── */
-                if (item.children) {
-                  const isOpen = activeAccordion === item.label
-                  return (
-                    <div key={item.label}>
-                      <button
-                        onClick={() => toggleAccordion(item.label)}
-                        aria-expanded={isOpen}
-                        className={cn(
-                          "w-full flex items-center justify-between",
-                          "px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 focus-ring",
-                          isActive
-                            ? "text-brand-purple bg-brand-purple/[0.09]"
-                            : "text-text-secondary hover:text-brand-purple hover:bg-brand-purple/[0.07]"
-                        )}
-                      >
-                        {item.label}
-                        <ChevronDown
-                          aria-hidden="true"
-                          className={cn(
-                            "w-4 h-4 transition-transform duration-200",
-                            isOpen && "rotate-180"
-                          )}
-                        />
-                      </button>
-
-                      <AnimatePresence initial={false}>
-                        {isOpen && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
-                            className="overflow-hidden"
-                          >
-                            <div className="pl-3 py-1 flex flex-col gap-0.5">
-                              {item.children.map((child) => {
-                                const Icon = child.icon
-                                const isChildActive = pathname === child.href
-                                return (
-                                  <Link
-                                    key={child.href}
-                                    href={child.href}
-                                    onClick={onClose}
-                                    aria-current={isChildActive ? "page" : undefined}
-                                    className={cn(
-                                      "flex items-start gap-2.5 px-3 py-2.5 rounded-xl",
-                                      "text-[13px] transition-all duration-200 focus-ring",
-                                      isChildActive
-                                        ? "text-brand-purple font-medium bg-brand-purple/[0.07]"
-                                        : "text-text-muted hover:text-brand-purple hover:bg-brand-purple/[0.07]"
-                                    )}
-                                  >
-                                    {Icon && (
-                                      <div className="flex-shrink-0 w-6 h-6 rounded-md bg-brand-purple/[0.07] flex items-center justify-center mt-0.5">
-                                        <Icon className="w-3.5 h-3.5 text-brand-purple/70" aria-hidden="true" />
-                                      </div>
-                                    )}
-                                    <div className="min-w-0">
-                                      <p className="font-medium leading-snug">{child.label}</p>
-                                      {child.description && (
-                                        <p className="text-[11px] text-text-muted/80 mt-0.5 leading-snug line-clamp-1">
-                                          {child.description}
-                                        </p>
-                                      )}
-                                    </div>
-                                  </Link>
-                                )
-                              })}
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  )
-                }
-
-                /* ── Regular link ── */
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={onClose}
-                    aria-current={pathname === item.href ? "page" : undefined}
-                    className={cn(
-                      "px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 focus-ring",
-                      isActive
-                        ? "text-brand-purple bg-brand-purple/[0.09]"
-                        : "text-text-secondary hover:text-brand-purple hover:bg-brand-purple/[0.07]"
-                    )}
-                  >
-                    {item.label}
-                  </Link>
-                )
-              })}
+              {NAV_LINKS.map((item) => (
+                <NavMobileAccordionItem key={item.label} item={item} pathname={pathname} onClose={onClose} />
+              ))}
 
               {/* ── CTA ── */}
               <div className="mt-2 pt-3 border-t border-brand-purple/[0.08]">
-                <Link
-                  href="/about/contact-us"
+                <a
+                  href="https://partners.clickdudes.com/partner/login"
                   onClick={onClose}
                   className={cn(
                     buttonVariants({ variant: "glow", size: "md" }),
                     "w-full justify-center"
                   )}
                 >
-                  Apply For Monetization
-                </Link>
+                  Access Partners Dashboard
+                </a>
               </div>
             </div>
           </motion.nav>

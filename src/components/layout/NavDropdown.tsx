@@ -1,7 +1,9 @@
 "use client"
 
+import { useRef, useState } from "react"
 import Link from "next/link"
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
+import { ChevronRight } from "lucide-react"
 import type { NavChild } from "@/types"
 import { cn } from "@/lib/utils"
 
@@ -22,9 +24,22 @@ interface NavDropdownProps {
   items:    NavChild[]
   pathname: string
   onClose?: () => void
+  nested?:  boolean
 }
 
-export function NavDropdown({ items, pathname, onClose }: NavDropdownProps) {
+export function NavDropdown({ items, pathname, onClose, nested = false }: NavDropdownProps) {
+  const [openChild, setOpenChild] = useState<string | null>(null)
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const openChildMenu = (label: string) => {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+    setOpenChild(label)
+  }
+
+  const closeChildMenu = () => {
+    closeTimer.current = setTimeout(() => setOpenChild(null), 150)
+  }
+
   return (
     <motion.div
       role="menu"
@@ -33,7 +48,8 @@ export function NavDropdown({ items, pathname, onClose }: NavDropdownProps) {
       animate="visible"
       exit="exit"
       className={cn(
-        "absolute top-full left-1/2 -translate-x-1/2 mt-3 z-[60]",
+        "absolute z-[60]",
+        nested ? "top-0 right-full mr-2" : "top-full left-1/2 -translate-x-1/2 mt-3",
         "bg-white/92 backdrop-blur-[28px] rounded-2xl p-2",
         "border border-brand-purple/[0.12]",
         "shadow-[0_20px_56px_rgba(7,17,47,0.10),0_0_0_1px_rgba(139,92,246,0.08)]",
@@ -51,8 +67,55 @@ export function NavDropdown({ items, pathname, onClose }: NavDropdownProps) {
         const Icon = item.icon
         const isActive = pathname === item.href
 
+        if (item.children) {
+          const isOpen = openChild === item.label
+          return (
+            <motion.div
+              key={`${item.label}-${item.href}`}
+              variants={itemVariants}
+              className="relative"
+              onMouseEnter={() => openChildMenu(item.label)}
+              onMouseLeave={closeChildMenu}
+            >
+              <button
+                type="button"
+                role="menuitem"
+                aria-haspopup="menu"
+                aria-expanded={isOpen}
+                onFocus={() => openChildMenu(item.label)}
+                onBlur={closeChildMenu}
+                className={cn(
+                  "w-full group flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-left",
+                  "transition-all duration-200 focus-ring",
+                  isOpen ? "bg-brand-purple/[0.06]" : "hover:bg-brand-purple/[0.06]"
+                )}
+              >
+                {Icon && (
+                  <div className={cn(
+                    "flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center",
+                    "transition-colors duration-200",
+                    "bg-brand-purple/[0.07] text-brand-purple/70 group-hover:bg-brand-purple/12 group-hover:text-brand-purple"
+                  )}>
+                    <Icon className="w-3.5 h-3.5" aria-hidden="true" />
+                  </div>
+                )}
+                <span className="flex-1 text-[13.5px] font-medium leading-snug text-text-primary group-hover:text-brand-purple transition-colors duration-200">
+                  {item.label}
+                </span>
+                <ChevronRight aria-hidden="true" className="w-3.5 h-3.5 text-text-muted flex-shrink-0" />
+              </button>
+
+              <AnimatePresence>
+                {isOpen && (
+                  <NavDropdown items={item.children} pathname={pathname} onClose={onClose} nested />
+                )}
+              </AnimatePresence>
+            </motion.div>
+          )
+        }
+
         return (
-          <motion.div key={item.href} variants={itemVariants}>
+          <motion.div key={`${item.label}-${item.href}`} variants={itemVariants}>
             <Link
               href={item.href}
               role="menuitem"

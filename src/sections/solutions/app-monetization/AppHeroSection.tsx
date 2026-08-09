@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Smartphone, TrendingUp, BarChart3, DollarSign, Gift, Zap, Activity } from "lucide-react"
+import { ArrowRight, Smartphone, TrendingUp, BarChart3, DollarSign, Gift, Zap, Activity, type LucideIcon } from "lucide-react"
 import Link from "next/link"
 import { Container } from "@/components/layout/Container"
 import { AppPhoneMockup } from "@/sections/solutions/app-monetization/AppPhoneMockup"
@@ -12,7 +12,7 @@ const SPK_STEP = "M0,16 L8,16 L16,12 L24,12 L32,9 L40,9 L48,6 L56,4"
 
 interface SatCard {
   id: string; label: string; value: string; delta: string
-  deltaColor: string; Icon: React.ElementType
+  deltaColor: string; Icon: LucideIcon
   iconBg: string; iconColor: string; pos: string; dur: number
   sparkline?: string; sparkColor?: string; isLive?: boolean
 }

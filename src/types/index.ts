@@ -7,6 +7,7 @@ export interface NavChild {
   href: string
   description?: string
   icon?: LucideIcon
+  children?: NavChild[]
 }
 
 export interface NavLink {

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { TrendingUp, AlertCircle, ArrowRight, Search, Globe, Smartphone, Clock, BarChart2, Target } from "lucide-react"
+import { TrendingUp, AlertCircle, ArrowRight, Search, Globe, Smartphone, Clock, BarChart2, Target, type LucideIcon } from "lucide-react"
 import Link from "next/link"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils"
 const fadeUp  = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.16, 1, 0.3, 1] as const } } }
 const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } } }
 
-interface RPMIssue { icon: React.ElementType; title: string; diagnosis: string; fix: string; iconBg: string; iconColor: string }
+interface RPMIssue { icon: LucideIcon; title: string; diagnosis: string; fix: string; iconBg: string; iconColor: string }
 
 const RPM_ISSUES: RPMIssue[] = [
   { icon: Globe,      iconBg: "bg-brand-purple/10", iconColor: "text-brand-purple", title: "Low-Value GEO Mix",          diagnosis: "More than 40% traffic from Tier-3 GEOs (South Asia, Southeast Asia, sub-Saharan Africa) severely depresses CPM.", fix: "Diversify traffic acquisition toward Tier-1/2 markets through SEO, content localization, and targeted social content." },

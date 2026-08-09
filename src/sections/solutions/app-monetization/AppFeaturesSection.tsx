@@ -1,14 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Layers, Gift, Smartphone, LayoutTemplate, SlidersHorizontal, BarChart3, Shield, TrendingUp } from "lucide-react"
+import { Layers, Gift, Smartphone, LayoutTemplate, SlidersHorizontal, BarChart3, Shield, TrendingUp, type LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { cn } from "@/lib/utils"
 import { LiveDot } from "@/components/shared/LiveDot"
 
 interface Feature {
-  icon: React.ElementType
+  icon: LucideIcon
   title: string
   description: string
   iconBg: string

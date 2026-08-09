@@ -4,10 +4,10 @@ import { HeroSection } from "@/components/marketing/HeroSection"
 import { PartnersSection } from "@/components/marketing/PartnersSection"
 
 const EcosystemSection      = dynamic(() => import("@/components/marketing/EcosystemSection").then(m => ({ default: m.EcosystemSection })))
-const RevenueSection        = dynamic(() => import("@/components/marketing/RevenueSection").then(m => ({ default: m.RevenueSection })))
+const PartnerDashboardHomeSection = dynamic(() => import("@/components/marketing/PartnerDashboardHomeSection").then(m => ({ default: m.PartnerDashboardHomeSection })))
 const ServicesSection       = dynamic(() => import("@/components/marketing/ServicesSection").then(m => ({ default: m.ServicesSection })))
 const DigitalServicesSection= dynamic(() => import("@/components/marketing/DigitalServicesSection").then(m => ({ default: m.DigitalServicesSection })))
-const AIOptimizationSection = dynamic(() => import("@/components/marketing/AIOptimizationSection").then(m => ({ default: m.AIOptimizationSection })))
+const BecomePartnerHomeSection = dynamic(() => import("@/components/marketing/BecomePartnerHomeSection").then(m => ({ default: m.BecomePartnerHomeSection })))
 const ProcessSection        = dynamic(() => import("@/components/marketing/ProcessSection").then(m => ({ default: m.ProcessSection })))
 const PublisherVoicesSection= dynamic(() => import("@/components/marketing/PublisherVoicesSection").then(m => ({ default: m.PublisherVoicesSection })))
 const FAQSection            = dynamic(() => import("@/components/marketing/FAQSection").then(m => ({ default: m.FAQSection })))
@@ -74,10 +74,10 @@ export default function HomePage() {
       <HeroSection />
       <PartnersSection />
       <EcosystemSection />
-      <RevenueSection />
+      <PartnerDashboardHomeSection />
       <ServicesSection />
       <DigitalServicesSection />
-      <AIOptimizationSection />
+      <BecomePartnerHomeSection />
       <ProcessSection />
       <PublisherVoicesSection />
       <FAQSection />

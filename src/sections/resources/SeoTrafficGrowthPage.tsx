@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Globe, CheckCircle2, ArrowRight, Search, TrendingUp, Zap, BarChart3 } from "lucide-react"
+import { Globe, CheckCircle2, ArrowRight, Search, TrendingUp, Zap, BarChart3, type LucideIcon } from "lucide-react"
 import Link from "next/link"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils"
 const fadeUp  = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.16, 1, 0.3, 1] as const } } }
 const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } } }
 
-interface PlaybookSection { icon: React.ElementType; title: string; color: string; bg: string; items: string[] }
+interface PlaybookSection { icon: LucideIcon; title: string; color: string; bg: string; items: string[] }
 
 const PLAYBOOK: PlaybookSection[] = [
   {

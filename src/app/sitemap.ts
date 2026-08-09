@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     route("/",                                                 "weekly",  1.0, today),
     route("/ad-formats",                                       "monthly", 0.8),
     route("/revenue-calculator",                               "monthly", 0.8),
+    route("/become-a-partner",                                 "monthly", 0.8),
 
     // Publisher Solutions
     route("/publisher-solutions/web-monetization",             "monthly", 0.9),
@@ -54,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     route("/resources/publisher-referral-program",             "monthly", 0.6),
 
     // About
+    route("/about",                                            "yearly",  0.5),
     route("/about/our-mission",                                "yearly",  0.6),
     route("/about/our-vision",                                 "yearly",  0.6),
     route("/about/our-team",                                   "yearly",  0.6),

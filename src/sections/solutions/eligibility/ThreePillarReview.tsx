@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Shield, Users2, LayoutDashboard } from "lucide-react"
+import { Shield, Users2, LayoutDashboard, type LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
@@ -10,7 +10,7 @@ import { staggerContainer, fadeUp } from "@/lib/animations"
 import { cn } from "@/lib/utils"
 
 interface PillarItem {
-  icon: React.ElementType
+  icon: LucideIcon
   title: string
   items: string[]
   iconColor: string

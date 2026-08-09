@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { CalculatorIcon, TrendingUp, ClipboardCheck, LayoutGrid, ShieldCheck, FileSearch, BarChart3, ArrowRight } from "lucide-react"
+import { CalculatorIcon, TrendingUp, ClipboardCheck, LayoutGrid, ShieldCheck, FileSearch, BarChart3, ArrowRight, type LucideIcon } from "lucide-react"
 import { Section } from "@/components/layout/Section"
 import { Container } from "@/components/layout/Container"
 import { SectionHeader } from "@/components/marketing/SectionHeader"
@@ -8,7 +8,7 @@ import { GlassCard } from "@/components/shared/GlassCard"
 import { cn } from "@/lib/utils"
 
 interface ToolCard {
-  icon: React.ElementType
+  icon: LucideIcon
   title: string
   description: string
   cta: string

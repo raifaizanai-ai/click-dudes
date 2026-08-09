@@ -18,7 +18,22 @@
       "Bash(Select-Object -First 50)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\PC\\\\click-dudes\\\\src\\\\app\" -Recurse -Filter \"page.tsx\")",
       "Bash(Select-Object FullName)",
-      "Bash(Sort-Object FullName)"
+      "Bash(Sort-Object FullName)",
+      "Bash(git stash *)",
+      "Bash(npx eslint *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"root=%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"partner=%{http_code}\\\\n\" http://localhost:3000/become-a-partner)",
+      "Bash(curl -s -o /dev/null -w \"about=%{http_code}\\\\n\" http://localhost:3000/about)",
+      "Bash(curl -s -o /dev/null -w \"resources=%{http_code}\\\\n\" http://localhost:3000/resources)",
+      "Bash(powershell -Command 'Get-Process node -ErrorAction SilentlyContinue | Where-Object { \\(Get-NetTCPConnection -OwningProcess $_.Id -ErrorAction SilentlyContinue | Where-Object LocalPort -eq 3010\\) } | Stop-Process -Force')",
+      "Bash(netstat -ano)",
+      "Bash(sort -k6,7)",
+      "Bash(command -v pnpm)",
+      "Bash(curl *)",
+      "Bash(grep -B1 \"^C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\PC\\\\\\\\\\\\\\\\click-dudes\\\\\\\\\\\\\\\\src\")",
+      "Bash(grep -iE \"legal|BrandMarkNode|FlowChain|FanFlow|FooterLaptop|FooterPartnerCard|PartnerDashboardHomeSection|BecomePartnerHomeSection|FinalCTASection|IdentityVisualStage|ChaosToSystemDiagram|WhyClickDudesSection|CommunicationStack|AnalyticsSpotlight|WhoCanPartnerSection|cookies\\\\\\\\\\\\\\\\page|privacy\\\\\\\\\\\\\\\\page|terms\\\\\\\\\\\\\\\\page\")",
+      "Bash(git add *)"
     ]
   }
 }

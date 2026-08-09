@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { FooterAICard } from "@/components/layout/FooterAICard"
+import { FooterPartnerCard } from "@/components/layout/FooterPartnerCard"
 import { SiteLogo } from "@/components/shared/SiteLogo"
 import { Divider } from "@/components/shared/Divider"
 import { RobotImage } from "@/components/shared/RobotImage"
@@ -22,6 +22,8 @@ const panelVariants = {
   }),
 }
 
+const isExternalHref = (href: string) => href.startsWith("http")
+
 /* ── Component ───────────────────────────────────────────── */
 
 export function Footer() {
@@ -31,57 +33,39 @@ export function Footer() {
     <footer aria-label="Site footer" className="relative overflow-hidden footer-premium-animated">
 
       {/* ── Atmospheric layers ──────────────────────────── */}
-      <GradientOrb color="purple" size="xl"  blur="2xl" opacity={0.18} animate className="-top-32 -left-32" />
-      <GradientOrb color="violet" size="lg"  blur="xl"  opacity={0.13}        className="top-1/2 -right-24 -translate-y-1/2" />
-      <GradientOrb color="cyan"   size="md"  blur="xl"  opacity={0.11}        className="bottom-16 left-1/3" />
-      <GradientOrb color="blue"   size="sm"  blur="xl"  opacity={0.09}        className="top-1/4 left-2/3" />
-      <div aria-hidden="true" className="absolute inset-0 ai-grid pointer-events-none opacity-[0.18]" />
+      <GradientOrb color="purple" size="lg" blur="2xl" opacity={0.14} animate className="-top-24 -left-24" />
+      <GradientOrb color="cyan"   size="md" blur="xl"  opacity={0.10}        className="bottom-8 right-1/4" />
+      <div aria-hidden="true" className="absolute inset-0 ai-grid pointer-events-none opacity-[0.14]" />
       <div aria-hidden="true" className="absolute top-0 inset-x-0 h-px pointer-events-none"
         style={{ background: "linear-gradient(to right, transparent 0%, rgba(139,92,246,0.10) 30%, rgba(103,232,249,0.08) 70%, transparent 100%)" }} />
-      <div aria-hidden="true" className="absolute top-0 inset-x-0 h-56 pointer-events-none"
-        style={{ background: "radial-gradient(ellipse 80% 100% at 50% 0%, rgba(139,92,246,0.10) 0%, transparent 100%)" }} />
 
       <Container>
         {/* ══════════════════════════════════════════════
-            Three-panel grid, 28 / 42 / 30 proportions
+            Compact three-panel grid, 26 / 44 / 30 proportions
         ══════════════════════════════════════════════ */}
-        <div className="pt-10 sm:pt-16 pb-8 sm:pb-10 grid grid-cols-1 lg:grid-cols-[1.35fr_2fr_1.45fr] gap-5 sm:gap-6 items-stretch">
+        <div className="pt-8 sm:pt-12 pb-6 sm:pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_2fr_1.3fr] gap-5 items-stretch">
 
-          {/* ─── LEFT: Brand + Rocket hero ─────────────── */}
+          {/* ─── LEFT: Brand ───────────────────────────── */}
           <motion.div
             custom={0} variants={panelVariants} initial="hidden"
             whileInView="visible" viewport={{ once: true, margin: "-40px" }}
-            className="glass-elevated rounded-3xl p-5 sm:p-7 flex flex-col items-start text-left overflow-hidden"
+            className="glass-elevated rounded-3xl p-5 sm:p-6 flex flex-col gap-3.5"
             style={{ boxShadow: "0 32px 80px rgba(7,17,47,0.12), 0 0 0 1px rgba(139,92,246,0.13), inset 0 1px 0 rgba(255,255,255,0.97)" }}
           >
-            <div className="self-start mb-4"><SiteLogo context="footer" /></div>
-            {/* Tagline */}
-            <p className="text-sm font-bold text-text-primary tracking-tight leading-tight mb-2.5">
+            <SiteLogo context="footer" />
+            <p className="text-sm font-bold text-text-primary tracking-tight leading-tight">
               Turning Clicks Into Revenue™
             </p>
-
-            {/* Feature list */}
-            <ul className="flex flex-col gap-1.5 mb-3">
-              {(["Google AdX", "Header Bidding", "Premium Demand", "AI Optimization"] as const).map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-brand-purple flex-shrink-0" aria-hidden="true" />
-                  <span className="text-[13px] text-text-secondary">{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            {/* Closing line */}
-            <p className="text-[11px] text-text-muted mb-5 leading-snug">
+            <p className="text-[12px] text-text-muted leading-snug">
               Built for publishers, apps, and CTV platforms.
             </p>
-            <div className="flex items-center gap-2 mb-4">
-              <FooterSocialLink href="https://x.com/ClickDudes"                            label="X"        icon={<TwitterIcon />}   />
-              <FooterSocialLink href="https://www.linkedin.com/company/clickdudes"          label="LinkedIn" icon={<LinkedInIcon />}  />
-              <FooterSocialLink href="https://facebook.com/ClickDudesOfficial"             label="Facebook" icon={<FacebookIcon />}  />
+            <div className="flex items-center gap-2">
+              <FooterSocialLink href="https://x.com/ClickDudes"                   label="X"        icon={<TwitterIcon />}  />
+              <FooterSocialLink href="https://www.linkedin.com/company/clickdudes" label="LinkedIn" icon={<LinkedInIcon />} />
+              <FooterSocialLink href="https://facebook.com/ClickDudesOfficial"    label="Facebook" icon={<FacebookIcon />} />
             </div>
-            {/* Rocket robot — primary hero visual */}
-            <div className="flex-1 flex items-end justify-center w-full pt-2">
-              <RobotImage variant="rocket" size="lg" floatDelay={0.3} glowColor="violet" />
+            <div className="flex justify-center pt-1">
+              <RobotImage variant="rocket" size="sm" glowColor="violet" />
             </div>
           </motion.div>
 
@@ -89,28 +73,30 @@ export function Footer() {
           <motion.div
             custom={1} variants={panelVariants} initial="hidden"
             whileInView="visible" viewport={{ once: true, margin: "-40px" }}
-            className="glass rounded-3xl p-6 sm:p-8 md:p-10 flex flex-col"
+            className="glass rounded-3xl p-5 sm:p-7 flex flex-col"
             style={{ boxShadow: "0 20px 60px rgba(7,17,47,0.08), 0 0 0 1px rgba(139,92,246,0.12), inset 0 1px 0 rgba(255,255,255,0.92)" }}
           >
             {/* Top header row */}
-            <div className="flex items-center justify-between mb-6 pb-5 border-b border-brand-purple/[0.10]">
+            <div className="flex items-center justify-between mb-4 pb-3.5 border-b border-brand-purple/[0.10]">
               <p className="text-sm font-bold text-text-primary tracking-tight">Site Navigation</p>
               <LiveDot color="purple" size="sm" label="Always on" />
             </div>
 
-            {/* 2×2 navigation grid — single column on very small screens */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 md:gap-x-8 gap-y-6 md:gap-y-8">
+            {/* 2×2 navigation grid */}
+            <div className="grid grid-cols-2 gap-x-6 gap-y-5">
               {FOOTER_COLUMNS.map((col) => (
-                <div key={col.heading} className="flex flex-col gap-3">
-                  <p className="text-[13px] sm:text-[15px] font-bold uppercase tracking-wide text-brand-purple">
+                <div key={col.heading} className="flex flex-col gap-2">
+                  <p className="text-[12px] font-bold uppercase tracking-wide text-brand-purple">
                     {col.heading}
                   </p>
-                  <ul className="flex flex-col gap-2">
+                  <ul className="flex flex-col gap-1.5">
                     {col.links.map((link) => (
                       <li key={link.href}>
                         <Link
                           href={link.href}
-                          className="text-[13px] sm:text-[14px] text-text-secondary hover:text-brand-purple transition-colors duration-200 focus-ring rounded"
+                          target={isExternalHref(link.href) ? "_blank" : undefined}
+                          rel={isExternalHref(link.href) ? "noopener noreferrer" : undefined}
+                          className="text-[13px] text-text-secondary hover:text-brand-purple transition-colors duration-200 focus-ring rounded"
                         >
                           {link.label}
                         </Link>
@@ -122,7 +108,7 @@ export function Footer() {
             </div>
 
             {/* Bottom trust badge row */}
-            <div className="mt-auto pt-5 border-t border-brand-purple/[0.10] flex flex-wrap items-center justify-between gap-3">
+            <div className="mt-auto pt-4 border-t border-brand-purple/[0.10] flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-1.5">
                 <span className="text-sm font-bold text-text-primary">{STATS.publishers}</span>
                 <span className="text-xs text-text-muted">Publishers</span>
@@ -134,15 +120,17 @@ export function Footer() {
             </div>
           </motion.div>
 
-          {/* ─── RIGHT: ClickBot™ AI Agent ─────────────── */}
-          <FooterAICard />
+          {/* ─── RIGHT: Partner Network card ───────────── */}
+          <div className="md:col-span-2 lg:col-span-1">
+            <FooterPartnerCard />
+          </div>
 
         </div>
 
         <Divider />
 
         {/* Copyright row */}
-        <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-text-muted order-2 sm:order-1">
             © {year} Click Dudes, Inc. All rights reserved.
           </p>

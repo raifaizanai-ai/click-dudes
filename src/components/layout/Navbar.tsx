@@ -29,6 +29,8 @@ const NAV_BASE    = "px-3.5 py-2 rounded-full text-[15px] font-medium transition
 const NAV_ACTIVE  = "text-brand-purple bg-brand-purple/[0.06] shadow-[inset_0_0_0_1px_rgba(139,92,246,0.09)]"
 const NAV_DEFAULT = "text-text-secondary hover:text-brand-purple hover:bg-brand-purple/[0.05]"
 
+const isExternalHref = (href: string) => href.startsWith("http")
+
 /* ── Component ──────────────────────────────────────────── */
 
 export function Navbar() {
@@ -181,6 +183,18 @@ export function Navbar() {
                 )
               }
 
+              if (isExternalHref(item.href)) {
+                return (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className={cn(NAV_BASE, isActive ? NAV_ACTIVE : NAV_DEFAULT)}
+                  >
+                    {item.label}
+                  </a>
+                )
+              }
+
               return (
                 <Link
                   key={item.href}
@@ -195,8 +209,8 @@ export function Navbar() {
           </nav>
 
           {/* ── CTA — glow pill with shine sweep ── */}
-          <Link
-            href="/about/contact-us"
+          <a
+            href="https://partners.clickdudes.com/partner/login"
             className={cn(
               buttonVariants({ variant: "glow", size: "sm" }),
               "hidden lg:inline-flex ml-auto shrink-0",
@@ -209,8 +223,8 @@ export function Navbar() {
               className="absolute inset-0 translate-x-[-110%] group-hover:translate-x-[110%] transition-transform duration-700 ease-in-out pointer-events-none"
               style={{ background: "linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.30) 50%, transparent 70%)" }}
             />
-            Apply For Monetization
-          </Link>
+            Access Partners Dashboard
+          </a>
 
           {/* ── Mobile hamburger ── */}
           <button
