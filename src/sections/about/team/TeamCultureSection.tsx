@@ -1,5 +1,6 @@
 "use client"
 
+import { Fragment } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Section } from "@/components/layout/Section"
@@ -11,7 +12,9 @@ import { TEAM_MEMBERS } from "@/data/team"
 import { fadeUp, staggerContainer, VIEWPORT_ONCE } from "@/lib/animations"
 
 export function TeamCultureSection() {
-  const [rai, umer] = TEAM_MEMBERS
+  const splitAt = Math.ceil(TEAM_MEMBERS.length / 2)
+  const beforeMark = TEAM_MEMBERS.slice(0, splitAt)
+  const afterMark = TEAM_MEMBERS.slice(splitAt)
 
   return (
     <Section background="section" padding="lg" className="relative overflow-hidden" aria-label="Building together">
@@ -42,11 +45,19 @@ export function TeamCultureSection() {
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex items-center justify-center gap-4 sm:gap-8 mt-2">
-            <AvatarNode member={rai} />
-            <ConnectorLine />
+            {beforeMark.map((member) => (
+              <Fragment key={member.slug}>
+                <AvatarNode member={member} />
+                <ConnectorLine />
+              </Fragment>
+            ))}
             <BrandMarkNode size="lg" />
-            <ConnectorLine />
-            <AvatarNode member={umer} />
+            {afterMark.map((member) => (
+              <Fragment key={member.slug}>
+                <ConnectorLine />
+                <AvatarNode member={member} />
+              </Fragment>
+            ))}
           </motion.div>
 
           <motion.div variants={fadeUp} className="mt-2">
@@ -64,7 +75,7 @@ export function TeamCultureSection() {
 }
 
 function ConnectorLine() {
-  return <div aria-hidden="true" className="w-8 sm:w-14 h-px bg-gradient-to-r from-brand-purple/40 to-brand-blue/40" />
+  return <div aria-hidden="true" className="hidden sm:block w-8 sm:w-14 h-px bg-gradient-to-r from-brand-purple/40 to-brand-blue/40" />
 }
 
 function AvatarNode({ member }: { member: (typeof TEAM_MEMBERS)[number] }) {

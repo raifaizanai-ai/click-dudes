@@ -49,7 +49,10 @@
       "Bash(command -v wsl)",
       "Bash(command -v pacman)",
       "PowerShell(Get-Command *)",
-      "PowerShell(winget search *)"
+      "PowerShell(winget search *)",
+      "PowerShell(cd C:\\\\dev\\\\click-dudes; Test-Path node_modules\\\\typescript; Test-Path node_modules\\\\next; \\(Get-ChildItem node_modules | Measure-Object\\).Count)",
+      "PowerShell(cd C:\\\\dev\\\\click-dudes; \\(Test-NetConnection -ComputerName localhost -Port 3000 -InformationLevel Quiet -WarningAction SilentlyContinue\\))",
+      "PowerShell(pnpm install *)"
     ]
   }
 }

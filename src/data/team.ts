@@ -39,6 +39,22 @@ export const TEAM_MEMBERS: TeamMember[] = [
     backdropTheme: "network",
   },
   {
+    slug: "matt-ortolani",
+    name: "Matt Ortolani",
+    role: "Co-Founder & Managing Director",
+    shortDescription:
+      "Co-Founder & Managing Director of Click-Dudes, focused on operational leadership, strategic partnerships and turning the company's vision into scalable execution across its publisher monetization ecosystem.",
+    image: "/team/matt-ortolani.png",
+    imageObjectPosition: "center top",
+    linkedin: "https://www.linkedin.com/in/mattortolani/",
+    focusAreas: [
+      { label: "Operations", value: "Strategic Execution" },
+      { label: "Partnerships", value: "Business Development" },
+      { label: "Growth", value: "Scalable Operations" },
+    ],
+    backdropTheme: "network",
+  },
+  {
     slug: "syed-umer",
     name: "Syed Umer",
     role: "Co-Founder & CFO",
